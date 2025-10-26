@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        display: ['Cormorant Garamond', 'serif'],
-        sans: ['Lato', 'sans-serif'],
+        display: ['Playfair Display', 'serif'],
+        sans: ['Inter', 'sans-serif'],
       },
       screens: {
         'mobile': '375px',
