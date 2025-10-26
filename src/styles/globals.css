@@ -1,0 +1,91 @@
+/* Font imports must come first */
+@import '@fontsource/cormorant-garamond/300.css';
+@import '@fontsource/cormorant-garamond/400.css';
+@import '@fontsource/cormorant-garamond/600.css';
+@import '@fontsource/lato/400.css';
+@import '@fontsource/lato/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  @media (min-width: 640px) {
+    body {
+      font-size: 18px;
+    }
+  }
+
+  /* Accessibility: respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Typography scale */
+  .heading-h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(40px, 6vw, 96px);
+    line-height: 0.95;
+    letter-spacing: -0.005em;
+    font-weight: 600;
+  }
+
+  .heading-h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(28px, 4vw, 56px);
+    line-height: 1.1;
+    font-weight: 600;
+  }
+
+  .heading-h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(20px, 2.4vw, 28px);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  /* Hero tint overlays */
+  .hero-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.45) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    );
+  }
+
+  @media (min-width: 640px) {
+    .hero-overlay {
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.35) 0%,
+        rgba(0, 0, 0, 0.15) 100%
+      );
+    }
+  }
+
+  /* Custom duration utility */
+  .duration-220 {
+    transition-duration: 220ms;
+  }
+}

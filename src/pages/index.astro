@@ -1,0 +1,304 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Featured venue cards - luxury venues with minimal text
+const featuredCards = [
+  { title: "Villa d'Este", imgSrc: '/images/featured-1.jpg' },
+  { title: 'Palazzo Avino', imgSrc: '/images/featured-2.jpg' },
+  { title: 'Belmond Caruso', imgSrc: '/images/featured-3.jpg' },
+];
+
+// All 6 location cards using same Porsche-style design
+const allLocationCards = [
+  { name: 'Tuscany', tag: 'Vineyards', imgSrc: '/images/loc-tuscany.jpg' },
+  { name: 'Amalfi Coast', tag: 'Coastal', imgSrc: '/images/loc-amalfi.jpg' },
+  { name: 'Positano', tag: 'Coastal', imgSrc: '/images/loc-amalfi.jpg' },
+  { name: 'Puglia', tag: 'Masseria', imgSrc: '/images/loc-puglia.jpg' },
+  { name: 'Rome', tag: 'Historic', imgSrc: '/images/loc-como.jpg' },
+  { name: 'Capri', tag: 'Island', imgSrc: '/images/loc-capri.jpg' },
+];
+---
+
+<BaseLayout>
+  <!-- HERO - Full screen dark image with centered text -->
+  <section class="relative h-screen bg-black">
+    <img
+      src="/images/hero.jpg"
+      alt="Italian venue"
+      class="absolute inset-0 w-full h-full object-cover opacity-70"
+    />
+    <div class="absolute inset-0 bg-black/30"></div>
+    
+    <div class="relative z-10 h-full flex items-center justify-center px-6">
+      <h1 class="heading-h1 text-white text-center">
+        Italy's most exclusive venues.
+      </h1>
+    </div>
+  </section>
+
+  <!-- FEATURED VENUES - Porsche-style minimal cards -->
+  <section class="bg-white py-20 md:py-28">
+    <div class="container mx-auto px-6 max-w-[1400px]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        {featuredCards.map((card) => (
+          <a href="#" class="group block relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-xl">
+            <!-- Porsche aspect ratio -->
+            <div class="aspect-[16/10] relative bg-black">
+              <img src={card.imgSrc} alt={card.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              
+              <!-- Gradient overlay for text -->
+              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+              
+              <!-- Title and arrow at bottom-left - Porsche style -->
+              <div class="absolute bottom-6 left-6 right-6 flex items-center justify-between">
+                <h3 class="text-white text-lg md:text-xl font-normal">
+                  {card.title}
+                </h3>
+                <svg class="w-6 h-6 text-white transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY SECTION - All 6 location cards with animated background transition -->
+  <section class="bg-white transition-colors duration-1000" id="journey-section">
+    <div class="container mx-auto px-8 md:px-12 lg:px-16 max-w-[1800px] py-16 md:py-24">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-12 md:mb-16 text-left transition-colors duration-1000 leading-tight font-display" id="journey-title">
+        Your Italian venue journey starts now.
+      </h2>
+      
+      <!-- All 6 location cards: Porsche-style with dynamic hover expansion -->
+      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+        {allLocationCards.slice(0, 2).map((location, index) => (
+          <a href="#" class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
+            <img src={location.imgSrc} alt={location.name} class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
+            
+            <!-- Location name at TOP - Porsche style -->
+            <div class="absolute top-0 left-0 right-0 p-6 md:p-10">
+              <h3 class="text-white text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight font-display">
+                {location.name}
+              </h3>
+            </div>
+            
+            <!-- Tag and Explore at bottom -->
+            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+              <div class="flex items-end justify-between">
+                <span class="text-xs font-medium text-white bg-white/15 px-3 py-1.5 rounded backdrop-blur-sm">{location.tag}</span>
+                <div class="explore-indicator flex items-center gap-2 text-white opacity-0 transition-opacity duration-300">
+                  <span class="text-sm font-light">Explore</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <!-- Trigger point for background transition to black (after row 1) -->
+      <div id="transition-trigger" class="h-px my-4 md:my-6"></div>
+      
+      <!-- Remaining 4 location cards (rows 2 & 3) -->
+      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 mb-6 md:mb-8 lg:mb-12">
+        {allLocationCards.slice(2, 4).map((location) => (
+          <a href="#" class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
+            <img src={location.imgSrc} alt={location.name} class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
+            
+            <!-- Location name at TOP - Porsche style -->
+            <div class="absolute top-0 left-0 right-0 p-6 md:p-10">
+              <h3 class="text-white text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight font-display">
+                {location.name}
+              </h3>
+            </div>
+            
+            <!-- Tag and Explore at bottom -->
+            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+              <div class="flex items-end justify-between">
+                <span class="text-xs font-medium text-white bg-white/15 px-3 py-1.5 rounded backdrop-blur-sm">{location.tag}</span>
+                <div class="explore-indicator flex items-center gap-2 text-white opacity-0 transition-opacity duration-300">
+                  <span class="text-sm font-light">Explore</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <!-- Last row -->
+      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+        {allLocationCards.slice(4, 6).map((location) => (
+          <a href="#" class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
+            <img src={location.imgSrc} alt={location.name} class="absolute inset-0 w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
+            
+            <!-- Location name at TOP - Porsche style -->
+            <div class="absolute top-0 left-0 right-0 p-6 md:p-10">
+              <h3 class="text-white text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight font-display">
+                {location.name}
+              </h3>
+            </div>
+            
+            <!-- Tag and Explore at bottom -->
+            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+              <div class="flex items-end justify-between">
+                <span class="text-xs font-medium text-white bg-white/15 px-3 py-1.5 rounded backdrop-blur-sm">{location.tag}</span>
+                <div class="explore-indicator flex items-center gap-2 text-white opacity-0 transition-opacity duration-300">
+                  <span class="text-sm font-light">Explore</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH SECTION -->
+  <section class="bg-white py-20 md:py-28">
+    <div class="container mx-auto px-6 max-w-3xl text-center">
+      <h2 class="heading-h2 font-semibold mb-4">Find your perfect venue.</h2>
+      <p class="text-lg text-zinc-600 mb-10">Search by location, capacity, or style.</p>
+      
+      <form class="relative">
+        <input
+          type="text"
+          placeholder="Search for 100 person wedding venue in Tuscany with budget 50k"
+          class="w-full px-6 py-4 pr-32 text-base rounded-full border border-zinc-300 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
+        />
+        <button
+          type="submit"
+          class="absolute right-2 top-2 bottom-2 px-6 bg-black text-white rounded-full hover:bg-zinc-800 transition-colors text-sm font-medium"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // Menu management
+  window.addEventListener('openMenu', () => {
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+  });
+  
+  window.addEventListener('closeMenu', () => {
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+  });
+
+  // Porsche-style background transition - triggers at specific point
+  const journeySection = document.getElementById('journey-section');
+  const journeyTitle = document.getElementById('journey-title');
+  const transitionTrigger = document.getElementById('transition-trigger');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Transition to black background
+          journeySection?.classList.remove('bg-white');
+          journeySection?.classList.add('bg-black');
+          journeyTitle?.classList.remove('text-black');
+          journeyTitle?.classList.add('text-white');
+        } else if (entry.boundingClientRect.top > 0) {
+          // Only transition back to white when scrolling up (trigger is below viewport)
+          journeySection?.classList.remove('bg-black');
+          journeySection?.classList.add('bg-white');
+          journeyTitle?.classList.remove('text-white');
+          journeyTitle?.classList.add('text-black');
+        }
+      });
+    },
+    {
+      threshold: 0,
+      rootMargin: '0px' // Trigger exactly when the trigger point hits the viewport
+    }
+  );
+
+  if (transitionTrigger) {
+    observer.observe(transitionTrigger);
+  }
+</script>
+
+<style>
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Porsche-style card expansion effect - width only, height stays fixed */
+  @media (min-width: 768px) {
+    .location-card-row {
+      display: flex;
+      gap: 1.5rem;
+      height: 500px; /* Fixed height - only width will change on hover */
+    }
+
+    /* Cards have equal flex by default */
+    .location-card {
+      flex: 1 1 0%;
+      min-width: 0;
+      height: 100%; /* Fill the fixed row height */
+      aspect-ratio: auto; /* Override aspect ratio since we're using fixed height */
+      transition: flex 0.7s cubic-bezier(0.4, 0, 0.2, 1), 
+                  opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* When hovering a card, it expands width only - very subtle */
+    .location-card-row:has(.location-card:hover) .location-card:hover {
+      flex: 1.1 1 0%;
+      z-index: 10;
+    }
+
+    /* All other cards in the same row shrink width slightly */
+    .location-card-row:has(.location-card:hover) .location-card:not(:hover) {
+      flex: 0.9 1 0%;
+      opacity: 0.85;
+    }
+
+    /* Show explore indicator on hover */
+    .location-card:hover .explore-indicator {
+      opacity: 1 !important;
+    }
+
+    /* Image fills the card and crops appropriately */
+    .location-card img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  /* Mobile: simple press effect */
+  @media (max-width: 767px) {
+    .location-card:active {
+      transform: scale(0.98);
+    }
+  }
+
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .location-card {
+      transition: none !important;
+    }
+  }
+</style>

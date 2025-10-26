@@ -1,0 +1,133 @@
+---
+// Footer component
+---
+
+<footer class="bg-black text-white py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 lg:gap-12 mb-12">
+      <!-- Newsletter -->
+      <div class="lg:col-span-2">
+        <h3 class="heading-h3 mb-4 font-sans">Newsletter</h3>
+        <p class="text-zinc-400 mb-4">Stay updated with the latest Italian venues.</p>
+        <form class="flex flex-col sm:flex-row gap-3" aria-label="Newsletter signup">
+          <input
+            type="email"
+            placeholder="Your email"
+            class="flex-1 px-4 py-3 rounded-full bg-zinc-900 border border-zinc-800 focus:outline-none focus:ring-2 focus:ring-white text-white placeholder:text-zinc-500"
+            aria-label="Email address"
+          />
+          <button
+            type="submit"
+            class="px-6 py-3 rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+            aria-label="Subscribe to newsletter"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+      <!-- Locations & Contact -->
+      <div>
+        <h3 class="heading-h3 mb-4 font-sans">Locations & Contact</h3>
+        <ul class="space-y-3">
+          <li>
+            <button class="text-zinc-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">Contact Us</button>
+          </li>
+          <li>
+            <button class="text-zinc-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">List Your Venue</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social -->
+      <div>
+        <h3 class="heading-h3 mb-4 font-sans">Connect</h3>
+        <ul class="flex gap-4">
+          <li>
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-zinc-800 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              <span class="sr-only">Facebook</span>
+              <span class="text-zinc-400">F</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-zinc-800 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              <span class="sr-only">Instagram</span>
+              <span class="text-zinc-400">IG</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-label="Pinterest"
+              class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-zinc-800 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              <span class="sr-only">Pinterest</span>
+              <span class="text-zinc-400">P</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-label="YouTube"
+              class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-zinc-800 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              <span class="sr-only">YouTube</span>
+              <span class="text-zinc-400">YT</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-label="Twitter"
+              class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-zinc-800 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              <span class="sr-only">Twitter</span>
+              <span class="text-zinc-400">X</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="w-10 h-10 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-zinc-800 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+            >
+              <span class="sr-only">LinkedIn</span>
+              <span class="text-zinc-400">LI</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Company Links -->
+    <div class="border-t border-zinc-900 pt-8 mb-8">
+      <ul class="flex flex-wrap gap-6 text-sm text-zinc-400">
+        <li>
+          <a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">About</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">Terms</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">Privacy</a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">Cookies</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-sm text-zinc-500 text-center">
+      <p>&copy; {new Date().getFullYear()} ItalianVenues. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

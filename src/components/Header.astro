@@ -1,0 +1,98 @@
+---
+// Header component with hamburger menu - Porsche inspired
+---
+
+<header
+  class="absolute top-0 left-0 right-0 z-50 transition-all duration-300"
+  id="site-header"
+>
+  <!-- Porsche-style gradient fade backdrop -->
+  <div class="absolute inset-0 transition-all duration-300" id="header-backdrop">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-transparent backdrop-blur-sm" id="header-gradient"></div>
+  </div>
+  
+  <div class="relative max-w-7xl mx-auto px-4 md:px-6">
+    <div class="flex items-center justify-between h-14 md:h-16">
+      <!-- Left: Hamburger with Menu label -->
+      <div>
+        <button
+          id="hamburger-button"
+          class="flex items-center gap-2 focus:outline-none focus:ring-2 focus:ring-white rounded-lg transition-colors px-2 py-2"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+        >
+          <svg
+            class="hamburger-icon w-5 h-5 text-white transition-colors duration-300"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <span class="menu-label hidden md:inline text-white text-sm font-medium tracking-wide transition-colors duration-300">Menu</span>
+        </button>
+      </div>
+
+      <!-- Center: Wordmark -->
+      <div class="absolute left-1/2 -translate-x-1/2">
+        <h1 class="text-base md:text-lg font-bold tracking-[0.15em] text-white transition-colors duration-300 uppercase">
+          Italian Venues
+        </h1>
+      </div>
+
+      <!-- Right: Empty for balance -->
+      <div class="w-11"></div>
+    </div>
+  </div>
+</header>
+
+<!-- Client-side header behavior and scroll detection -->
+<script>
+  const header = document.getElementById('site-header');
+  const headerBackdrop = document.getElementById('header-backdrop');
+  const wordmark = header?.querySelector('h1');
+  const hamburgerIcon = header?.querySelector('.hamburger-icon');
+  const menuLabel = header?.querySelector('.menu-label');
+
+  // Update header based on scroll position
+  function updateHeaderVariant() {
+    const scrollY = window.scrollY;
+    const isScrolled = scrollY > 48;
+    const headerGradient = document.getElementById('header-gradient');
+
+    if (!header || !wordmark || !hamburgerIcon || !headerBackdrop || !headerGradient || !menuLabel) return;
+
+    if (isScrolled) {
+      // White background with shadow (hide gradient)
+      headerGradient.classList.add('hidden');
+      headerBackdrop.classList.add('bg-white', 'shadow-lg');
+      wordmark.classList.remove('text-white');
+      wordmark.classList.add('text-black');
+      hamburgerIcon.classList.remove('text-white');
+      hamburgerIcon.classList.add('text-black');
+      menuLabel.classList.remove('text-white');
+      menuLabel.classList.add('text-black');
+    } else {
+      // Gradient fade (Porsche style)
+      headerGradient.classList.remove('hidden');
+      headerBackdrop.classList.remove('bg-white', 'shadow-lg');
+      wordmark.classList.remove('text-black');
+      wordmark.classList.add('text-white');
+      hamburgerIcon.classList.remove('text-black');
+      hamburgerIcon.classList.add('text-white');
+      menuLabel.classList.remove('text-black');
+      menuLabel.classList.add('text-white');
+    }
+  }
+
+  updateHeaderVariant();
+  window.addEventListener('scroll', updateHeaderVariant, { passive: true });
+
+  // Menu toggle (will be handled by index.astro)
+  const hamburger = document.getElementById('hamburger-button');
+  hamburger?.addEventListener('click', () => {
+    const event = new CustomEvent('openMenu');
+    window.dispatchEvent(event);
+  });
+</script>
