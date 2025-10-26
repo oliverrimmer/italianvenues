@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import OverlayMenu from '../components/OverlayMenu.astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 import '../styles/globals.css';
 
 interface Props {
@@ -58,6 +59,8 @@ const {
     <Footer />
     
     <OverlayMenu />
+    
+    <SpeedInsights />
   </body>
 </html>
 
