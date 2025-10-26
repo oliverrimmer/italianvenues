@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import OverlayMenu from '../components/OverlayMenu.astro';
+import '../styles/globals.css';
 
 interface Props {
   title?: string;
@@ -42,9 +43,6 @@ const {
     
     <!-- Canonical -->
     <link rel="canonical" href="https://italianvenues.com/" />
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="/src/styles/globals.css" />
   </head>
   <body>
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:bg-white focus:text-black focus:rounded">
