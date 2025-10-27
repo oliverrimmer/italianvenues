@@ -1,0 +1,52 @@
+{
+  "name": "La Posta Vecchia",
+  "city": "Ladispoli",
+  "region": "Rome",
+  "maxGuests": 160,
+  "exclusiveUse": true,
+  "startingPriceEur": 25000,
+  "heroImage": "https://www.postavecchiahotel.com/media/LPV-hero.jpg",
+  "intro": "A striking Roman villa and former mansion of Jean Paul Getty, La Posta Vecchia blends history and natural beauty. Overlooking the Tyrrhenian Sea and Odescalchi Castle, it is an unforgettable venue for weddings, celebrations, and private occasions.",
+  "usps": [
+    "21 Rooms & Suites",
+    "Restaurant The Cesar",
+    "Private beach & 4-hectare park",
+    "Indoor pool, spa, gym, tennis",
+    "Onsite Roman ruins museum"
+  ],
+  "gallery": [
+    "https://www.postavecchiahotel.com/media/LPV-gallery1.jpg",
+    "https://www.postavecchiahotel.com/media/LPV-gallery2.jpg",
+    "https://www.postavecchiahotel.com/media/LPV-gallery3.jpg",
+    "https://www.postavecchiahotel.com/media/LPV-gallery4.jpg"
+  ],
+  "spaces": [
+    { "name": "Ristorante The Cesar", "capacity": "100 seated / 70 buffet" },
+    { "name": "Camino Room", "capacity": "60 seated / 50 ceremony" },
+    { "name": "Side Terrace", "capacity": "100 seated / 150 ceremony" },
+    { "name": "Front Terrace", "capacity": "160 seated / 150 ceremony" },
+    { "name": "Getty Studio", "capacity": "40 seated / 80 ceremony" },
+    { "name": "Front Garden", "capacity": "120 buffet / 150 ceremony" },
+    { "name": "Side Garden (2450 sqm)", "capacity": "160 in all formats" }
+  ],
+  "locationInfo": {
+    "address": "Ladispoli, Palo Laziale 00055 (RM)",
+    "distances": {
+      "Roma Termini": "42 km / ~1h",
+      "Civitavecchia": "39 km / 40 min",
+      "Fiumicino Airport": "34 km / 30 min",
+      "Ciampino Airport": "53 km / 45 min"
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2984.400434122916!2d12.079!3d41.9708!2m3..."
+  },
+  "faqs": [
+    { "q": "Is exclusive use required?", "a": "Yes, all 21 rooms and common areas are included for events." },
+    { "q": "When is the best season?", "a": "April through October offers the most suitable weather for weddings." },
+    { "q": "What services are included?", "a": "Gourmet breakfast, minibar, spa, pool, beach access, and parking." }
+  ],
+  "contact": {
+    "cta": "Request availability & receive a tailored quote",
+    "email": "contact@italianvenues.com"
+  }
+}
+
