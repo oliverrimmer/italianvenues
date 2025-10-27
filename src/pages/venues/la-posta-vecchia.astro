@@ -120,36 +120,85 @@ const { name, city, region, maxGuests, exclusiveUse, startingPriceEur, heroImage
   </section>
 
   <!-- LOCATION SECTION -->
-  <section class="bg-zinc-50 py-20 md:py-28">
-    <div class="container mx-auto px-6 max-w-6xl">
+  <section class="bg-white py-20 md:py-28">
+    <div class="container mx-auto px-6 max-w-7xl">
       <h2 class="heading-h2 font-semibold mb-12 text-center">Location</h2>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        <!-- Map -->
-        <div class="rounded-xl overflow-hidden shadow-lg">
-          <iframe
-            src={locationInfo.mapEmbed}
-            width="100%"
-            height="400"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title={`Map of ${name}`}
-          ></iframe>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Map - Takes 2 columns -->
+        <div class="lg:col-span-2">
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-zinc-200" style="height: 500px;">
+            <iframe
+              src={locationInfo.mapEmbed}
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title={`Map of ${name}`}
+            ></iframe>
+          </div>
+          <a 
+            href="https://maps.app.goo.gl/5nnaW6TZWjJtnQnM7" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 mt-4 text-[#a78656] hover:text-[#8f6d47] font-medium transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            View larger map & get directions
+          </a>
         </div>
 
-        <!-- Distance Info -->
-        <div>
-          <h3 class="heading-h3 font-semibold mb-6">Getting There</h3>
-          <p class="text-zinc-700 mb-6">{locationInfo.address}</p>
-          <div class="space-y-4">
-            {Object.entries(locationInfo.distances).map(([location, distance]) => (
-              <div class="flex justify-between items-center py-3 border-b border-zinc-200">
-                <span class="text-zinc-800 font-medium">{location}</span>
-                <span class="text-zinc-600">{distance}</span>
+        <!-- Info Panel - Takes 1 column -->
+        <div class="space-y-6">
+          <!-- Address Card -->
+          <div class="bg-zinc-50 rounded-xl p-6 border border-zinc-200">
+            <div class="flex items-start gap-3 mb-4">
+              <svg class="w-6 h-6 text-[#a78656] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <div>
+                <h3 class="font-semibold text-lg text-zinc-900 mb-2">Address</h3>
+                <p class="text-zinc-700 leading-relaxed">{locationInfo.address}</p>
               </div>
-            ))}
+            </div>
           </div>
+
+          <!-- Travel Times -->
+          <div class="bg-zinc-50 rounded-xl p-6 border border-zinc-200">
+            <div class="flex items-center gap-3 mb-4">
+              <svg class="w-6 h-6 text-[#a78656]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <h3 class="font-semibold text-lg text-zinc-900">Travel Times</h3>
+            </div>
+            <div class="space-y-3">
+              {Object.entries(locationInfo.distances).map(([location, distance]) => (
+                <div class="flex items-center justify-between py-2 border-b border-zinc-200 last:border-0">
+                  <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                    </svg>
+                    <span class="text-zinc-700 text-sm font-medium">{location}</span>
+                  </div>
+                  <span class="text-zinc-600 text-sm font-medium">{distance}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <a 
+            href="#contact" 
+            class="block w-full text-center px-6 py-3 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-colors duration-200"
+          >
+            Request Details
+          </a>
         </div>
       </div>
     </div>
