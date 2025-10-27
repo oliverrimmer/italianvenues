@@ -65,11 +65,11 @@ const allLocationCards = [
     </div>
   </section>
 
-  <!-- JOURNEY SECTION - All 6 location cards with animated background transition -->
-  <section class="bg-white transition-colors duration-1000" id="journey-section">
+  <!-- DISCOVERY SECTION - All 6 location cards with animated background transition -->
+  <section class="bg-white transition-colors duration-1000" id="discovery-section">
     <div class="container mx-auto px-8 md:px-12 lg:px-16 max-w-[1800px] py-16 md:py-24">
-      <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-12 md:mb-16 text-left transition-colors duration-1000 leading-tight font-display" id="journey-title">
-        Your Italian venue journey starts now.
+              <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold mb-12 md:mb-16 text-left transition-colors duration-1000 leading-tight font-display" id="discovery-title">
+        Your Italian venue discovery starts now.
       </h2>
       
       <!-- All 6 location cards: Porsche-style with dynamic hover expansion -->
@@ -203,8 +203,8 @@ const allLocationCards = [
   });
 
   // Porsche-style background transition - triggers at specific point
-  const journeySection = document.getElementById('journey-section');
-  const journeyTitle = document.getElementById('journey-title');
+      const discoverySection = document.getElementById('discovery-section');
+    const discoveryTitle = document.getElementById('discovery-title');
   const transitionTrigger = document.getElementById('transition-trigger');
 
   const observer = new IntersectionObserver(
@@ -212,16 +212,16 @@ const allLocationCards = [
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           // Transition to black background
-          journeySection?.classList.remove('bg-white');
-          journeySection?.classList.add('bg-black');
-          journeyTitle?.classList.remove('text-black');
-          journeyTitle?.classList.add('text-white');
+                  discoverySection?.classList.remove('bg-white');
+        discoverySection?.classList.add('bg-black');
+        discoveryTitle?.classList.remove('text-black');
+        discoveryTitle?.classList.add('text-white');
         } else if (entry.boundingClientRect.top > 0) {
           // Only transition back to white when scrolling up (trigger is below viewport)
-          journeySection?.classList.remove('bg-black');
-          journeySection?.classList.add('bg-white');
-          journeyTitle?.classList.remove('text-white');
-          journeyTitle?.classList.add('text-black');
+                  discoverySection?.classList.remove('bg-black');
+        discoverySection?.classList.add('bg-white');
+        discoveryTitle?.classList.remove('text-white');
+        discoveryTitle?.classList.add('text-black');
         }
       });
     },
