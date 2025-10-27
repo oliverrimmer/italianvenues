@@ -1,0 +1,55 @@
+{
+  "name": "Mezzatorre Hotel & Thermal Spa",
+  "city": "Forio, Ischia",
+  "region": "Campania",
+  "maxGuests": 120,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl",
+  "intro": "Perched above a private bay on Ischia, Mezzatorre Hotel & Thermal Spa occupies a historic 16th century watchtower. Today, it blends heritage, nature, and wellness — an exceptional hideaway proudly overlooking the Gulf of Naples.",
+  "usps": [
+    "48 Rooms & Suites",
+    "Ristorante La Torre & Bar La Torre",
+    "Ristorante & Bar La Baia",
+    "Thermal Spa & Wellness Centre",
+    "Private bay & beach club",
+    "Outdoor pool, tennis court, gym"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/11a787e9-0fe2-4846-5c35-624de0585200/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/19b9edf8-3b60-44e9-1f4c-04678fbae700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bfb4c9f0-a2fb-434f-1e5c-40742db47200/cardlg"
+  ],
+  "spaces": [
+    { "name": "Ristorante La Torre (Indoor)", "capacity": "100 cocktail / 80 seated / 65 buffet" },
+    { "name": "Ristorante La Torre (Terrace)", "capacity": "80 cocktail / 80 seated / 80 buffet" },
+    { "name": "Piazzetta Torre", "capacity": "100 cocktail" },
+    { "name": "Gazebo", "capacity": "80 cocktail / 80 seated / 50 buffet" },
+    { "name": "Visconti Terrace", "capacity": "120 cocktail / 110 seated / 90 buffet" },
+    { "name": "Vittoria Terrace", "capacity": "100 cocktail / 50 seated / 80 buffet / 100 ceremony" },
+    { "name": "Ristorante & Bar La Baia", "capacity": "80 cocktail / 60 seated" },
+    { "name": "Piazzetta Visconti", "capacity": "100 cocktail" }
+  ],
+  "locationInfo": {
+    "address": "Via Mezzatorre 23/d, 80075 Forio (NA), Ischia",
+    "distances": {
+      "Napoli Capodichino Airport": "44 km — 1h30 by hydrofoil / 2h20 by ferry / 1h by motorboat",
+      "Napoli Centrale Station": "46 km — 1h20 by hydrofoil / 2h10 by ferry / 1h10 by motorboat",
+      "Ischia Port": "8 km — 25 min",
+      "Casamicciola Port": "3 km — 15 min",
+      "Casamicciola Heliport": "2.5 km — 10 min"
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.167366993715!2d13.898!3d40.751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b5d0ed58efaa5%3A0x7c8e5b672b0ad0b0!2sMezzatorre%20Hotel%20%26%20Thermal%20Spa!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "faqs": [
+    { "q": "Is exclusive use required?", "a": "Yes, all 48 rooms and common areas are included for private events." },
+    { "q": "What services are included?", "a": "Breakfast, minibar, spa and thermal baths, outdoor pool, beach access, and parking." },
+    { "q": "What experiences are available?", "a": "Sea and mountain excursions, boat trips, yoga and pilates, spa treatments, wine tastings, and cooking classes." }
+  ],
+  "contact": {
+    "cta": "Request availability & receive a tailored quote",
+    "email": "contact@italianvenues.com"
+  }
+}
+
