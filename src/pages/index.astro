@@ -203,8 +203,8 @@ const allLocationCards = [
   });
 
   // Porsche-style background transition - triggers at specific point
-      const discoverySection = document.getElementById('discovery-section');
-    const discoveryTitle = document.getElementById('discovery-title');
+  const discoverySection = document.getElementById('discovery-section');
+  const discoveryTitle = document.getElementById('discovery-title');
   const transitionTrigger = document.getElementById('transition-trigger');
 
   const observer = new IntersectionObserver(
@@ -212,16 +212,16 @@ const allLocationCards = [
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           // Transition to black background
-                  discoverySection?.classList.remove('bg-white');
-        discoverySection?.classList.add('bg-black');
-        discoveryTitle?.classList.remove('text-black');
-        discoveryTitle?.classList.add('text-white');
+          discoverySection?.classList.remove('bg-white');
+          discoverySection?.classList.add('bg-black');
+          discoveryTitle?.classList.remove('text-black');
+          discoveryTitle?.classList.add('text-white');
         } else if (entry.boundingClientRect.top > 0) {
           // Only transition back to white when scrolling up (trigger is below viewport)
-                  discoverySection?.classList.remove('bg-black');
-        discoverySection?.classList.add('bg-white');
-        discoveryTitle?.classList.remove('text-white');
-        discoveryTitle?.classList.add('text-black');
+          discoverySection?.classList.remove('bg-black');
+          discoverySection?.classList.add('bg-white');
+          discoveryTitle?.classList.remove('text-white');
+          discoveryTitle?.classList.add('text-black');
         }
       });
     },
