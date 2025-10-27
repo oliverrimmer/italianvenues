@@ -1,0 +1,59 @@
+{
+  "name": "Hotel Il Pellicano",
+  "city": "Porto Ercole",
+  "region": "Tuscany",
+  "maxGuests": 120,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl",
+  "intro": "Overlooking the cliffs of Monte Argentario, Hotel Il Pellicano is a legendary Tuscan retreat founded in the 1960s by aviator Michael Graham and socialite Patsy Daszel. Originally a private club for friends and jet-set guests, today it offers timeless Italian charm, world-class dining, and unforgettable celebrations on the Tyrrhenian coast.",
+  "usps": [
+    "50 Rooms & Suites",
+    "Ristorante Il Pellicano (1* Michelin)",
+    "Pelligrill – Tuscan Grill",
+    "Pelliclub Health & Beauty Centre",
+    "Heated seawater outdoor pool",
+    "Private terrace beach with elevator",
+    "Tennis court, gym, Caldarium"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/11a787e9-0fe2-4846-5c35-624de0585200/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/19b9edf8-3b60-44e9-1f4c-04678fbae700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bfb4c9f0-a2fb-434f-1e5c-40742db47200/cardlg"
+  ],
+  "spaces": [
+    { "name": "Ristorante Il Pellicano (Terrace)", "capacity": "100 cocktail / 100 seated / 70 buffet" },
+    { "name": "Ristorante Il Pellicano (Indoor)", "capacity": "100 cocktail / 100 seated / 70 buffet" },
+    { "name": "Pelligrill", "capacity": "90 cocktail / 90 seated / 70 buffet / 100 ceremony" },
+    { "name": "Bar All'Aperto", "capacity": "120 cocktail" },
+    { "name": "Outdoor Pool", "capacity": "120 cocktail / 100 ceremony" },
+    { "name": "Beach Club", "capacity": "120 cocktail / 90 seated / 100 ceremony" }
+  ],
+  "locationInfo": {
+    "address": "Località Sbarcatello, 58019 Porto Ercole (GR), Tuscany",
+    "distances": {
+      "Rome Termini": "165 km — 2h30",
+      "Rome Fiumicino Airport": "145 km — 1h45",
+      "Rome Ciampino Airport": "165 km — 2h",
+      "Orbetello": "14 km — 20 min",
+      "Porto Ercole": "10 km — 20 min",
+      "Civitavecchia": "84 km — 1h15",
+      "Grosseto": "56 km — 1h",
+      "Livorno": "200 km — 2h25",
+      "Pisa": "210 km — 2h20",
+      "Florence": "205 km — 2h30"
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.236429253607!2d11.200!3d42.416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13295a1b2443cf1f%3A0x35cf8a89fb1e9d3c!2sHotel%20Il%20Pellicano!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "faqs": [
+    { "q": "Is exclusive use required?", "a": "Yes, all 50 rooms and common areas are included for private events." },
+    { "q": "What services are included?", "a": "Breakfast, minibar, spa and Caldarium, outdoor pool, private beach access, tennis, and parking." },
+    { "q": "What experiences are available?", "a": "Cooking classes, sailing trips, sport fishing, scuba diving, golf lessons, wine tastings, boat excursions to Giglio & Giannutri, thermal baths of Saturnia, and horse riding excursions." }
+  ],
+  "contact": {
+    "cta": "Request availability & receive a tailored quote",
+    "email": "contact@italianvenues.com"
+  }
+}
+
