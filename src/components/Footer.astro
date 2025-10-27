@@ -2,23 +2,23 @@
 // Footer component
 ---
 
-<footer class="bg-black text-white py-16 md:py-24">
-  <div class="max-w-7xl mx-auto px-4 md:px-6">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 lg:gap-12 mb-12">
+<footer class="bg-black text-white py-24 md:py-36">
+  <div class="max-w-7xl mx-auto px-6 md:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-12 lg:gap-16 mb-20">
       <!-- Newsletter -->
       <div class="lg:col-span-2">
-        <h3 class="heading-h3 mb-4 font-sans">Newsletter</h3>
-        <p class="text-zinc-400 mb-4">Stay updated with the latest Italian venues.</p>
-        <form class="flex flex-col sm:flex-row gap-3" aria-label="Newsletter signup">
+        <h3 class="heading-h3 mb-3 font-sans">Newsletter</h3>
+        <p class="text-zinc-400 mb-8 text-base leading-relaxed max-w-md">Discover Italy's finest venues before anyone else.</p>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-lg" aria-label="Newsletter signup">
           <input
             type="email"
             placeholder="Your email"
-            class="flex-1 px-4 py-3 rounded-full bg-zinc-900 border border-zinc-800 focus:outline-none focus:ring-2 focus:ring-white text-white placeholder:text-zinc-500"
+            class="flex-1 px-5 py-3.5 rounded-full bg-zinc-900 border border-zinc-700 focus:outline-none focus:ring-2 focus:ring-white focus:border-white text-white placeholder:text-zinc-500 text-sm"
             aria-label="Email address"
           />
           <button
             type="submit"
-            class="px-6 py-3 rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition-colors focus:outline-none focus:ring-2 focus:ring-white"
+            class="px-8 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-zinc-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white shadow-sm"
             aria-label="Subscribe to newsletter"
           >
             Subscribe
@@ -28,20 +28,20 @@
 
       <!-- Locations & Contact -->
       <div>
-        <h3 class="heading-h3 mb-4 font-sans">Locations & Contact</h3>
-        <ul class="space-y-3">
+        <h3 class="heading-h3 mb-5 font-sans">Locations & Contact</h3>
+        <ul class="space-y-4">
           <li>
-            <button class="text-zinc-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">Contact Us</button>
+            <button class="text-zinc-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded text-sm">Contact Us</button>
           </li>
           <li>
-            <button class="text-zinc-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">List Your Venue</button>
+            <button class="text-zinc-400 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded text-sm">List Your Venue</button>
           </li>
         </ul>
       </div>
 
       <!-- Social -->
       <div>
-        <h3 class="heading-h3 mb-4 font-sans">Connect</h3>
+        <h3 class="heading-h3 mb-5 font-sans">Connect</h3>
         <ul class="flex gap-4">
           <li>
             <a
@@ -108,8 +108,8 @@
     </div>
 
     <!-- Company Links -->
-    <div class="border-t border-zinc-900 pt-8 mb-8">
-      <ul class="flex flex-wrap gap-6 text-sm text-zinc-400">
+    <div class="border-t border-zinc-800 pt-12 mb-8">
+      <ul class="flex flex-wrap gap-8 text-sm text-zinc-500">
         <li>
           <a href="#" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-white rounded">About</a>
         </li>
@@ -126,7 +126,7 @@
     </div>
 
     <!-- Copyright -->
-    <div class="text-sm text-zinc-500 text-center">
+    <div class="text-sm text-zinc-600 text-center">
       <p>&copy; {new Date().getFullYear()} ItalianVenues. All rights reserved.</p>
     </div>
   </div>

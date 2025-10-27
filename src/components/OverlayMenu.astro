@@ -108,25 +108,25 @@ const sections = {
       <aside class="w-80 bg-white border-r border-zinc-200 p-12 overflow-y-auto">
         <nav>
           <h2 id="menu-title" class="sr-only">Navigation Menu</h2>
-          <ul class="space-y-0">
+          <ul class="space-y-3">
             <li>
               <button
-                class="menu-section w-full flex items-center justify-between text-left text-2xl py-6 border-b border-zinc-200 hover:bg-zinc-100 transition-colors focus:outline-none focus:bg-zinc-100 font-normal"
+                class="menu-section w-full flex items-center justify-between text-left text-2xl px-6 py-8 rounded-2xl hover:bg-porsche-grey transition-all duration-200 focus:outline-none font-medium"
                 data-section="locations"
               >
                 <span>Locations</span>
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </button>
             </li>
             <li>
               <button
-                class="menu-section w-full flex items-center justify-between text-left text-2xl py-6 border-b border-zinc-200 hover:bg-zinc-100 transition-colors focus:outline-none focus:bg-zinc-100 font-normal"
+                class="menu-section w-full flex items-center justify-between text-left text-2xl px-6 py-8 rounded-2xl hover:bg-porsche-grey transition-all duration-200 focus:outline-none font-medium"
                 data-section="styles"
               >
                 <span>Venue Styles</span>
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </button>
@@ -134,7 +134,7 @@ const sections = {
             <li>
               <a
                 href="/#"
-                class="menu-section block w-full text-left text-2xl py-6 border-b border-zinc-200 hover:bg-zinc-100 transition-colors focus:outline-none focus:bg-zinc-100 font-normal"
+                class="menu-section block w-full text-left text-2xl px-6 py-8 rounded-2xl hover:bg-porsche-grey transition-all duration-200 focus:outline-none font-medium"
               >
                 Contact
               </a>
@@ -143,8 +143,8 @@ const sections = {
         </nav>
       </aside>
 
-      <!-- Right Content Area - Scrollable -->
-      <div class="flex-1 overflow-y-auto bg-zinc-50 relative">
+                 <!-- Right Content Area - Scrollable -->
+           <div class="flex-1 overflow-y-auto bg-porsche-grey relative">
         <!-- Close button - top right (desktop) -->
         <div class="absolute top-8 right-8 z-10">
           <button
@@ -161,28 +161,34 @@ const sections = {
         <div class="p-12 pt-24">
         <!-- Locations Section -->
         <div class="menu-content" data-content="locations">
-          <div class="space-y-6">
+          <div class="space-y-4">
             {sections.locations.map((item) => (
               <a
                 href="#"
-                class="menu-card-link block group relative overflow-hidden rounded-2xl bg-black shadow-xl hover:shadow-2xl transition-all duration-500"
+                class="menu-card-link block group"
               >
-                <div class="h-48 md:h-64 relative">
-                  <img src={item.imgSrc} alt={item.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                <div class="flex items-center gap-8 p-4 rounded-lg hover:bg-white transition-all duration-200">
+                  <!-- Title on left -->
+                  <h4 class="text-3xl font-medium font-display min-w-[200px]">{item.title}</h4>
                   
-                  <!-- Content overlay -->
-                  <div class="absolute inset-0 p-4 md:p-6 flex flex-col justify-end">
-                    <div class="flex items-end justify-between">
-                      <div>
-                        <p class="text-white/80 text-xs md:text-sm mb-1">Explore</p>
-                        <h4 class="text-white font-semibold text-xl md:text-3xl font-display leading-tight">{item.title}</h4>
-                      </div>
-                      <svg class="w-5 h-5 md:w-6 md:h-6 text-white opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                      </svg>
-                    </div>
+                  <!-- Image on right -->
+                  <div class="flex-1 relative overflow-hidden rounded">
+                    <img 
+                      src={item.imgSrc} 
+                      alt={item.title} 
+                      class="w-full h-48 object-cover object-center transition-transform duration-300 group-hover:scale-105" 
+                    />
                   </div>
+                  
+                  <!-- Arrow indicator -->
+                  <svg 
+                    class="w-6 h-6 text-black transition-transform duration-300 group-hover:translate-x-1 flex-shrink-0" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
                 </div>
               </a>
             ))}
@@ -191,28 +197,34 @@ const sections = {
 
         <!-- Styles Section -->
         <div class="menu-content hidden" data-content="styles">
-          <div class="space-y-6">
+          <div class="space-y-4">
             {sections.styles.map((item) => (
               <a
                 href="#"
-                class="menu-card-link block group relative overflow-hidden rounded-2xl bg-black shadow-xl hover:shadow-2xl transition-all duration-500"
+                class="menu-card-link block group"
               >
-                <div class="h-48 md:h-64 relative">
-                  <img src={item.imgSrc} alt={item.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                <div class="flex items-center gap-8 p-4 rounded-lg hover:bg-white transition-all duration-200">
+                  <!-- Title on left -->
+                  <h4 class="text-3xl font-medium font-display min-w-[200px]">{item.title}</h4>
                   
-                  <!-- Content overlay -->
-                  <div class="absolute inset-0 p-4 md:p-6 flex flex-col justify-end">
-                    <div class="flex items-end justify-between">
-                      <div>
-                        <p class="text-white/80 text-xs md:text-sm mb-1">Explore</p>
-                        <h4 class="text-white font-semibold text-xl md:text-3xl font-display leading-tight">{item.title}</h4>
-                      </div>
-                      <svg class="w-5 h-5 md:w-6 md:h-6 text-white opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                      </svg>
-                    </div>
+                  <!-- Image on right -->
+                  <div class="flex-1 relative overflow-hidden rounded">
+                    <img 
+                      src={item.imgSrc} 
+                      alt={item.title} 
+                      class="w-full h-48 object-cover object-center transition-transform duration-300 group-hover:scale-105" 
+                    />
                   </div>
+                  
+                  <!-- Arrow indicator -->
+                  <svg 
+                    class="w-6 h-6 text-black transition-transform duration-300 group-hover:translate-x-1 flex-shrink-0" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
                 </div>
               </a>
             ))}
@@ -281,11 +293,11 @@ const sections = {
       button.addEventListener('click', () => {
         const section = button.getAttribute('data-section');
 
-        // Update active button styling - Porsche style grey background
-        menuButtons.forEach((btn) => {
-          btn.classList.remove('bg-zinc-100');
-        });
-        button.classList.add('bg-zinc-100');
+            // Update active button styling - Porsche style grey background
+            menuButtons.forEach((btn) => {
+              btn.classList.remove('bg-porsche-grey');
+            });
+            button.classList.add('bg-porsche-grey');
 
         // Show/hide content
         contentSections.forEach((content) => {
@@ -296,7 +308,7 @@ const sections = {
 
     // Initialize first section as active with grey background (desktop only)
     if (menuButtons[0]) {
-      menuButtons[0].classList.add('bg-zinc-100');
+      menuButtons[0].classList.add('bg-porsche-grey');
     }
     menuButtons[0]?.click();
   });

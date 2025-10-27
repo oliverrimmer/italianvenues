@@ -11,6 +11,11 @@ module.exports = {
         'mobile': '375px',
         'desktop': '1025px',
       },
+      colors: {
+        porsche: {
+          grey: '#EEEFF2',
+        },
+      },
     },
   },
   plugins: [],
