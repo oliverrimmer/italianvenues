@@ -3,10 +3,11 @@
 const sections = {
   locations: [
     { title: 'Amalfi Coast', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/menumd' },
+    { title: 'Rome', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/menumd' },
     { title: 'Tuscany', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/11a787e9-0fe2-4846-5c35-624de0585200/menumd' },
-    { title: 'Lake Como', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/f94c0d74-865b-4700-eb89-f0ea3c07ae00/menumd' },
-    { title: 'Puglia', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9053c373-f3f5-48ff-99db-c28ce19c0300/menumd' },
-    { title: 'Sicily', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/18e4cf25-0c2f-4fc3-4250-cb5f3ba84500/menumd' },
+    { title: 'Venice', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/19b9edf8-3b60-44e9-1f4c-04678fbae700/menumd' },
+    { title: 'Portofino', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bfb4c9f0-a2fb-434f-1e5c-40742db47200/menumd' },
+    { title: 'Puglia', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/c3f617d3-ac59-4b7c-4e2e-40fb54d4ac00/menumd' },
   ],
   styles: [
     { title: 'Classic Villa', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/f94c0d74-865b-4700-eb89-f0ea3c07ae00/menumd' },
@@ -88,6 +89,19 @@ const sections = {
             ))}
           </div>
         </div>
+
+        <!-- Contact Section -->
+        <div>
+          <a
+            href="/contact"
+            class="w-full flex items-center justify-between py-4 border-b border-zinc-200 hover:bg-zinc-100 transition-colors focus:outline-none"
+          >
+            <h2 class="text-2xl font-normal">Contact</h2>
+            <svg class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -100,7 +114,7 @@ const sections = {
           <ul class="space-y-0">
             <li>
               <button
-                class="menu-section w-full flex items-center justify-between text-left text-2xl py-6 border-b border-zinc-200 hover:opacity-60 transition-opacity focus:outline-none focus:ring-2 focus:ring-black font-normal"
+                class="menu-section w-full flex items-center justify-between text-left text-2xl py-6 border-b border-zinc-200 hover:bg-zinc-100 transition-colors focus:outline-none focus:bg-zinc-100 font-normal"
                 data-section="locations"
               >
                 <span>Locations</span>
@@ -111,7 +125,7 @@ const sections = {
             </li>
             <li>
               <button
-                class="menu-section w-full flex items-center justify-between text-left text-2xl py-6 border-b border-zinc-200 hover:opacity-60 transition-opacity focus:outline-none focus:ring-2 focus:ring-black font-normal"
+                class="menu-section w-full flex items-center justify-between text-left text-2xl py-6 border-b border-zinc-200 hover:bg-zinc-100 transition-colors focus:outline-none focus:bg-zinc-100 font-normal"
                 data-section="styles"
               >
                 <span>Venue Styles</span>
@@ -119,6 +133,17 @@ const sections = {
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </button>
+            </li>
+            <li>
+              <a
+                href="/contact"
+                class="menu-section w-full flex items-center justify-between text-left text-2xl py-6 border-b border-zinc-200 hover:bg-zinc-100 transition-colors focus:outline-none focus:bg-zinc-100 font-normal"
+              >
+                <span>Contact</span>
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </a>
             </li>
           </ul>
         </nav>
@@ -257,10 +282,16 @@ const sections = {
       });
     });
 
-    // Desktop: Section switching
+    // Desktop: Section switching with grey background
     menuButtons.forEach((button) => {
       button.addEventListener('click', () => {
         const section = button.getAttribute('data-section');
+
+        // Update active button styling - Porsche style grey background
+        menuButtons.forEach((btn) => {
+          btn.classList.remove('bg-zinc-100');
+        });
+        button.classList.add('bg-zinc-100');
 
         // Show/hide content
         contentSections.forEach((content) => {
@@ -269,7 +300,10 @@ const sections = {
       });
     });
 
-    // Initialize first section as active (desktop only)
+    // Initialize first section as active with grey background (desktop only)
+    if (menuButtons[0]) {
+      menuButtons[0].classList.add('bg-zinc-100');
+    }
     menuButtons[0]?.click();
   });
 </script>
