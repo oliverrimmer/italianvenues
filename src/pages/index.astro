@@ -3,9 +3,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Featured venue cards - luxury venues with minimal text
 const featuredCards = [
-  { title: "La Posta Vecchia", imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/featured' },
-  { title: 'Mezzatorre Hotel & Thermal Spa', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/featured' },
-  { title: 'Hotel Il Pellicano', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/featured' },
+  { title: "La Posta Vecchia", imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/featured', link: '/venues/la-posta-vecchia' },
+  { title: 'Mezzatorre Hotel & Thermal Spa', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/featured', link: '#' },
+  { title: 'Hotel Il Pellicano', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/featured', link: '#' },
 ];
 
 // All 6 location cards using same Porsche-style design
@@ -44,7 +44,7 @@ const allLocationCards = [
     <div class="container mx-auto px-6 max-w-[1400px]">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
         {featuredCards.map((card) => (
-          <a href="#" class="group block relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-xl">
+          <a href={card.link} class="group block relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-xl">
             <!-- Porsche aspect ratio -->
             <div class="aspect-[16/10] relative bg-black">
               <img src={card.imgSrc} alt={card.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
