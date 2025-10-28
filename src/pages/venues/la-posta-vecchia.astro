@@ -1,0 +1,662 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const venueData = await import('../../data/venues/la-posta-vecchia.json');
+const {
+  name, city, region, maxGuests, exclusiveUse, startingPriceEur, heroImage, intro, history, usps, gallery, spaces, ancillaryServices, outlets, facilities, exclusiveUseDetails, locationInfo, faqs, contact
+} = venueData.default;
+
+const mapsLink = 'https://maps.app.goo.gl/5nnaW6TZWjJtnQnM7';
+---
+
+<BaseLayout 
+  title={`${name} — Exclusive Luxury Wedding Venue in ${city}, ${region} | ItalianVenues`}
+  description={`La Posta Vecchia, the former mansion of Jean Paul Getty, is an exclusive luxury wedding venue near Rome. With 21 rooms, overlooking the Tyrrhenian Sea, private beach, heated pool, archaeological museum, and opulent Renaissance interiors. Perfect for exclusive use events up to 160 guests.`}
+>
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": name,
+    "description": intro,
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": city,
+      "addressRegion": region,
+      "addressCountry": "IT"
+    },
+    "telephone": contact.hotelPhone,
+    "email": contact.hotelEmail,
+    "priceRange": `€${startingPriceEur.toLocaleString()} and up`,
+    "maximumAttendeeCapacity": maxGuests,
+    "amenityFeature": facilities.map(f => ({
+      "@type": "LocationFeatureSpecification",
+      "name": typeof f === 'string' ? f : f.name
+    }))
+  })} />
+
+  <!-- HERO SECTION -->
+  <section class="relative h-screen bg-black">
+    <img
+      src={heroImage}
+      alt={name}
+      class="absolute inset-0 w-full h-full object-cover opacity-70"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+    
+    <div class="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
+      <p class="text-[#a78656] text-sm md:text-base font-medium tracking-wider uppercase mb-4">{city}, {region}</p>
+      <h1 class="heading-h1 text-white mb-6">
+        {name}
+      </h1>
+      <p class="text-white/90 text-lg md:text-xl max-w-2xl mb-8">
+        {intro.substring(0, 120)}...
+      </p>
+      <a href="#contact" class="inline-flex items-center px-8 py-4 border-2 border-[#a78656] text-[#a78656] font-medium hover:bg-[#a78656] hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#a78656] rounded">
+        Enquire Now
+      </a>
+    </div>
+  </section>
+
+  <!-- STICKY NAVIGATION BAR -->
+  <nav id="sticky-nav" class="sticky top-0 z-40 bg-white border-b border-zinc-200 shadow-sm transition-all duration-200">
+    <div class="container mx-auto px-6 max-w-7xl">
+      <div class="flex items-center gap-3 overflow-x-auto scrollbar-hide py-4">
+        <a href="#overview" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Overview</a>
+        <a href="#heritage" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Heritage</a>
+        <a href="#gallery" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Gallery</a>
+        <a href="#exclusive" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Exclusive Use</a>
+        <a href="#spaces" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Event Spaces</a>
+        <a href="#facilities" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Facilities</a>
+        <a href="#outlets" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Dining</a>
+        <a href="#services" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Experiences</a>
+        <a href="#location" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Location</a>
+        <a href="#faqs" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">FAQs</a>
+        <a href="#contact" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OVERVIEW SECTION -->
+  <section id="overview" class="bg-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <!-- Intro Text -->
+        <div>
+          <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">About {name}</h2>
+          <div class="space-y-6">
+            <p class="text-lg leading-relaxed text-zinc-700">{intro}</p>
+            <div class="flex flex-wrap gap-4 pt-4">
+              <div class="px-5 py-3 bg-zinc-100 rounded-xl">
+                <p class="text-sm text-zinc-600 font-medium">Max Guests</p>
+                <p class="text-2xl font-semibold text-black">{maxGuests}</p>
+              </div>
+              {exclusiveUse && (
+                <div class="px-5 py-3 bg-zinc-100 rounded-xl">
+                  <p class="text-sm text-zinc-600 font-medium">Exclusive Use</p>
+                  <p class="text-2xl font-semibold text-black">Yes</p>
+                </div>
+              )}
+              {startingPriceEur > 0 && (
+                <div class="px-5 py-3 bg-zinc-100 rounded-xl">
+                  <p class="text-sm text-zinc-600 font-medium">Starting From</p>
+                  <p class="text-2xl font-semibold text-black">€{startingPriceEur.toLocaleString()}</p>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Features Table -->
+        <div class="bg-zinc-50/50 rounded-xl border border-zinc-200 p-6">
+          <h3 class="heading-h3 font-semibold mb-5 text-zinc-900">Key Features</h3>
+          <table class="w-full">
+            <tbody>
+              {usps.map((usp, index) => (
+                <tr class={index < usps.length - 1 ? 'border-b border-zinc-300' : ''}>
+                  <td class="py-3">
+                    <div class="flex items-center gap-3">
+                      <svg class="w-5 h-5 text-[#a78656] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                      </svg>
+                      <span class="text-lg text-zinc-700 font-medium">{usp}</span>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERITAGE SECTION -->
+  {history && (
+    <section id="heritage" class="bg-gradient-to-b from-zinc-50 to-white py-24 md:py-32">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <div class="text-center mb-12">
+          <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">A Living Monument to Italian History</h2>
+          <p class="text-xl text-zinc-700 leading-relaxed max-w-3xl mx-auto">
+            Once a seaside resort favoured by Roman emperors, later a Renaissance villa for the noble Orsini family, 
+            and finally the home of Jean Paul Getty, who filled it with Italian art treasures.
+          </p>
+        </div>
+        <div class="space-y-6">
+          <p class="text-lg text-zinc-700 leading-relaxed tracking-wide">
+            {history.description}
+          </p>
+          <p class="text-lg text-zinc-700 leading-relaxed tracking-wide">
+            {history.artCollection}
+          </p>
+        </div>
+        
+        <!-- Historical Timeline -->
+        <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center bg-[#a78656] px-8 py-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-4xl font-serif text-white mb-2">Roman Era</div>
+            <p class="text-white text-lg">Ancient seaside resort</p>
+          </div>
+          <div class="text-center bg-[#a78656] px-8 py-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-4xl font-serif text-white mb-2">Renaissance</div>
+            <p class="text-white text-lg">Noble Orsini villa</p>
+          </div>
+          <div class="text-center bg-[#a78656] px-8 py-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-4xl font-serif text-white mb-2">Modern Age</div>
+            <p class="text-white text-lg">Getty's art sanctuary</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- GALLERY SECTION -->
+  <section id="gallery" class="bg-zinc-50 py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Gallery</h2>
+        <p class="text-lg text-zinc-600 max-w-2xl mx-auto">Experience the grandeur of La Posta Vecchia through our photographic journey</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {gallery.map((image, index) => {
+          const altDescriptions = [
+            `${name} - Tyrrhenian Sea view and main building`,
+            `${name} - Renaissance architecture and gardens`,
+            `${name} - Interior with art collection and tapestries`,
+            `${name} - Outdoor terraces overlooking the Tyrrhenian Sea`
+          ];
+          return (
+            <div class="relative aspect-[4/3] rounded-xl overflow-hidden group cursor-pointer">
+              <img 
+                src={image} 
+                alt={altDescriptions[index] || `${name} - Image ${index + 1}`}
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- EXCLUSIVE USE SECTION -->
+  {exclusiveUseDetails && (
+    <section id="exclusive" class="bg-white py-24 md:py-32">
+      <div class="container mx-auto px-6 max-w-6xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Exclusive Use Experience</h2>
+        <p class="text-xl text-zinc-700 leading-relaxed max-w-3xl mx-auto">
+          {exclusiveUseDetails.description}
+        </p>
+      </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {exclusiveUseDetails.included.map((item) => (
+            <div class="flex items-start gap-4 bg-zinc-50 p-6 rounded-xl border border-zinc-200 hover:border-[#a78656] transition-all hover:shadow-md">
+              <svg class="w-6 h-6 text-[#a78656] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-zinc-800 leading-relaxed">{item}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- EVENT SPACES SECTION -->
+  <section id="spaces" class="bg-zinc-50 py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Event Spaces & Capacities</h2>
+        <p class="text-xl text-zinc-700 leading-relaxed max-w-3xl mx-auto">
+          Seven distinct spaces, each offering unique ambiance for your celebration
+        </p>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full border border-zinc-200 rounded-lg bg-white">
+          <thead class="bg-zinc-100">
+            <tr>
+              <th class="px-8 py-4 text-left text-sm font-semibold text-zinc-900">Event Space</th>
+              <th class="px-6 py-4 text-center text-sm font-semibold text-zinc-900">Cocktail</th>
+              <th class="px-6 py-4 text-center text-sm font-semibold text-zinc-900">Seated Dinner</th>
+              <th class="px-6 py-4 text-center text-sm font-semibold text-zinc-900">Buffet</th>
+              <th class="px-6 py-4 text-center text-sm font-semibold text-zinc-900">Ceremony</th>
+            </tr>
+          </thead>
+          <tbody>
+            {spaces.map((space, index) => (
+              <tr class={index % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}>
+                <td class="px-8 py-5">
+                  <p class="font-semibold text-zinc-900">{space.name}</p>
+                  {space.description && <p class="text-sm text-zinc-600 mt-1">{space.description}</p>}
+                </td>
+                <td class="px-6 py-5 text-center text-zinc-700">{space.capacities.cocktail > 0 ? space.capacities.cocktail : '-'}</td>
+                <td class="px-6 py-5 text-center text-zinc-700">{space.capacities.seated > 0 ? space.capacities.seated : '-'}</td>
+                <td class="px-6 py-5 text-center text-zinc-700">{space.capacities.buffet > 0 ? space.capacities.buffet : '-'}</td>
+                <td class="px-6 py-5 text-center text-zinc-700">{space.capacities.ceremony > 0 ? space.capacities.ceremony : '-'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FACILITIES SECTION -->
+  {facilities && facilities.length > 0 && (
+    <section id="facilities" class="bg-white py-24 md:py-32">
+      <div class="container mx-auto px-6 max-w-7xl">
+        <div class="text-center mb-12">
+          <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">World-Class Facilities</h2>
+          <p class="text-lg text-zinc-600 max-w-2xl mx-auto">Five-star amenities designed for relaxation and enrichment</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {facilities.map((facility) => (
+            <div class="bg-zinc-50 p-8 rounded-xl border border-zinc-200 hover:border-[#a78656] transition-all hover:shadow-lg">
+              <svg class="w-10 h-10 text-[#a78656] mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <h3 class="text-xl font-semibold text-zinc-900 mb-3">{facility.name || facility}</h3>
+              {facility.description && (
+                <p class="text-zinc-600 leading-relaxed">{facility.description}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- DINING & BAR AREAS SECTION -->
+  {outlets && outlets.length > 0 && (
+    <section id="outlets" class="bg-white py-24 md:py-32">
+      <div class="container mx-auto px-6 max-w-7xl">
+        <div class="text-center mb-12">
+          <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Dining & Bar Areas</h2>
+          <p class="text-xl text-zinc-700 leading-relaxed max-w-3xl mx-auto">
+            Seven distinguished spaces for dining, entertainment, and memorable celebrations
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          {outlets.map((outlet) => (
+            <div class="bg-zinc-50 p-6 rounded-xl border border-zinc-200 hover:border-[#a78656] transition-all hover:shadow-lg text-center">
+              <h3 class="text-lg font-semibold text-zinc-900">{outlet}</h3>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ADDITIONAL SERVICES SECTION -->
+  {ancillaryServices && ancillaryServices.length > 0 && (
+    <section id="services" class="bg-gradient-to-b from-white to-zinc-50 py-24 md:py-32">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Curated Experiences</h2>
+          <p class="text-xl text-zinc-700 leading-relaxed max-w-3xl mx-auto">
+            Our professional team arranges exceptional activities to enhance your stay
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {ancillaryServices.map((service) => (
+            <div class="flex items-center gap-4 bg-white px-6 py-5 rounded-xl border border-zinc-200 shadow-sm hover:shadow-md transition-shadow">
+              <svg class="w-6 h-6 text-[#a78656] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-zinc-800 font-medium">{service}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- LOCATION SECTION -->
+  <section id="location" class="bg-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Location</h2>
+        <p class="text-lg text-zinc-600 max-w-2xl mx-auto">Easily accessible from Rome and international airports</p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Map -->
+        <div class="lg:col-span-2">
+          <div class="rounded-2xl overflow-hidden shadow-xl border border-zinc-200" style="height: 500px;">
+            <iframe
+              src={locationInfo.mapEmbed}
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title={`Map of ${name}`}
+            ></iframe>
+          </div>
+          <a 
+            href={mapsLink} 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 mt-4 text-[#a78656] hover:text-[#8f6d47] font-medium transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            View larger map & get directions
+          </a>
+        </div>
+
+        <!-- Info Panel -->
+        <div class="space-y-6">
+          <!-- Address Card -->
+          <div class="bg-zinc-50 rounded-xl p-6 border border-zinc-200">
+            <div class="flex items-start gap-3 mb-4">
+              <svg class="w-6 h-6 text-[#a78656] flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <div>
+                <h3 class="font-semibold text-lg text-zinc-900 mb-2">Address</h3>
+                <p class="text-zinc-700 leading-relaxed">{locationInfo.address}</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Travel Times -->
+          <div class="bg-zinc-50 rounded-xl p-6 border border-zinc-200">
+            <div class="flex items-center gap-3 mb-4">
+              <svg class="w-6 h-6 text-[#a78656]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <h3 class="font-semibold text-lg text-zinc-900">Travel Times</h3>
+            </div>
+            <div class="space-y-3">
+              {Object.entries(locationInfo.distances).map(([location, distance]) => (
+                <div class="flex items-center justify-between py-2 border-b border-zinc-200 last:border-0">
+                  <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+                    </svg>
+                    <span class="text-zinc-700 text-sm font-medium">{location}</span>
+                  </div>
+                  <span class="text-zinc-600 text-sm font-medium">{distance}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <a 
+            href="#contact" 
+            class="block w-full text-center px-6 py-3 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-colors duration-200"
+          >
+            Request Details
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs SECTION -->
+  <section id="faqs" class="bg-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-4xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Frequently Asked Questions</h2>
+        <p class="text-lg text-zinc-600 max-w-2xl mx-auto">Everything you need to know about hosting your event at La Posta Vecchia</p>
+      </div>
+      <div class="space-y-6">
+        {faqs.map((faq, index) => (
+          <details class="group bg-zinc-50 border border-zinc-200 rounded-lg">
+            <summary class="flex justify-between items-center cursor-pointer px-6 py-6 hover:bg-zinc-100 transition-colors">
+              <h3 class="text-lg font-medium text-zinc-900 pr-8 leading-snug">{faq.q}</h3>
+              <svg class="w-5 h-5 text-zinc-500 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-zinc-700 leading-relaxed">
+              {faq.a}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="bg-[hsl(0,0%,3%)] text-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-2xl">
+      <h2 class="heading-h2 font-semibold mb-6 text-center">{contact.cta}</h2>
+      <p class="text-center text-zinc-400 mb-12">Fill out the form below and we'll respond within 24 hours.</p>
+      
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-zinc-300 mb-2">Full Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
+              placeholder="John Smith"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-zinc-300 mb-2">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
+              placeholder="john@example.com"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="guests" class="block text-sm font-medium text-zinc-300 mb-2">Number of Guests</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
+              placeholder="100"
+            />
+          </div>
+          <div>
+            <label for="date" class="block text-sm font-medium text-zinc-300 mb-2">Preferred Date</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-zinc-300 mb-2">Message *</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent resize-none"
+            placeholder="Tell us about your event..."
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full px-8 py-4 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:ring-offset-2 focus:ring-offset-[hsl(0,0%,3%)]"
+        >
+          Send Enquiry
+        </button>
+      </form>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details[open] summary {
+    border-bottom: 1px solid rgb(212, 212, 216);
+    padding-bottom: 1.5rem;
+  }
+
+  * {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link.active {
+    background-color: #a78656;
+    color: white;
+    box-shadow: 0 2px 4px rgba(167, 134, 86, 0.2);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const stickyNav = document.getElementById('sticky-nav');
+
+    let activeSection: string | null = null;
+    let scrollTimeout: number | null = null;
+    let isScrolling = false;
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!isScrolling) return;
+        
+        let highestSection: string | null = null;
+        let highestRatio = 0;
+        
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio > highestRatio) {
+            highestRatio = entry.intersectionRatio;
+            highestSection = entry.target.getAttribute('id');
+          }
+        });
+        
+        if (highestSection && highestSection !== activeSection) {
+          activeSection = highestSection;
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${highestSection}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      },
+      {
+        threshold: 0.3,
+        rootMargin: '-120px 0px -60% 0px',
+      }
+    );
+    
+    let scrollUpdateTimeout: number | null = null;
+    window.addEventListener('scroll', () => {
+      isScrolling = true;
+      
+      if (scrollUpdateTimeout) {
+        clearTimeout(scrollUpdateTimeout);
+      }
+      
+      scrollUpdateTimeout = window.setTimeout(() => {
+        isScrolling = false;
+        
+        const scrollPosition = window.scrollY + 150;
+        
+        let currentSection: string | null = null;
+        let closestSection: string | null = null;
+        let minDistance = Infinity;
+        
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          const sectionTop = window.scrollY + rect.top;
+          const distance = Math.abs(scrollPosition - sectionTop);
+          
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + rect.height) {
+            currentSection = section.getAttribute('id');
+          }
+          
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestSection = section.getAttribute('id');
+          }
+        });
+        
+        const targetSection = currentSection || closestSection;
+        
+        if (targetSection && targetSection !== activeSection) {
+          activeSection = targetSection;
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${targetSection}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      }, 150);
+    }, { passive: true });
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    if (navLinks.length > 0) {
+      navLinks[0].classList.add('active');
+    }
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          navLinks.forEach((l) => l.classList.remove('active'));
+          link.classList.add('active');
+          
+          activeSection = targetId.substring(1);
+          
+          const offsetTop = targetSection.offsetTop - (stickyNav?.offsetHeight || 0);
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth',
+          });
+        }
+      });
+    });
+  });
+</script>
+

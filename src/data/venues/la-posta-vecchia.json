@@ -6,28 +6,147 @@
   "exclusiveUse": true,
   "startingPriceEur": 25000,
   "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl",
-  "intro": "A striking Roman villa and former mansion of Jean Paul Getty, La Posta Vecchia blends history and natural beauty. Overlooking the Tyrrhenian Sea and Odescalchi Castle, it is an unforgettable venue for weddings, celebrations, and private occasions.",
+  "intro": "A striking Roman villa and former mansion of Jean Paul Getty, La Posta Vecchia blends history and natural beauty. Overlooking the Tyrrhenian Sea and Odescalchi Castle, it is an unforgettable venue for weddings, celebrations, and private occasions. Rich in history, the property has been home to Roman emperors, the noble Orsini family, and Jean Paul Getty, who filled it with Italian art treasures. Today guests are welcomed with 17th-century tapestries, marble busts of Roman emperors, and a rare antiquarian map by Giovanni Battista Piranesi.",
+  "history": {
+    "description": "La Posta Vecchia stands as an intriguing witness to Italian history. Once a seaside resort favoured by Roman emperors, later a Renaissance villa for the noble Orsini family, and finally the home of Jean Paul Getty, the billionaire who filled it with Italian art treasures. It was this extraordinary fusion of history and opulence that Roberto Sciò found irresistible, leading him to transform it into his family home.",
+    "artCollection": "The interiors showcase a magnificent collection curated by Getty and his art historian Federico Zeri. A glorious 17th-century tapestry, dignified marble busts of Roman emperors Flavio Vespasiano and Agrippa, and an antiquarian map by Giovanni Battista Piranesi offer just a taste of the magnificent furnishings that adorn every wall and room."
+  },
   "usps": [
     "21 Rooms & Suites",
     "Restaurant The Cesar",
-    "Private beach & 4-hectare park",
-    "Indoor pool, spa, gym, tennis",
-    "Onsite Roman ruins museum"
+    "Posta Vecchia Beauty Club",
+    "Heated indoor pool",
+    "Private museum with Roman ruins",
+    "Private 4-hectare park & beach",
+    "Tennis court",
+    "Gym",
+    "Meeting room",
+    "Private parking"
   ],
   "gallery": [
     "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
     "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/11a787e9-0fe2-4846-5c35-624de0585200/cardlg",
     "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/19b9edf8-3b60-44e9-1f4c-04678fbae700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bfb4c9f0-a2fb-434f-1e5c-40742db47200/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/11a787e9-0fe2-4846-5c35-624de0585200/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/19b9edf8-3b60-44e9-1f4c-04678fbae700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bfb4c9f0-a2fb-434f-1e5c-40742db47200/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/11a787e9-0fe2-4846-5c35-624de0585200/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/19b9edf8-3b60-44e9-1f4c-04678fbae700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
     "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bfb4c9f0-a2fb-434f-1e5c-40742db47200/cardlg"
   ],
   "spaces": [
-    { "name": "Ristorante The Cesar", "capacity": "100 seated / 70 buffet" },
-    { "name": "Camino Room", "capacity": "60 seated / 50 ceremony" },
-    { "name": "Side Terrace", "capacity": "100 seated / 150 ceremony" },
-    { "name": "Front Terrace", "capacity": "160 seated / 150 ceremony" },
-    { "name": "Getty Studio", "capacity": "40 seated / 80 ceremony" },
-    { "name": "Front Garden", "capacity": "120 buffet / 150 ceremony" },
-    { "name": "Side Garden (2450 sqm)", "capacity": "160 in all formats" }
+    {
+      "name": "Ristorante The Cesar",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 100,
+        "buffet": 70,
+        "ceremony": 0
+      },
+      "description": "The main restaurant offering fine dining with views of the Tyrrhenian Sea"
+    },
+    {
+      "name": "Camino Room",
+      "capacities": {
+        "cocktail": 50,
+        "seated": 60,
+        "buffet": 30,
+        "ceremony": 50
+      },
+      "description": "Intimate lounge with ornate coffered ceilings, gold-framed mirrors, and rich decor"
+    },
+    {
+      "name": "Side Terrace",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 100,
+        "buffet": 70,
+        "ceremony": 150
+      },
+      "description": "Elegant outdoor terrace perfect for al fresco dining"
+    },
+    {
+      "name": "Front Terrace",
+      "capacities": {
+        "cocktail": 160,
+        "seated": 160,
+        "buffet": 100,
+        "ceremony": 150
+      },
+      "description": "Stunning seaside terrace with panoramic Tyrrhenian Sea views"
+    },
+    {
+      "name": "Getty Studio",
+      "capacities": {
+        "cocktail": 110,
+        "seated": 40,
+        "buffet": 30,
+        "ceremony": 80
+      },
+      "description": "Versatile space named after the legendary art collector"
+    },
+    {
+      "name": "Front Garden",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 120,
+        "buffet": 120,
+        "ceremony": 150
+      },
+      "description": "Expansive garden with lush lawns and decorative circular features"
+    },
+    {
+      "name": "Side Garden (2,450 sqm)",
+      "capacities": {
+        "cocktail": 160,
+        "seated": 160,
+        "buffet": 160,
+        "ceremony": 160
+      },
+      "description": "Massive 2,450 sqm garden, ideal for grand events with tent options for weather protection"
+    }
+  ],
+  "ancillaryServices": [
+    "Excursions",
+    "Yoga and pilates",
+    "Wellness treatments",
+    "Wine tastings",
+    "Cooking classes",
+    "Transfers by limousine, bus, or helicopter"
+  ],
+  "outlets": [
+    "Ristorante The Cesar",
+    "Front Terrace",
+    "Bar Piranesi",
+    "Front Garden",
+    "Camino Room",
+    "Side Terrace",
+    "Entrance Hall"
+  ],
+  "facilities": [
+    {
+      "name": "Heated Indoor Pool",
+      "description": "Stunning pool with arched windows overlooking the Tyrrhenian Sea and private beach"
+    },
+    {
+      "name": "Archaeological Museum",
+      "description": "Private museum showcasing ancient Roman ruins discovered beneath the property"
+    },
+    {
+      "name": "Tennis Court",
+      "description": "Pristine court set amidst lush gardens for your recreational enjoyment"
+    },
+    {
+      "name": "Fully Equipped Gym",
+      "description": "State-of-the-art fitness center with Technogym equipment and natural lighting"
+    },
+    {
+      "name": "Posta Vecchia Beauty Club",
+      "description": "Luxurious spa offering wellness treatments, massage therapy, and relaxation"
+    }
   ],
   "locationInfo": {
     "address": "Ladispoli, Palo Laziale 00055 (RM)",
@@ -39,14 +158,46 @@
     },
     "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.8426373647384!2d12.074308476503845!3d41.95493876443882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132586f0b44a9c45%3A0xe4c8ec0d8d0b3b0f!2sLa%20Posta%20Vecchia!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
   },
+  "exclusiveUseDetails": {
+    "included": [
+      "Use of all 21 rooms and common areas",
+      "Buffet gourmet breakfast served in the restaurant",
+      "Soft drinks and snacks from minibar included",
+      "VIP treatment and daily newspaper in room",
+      "Use of the heated indoor pool",
+      "Private access to the beach",
+      "Access to the private archaeological museum with ancient Roman ruins",
+      "Use of Posta Vecchia Beauty Club, upon appointment",
+      "Use of the tennis court, upon appointment",
+      "Use of the Gym",
+      "Use of the Meeting Room, upon request",
+      "Wi-Fi connection",
+      "Complimentary parking"
+    ],
+    "description": "Exclusive use includes complete privacy of the entire estate, allowing your event to unfold across all 21 rooms and extensive common areas. Every guest enjoys VIP treatment with gourmet breakfast, complementary minibar access, and full access to all facilities including the heated pool, private beach, archaeological museum, spa, tennis court, and gym."
+  },
   "faqs": [
-    { "q": "Is exclusive use required?", "a": "Yes, all 21 rooms and common areas are included for events." },
-    { "q": "When is the best season?", "a": "April through October offers the most suitable weather for weddings." },
-    { "q": "What services are included?", "a": "Gourmet breakfast, minibar, spa, pool, beach access, and parking." }
+    {
+      "q": "Is exclusive use required?",
+      "a": "Yes, all 21 rooms and common areas are included for events."
+    },
+    {
+      "q": "What's included with exclusive use?",
+      "a": "Gourmet breakfast, minibar, spa, pool, beach access, museum entry, gym, tennis, meeting room, VIP treatment, Wi-Fi, and parking."
+    },
+    {
+      "q": "Do you offer wellness and group activities?",
+      "a": "Yes, including yoga, pilates, wellness treatments, wine tastings, and cooking classes."
+    },
+    {
+      "q": "Are transfers available?",
+      "a": "Yes, by limousine, luxury bus, or helicopter."
+    }
   ],
   "contact": {
     "cta": "Request availability & receive a tailored quote",
-    "email": "contact@italianvenues.com"
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "events@pellicanohotels.com",
+    "hotelPhone": "+39 06 45 44 57 43"
   }
 }
-

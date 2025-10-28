@@ -14,7 +14,7 @@ const { slug } = Astro.params;
 
 // Dynamically import the venue data based on the slug
 const venueData = await import(`../../data/venues/${slug}.json`);
-const { name, city, region, maxGuests, exclusiveUse, startingPriceEur, heroImage, intro, usps, gallery, spaces, locationInfo, faqs, contact } = venueData.default;
+const { name, city, region, maxGuests, exclusiveUse, startingPriceEur, heroImage, intro, usps, gallery, spaces, ancillaryServices, outlets, facilities, locationInfo, faqs, contact } = venueData.default;
 
 // Map slugs to Google Maps links (could also be in JSON)
 const mapsLinks: Record<string, string> = {
@@ -54,13 +54,25 @@ const mapsLinks: Record<string, string> = {
   <!-- STICKY NAVIGATION BAR -->
   <nav id="sticky-nav" class="sticky top-0 z-40 bg-white border-b border-zinc-200 shadow-sm transition-all duration-200">
     <div class="container mx-auto px-6 max-w-7xl">
-      <div class="flex items-center gap-6 overflow-x-auto scrollbar-hide">
-        <a href="#overview" class="nav-link py-4 px-2 text-sm font-medium text-zinc-700 hover:text-[#a78656] whitespace-nowrap transition-colors">Overview</a>
-        <a href="#gallery" class="nav-link py-4 px-2 text-sm font-medium text-zinc-700 hover:text-[#a78656] whitespace-nowrap transition-colors">Gallery</a>
-        <a href="#details" class="nav-link py-4 px-2 text-sm font-medium text-zinc-700 hover:text-[#a78656] whitespace-nowrap transition-colors">Details</a>
-        <a href="#location" class="nav-link py-4 px-2 text-sm font-medium text-zinc-700 hover:text-[#a78656] whitespace-nowrap transition-colors">Location</a>
-        <a href="#faqs" class="nav-link py-4 px-2 text-sm font-medium text-zinc-700 hover:text-[#a78656] whitespace-nowrap transition-colors">FAQs</a>
-        <a href="#contact" class="nav-link py-4 px-2 text-sm font-medium text-zinc-700 hover:text-[#a78656] whitespace-nowrap transition-colors">Contact</a>
+      <div class="flex items-center gap-3 overflow-x-auto scrollbar-hide py-4">
+        <a href="#overview" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">
+          Overview
+        </a>
+        <a href="#gallery" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">
+          Gallery
+        </a>
+        <a href="#details" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">
+          Details
+        </a>
+        <a href="#location" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">
+          Location
+        </a>
+        <a href="#faqs" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">
+          FAQs
+        </a>
+        <a href="#contact" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">
+          Contact
+        </a>
       </div>
     </div>
   </nav>
@@ -138,14 +150,20 @@ const mapsLinks: Record<string, string> = {
           <thead class="bg-zinc-100">
             <tr>
               <th class="px-6 py-4 text-left text-sm font-semibold text-zinc-900">Space</th>
-              <th class="px-6 py-4 text-left text-sm font-semibold text-zinc-900">Capacity</th>
+              <th class="px-6 py-4 text-left text-sm font-semibold text-zinc-900">Cocktail</th>
+              <th class="px-6 py-4 text-left text-sm font-semibold text-zinc-900">Seated</th>
+              <th class="px-6 py-4 text-left text-sm font-semibold text-zinc-900">Buffet</th>
+              <th class="px-6 py-4 text-left text-sm font-semibold text-zinc-900">Ceremony</th>
             </tr>
           </thead>
           <tbody>
             {spaces.map((space, index) => (
               <tr class={index % 2 === 0 ? 'bg-white' : 'bg-zinc-50'}>
                 <td class="px-6 py-4 text-zinc-800 font-medium">{space.name}</td>
-                <td class="px-6 py-4 text-zinc-600">{space.capacity}</td>
+                <td class="px-6 py-4 text-zinc-600">{space.capacities?.cocktail || space.capacity || '-'}</td>
+                <td class="px-6 py-4 text-zinc-600">{space.capacities?.seated || space.capacity || '-'}</td>
+                <td class="px-6 py-4 text-zinc-600">{space.capacities?.buffet || space.capacity || '-'}</td>
+                <td class="px-6 py-4 text-zinc-600">{space.capacities?.ceremony || space.capacity || '-'}</td>
               </tr>
             ))}
           </tbody>
@@ -153,6 +171,67 @@ const mapsLinks: Record<string, string> = {
       </div>
     </div>
   </section>
+
+  <!-- FACILITIES & SERVICES SECTION -->
+  {facilities && facilities.length > 0 && (
+    <section id="facilities" class="bg-zinc-50 py-20 md:py-28">
+      <div class="container mx-auto px-6 max-w-7xl">
+        <h2 class="heading-h2 font-semibold mb-12 text-center">Facilities</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {facilities.map((facility) => (
+            <div class="bg-white p-6 rounded-xl border border-zinc-200 shadow-sm">
+              <div class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-[#a78656] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span class="text-zinc-800 font-medium">{facility}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- ADDITIONAL SERVICES SECTION -->
+  {ancillaryServices && ancillaryServices.length > 0 && (
+    <section id="services" class="bg-white py-20 md:py-28">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <h2 class="heading-h2 font-semibold mb-12 text-center">Additional Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {ancillaryServices.map((service) => (
+            <div class="flex items-center gap-3 px-4 py-3 bg-zinc-50 rounded-lg">
+              <svg class="w-5 h-5 text-[#a78656]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-zinc-700">{service}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- OUTLETS SECTION -->
+  {outlets && outlets.length > 0 && (
+    <section id="outlets" class="bg-zinc-50 py-20 md:py-28">
+      <div class="container mx-auto px-6 max-w-5xl">
+        <h2 class="heading-h2 font-semibold mb-12 text-center">Dining & Bar Areas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {outlets.map((outlet) => (
+            <div class="bg-white p-6 rounded-xl border border-zinc-200 shadow-sm">
+              <div class="flex items-center gap-3">
+                <svg class="w-6 h-6 text-[#a78656] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <span class="text-zinc-800 font-medium text-lg">{outlet}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 
   <!-- LOCATION SECTION -->
   <section id="location" class="bg-white py-20 md:py-28">
@@ -243,16 +322,16 @@ const mapsLinks: Record<string, string> = {
   <section id="faqs" class="bg-white py-20 md:py-28">
     <div class="container mx-auto px-6 max-w-4xl">
       <h2 class="heading-h2 font-semibold mb-12 text-center">Frequently Asked Questions</h2>
-      <div class="space-y-4">
+      <div class="space-y-6">
         {faqs.map((faq, index) => (
-          <details class="group border border-zinc-200 rounded-lg">
-            <summary class="flex justify-between items-center cursor-pointer px-6 py-5 hover:bg-zinc-50 transition-colors">
-              <h3 class="text-lg font-medium text-zinc-900 pr-8">{faq.q}</h3>
-              <svg class="w-5 h-5 text-zinc-500 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <details class="group bg-zinc-50 border border-zinc-200 rounded-lg">
+            <summary class="flex justify-between items-center cursor-pointer px-6 py-6 hover:bg-zinc-100 transition-colors">
+              <h3 class="text-lg font-medium text-zinc-900 pr-8 leading-snug">{faq.q}</h3>
+              <svg class="w-5 h-5 text-zinc-500 transition-transform group-open:rotate-180 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
               </svg>
             </summary>
-            <div class="px-6 pb-5 text-zinc-700 leading-relaxed">
+            <div class="px-6 pb-6 pt-2 text-zinc-700 leading-relaxed">
               {faq.a}
             </div>
           </details>
@@ -345,7 +424,8 @@ const mapsLinks: Record<string, string> = {
   }
   
   details[open] summary {
-    border-bottom: 1px solid rgb(228, 228, 231);
+    border-bottom: 1px solid rgb(212, 212, 216);
+    padding-bottom: 1.5rem;
   }
 
   /* Smooth transitions */
@@ -353,10 +433,11 @@ const mapsLinks: Record<string, string> = {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* Active navigation link with gold underline */
+  /* Active navigation link with gold chip background */
   .nav-link.active {
-    color: #a78656;
-    border-bottom: 2px solid #a78656;
+    background-color: #a78656;
+    color: white;
+    box-shadow: 0 2px 4px rgba(167, 134, 86, 0.2);
   }
 </style>
 
@@ -367,32 +448,105 @@ const mapsLinks: Record<string, string> = {
     const navLinks = document.querySelectorAll('.nav-link');
     const stickyNav = document.getElementById('sticky-nav');
 
-    // Create observer to watch for scroll position
+    // Create observer to watch for scroll position with debouncing
+    let activeSection: string | null = null;
+    let scrollTimeout: number | null = null;
+    let isScrolling = false;
+    
     const observer = new IntersectionObserver(
       (entries) => {
+        // Only update during active scrolling, not during programmatic scroll (like click-to-scroll)
+        if (!isScrolling) return;
+        
+        // Find the section that's most visible/highest in viewport
+        let highestSection: string | null = null;
+        let highestRatio = 0;
+        
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            // Update active nav link
-            const id = entry.target.getAttribute('id');
-            navLinks.forEach((link) => {
-              link.classList.remove('active');
-              if (link.getAttribute('href') === `#${id}`) {
-                link.classList.add('active');
-              }
-            });
+          if (entry.isIntersecting && entry.intersectionRatio > highestRatio) {
+            highestRatio = entry.intersectionRatio;
+            highestSection = entry.target.getAttribute('id');
           }
         });
+        
+        // Only update if we found a better candidate
+        if (highestSection && highestSection !== activeSection) {
+          activeSection = highestSection;
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${highestSection}`) {
+              link.classList.add('active');
+            }
+          });
+        }
       },
       {
         threshold: 0.3,
-        rootMargin: '-80px 0px -70% 0px', // Trigger when section is in top portion of viewport
+        rootMargin: '-120px 0px -60% 0px',
       }
     );
+    
+    // Track user scroll with debounce
+    let scrollUpdateTimeout: number | null = null;
+    window.addEventListener('scroll', () => {
+      isScrolling = true;
+      
+      // Clear existing timeout
+      if (scrollUpdateTimeout) {
+        clearTimeout(scrollUpdateTimeout);
+      }
+      
+      // Set new timeout to detect when scrolling stops
+      scrollUpdateTimeout = window.setTimeout(() => {
+        isScrolling = false;
+        
+        // Update based on current scroll position after scrolling stops
+        const scrollPosition = window.scrollY + 150; // Offset for header
+        
+        let currentSection: string | null = null;
+        let closestSection: string | null = null;
+        let minDistance = Infinity;
+        
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          const sectionTop = window.scrollY + rect.top;
+          const sectionCenter = sectionTop + rect.height / 2;
+          const distance = Math.abs(scrollPosition - sectionTop);
+          
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + rect.height) {
+            currentSection = section.getAttribute('id');
+          }
+          
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestSection = section.getAttribute('id');
+          }
+        });
+        
+        // Use current section if in bounds, otherwise use closest
+        const targetSection = currentSection || closestSection;
+        
+        if (targetSection && targetSection !== activeSection) {
+          activeSection = targetSection;
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${targetSection}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      }, 150); // 150ms delay - industry standard for scroll debouncing
+    }, { passive: true });
 
     // Observe all sections
     sections.forEach((section) => {
       observer.observe(section);
     });
+
+    // Set first nav link as active by default
+    if (navLinks.length > 0) {
+      navLinks[0].classList.add('active');
+    }
 
     // Smooth scroll behavior
     navLinks.forEach((link) => {
@@ -402,6 +556,13 @@ const mapsLinks: Record<string, string> = {
         const targetSection = document.querySelector(targetId);
         
         if (targetSection) {
+          // Update active state immediately on click
+          navLinks.forEach((l) => l.classList.remove('active'));
+          link.classList.add('active');
+          
+          // Update activeSection tracking
+          activeSection = targetId.substring(1); // Remove the # symbol
+          
           const offsetTop = targetSection.offsetTop - (stickyNav?.offsetHeight || 0);
           window.scrollTo({
             top: offsetTop,
