@@ -8,14 +8,12 @@ const featuredCards = [
   { title: 'Hotel Il Pellicano', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/featured', link: '/venues/hotel-il-pellicano' },
 ];
 
-// All 6 location cards using same Porsche-style design
+// Location cards - 4 locations
 const allLocationCards = [
   { name: 'Amalfi Coast', tag: 'Coastal', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg' },
-  { name: 'Rome', tag: 'Historic', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg' },
+  { name: 'Lake Como', tag: 'Lakeside', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/19b9edf8-3b60-44e9-1f4c-04678fbae700/cardlg' },
   { name: 'Tuscany', tag: 'Vineyards', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/11a787e9-0fe2-4846-5c35-624de0585200/cardlg' },
-  { name: 'Venice', tag: 'Coastal', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/19b9edf8-3b60-44e9-1f4c-04678fbae700/cardlg' },
-  { name: 'Portofino', tag: 'Masseria', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bfb4c9f0-a2fb-434f-1e5c-40742db47200/cardlg' },
-  { name: 'Puglia', tag: 'Masseria', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/c3f617d3-ac59-4b7c-4e2e-40fb54d4ac00/cardlg' },
+  { name: 'Rome', tag: 'Historic', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg' },
 ];
 ---
 
@@ -75,8 +73,8 @@ const allLocationCards = [
         Your Italian venue discovery starts now.
       </h2>
       
-      <!-- All 6 location cards: Porsche-style with dynamic hover expansion -->
-      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+      <!-- All 4 location cards: Porsche-style with dynamic hover expansion -->
+      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 mb-6 md:mb-8 lg:mb-12">
         {allLocationCards.slice(0, 2).map((location, index) => (
           <a href="#" class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
             <img src={location.imgSrc} alt={location.name} class="absolute inset-0 w-full h-full object-cover" />
@@ -108,39 +106,9 @@ const allLocationCards = [
       <!-- Trigger point for background transition to black (after row 1) -->
       <div id="transition-trigger" class="h-px my-4 md:my-6"></div>
       
-      <!-- Remaining 4 location cards (rows 2 & 3) -->
-      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 mb-6 md:mb-8 lg:mb-12">
-        {allLocationCards.slice(2, 4).map((location) => (
-          <a href="#" class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
-            <img src={location.imgSrc} alt={location.name} class="absolute inset-0 w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
-            
-            <!-- Location name at TOP - Porsche style -->
-            <div class="absolute top-0 left-0 right-0 p-6 md:p-10">
-              <h3 class="text-white text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight font-display">
-                {location.name}
-              </h3>
-            </div>
-            
-            <!-- Tag and Explore at bottom -->
-            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
-              <div class="flex items-end justify-between">
-                <span class="text-xs font-medium text-white bg-white/15 px-3 py-1.5 rounded backdrop-blur-sm">{location.tag}</span>
-                <div class="explore-indicator flex items-center gap-2 text-white opacity-0 transition-opacity duration-300">
-                  <span class="text-sm font-light">Explore</span>
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </a>
-        ))}
-      </div>
-
-      <!-- Last row -->
+      <!-- Remaining 2 location cards (row 2) -->
       <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
-        {allLocationCards.slice(4, 6).map((location) => (
+        {allLocationCards.slice(2, 4).map((location) => (
           <a href="#" class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
             <img src={location.imgSrc} alt={location.name} class="absolute inset-0 w-full h-full object-cover" />
             <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
