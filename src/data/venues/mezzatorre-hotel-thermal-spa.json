@@ -7,14 +7,22 @@
   "startingPriceEur": 0,
   "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl",
   "heroDescription": "Perched above a private bay on Ischia, Mezzatorre Hotel & Thermal Spa occupies a historic 16th century watchtower. An exceptional hideaway overlooking the Gulf of Naples.",
-  "intro": "Perched above a private bay on Ischia, Mezzatorre Hotel & Thermal Spa occupies a historic 16th century watchtower. Today, it blends heritage, nature, and wellness — an exceptional hideaway proudly overlooking the Gulf of Naples.",
+  "intro": "Perched above a private bay on Ischia, Mezzatorre Hotel & Thermal Spa occupies a historic 16th century watchtower. Today, it blends heritage, nature, and wellness — an exceptional hideaway proudly overlooking the Gulf of Naples, offering an intimate escape with thermal spa facilities and stunning Mediterranean views.",
+  "history": {
+    "description": "The structure that houses Mezzatorre Hotel & Thermal Spa has a fascinating history. It was, in fact, an ancient watchtower built between the 16th and 17th century by the Aragonese, which however was never finished (fittingly the name 'Mezzatorre' translates as 'Half-Tower'). It was enlarged in the 18th century by the dukes of Rancidello.",
+    "modernEra": "In the 1930s, the tower was used as a pension until Luigi Patalano, a distinguished scholar, politician and poet, bought it. Founder of political and cultural magazines, he transformed the property into an active cultural cenacle. In the same park as Mezzatorre Patalano also built 'La Colombaia', a beautiful villa that was first owned by Baron Fassini, an aristocrat and bon viveur, and then, in the 50s, by film director Luchino Visconti. In 2018, the Sciò family came across Mezzatorre, fell in love with it and in 2019, the Pellicano Hotels Group took over its management. Marie-Louise Sciò, CEO & Creative Director of the Group, injected her very own personality into every corner of the property — and transformed it into an exceptional Italian abode that fits right into the Pellicano world."
+  },
   "usps": [
     "48 Rooms & Suites",
     "Ristorante La Torre & Bar La Torre",
     "Ristorante & Bar La Baia",
-    "Thermal Spa & Wellness Centre",
+    "Wellness Centre & Thermal Spa",
     "Private bay & beach club",
-    "Outdoor pool, tennis court, gym"
+    "Heated outdoor pool",
+    "Tennis court",
+    "Gym",
+    "Boutique shop",
+    "Multiple event spaces & terraces"
   ],
   "gallery": [
     "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
@@ -23,34 +31,176 @@
     "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bfb4c9f0-a2fb-434f-1e5c-40742db47200/cardlg"
   ],
   "spaces": [
-    { "name": "Ristorante La Torre (Indoor)", "capacity": "100 cocktail / 80 seated / 65 buffet" },
-    { "name": "Ristorante La Torre (Terrace)", "capacity": "80 cocktail / 80 seated / 80 buffet" },
-    { "name": "Piazzetta Torre", "capacity": "100 cocktail" },
-    { "name": "Gazebo", "capacity": "80 cocktail / 80 seated / 50 buffet" },
-    { "name": "Visconti Terrace", "capacity": "120 cocktail / 110 seated / 90 buffet" },
-    { "name": "Vittoria Terrace", "capacity": "100 cocktail / 50 seated / 80 buffet / 100 ceremony" },
-    { "name": "Ristorante & Bar La Baia", "capacity": "80 cocktail / 60 seated" },
-    { "name": "Piazzetta Visconti", "capacity": "100 cocktail" }
+    {
+      "name": "Ristorante La Torre Indoor",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 80,
+        "buffet": 65,
+        "ceremony": 0
+      },
+      "description": "Elegant indoor restaurant with refined Mediterranean cuisine"
+    },
+    {
+      "name": "Ristorante La Torre Terrace",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 80,
+        "buffet": 80,
+        "ceremony": 0
+      },
+      "description": "Stunning terrace overlooking the Tyrrhenian Sea and Gulf of Naples"
+    },
+    {
+      "name": "Piazzetta Torre",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "Charming square perfect for welcome cocktails and aperitifs"
+    },
+    {
+      "name": "Gazebo",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 80,
+        "buffet": 50,
+        "ceremony": 0
+      },
+      "description": "Intimate covered space with panoramic views"
+    },
+    {
+      "name": "Visconti Terrace",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 110,
+        "buffet": 90,
+        "ceremony": 0
+      },
+      "description": "Expansive terrace named after the legendary director Luchino Visconti"
+    },
+    {
+      "name": "Vittoria Terrace",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 50,
+        "buffet": 80,
+        "ceremony": 100
+      },
+      "description": "Versatile terrace space ideal for ceremonies and receptions"
+    },
+    {
+      "name": "Ristorante & Bar La Baia",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 60,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "Beachside restaurant and bar at the private bay"
+    },
+    {
+      "name": "Piazzetta Visconti",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "Historic square with pool views, perfect for evening cocktails"
+    }
+  ],
+  "ancillaryServices": [
+    "Sea and mountain excursions around the island",
+    "Boat day and half-day trips",
+    "Yoga and pilates classes",
+    "Wellness and beauty treatments",
+    "Wine tastings",
+    "Cooking classes",
+    "Private motorboat transfers to the bay",
+    "Helicopter transfers"
+  ],
+  "outlets": [
+    "Ristorante La Torre",
+    "Bar La Torre",
+    "Ristorante & Bar La Baia",
+    "Gazebo",
+    "Piazzetta Torre",
+    "Visconti Terrace",
+    "Vittoria Terrace",
+    "Piazzetta Visconti"
+  ],
+  "facilities": [
+    {
+      "name": "Thermal Spa & Wellness Centre",
+      "description": "State-of-the-art thermal spa featuring Ischia's renowned healing thermal waters, offering massage treatments, beauty therapies, and relaxation areas"
+    },
+    {
+      "name": "Private Bay & Beach Club",
+      "description": "Exclusive private bay with beach club facilities, sun loungers, and direct access to the crystal-clear Tyrrhenian Sea"
+    },
+    {
+      "name": "Heated Outdoor Pool",
+      "description": "Stunning infinity pool with panoramic sea views, surrounded by Mediterranean gardens"
+    },
+    {
+      "name": "Tennis Court",
+      "description": "Professional tennis court available for guests, set within lush gardens"
+    },
+    {
+      "name": "Fully Equipped Gym",
+      "description": "Modern fitness center with cardio and strength training equipment"
+    },
+    {
+      "name": "Boutique Shop",
+      "description": "Curated boutique featuring luxury fashion, accessories, and local artisan products"
+    }
   ],
   "locationInfo": {
-    "address": "Via Mezzatorre 23/d, 80075 Forio (NA), Ischia",
+    "address": "Via Mezzatorre, 23/d, 80075 Forio (NA), Ischia",
     "distances": {
-      "Napoli Capodichino Airport": "44 km — 1h30 by hydrofoil / 2h20 by ferry / 1h by motorboat",
-      "Napoli Centrale Station": "46 km — 1h20 by hydrofoil / 2h10 by ferry / 1h10 by motorboat",
-      "Ischia Port": "8 km — 25 min",
-      "Casamicciola Port": "3 km — 15 min",
-      "Casamicciola Heliport": "2.5 km — 10 min"
+      "Napoli Capodichino Airport": "44 km — 1h30 via hydrofoil",
+      "Via Hydrofoil": "1 hour 30 minutes",
+      "Via Ferry": "2 hours 20 minutes",
+      "Via Motorboat": "1 hour",
+      "Napoli Centrale Station": "46 km — 1h20 via hydrofoil",
+      "Ischia Port": "8 km — 25 minutes",
+      "Casamicciola Port": "3 km — 15 minutes",
+      "Casamicciola Heliport": "2.5 km — 10 minutes"
     },
+    "gps": "N 40°45'03.44, E 13°53'55.32",
     "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.167366993715!2d13.898!3d40.751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b5d0ed58efaa5%3A0x7c8e5b672b0ad0b0!2sMezzatorre%20Hotel%20%26%20Thermal%20Spa!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
   },
+  "exclusiveUseDetails": {
+    "included": [
+      "Use of all 48 rooms and common areas",
+      "Buffet gourmet breakfast served in the main restaurant",
+      "Soft drinks and snacks from minibar included",
+      "VIP treatment and daily newspaper in room",
+      "Use of the heated outdoor pool",
+      "Access to the private bay and beach club",
+      "Access to the Thermal baths, upon appointment",
+      "Use of Beauty Centre and Wellness facilities, upon appointment",
+      "Use of the tennis court, upon appointment",
+      "Wi-Fi connection throughout the property",
+      "Complimentary parking"
+    ],
+    "description": "Exclusive use includes complete privacy of the entire estate, allowing your event to unfold across all 48 rooms and extensive common areas. Every guest enjoys VIP treatment with gourmet breakfast, complementary minibar access, and full access to all facilities including the thermal spa, private bay, beach club, heated pool, tennis court, and gym. Private motorboat transfers to the bay are available upon request.",
+    "transfers": "Private transfers by motorboat to our private bay are available upon request (sea conditions permitting). The service also includes a transfer by car from Naples's airport to the port of Pozzuoli. The speedboat ride takes approximately 35 minutes."
+  },
   "faqs": [
-    { "q": "Is exclusive use required?", "a": "Yes, all 48 rooms and common areas are included for private events." },
-    { "q": "What services are included?", "a": "Breakfast, minibar, spa and thermal baths, outdoor pool, beach access, and parking." },
-    { "q": "What experiences are available?", "a": "Sea and mountain excursions, boat trips, yoga and pilates, spa treatments, wine tastings, and cooking classes." }
+    { "q": "Is exclusive use required?", "a": "Yes, all 48 rooms and common areas are included for exclusive events, providing complete privacy for your celebration." },
+    { "q": "What's included with exclusive use?", "a": "Gourmet breakfast, minibar, thermal spa access, wellness centre, outdoor pool, private bay and beach club, tennis court, gym, VIP treatment, Wi-Fi, and parking." },
+    { "q": "How do guests reach the hotel?", "a": "Guests can reach Ischia via hydrofoil (1h30), ferry (2h20), or private motorboat (1h) from Naples. We can arrange transfers from Naples airport to Pozzuoli port, followed by speedboat to the private bay (35 minutes)." },
+    { "q": "What wellness and group activities are available?", "a": "We offer thermal spa treatments, yoga and pilates classes, wellness therapies, wine tastings, cooking classes, sea and mountain excursions, and boat trips around the island." },
+    { "q": "Can you arrange special transfers?", "a": "Yes, we can arrange private motorboat transfers directly to our private bay, as well as helicopter transfers to Casamicciola Heliport (2.5km away)." }
   ],
   "contact": {
     "cta": "Request availability & receive a tailored quote",
-    "email": "contact@italianvenues.com"
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "events@pellicanohotels.com",
+    "hotelPhone": "+39 081 986111"
   }
 }
-
