@@ -111,36 +111,36 @@ const sections = {
     <!-- Desktop: Sidebar + Content Area -->
     <div class="hidden md:flex h-full w-full">
       <!-- Left Sidebar - Navigation -->
-      <aside class="w-[450px] bg-white border-r border-zinc-200 p-10 overflow-y-auto">
+      <aside class="w-[450px] bg-zinc-50 border-r border-zinc-200 pr-12 py-12 pl-12 overflow-y-auto">
         <nav>
           <h2 id="menu-title" class="sr-only">Navigation Menu</h2>
-          <ul class="space-y-1">
-            <li class="pr-12">
+          <ul class="space-y-0">
+            <li>
               <button
-                class="menu-section w-full flex items-center justify-between text-left text-2xl px-6 py-3 rounded-2xl hover:bg-porsche-grey transition-all duration-200 focus:outline-none font-medium"
+                class="menu-section w-full flex items-center justify-between text-left text-xl px-4 py-3 hover:bg-zinc-200/50 transition-all duration-200 focus:outline-none font-normal text-zinc-900"
                 data-section="regions"
               >
                 <span>Locations</span>
-                <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 flex-shrink-0 text-zinc-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </button>
             </li>
-            <li class="pr-12">
+            <li>
               <button
-                class="menu-section w-full flex items-center justify-between text-left text-2xl px-6 py-3 rounded-2xl hover:bg-porsche-grey transition-all duration-200 focus:outline-none font-medium"
+                class="menu-section w-full flex items-center justify-between text-left text-xl px-4 py-3 hover:bg-zinc-200/50 transition-all duration-200 focus:outline-none font-normal text-zinc-900"
                 data-section="styles"
               >
                 <span>Styles</span>
-                <svg class="w-6 h-6 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-5 h-5 flex-shrink-0 text-zinc-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </button>
             </li>
-            <li class="pr-12">
+            <li>
               <a
                 href="/#contact"
-                class="menu-section block w-full text-left text-2xl px-6 py-3 rounded-2xl hover:bg-porsche-grey transition-all duration-200 focus:outline-none font-medium"
+                class="menu-section block w-full text-left text-xl px-4 py-3 hover:bg-zinc-200/50 transition-all duration-200 focus:outline-none font-normal text-zinc-900"
               >
                 Contact
               </a>
@@ -307,9 +307,17 @@ const sections = {
     // Initialize first section as active with grey background (desktop only)
     const firstButtonWithSection = Array.from(menuButtons).find(btn => btn.getAttribute('data-section'));
     if (firstButtonWithSection) {
-      firstButtonWithSection.classList.add('bg-porsche-grey');
+      firstButtonWithSection.classList.add('bg-zinc-200');
       firstButtonWithSection.click();
     }
+    
+    // Update active state when clicking menu buttons
+    menuButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        menuButtons.forEach(btn => btn.classList.remove('bg-zinc-200'));
+        button.classList.add('bg-zinc-200');
+      });
+    });
   });
 </script>
 
