@@ -151,10 +151,10 @@ const sections = {
 
                  <!-- Right Content Area - Scrollable -->
            <div class="flex-1 overflow-y-auto bg-porsche-grey relative">
-        <div class="px-20 py-16 pr-32">
+        <div class="py-16">
         <!-- Regions Section -->
         <div class="menu-content" data-content="regions">
-          <div class="space-y-4">
+          <div class="space-y-4 max-w-5xl mx-auto">
             {sections.regions.map((item) => (
               <a
                 href={`/${item.slug}`}
@@ -190,7 +190,7 @@ const sections = {
 
         <!-- Styles Section -->
         <div class="menu-content hidden" data-content="styles">
-          <div class="space-y-4">
+          <div class="space-y-4 max-w-5xl mx-auto">
             {sections.styles.map((item) => (
               <a
                 href={`/${item.slug}`}
