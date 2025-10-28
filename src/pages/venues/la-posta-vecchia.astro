@@ -3,7 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const venueData = await import('../../data/venues/la-posta-vecchia.json');
 const {
-  name, city, region, maxGuests, exclusiveUse, startingPriceEur, heroImage, intro, history, usps, gallery, spaces, ancillaryServices, outlets, facilities, exclusiveUseDetails, locationInfo, faqs, contact
+  name, city, region, maxGuests, exclusiveUse, startingPriceEur, heroImage, heroDescription, intro, history, usps, gallery, spaces, ancillaryServices, outlets, facilities, exclusiveUseDetails, locationInfo, faqs, contact
 } = venueData.default;
 
 const mapsLink = 'https://maps.app.goo.gl/5nnaW6TZWjJtnQnM7';
@@ -50,7 +50,7 @@ const mapsLink = 'https://maps.app.goo.gl/5nnaW6TZWjJtnQnM7';
         {name}
       </h1>
       <p class="text-white/90 text-lg md:text-xl max-w-2xl mb-8">
-        {intro.substring(0, 120)}...
+        {heroDescription}
       </p>
       <a href="#contact" class="inline-flex items-center px-8 py-4 border-2 border-[#a78656] text-[#a78656] font-medium hover:bg-[#a78656] hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#a78656] rounded">
         Enquire Now
