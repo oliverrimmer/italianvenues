@@ -152,10 +152,10 @@
   "locationInfo": {
     "address": "Ladispoli, Palo Laziale 00055 (RM)",
     "distances": {
-      "Roma Termini": "42 km / ~1h",
-      "Civitavecchia": "39 km / 40 min",
-      "Fiumicino Airport": "34 km / 30 min",
-      "Ciampino Airport": "53 km / 45 min"
+      "Roma Termini": "42 km / 1h",
+      "Civitavecchia": "39 km / 40min",
+      "Fiumicino Airport": "34 km / 30min",
+      "Ciampino Airport": "53 km / 45min"
     },
     "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.8426373647384!2d12.074308476503845!3d41.95493876443882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132586f0b44a9c45%3A0xe4c8ec0d8d0b3b0f!2sLa%20Posta%20Vecchia!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
   },

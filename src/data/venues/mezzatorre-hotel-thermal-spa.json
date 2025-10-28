@@ -161,14 +161,14 @@
   "locationInfo": {
     "address": "Via Mezzatorre, 23/d, 80075 Forio (NA), Ischia",
     "distances": {
-      "Napoli Capodichino Airport": "44 km — 1h30 via hydrofoil",
-      "Via Hydrofoil": "1 hour 30 minutes",
-      "Via Ferry": "2 hours 20 minutes",
-      "Via Motorboat": "1 hour",
-      "Napoli Centrale Station": "46 km — 1h20 via hydrofoil",
-      "Ischia Port": "8 km — 25 minutes",
-      "Casamicciola Port": "3 km — 15 minutes",
-      "Casamicciola Heliport": "2.5 km — 10 minutes"
+      "Napoli Capodichino Airport": "44 km / 1h30 by hydrofoil",
+      "Via Hydrofoil": "1h 30min",
+      "Via Ferry": "2h 20min",
+      "Via Motorboat": "1h",
+      "Napoli Centrale Station": "46 km / 1h20 by hydrofoil",
+      "Ischia Port": "8 km / 25min",
+      "Casamicciola Port": "3 km / 15min",
+      "Casamicciola Heliport": "2.5 km / 10min"
     },
     "gps": "N 40°45'03.44, E 13°53'55.32",
     "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2955.167366993715!2d13.898!3d40.751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b5d0ed58efaa5%3A0x7c8e5b672b0ad0b0!2sMezzatorre%20Hotel%20%26%20Thermal%20Spa!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"

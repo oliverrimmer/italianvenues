@@ -34,16 +34,16 @@
   "locationInfo": {
     "address": "Località Sbarcatello, 58019 Porto Ercole (GR), Tuscany",
     "distances": {
-      "Rome Termini": "165 km — 2h30",
-      "Rome Fiumicino Airport": "145 km — 1h45",
-      "Rome Ciampino Airport": "165 km — 2h",
-      "Orbetello": "14 km — 20 min",
-      "Porto Ercole": "10 km — 20 min",
-      "Civitavecchia": "84 km — 1h15",
-      "Grosseto": "56 km — 1h",
-      "Livorno": "200 km — 2h25",
-      "Pisa": "210 km — 2h20",
-      "Florence": "205 km — 2h30"
+      "Rome Termini": "165 km / 2h30",
+      "Rome Fiumicino Airport": "145 km / 1h45",
+      "Rome Ciampino Airport": "165 km / 2h",
+      "Orbetello": "14 km / 20min",
+      "Porto Ercole": "10 km / 20min",
+      "Civitavecchia": "84 km / 1h15",
+      "Grosseto": "56 km / 1h",
+      "Livorno": "200 km / 2h25",
+      "Pisa": "210 km / 2h20",
+      "Florence": "205 km / 2h30"
     },
     "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.236429253607!2d11.200!3d42.416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13295a1b2443cf1f%3A0x35cf8a89fb1e9d3c!2sHotel%20Il%20Pellicano!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
   },
