@@ -7,7 +7,12 @@
   "startingPriceEur": 0,
   "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl",
   "heroDescription": "Overlooking the cliffs of Monte Argentario, Hotel Il Pellicano is a legendary Tuscan retreat. A timeless destination for world-class dining and unforgettable celebrations on the Tyrrhenian coast.",
-  "intro": "Overlooking the cliffs of Monte Argentario, Hotel Il Pellicano is a legendary Tuscan retreat founded in the 1960s by aviator Michael Graham and socialite Patsy Daszel. Originally a private club for friends and jet-set guests, today it offers timeless Italian charm, world-class dining, and unforgettable celebrations on the Tyrrhenian coast.",
+  "intro": "Overlooking the cliffs of Monte Argentario, Hotel Il Pellicano is a legendary Tuscan retreat founded in the 1960s by aviator Michael Graham and socialite Patsy Daszel. Originally a private club for friends and jet-set guests, today it offers timeless Italian charm, Michelin-starred dining, and unforgettable celebrations on the Tyrrhenian coast.",
+  "history": {
+    "description": "Il Pellicano was the result of a love story between Michael Graham, a British Royal Air Force (RAF) aviator and the only survivor of a plane crash in Africa in the mid-1950s, and Patsy Daszel, socialite of the American jet set, who cut out an article about the plane crash and pasted it in her diary with the hope that someday she would meet the charming British soldier.",
+    "loveStory": "Like a fairy tale, her wish came true. Patsy and Michael met during a party in Pelican Point in California, and it was love at first sight. After travelling extensively around the world, the couple arrived in Tuscany, on the Monte Argentario peninsula, where they discovered this corner of heaven, reminiscent of the location of their first encounter. In this stretch of cliffs overlooking the sea, with the magnificent nature of Monte Argentario as the only background, Michael and Patsy decided to build Hotel Il Pellicano.",
+    "inauguration": "They inaugurated the property in 1965 as a private club, where they could host friends, feel at home and fully embrace La Dolce Vita. Through the decades, Il Pellicano has continued to maintain that same embracing atmosphere, offering a unique 'Pellicano Experience' to anyone who stays or passes by – and creating a perfect setting for an extraordinary event."
+  },
   "usps": [
     "50 Rooms & Suites",
     "Ristorante Il Pellicano (1* Michelin)",
@@ -15,7 +20,11 @@
     "Pelliclub Health & Beauty Centre",
     "Heated seawater outdoor pool",
     "Private terrace beach with elevator",
-    "Tennis court, gym, Caldarium"
+    "Tennis court",
+    "Gym with next-generation equipment",
+    "Caldarium spa facilities",
+    "Boutique shop",
+    "Private parking"
   ],
   "gallery": [
     "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
@@ -24,37 +33,158 @@
     "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bfb4c9f0-a2fb-434f-1e5c-40742db47200/cardlg"
   ],
   "spaces": [
-    { "name": "Ristorante Il Pellicano (Terrace)", "capacity": "100 cocktail / 100 seated / 70 buffet" },
-    { "name": "Ristorante Il Pellicano (Indoor)", "capacity": "100 cocktail / 100 seated / 70 buffet" },
-    { "name": "Pelligrill", "capacity": "90 cocktail / 90 seated / 70 buffet / 100 ceremony" },
-    { "name": "Bar All'Aperto", "capacity": "120 cocktail" },
-    { "name": "Outdoor Pool", "capacity": "120 cocktail / 100 ceremony" },
-    { "name": "Beach Club", "capacity": "120 cocktail / 90 seated / 100 ceremony" }
+    {
+      "name": "Ristorante Il Pellicano Terrace",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 100,
+        "buffet": 70,
+        "ceremony": 0
+      },
+      "description": "Michelin-starred terrace dining with panoramic Tyrrhenian Sea views"
+    },
+    {
+      "name": "Ristorante Il Pellicano Indoor",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 100,
+        "buffet": 70,
+        "ceremony": 0
+      },
+      "description": "Elegant indoor dining with sophisticated Tuscan cuisine"
+    },
+    {
+      "name": "Pelligrill",
+      "capacities": {
+        "cocktail": 90,
+        "seated": 90,
+        "buffet": 70,
+        "ceremony": 100
+      },
+      "description": "Authentic Tuscan grill restaurant with Mediterranean ambiance"
+    },
+    {
+      "name": "Bar All'Aperto",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "Open-air bar perfect for welcome cocktails and evening aperitifs"
+    },
+    {
+      "name": "Outdoor Pool",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 100
+      },
+      "description": "Stunning heated seawater infinity pool overlooking the coast"
+    },
+    {
+      "name": "Beach Club",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 90,
+        "buffet": 0,
+        "ceremony": 100
+      },
+      "description": "Private beach club with elevator access and spectacular sea views"
+    }
+  ],
+  "ancillaryServices": [
+    "Cooking classes with our Executive Chef",
+    "Sailing trips along the Tuscan coast",
+    "Offshore sport fishing excursions",
+    "Scuba diving in the coves around Monte Argentario",
+    "Golf practice and lessons",
+    "Wine tasting with our Sommelier or visits to selected wineries in the Maremma region",
+    "Off-shore boat excursions to the islands of Giglio and Giannutri",
+    "All-day retreats to the thermal baths of Saturnia",
+    "Horse riding excursions through the countryside",
+    "Private transfers by limousine, luxury bus, or helicopter"
+  ],
+  "outlets": [
+    "Ristorante Il Pellicano (1* Michelin)",
+    "Pelligrill – Tuscan Grill",
+    "Bar All'Aperto",
+    "Ristorante Il Pellicano Terrace",
+    "Beach Club Bar"
+  ],
+  "facilities": [
+    {
+      "name": "Pelliclub Health & Beauty Centre",
+      "description": "Luxurious spa with Caldarium, massage treatments, and beauty therapies in an elegant setting overlooking the sea"
+    },
+    {
+      "name": "Heated Seawater Outdoor Pool",
+      "description": "Spectacular infinity pool with heated seawater, offering breathtaking views of the Tyrrhenian coast"
+    },
+    {
+      "name": "Private Terrace Beach",
+      "description": "Exclusive beach club with elevator access, sun loungers, and beach service for ultimate relaxation by the sea"
+    },
+    {
+      "name": "Tennis Court",
+      "description": "Professional tennis court set among Mediterranean gardens, available for guests and events"
+    },
+    {
+      "name": "Fully Equipped Gym",
+      "description": "State-of-the-art fitness center with next-generation equipment and natural lighting"
+    },
+    {
+      "name": "Boutique Shop",
+      "description": "Carefully curated boutique featuring luxury fashion, accessories, and artisan products"
+    }
   ],
   "locationInfo": {
     "address": "Località Sbarcatello, 58019 Porto Ercole (GR), Tuscany",
     "distances": {
+      "Pisa": "210 km / 2h30",
       "Rome Termini": "165 km / 2h30",
+      "Orbetello": "14 km / 20min",
+      "Civitavecchia": "84 km / 1h15",
+      "Livorno": "200 km / 2h25",
       "Rome Fiumicino Airport": "145 km / 1h45",
       "Rome Ciampino Airport": "165 km / 2h",
-      "Orbetello": "14 km / 20min",
-      "Porto Ercole": "10 km / 20min",
-      "Civitavecchia": "84 km / 1h15",
       "Grosseto": "56 km / 1h",
-      "Livorno": "200 km / 2h25",
-      "Pisa": "210 km / 2h20",
-      "Florence": "205 km / 2h30"
+      "Pisa Airport": "210 km / 2h20",
+      "Florence": "205 km / 2h30",
+      "Porto Ercole": "10 km / 20min"
     },
+    "gps": "N 42°24'500'', E 11°12'100''",
     "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.236429253607!2d11.200!3d42.416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13295a1b2443cf1f%3A0x35cf8a89fb1e9d3c!2sHotel%20Il%20Pellicano!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
   },
+  "exclusiveUseDetails": {
+    "included": [
+      "Use of all 50 rooms and common areas",
+      "Buffet gourmet breakfast served in the main restaurant",
+      "Soft drinks and snacks from minibar included",
+      "VIP treatment and daily newspaper in room",
+      "Use of the heated outdoor pool",
+      "Private access to the beach with elevator",
+      "Use of the gym with next-generation equipment, upon appointment",
+      "Use of Caldarium at our Pelliclub Health & Beauty Centre, upon appointment",
+      "Use of the tennis court, upon appointment",
+      "Wi-Fi connection throughout the property",
+      "Complimentary parking"
+    ],
+    "description": "Exclusive use includes complete privacy of the entire estate, allowing your event to unfold across all 50 rooms and extensive common areas. Every guest enjoys VIP treatment with gourmet breakfast, complementary minibar access, and full access to all facilities including the heated seawater pool, private beach with elevator, spa and Caldarium, tennis court, and gym.",
+    "transfers": "Private transfer service is available via limousine, luxury bus and/or helicopter for seamless arrivals and departures."
+  },
   "faqs": [
-    { "q": "Is exclusive use required?", "a": "Yes, all 50 rooms and common areas are included for private events." },
-    { "q": "What services are included?", "a": "Breakfast, minibar, spa and Caldarium, outdoor pool, private beach access, tennis, and parking." },
-    { "q": "What experiences are available?", "a": "Cooking classes, sailing trips, sport fishing, scuba diving, golf lessons, wine tastings, boat excursions to Giglio & Giannutri, thermal baths of Saturnia, and horse riding excursions." }
+    { "q": "Is exclusive use required?", "a": "Yes, all 50 rooms and common areas are included for exclusive events, providing complete privacy for your celebration." },
+    { "q": "What's included with exclusive use?", "a": "Gourmet breakfast, minibar, heated outdoor pool, private beach access with elevator, spa and Caldarium, tennis court, gym, VIP treatment, Wi-Fi, and parking." },
+    { "q": "Do you have Michelin-starred dining?", "a": "Yes, Ristorante Il Pellicano has been awarded 1 Michelin star, offering exceptional Italian cuisine with stunning coastal views." },
+    { "q": "What wellness and group activities are available?", "a": "We offer cooking classes with our Executive Chef, sailing trips, sport fishing, scuba diving, golf lessons, wine tastings, boat excursions to Giglio and Giannutri islands, thermal bath visits to Saturnia, and horse riding excursions." },
+    { "q": "Are transfers available?", "a": "Yes, we can arrange private transfers by limousine, luxury bus, or helicopter for your convenience." }
   ],
   "contact": {
     "cta": "Request availability & receive a tailored quote",
-    "email": "contact@italianvenues.com"
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "events@pellicanohotels.com",
+    "hotelPhone": "+39 06 45 44 57 43"
   }
 }
-
