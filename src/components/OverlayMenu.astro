@@ -150,32 +150,32 @@ const sections = {
       </aside>
 
                  <!-- Right Content Area - Scrollable -->
-           <div class="flex-1 overflow-y-auto bg-porsche-grey relative flex items-start justify-center">
-        <div class="py-16 px-20 w-full max-w-4xl">
+           <div class="flex-1 overflow-y-auto bg-porsche-grey relative">
+        <div class="py-12 px-12">
         <!-- Regions Section -->
         <div class="menu-content" data-content="regions">
-          <div class="space-y-6">
+          <div class="space-y-5">
             {sections.regions.map((item) => (
               <a
                 href={`/${item.slug}`}
                 class="menu-card-link block group"
               >
-                <div class="flex items-center gap-6 p-6 rounded-lg bg-white/70 hover:bg-white transition-all duration-200 shadow-sm">
+                <div class="flex items-center gap-6 p-5 rounded hover:bg-white transition-all duration-200">
                   <!-- Title on left -->
-                  <h4 class="text-3xl font-medium font-display min-w-[160px]">{item.title}</h4>
+                  <h4 class="text-2xl font-medium font-display w-[140px] flex-shrink-0">{item.title}</h4>
                   
-                  <!-- Image in center - fixed width -->
-                  <div class="w-[450px] flex-shrink-0 relative overflow-hidden rounded-lg">
+                  <!-- Image - flexible width -->
+                  <div class="flex-1 relative overflow-hidden rounded">
                     <img 
                       src={item.imgSrc} 
                       alt={item.title} 
-                      class="w-full h-52 object-cover object-center transition-transform duration-300 group-hover:scale-105" 
+                      class="w-full h-40 object-cover object-center transition-transform duration-300 group-hover:scale-105" 
                     />
                   </div>
                   
                   <!-- Arrow indicator -->
                   <svg 
-                    class="w-6 h-6 text-zinc-600 transition-transform duration-300 group-hover:translate-x-1 flex-shrink-0 ml-auto" 
+                    class="w-5 h-5 text-zinc-600 transition-transform duration-300 group-hover:translate-x-1 flex-shrink-0" 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -190,28 +190,28 @@ const sections = {
 
         <!-- Styles Section -->
         <div class="menu-content hidden" data-content="styles">
-          <div class="space-y-6">
+          <div class="space-y-5">
             {sections.styles.map((item) => (
               <a
                 href={`/${item.slug}`}
                 class="menu-card-link block group"
               >
-                <div class="flex items-center gap-6 p-6 rounded-lg bg-white/70 hover:bg-white transition-all duration-200 shadow-sm">
+                <div class="flex items-center gap-6 p-5 rounded hover:bg-white transition-all duration-200">
                   <!-- Title on left -->
-                  <h4 class="text-3xl font-medium font-display min-w-[160px]">{item.title}</h4>
+                  <h4 class="text-2xl font-medium font-display w-[140px] flex-shrink-0">{item.title}</h4>
                   
-                  <!-- Image in center - fixed width -->
-                  <div class="w-[450px] flex-shrink-0 relative overflow-hidden rounded-lg">
+                  <!-- Image - flexible width -->
+                  <div class="flex-1 relative overflow-hidden rounded">
                     <img 
                       src={item.imgSrc} 
                       alt={item.title} 
-                      class="w-full h-52 object-cover object-center transition-transform duration-300 group-hover:scale-105" 
+                      class="w-full h-40 object-cover object-center transition-transform duration-300 group-hover:scale-105" 
                     />
                   </div>
                   
                   <!-- Arrow indicator -->
                   <svg 
-                    class="w-6 h-6 text-zinc-600 transition-transform duration-300 group-hover:translate-x-1 flex-shrink-0 ml-auto" 
+                    class="w-5 h-5 text-zinc-600 transition-transform duration-300 group-hover:translate-x-1 flex-shrink-0" 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
