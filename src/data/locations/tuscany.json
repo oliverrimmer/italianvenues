@@ -1,0 +1,170 @@
+{
+  "name": "Tuscany",
+  "slug": "tuscany",
+  "country": "Italy",
+  "heroImage": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1920&q=85",
+  "heroTitle": "Weddings in Tuscany: Where History Meets Romance",
+  "heroDescription": "From sun-drenched vineyards to medieval hilltop towns and the dramatic Tyrrhenian coastline, Tuscany offers an unparalleled canvas for your Italian destination wedding.",
+  "metaDescription": "Plan your dream destination wedding in Tuscany, Italy. Discover luxury wedding venues, historic villas, coastal retreats, and vineyard estates across Florence, Siena, and the Tuscan coast.",
+  
+  "about": {
+    "intro": "Tuscany is the quintessential Italian wedding destination—a region where Renaissance art, rolling cypress-lined hills, and world-class wine estates converge to create an atmosphere of timeless elegance. Whether you envision an intimate ceremony in a medieval borgo, a grand celebration at a historic villa, or a seaside soirée on the Tyrrhenian coast, Tuscany delivers an unmatched blend of natural beauty, cultural richness, and culinary excellence.",
+    "landscape": "The Tuscan landscape is iconic: golden wheat fields, ancient olive groves, prestigious vineyards stretching across gentle hills, and postcard-perfect hilltop towns like San Gimignano, Montepulciano, and Cortona. Along the coast, the Maremma and Monte Argentario offer dramatic cliffs, secluded coves, and luxury seaside resorts—a lesser-known but equally enchanting side of Tuscany.",
+    "culture": "Tuscany is the birthplace of the Italian Renaissance. Florence alone is home to masterpieces by Michelangelo, Botticelli, and Leonardo da Vinci. But beyond the museums, Tuscany thrives on its living traditions: artisan winemakers, truffle hunters, master chefs, and generational craftspeople. For your wedding, this means access to world-class sommeliers, Michelin-starred catering, handmade linens, and florists who arrange with the same artistry as the Old Masters.",
+    "cuisine": "Tuscan cuisine is rustic yet refined. Think wild boar ragu, hand-rolled pici pasta, bistecca alla Fiorentina, panzanella, and ribollita—paired with Brunello di Montalcino, Chianti Classico, or Vernaccia di San Gimignano. Wedding menus here celebrate farm-to-table philosophy with truffles, pecorino, olive oil pressed on-site, and seasonal produce from villa gardens."
+  },
+
+  "climate": {
+    "summary": "Tuscany enjoys a Mediterranean climate with hot, dry summers and mild winters. The best wedding months are May through October, with June and September offering the perfect balance of warm weather and lower tourist crowds.",
+    "seasons": [
+      {
+        "months": "May – June",
+        "avgTemp": "22–28°C",
+        "rainfall": "Low",
+        "daylight": "14–15 hours",
+        "description": "Ideal for weddings. Warm, sunny days, blooming landscapes, and lush vineyards. June brings golden light perfect for photography."
+      },
+      {
+        "months": "July – August",
+        "avgTemp": "28–32°C",
+        "rainfall": "Very Low",
+        "daylight": "14–15 hours",
+        "description": "Peak summer. Hot and dry with stunning sunsets. Popular but can be crowded in Florence and coastal areas. Ideal for beach and poolside celebrations."
+      },
+      {
+        "months": "September – October",
+        "avgTemp": "20–26°C",
+        "rainfall": "Moderate",
+        "daylight": "12–13 hours",
+        "description": "Harvest season. Cooler, comfortable temperatures with grape and olive harvests in full swing. September is particularly magical for vineyard weddings."
+      },
+      {
+        "months": "November – April",
+        "avgTemp": "8–16°C",
+        "rainfall": "High",
+        "daylight": "9–11 hours",
+        "description": "Off-season. Cooler and wetter, but intimate indoor weddings in historic villas offer cozy charm and lower rates."
+      }
+    ],
+    "bestMonths": "June and September are widely regarded as the best months for Tuscany weddings—warm, scenic, and less crowded than peak summer."
+  },
+
+  "accessibility": {
+    "airports": [
+      { "name": "Florence Airport (FLR)", "distance": "15 km from Florence", "description": "Closest for central Tuscany, with connections to major European cities" },
+      { "name": "Pisa International Airport (PSA)", "distance": "80 km from Florence", "description": "Larger international hub, ideal for guests from the US, UK, and beyond" },
+      { "name": "Rome Fiumicino (FCO)", "distance": "280 km from Florence", "description": "Major international gateway, 2.5–3 hours by car or train to Tuscany" }
+    ],
+    "transport": "From Florence or Pisa, private chauffeur services, luxury buses, or car rentals provide seamless transfers to wedding venues. High-speed trains connect Rome, Florence, and Pisa in under 90 minutes. Helicopter transfers are also available for VIP arrivals.",
+    "driving": "Tuscany is highly accessible by car. From Florence, most venues are within 1–2 hours. The region's scenic drives—SS222 Chianti wine route, Via Aurelia coastal road—are part of the charm."
+  },
+
+  "serviceAreas": [
+    "Florence",
+    "Siena",
+    "Val d'Orcia",
+    "Chianti",
+    "Monte Argentario & Maremma Coast",
+    "Lucca",
+    "Pisa",
+    "Montepulciano",
+    "San Gimignano",
+    "Cortona"
+  ],
+
+  "distancesFromMajorCities": {
+    "Florence": "Regional capital and cultural heart",
+    "Rome": "280 km / 2h30 by car, 1h30 by high-speed train",
+    "Milan": "300 km / 3h by car, 2h by high-speed train",
+    "Venice": "260 km / 3h by car, 2h by train",
+    "Pisa": "80 km / 1h by car"
+  },
+
+  "featuredVenues": [
+    {
+      "name": "Hotel Il Pellicano",
+      "slug": "hotel-il-pellicano",
+      "setting": "Seaside Resort",
+      "location": "Porto Ercole, Monte Argentario",
+      "maxGuests": 120,
+      "usp": "Legendary 1960s clifftop retreat with 1* Michelin dining and private beach access",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl",
+      "featured": true
+    },
+    {
+      "name": "Castello di Vincigliata",
+      "slug": "castello-di-vincigliata",
+      "setting": "Medieval Castle",
+      "location": "Fiesole, Florence",
+      "maxGuests": 200,
+      "usp": "Authentic 11th-century fortress with panoramic views over Florence",
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
+      "featured": false
+    },
+    {
+      "name": "Borgo Santo Pietro",
+      "slug": "borgo-santo-pietro",
+      "setting": "Luxury Villa & Estate",
+      "location": "Chiusdino, Siena",
+      "maxGuests": 150,
+      "usp": "Five-star Relais & Châteaux property with Michelin-starred dining and organic farm",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "featured": false
+    },
+    {
+      "name": "Villa La Foce",
+      "slug": "villa-la-foce",
+      "setting": "Historic Villa",
+      "location": "Val d'Orcia",
+      "maxGuests": 100,
+      "usp": "Iconic Renaissance villa surrounded by UNESCO World Heritage landscapes",
+      "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800&q=80",
+      "featured": false
+    }
+  ],
+
+  "localExperience": {
+    "intro": "A Tuscan wedding is more than a ceremony—it's an immersive journey into Italian art de vivre. Your guests will experience world-class wine, art, nature, and cuisine at every turn.",
+    "activities": [
+      "Private wine tastings at prestigious Chianti Classico and Brunello estates",
+      "Truffle hunting excursions in the forests of San Miniato",
+      "Cooking classes with local chefs in Renaissance kitchens",
+      "Hot air balloon rides over Val d'Orcia at sunrise",
+      "Private tours of the Uffizi Gallery, Duomo, and Accademia in Florence",
+      "Sailing and yacht charters along the Monte Argentario coast",
+      "Spa days at thermal springs in Saturnia or Montecatini Terme",
+      "Vespa tours through Chianti vineyards",
+      "Private gondola-style boat rides on the Arno River",
+      "Olive oil and balsamic vinegar tastings at historic estates"
+    ],
+    "vendors": "Tuscany is home to Italy's finest wedding vendors: award-winning planners like Weddings in Tuscany and The Tuscan Wedding, luxury florists, artisan stationery designers, and top-tier photographers specializing in editorial Italian weddings. Many luxury hotels—like Il Pellicano, Castello di Casole, and Rosewood Castiglion del Bosco—offer in-house event coordination and Michelin-level catering.",
+    "accommodations": "Guests can stay in five-star hotels like Four Seasons Florence, Belmond Castello di Casole, or boutique agriturismi (farmhouse estates) scattered across the countryside. For coastal weddings, Hotel Il Pellicano and Il Pellicano's sister properties offer world-class luxury with private beach access."
+  },
+
+  "comparisonInsights": {
+    "vsAmalfiCoast": "While the Amalfi Coast offers dramatic cliffside glamour, Tuscany provides more space, privacy, and cultural depth. Venues here are often historic estates with sprawling gardens, and the region's wine and culinary culture is unmatched.",
+    "vsLakeComo": "Lake Como is elegant and alpine; Tuscany is warm, rustic, and vinicultural. Como suits intimate, romantic affairs; Tuscany excels at grand celebrations with 100+ guests across multi-day events.",
+    "vsUmbria": "Umbria is Tuscany's quieter sibling—more secluded and affordable, but with fewer luxury venues and less international accessibility. Tuscany offers more variety in landscapes (coast, hills, cities) and world-class infrastructure.",
+    "whyTuscany": "Tuscany is the most established and diverse Italian wedding destination. You get Renaissance cities, UNESCO vineyards, Michelin dining, coastal retreats, and an unmatched network of luxury vendors and venues—all within a two-hour radius."
+  },
+
+  "seoKeywords": [
+    "Tuscany wedding venues",
+    "destination weddings in Tuscany",
+    "luxury weddings Tuscany Italy",
+    "Tuscan villa weddings",
+    "Florence wedding venues",
+    "Chianti wedding estates",
+    "Tuscan coast weddings",
+    "vineyard weddings Tuscany",
+    "castello weddings Tuscany",
+    "Tuscany wedding planners"
+  ],
+
+  "cta": {
+    "primary": "Explore Tuscany Wedding Venues",
+    "secondary": "Request a Tailored Tuscany Wedding Quote",
+    "enquiryLink": "#contact"
+  }
+}
+
