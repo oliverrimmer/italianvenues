@@ -1,6 +1,12 @@
 ---
 // Menu sections data - SEO-focused structure
 const sections = {
+  venues: [
+    { title: 'La Posta Vecchia', subtitle: 'Rome', slug: 'venues/la-posta-vecchia', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl' },
+    { title: 'Mezzatorre Hotel & Thermal Spa', subtitle: 'Ischia Island', slug: 'venues/mezzatorre-hotel-thermal-spa', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl' },
+    { title: 'Hotel Il Pellicano', subtitle: 'Tuscany', slug: 'venues/hotel-il-pellicano', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl' },
+    { title: 'View All Venues', subtitle: 'Browse full directory', slug: 'venues', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/1b934f50-6f77-4c03-0ddc-fde1fcdf3d00/cardlg', isDirectory: true },
+  ],
   regions: [
     { title: 'Amalfi Coast', slug: 'locations/amalfi-coast', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg' },
     { title: 'Lake Como', slug: 'locations/lake-como', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg' },
@@ -56,6 +62,27 @@ const sections = {
     <!-- Mobile: Simple list view (Porsche style) -->
     <div class="md:hidden h-full overflow-y-auto">
       <div class="p-6 pt-16">
+        <!-- Venues Section -->
+        <div class="mb-3">
+          <button
+            class="mobile-menu-toggle w-full flex items-center justify-between py-3 border-b border-zinc-200 focus:outline-none"
+            data-mobile-section="venues"
+          >
+            <h2 class="text-2xl font-normal">Venues</h2>
+            <svg class="mobile-chevron w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </button>
+          <div class="mobile-menu-content hidden pt-3 space-y-2">
+            {sections.venues.map((item) => (
+              <a href={`/${item.slug}`} class="block py-2 px-4 bg-zinc-50 rounded-lg hover:bg-zinc-100 transition-colors">
+                <h3 class="text-lg font-medium">{item.title}</h3>
+                {item.subtitle && <p class="text-sm text-zinc-600 mt-1">{item.subtitle}</p>}
+              </a>
+            ))}
+          </div>
+        </div>
+
         <!-- Locations Section -->
         <div class="mb-3">
           <button
@@ -118,6 +145,17 @@ const sections = {
             <li>
               <button
                 class="menu-section w-full flex items-center justify-between text-left text-xl px-4 py-3 hover:bg-zinc-200/50 transition-all duration-200 focus:outline-none font-normal text-zinc-900"
+                data-section="venues"
+              >
+                <span>Venues</span>
+                <svg class="w-5 h-5 flex-shrink-0 text-zinc-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button
+                class="menu-section w-full flex items-center justify-between text-left text-xl px-4 py-3 hover:bg-zinc-200/50 transition-all duration-200 focus:outline-none font-normal text-zinc-900"
                 data-section="regions"
               >
                 <span>Locations</span>
@@ -150,10 +188,49 @@ const sections = {
       </aside>
 
                  <!-- Right Content Area - Scrollable -->
-           <div class="flex-1 overflow-y-auto bg-porsche-grey relative">
+          <div class="flex-1 overflow-y-auto bg-porsche-grey relative">
         <div class="py-12 px-12">
+        <!-- Venues Section -->
+        <div class="menu-content" data-content="venues">
+          <div class="space-y-5">
+            {sections.venues.map((item) => (
+              <a
+                href={`/${item.slug}`}
+                class="menu-card-link block group"
+              >
+                <div class="flex items-center gap-6 p-5 bg-white/70 rounded hover:bg-white transition-all duration-200 shadow-sm">
+                  <!-- Title on left -->
+                  <h4 class="text-2xl font-medium font-display w-[200px] flex-shrink-0">
+                    {item.title}
+                    {item.subtitle && <span class="block text-sm text-zinc-600 font-normal mt-1">{item.subtitle}</span>}
+                  </h4>
+                  
+                  <!-- Image - flexible width -->
+                  <div class="flex-1 relative overflow-hidden rounded">
+                    <img 
+                      src={item.imgSrc} 
+                      alt={item.title} 
+                      class="w-full h-40 object-cover object-center transition-transform duration-300 group-hover:scale-105" 
+                    />
+                  </div>
+                  
+                  <!-- Arrow indicator -->
+                  <svg 
+                    class="w-5 h-5 text-zinc-600 transition-transform duration-300 group-hover:translate-x-1 flex-shrink-0" 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+
         <!-- Regions Section -->
-        <div class="menu-content" data-content="regions">
+        <div class="menu-content hidden" data-content="regions">
           <div class="space-y-5">
             {sections.regions.map((item) => (
               <a
