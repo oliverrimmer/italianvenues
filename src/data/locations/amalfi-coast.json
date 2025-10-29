@@ -1,0 +1,170 @@
+{
+  "name": "Amalfi Coast",
+  "slug": "amalfi-coast",
+  "country": "Italy",
+  "heroImage": "https://images.unsplash.com/photo-1533429257764-d28e37f1e24b?w=1920&q=85",
+  "heroTitle": "Weddings on the Amalfi Coast: Dramatic Cliffs Meet the Mediterranean",
+  "heroDescription": "From the pastel villages of Positano and Ravello to the lemon groves of Sorrento, the Amalfi Coast offers the most spectacular coastal wedding destination in Italy.",
+  "metaDescription": "Plan your dream destination wedding on the Amalfi Coast, Italy. Discover luxury clifftop venues, historic villas, and seaside terraces in Positano, Ravello, Amalfi, and Sorrento.",
+  
+  "about": {
+    "intro": "The Amalfi Coast is Italy's most iconic seaside wedding destination—a UNESCO World Heritage Site where dramatic clifftop villages cascade down to the turquoise Mediterranean. With its pastel-hued architecture, terraced lemon groves, and panoramic coastal views, the Amalfi Coast delivers an unparalleled backdrop for a destination wedding that feels both intimate and cinematic.",
+    "landscape": "The Costiera Amalfitana stretches 50 kilometers along the southern edge of the Sorrento Peninsula, featuring vertiginous cliffs, hidden coves, and picturesque towns like Positano, Ravello, Amalfi, and Praiano. Each village offers its own character: Positano for glamorous beachside elegance, Ravello for hilltop gardens and classical music, Amalfi for historic charm, and Sorrento for accessibility and vibrant culture.",
+    "culture": "The Amalfi Coast has been a magnet for artists, writers, and jet-setters since the 1950s. Villa Cimbrone and Villa Rufolo in Ravello inspired Wagner and Greta Garbo. Today, the coast maintains its La Dolce Vita spirit with Michelin-starred restaurants, artisan ceramics, handmade limoncello, and centuries-old traditions like the Regata Storica. Weddings here blend Italian coastal sophistication with authentic southern warmth.",
+    "cuisine": "Coastal cuisine reigns supreme: fresh seafood, handmade scialatielli pasta with seafood, buffalo mozzarella, San Marzano tomatoes, and of course, lemons—used in everything from limoncello to delizia al limone dessert. Weddings feature open-air terrace dining with views of the Bay of Salerno, paired with Campanian wines like Greco di Tufo and Falanghina."
+  },
+
+  "climate": {
+    "summary": "The Amalfi Coast enjoys a Mediterranean climate with warm, dry summers and mild winters. The best wedding months are May through October, with June and September offering perfect weather and fewer crowds than peak summer.",
+    "seasons": [
+      {
+        "months": "May – June",
+        "avgTemp": "22–28°C",
+        "rainfall": "Low",
+        "daylight": "14–15 hours",
+        "description": "Ideal wedding season. Warm days, blooming bougainvillea, calm seas, and golden hour light perfect for clifftop ceremonies. June offers long evenings for outdoor dining."
+      },
+      {
+        "months": "July – August",
+        "avgTemp": "28–32°C",
+        "rainfall": "Very Low",
+        "daylight": "14–15 hours",
+        "description": "Peak summer. Hot and dry with spectacular sunsets. Popular but crowded—expect higher rates and traffic on coastal roads. Ideal for beach clubs and poolside receptions."
+      },
+      {
+        "months": "September – October",
+        "avgTemp": "24–28°C",
+        "rainfall": "Moderate",
+        "daylight": "12–13 hours",
+        "description": "The best month for Amalfi weddings. Warm sea temperatures, fewer tourists, stunning light, and harvest-season cuisine. September is particularly magical."
+      },
+      {
+        "months": "November – April",
+        "avgTemp": "10–18°C",
+        "rainfall": "High",
+        "daylight": "9–11 hours",
+        "description": "Off-season. Cooler and wetter, but intimate indoor celebrations at historic villas offer charm and lower rates. Some venues close for winter."
+      }
+    ],
+    "bestMonths": "September is the single best month for Amalfi Coast weddings—warm, scenic, and less crowded. June is a close second for longer daylight hours."
+  },
+
+  "accessibility": {
+    "airports": [
+      { "name": "Naples International Airport (NAP)", "distance": "60 km from Sorrento", "description": "Closest major airport with connections to Europe and beyond, 90 minutes by car or private transfer" },
+      { "name": "Rome Fiumicino (FCO)", "distance": "280 km from Amalfi", "description": "Major international hub, 3 hours by car or train + transfer" },
+      { "name": "Salerno Airport", "distance": "30 km from Amalfi", "description": "Small regional airport for private and charter flights" }
+    ],
+    "transport": "Private chauffeur services, luxury minibuses, and boat transfers are the most elegant ways to navigate the coast. Hydrofoils from Naples or Salerno offer scenic arrivals. Helicopter transfers are available for VIP guests. Note: coastal roads are narrow and winding—professional drivers are essential.",
+    "driving": "The famous SS163 coastal road (Amalfitana) is one of the world's most scenic drives but requires caution. Most venues offer valet parking or shuttle services from designated parking areas."
+  },
+
+  "serviceAreas": [
+    "Positano",
+    "Ravello",
+    "Amalfi",
+    "Praiano",
+    "Sorrento",
+    "Furore",
+    "Atrani",
+    "Maiori",
+    "Minori",
+    "Capri (by boat)"
+  ],
+
+  "distancesFromMajorCities": {
+    "Naples": "60 km / 1h30 by car to Sorrento",
+    "Rome": "280 km / 3h by car, 2h30 by train to Naples + transfer",
+    "Florence": "500 km / 5h30 by car",
+    "Salerno": "25 km / 45 min by car to Amalfi",
+    "Pompeii": "30 km / 45 min from Sorrento"
+  },
+
+  "featuredVenues": [
+    {
+      "name": "Mezzatorre Hotel & Thermal Spa",
+      "slug": "mezzatorre-hotel-thermal-spa",
+      "setting": "Coastal Castle & Spa",
+      "location": "Ischia Island (near Amalfi)",
+      "maxGuests": 200,
+      "usp": "16th-century Aragonese watchtower on a volcanic island with thermal spa and private beach",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl",
+      "featured": true
+    },
+    {
+      "name": "Belmond Hotel Caruso",
+      "slug": "belmond-hotel-caruso",
+      "setting": "Clifftop Palace",
+      "location": "Ravello",
+      "maxGuests": 150,
+      "usp": "11th-century palazzo with infinity pool overlooking the Bay of Salerno",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "featured": false
+    },
+    {
+      "name": "Monastero Santa Rosa",
+      "slug": "monastero-santa-rosa",
+      "setting": "Cliffside Monastery",
+      "location": "Conca dei Marini",
+      "maxGuests": 80,
+      "usp": "17th-century monastery perched 300 feet above the sea with Michelin-starred dining",
+      "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      "featured": false
+    },
+    {
+      "name": "Villa Cimbrone",
+      "slug": "villa-cimbrone",
+      "setting": "Historic Villa & Gardens",
+      "location": "Ravello",
+      "maxGuests": 120,
+      "usp": "Iconic Terrace of Infinity with panoramic views and centuries-old gardens",
+      "image": "https://images.unsplash.com/photo-1519167758481-83f29da8c8a0?w=800&q=80",
+      "featured": false
+    }
+  ],
+
+  "localExperience": {
+    "intro": "An Amalfi Coast wedding is a multi-sensory experience—azure seas, fragrant lemon groves, cliffside sunsets, and the sound of waves against ancient stone. Your guests will remember it forever.",
+    "activities": [
+      "Private yacht charters along the coast with stops in Positano and Capri",
+      "Sunset aperitivo cruises with prosecco and local delicacies",
+      "Cooking classes featuring coastal cuisine and homemade pasta",
+      "Guided tours of Pompeii and Herculaneum ruins",
+      "Limoncello tastings at traditional farms in Sorrento",
+      "Boat trips to the Blue Grotto in Capri",
+      "Private wine tastings of Lacryma Christi and Falanghina",
+      "Vespa tours through hillside villages and lemon terraces",
+      "Day trips to the island of Capri via private boat",
+      "Spa days at thermal resorts in Ischia"
+    ],
+    "vendors": "The Amalfi Coast is home to Italy's top wedding planners specializing in luxury coastal events, including The Amalfi Experience, Weddings in Campania, and Sugokuii Events. Florists create cascading bougainvillea installations, and photographers specialize in dramatic clifftop and terrace imagery.",
+    "accommodations": "Guests can stay at five-star hotels like Le Sirenuse Positano, Belmond Hotel Caruso, Monastero Santa Rosa, or boutique B&Bs in historic palazzos. Many venues offer room blocks or buyout options for multi-day celebrations."
+  },
+
+  "comparisonInsights": {
+    "vsTuscany": "While Tuscany offers rolling hills and vineyards, the Amalfi Coast delivers dramatic vertical beauty with sea views. Amalfi is more compact and intimate, ideal for 50–120 guest weddings with a coastal, glamorous vibe.",
+    "vsLakeComo": "Lake Como is alpine and serene; the Amalfi Coast is Mediterranean and vibrant. Amalfi offers warmer weather, beach access, and a more energetic, jet-set atmosphere. Como is quieter and more romantic.",
+    "vsPuglia": "Puglia offers rustic masserie and olive groves; the Amalfi Coast is more luxurious and vertically stunning. Amalfi is more established for international weddings with world-class infrastructure, while Puglia is emerging and more affordable.",
+    "whyAmalfi": "The Amalfi Coast is the ultimate Italian coastal wedding destination. Nowhere else combines UNESCO cliffside villages, Michelin dining, luxury hotels, and such cinematic beauty in a compact, accessible area. It's the perfect blend of glamour, romance, and Italian coastal culture."
+  },
+
+  "seoKeywords": [
+    "Amalfi Coast wedding venues",
+    "destination weddings Amalfi Coast",
+    "Positano wedding venues",
+    "Ravello wedding villas",
+    "luxury weddings Amalfi Coast Italy",
+    "clifftop weddings Amalfi",
+    "Sorrento wedding venues",
+    "Amalfi Coast wedding planners",
+    "coastal weddings Italy",
+    "Villa Cimbrone weddings"
+  ],
+
+  "cta": {
+    "primary": "Explore Amalfi Coast Wedding Venues",
+    "secondary": "Request a Tailored Amalfi Coast Wedding Quote",
+    "enquiryLink": "#contact"
+  }
+}
+

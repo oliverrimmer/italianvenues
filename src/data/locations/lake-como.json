@@ -1,0 +1,170 @@
+{
+  "name": "Lake Como",
+  "slug": "lake-como",
+  "country": "Italy",
+  "heroImage": "https://images.unsplash.com/photo-1513581166391-887a96ddeafd?w=1920&q=85",
+  "heroTitle": "Weddings at Lake Como: Alpine Elegance Meets Italian Romance",
+  "heroDescription": "Where snow-capped Alps meet tranquil blue waters, Lake Como offers the most romantic lakeside wedding destination in Europe—beloved by royalty, celebrities, and discerning couples.",
+  "metaDescription": "Plan your dream destination wedding at Lake Como, Italy. Discover luxury lakeside villas, historic palazzos, and mountain-view venues in Bellagio, Varenna, and Como.",
+  
+  "about": {
+    "intro": "Lake Como is Europe's most elegant and romantic wedding destination—a glacial lake surrounded by the Italian Alps, dotted with belle époque villas, terraced gardens, and charming villages. With its serene waters, dramatic mountain backdrop, and timeless Italian sophistication, Lake Como delivers an atmosphere of quiet luxury and old-world glamour unmatched anywhere else.",
+    "landscape": "Shaped like an inverted 'Y', Lake Como stretches 46 kilometers through Lombardy, with three distinct branches. The western shore features grand villas and the city of Como; the eastern shore offers quieter charm in Varenna and Menaggio; and the central promontory of Bellagio—the 'Pearl of the Lake'—provides the most iconic views. Surrounding the lake are the pre-Alpine mountains, cypress-lined shores, and gardens filled with camellias, azaleas, and wisteria.",
+    "culture": "Lake Como has been a retreat for European aristocracy, artists, and intellectuals since Roman times. Today it's beloved by Hollywood stars (George Clooney's Villa Oleandra is here) and fashion elite. The region celebrates elegance over ostentation: silk production in Como, artisan boat-building, classical music festivals, and Michelin-starred dining. Weddings here feel intimate, refined, and timelessly chic.",
+    "cuisine": "Lombardian cuisine is rich and refined: risotto, polenta, missoltini (dried lake fish), ossobuco, and artisan cheeses. Lake Como weddings feature elegant terrace dining with views across the water, paired with Franciacorta sparkling wine and Valtellina reds. Many villas have historic kitchens and private chefs trained in both traditional and modern Italian cuisine."
+  },
+
+  "climate": {
+    "summary": "Lake Como enjoys a temperate climate with warm summers and mild winters. The best wedding months are May through September, with May and September offering the most comfortable temperatures and fewer crowds.",
+    "seasons": [
+      {
+        "months": "May – June",
+        "avgTemp": "18–26°C",
+        "rainfall": "Moderate",
+        "daylight": "14–15 hours",
+        "description": "Peak wedding season. Gardens are in full bloom with wisteria and roses. Warm days, cool evenings, and soft light ideal for lakeside ceremonies. June is especially popular."
+      },
+      {
+        "months": "July – August",
+        "avgTemp": "24–30°C",
+        "rainfall": "Low",
+        "daylight": "14–15 hours",
+        "description": "High summer. Warm and dry with long evenings perfect for outdoor receptions. Popular with tourists, so venues book early. Ideal for late-night terrace dining under the stars."
+      },
+      {
+        "months": "September – October",
+        "avgTemp": "18–24°C",
+        "rainfall": "Moderate",
+        "daylight": "12–13 hours",
+        "description": "Beautiful shoulder season. Fewer crowds, golden light, and comfortable temperatures. September is ideal for refined, intimate weddings. Foliage begins changing in October."
+      },
+      {
+        "months": "November – April",
+        "avgTemp": "6–14°C",
+        "rainfall": "High",
+        "daylight": "9–11 hours",
+        "description": "Off-season. Cooler and wetter, with occasional snow on mountain peaks. Some villas close for winter. Indoor celebrations offer cozy charm and significant savings."
+      }
+    ],
+    "bestMonths": "May and September are the best months for Lake Como weddings—mild weather, blooming gardens, and fewer crowds. June is also popular for longer daylight."
+  },
+
+  "accessibility": {
+    "airports": [
+      { "name": "Milan Malpensa Airport (MXP)", "distance": "60 km from Como", "description": "Major international hub, 1 hour by car or private transfer to Lake Como" },
+      { "name": "Milan Linate Airport (LIN)", "distance": "70 km from Como", "description": "Smaller airport closer to Milan city center, ideal for European connections" },
+      { "name": "Bergamo Orio al Serio (BGY)", "distance": "60 km from Lecco", "description": "Low-cost carrier hub with good European connections, 1 hour to eastern Lake Como" }
+    ],
+    "transport": "Private chauffeur services and luxury minibuses offer seamless transfers from Milan airports. Water taxis and vintage wooden boats provide elegant arrivals at lakeside villas. Helicopter transfers are available for VIP guests. The lake is highly accessible, with Como town just 45 minutes from Milan by train.",
+    "driving": "Lake Como is easily accessible by car from Milan (1 hour), Switzerland (1 hour from Lugano), and northern Italy. Lakeside roads (SS340) are scenic but narrow—valet services and boat transfers are recommended for guests."
+  },
+
+  "serviceAreas": [
+    "Bellagio",
+    "Varenna",
+    "Como (city)",
+    "Cernobbio",
+    "Menaggio",
+    "Tremezzo",
+    "Lenno",
+    "Laglio",
+    "Torno",
+    "Argegno"
+  ],
+
+  "distancesFromMajorCities": {
+    "Milan": "60 km / 1h by car, 1h by train to Como",
+    "Lugano (Switzerland)": "30 km / 40 min",
+    "Bergamo": "60 km / 1h",
+    "Venice": "280 km / 3h",
+    "Florence": "330 km / 3h30"
+  },
+
+  "featuredVenues": [
+    {
+      "name": "Villa del Balbianello",
+      "slug": "villa-del-balbianello",
+      "setting": "Historic Lakeside Villa",
+      "location": "Lenno, Lake Como",
+      "maxGuests": 120,
+      "usp": "18th-century villa on a wooded promontory with terraced gardens and panoramic lake views (Star Wars & Bond filming location)",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "featured": false
+    },
+    {
+      "name": "Villa d'Este",
+      "slug": "villa-deste",
+      "setting": "Luxury Palace Hotel",
+      "location": "Cernobbio, Lake Como",
+      "maxGuests": 180,
+      "usp": "16th-century Renaissance palace with floating garden, Michelin dining, and legendary luxury service",
+      "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&q=80",
+      "featured": false
+    },
+    {
+      "name": "Villa Pizzo",
+      "slug": "villa-pizzo",
+      "setting": "Aristocratic Villa",
+      "location": "Cernobbio, Lake Como",
+      "maxGuests": 200,
+      "usp": "Private 16th-century villa with neoclassical gardens, frescoed ballrooms, and exclusive lakefront access",
+      "image": "https://images.unsplash.com/photo-1519167758481-83f29da8c8a0?w=800&q=80",
+      "featured": false
+    },
+    {
+      "name": "Grand Hotel Tremezzo",
+      "slug": "grand-hotel-tremezzo",
+      "setting": "Belle Époque Palace",
+      "location": "Tremezzo, Lake Como",
+      "maxGuests": 150,
+      "usp": "Art Nouveau grandeur with floating pool, terraced gardens, and views of Bellagio across the water",
+      "image": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800&q=80",
+      "featured": false
+    }
+  ],
+
+  "localExperience": {
+    "intro": "A Lake Como wedding is a symphony of elegance—vintage boats gliding across mirror-smooth water, gardens cascading down to the shore, and Alpine peaks framing every sunset. Your guests will experience Italy at its most refined.",
+    "activities": [
+      "Private boat tours on vintage wooden Riva speedboats",
+      "Sunset aperitivo cruises with prosecco and lake views",
+      "Guided tours of historic villas: Villa Carlotta, Villa Monastero, Villa Melzi",
+      "Cooking classes with Lombardian chefs in historic kitchens",
+      "Wine tastings of Franciacorta and Valtellina wines",
+      "Day trips to Bellagio for silk shopping and gelato",
+      "Hiking in the pre-Alpine mountains with panoramic views",
+      "Spa days at luxury lakeside resorts",
+      "Scenic drives along the Tremezzina coastal road",
+      "Day trips to nearby Switzerland (Lugano, St. Moritz)"
+    ],
+    "vendors": "Lake Como is home to Italy's most refined wedding planners, including Lake Como Wedding Planner, Italyweddings.net, and The Lake Como Wedding Company. Florists specialize in classic garden elegance, and photographers excel at capturing the lake's timeless beauty and cinematic light.",
+    "accommodations": "Guests can stay at five-star palaces like Villa d'Este, Grand Hotel Tremezzo, Passalacqua, or boutique hotels like Il Sereno and CastaDiva Resort. Many villas offer exclusive buyout options for intimate, private celebrations."
+  },
+
+  "comparisonInsights": {
+    "vsTuscany": "Tuscany offers rustic charm and vineyards; Lake Como delivers refined lakeside elegance and Alpine beauty. Como is cooler, quieter, and more exclusive—ideal for intimate, sophisticated weddings with 50–150 guests.",
+    "vsAmalfiCoast": "The Amalfi Coast is Mediterranean and vibrant; Lake Como is alpine and serene. Como offers more privacy, cooler temperatures, and easier accessibility from Milan and Switzerland. Amalfi is more dramatic; Como is more romantic.",
+    "vsFrenchRiviera": "Lake Como offers Italian warmth and authenticity at a lower price point than the French Riviera, with better food and more historic charm. Como is less commercialized and more intimate, with a focus on old-world elegance over glitz.",
+    "whyComo": "Lake Como is the most romantic wedding destination in Europe. It combines accessibility (1 hour from Milan), world-class luxury villas, Michelin dining, and unparalleled natural beauty. It's intimate, exclusive, and effortlessly elegant—perfect for couples seeking timeless Italian sophistication."
+  },
+
+  "seoKeywords": [
+    "Lake Como wedding venues",
+    "destination weddings Lake Como",
+    "Bellagio wedding villas",
+    "Lake Como luxury weddings",
+    "Villa del Balbianello weddings",
+    "Lake Como wedding planners",
+    "lakeside weddings Italy",
+    "Como wedding venues",
+    "Villa d'Este weddings",
+    "romantic Lake Como weddings"
+  ],
+
+  "cta": {
+    "primary": "Explore Lake Como Wedding Venues",
+    "secondary": "Request a Tailored Lake Como Wedding Quote",
+    "enquiryLink": "#contact"
+  }
+}
+

@@ -1,0 +1,169 @@
+{
+  "name": "Rome",
+  "slug": "rome",
+  "country": "Italy",
+  "heroImage": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=1920&q=85",
+  "heroTitle": "Weddings in Rome: Where Ancient History Meets Eternal Romance",
+  "heroDescription": "From Vatican palaces to countryside villas, Rome and its surroundings offer the perfect blend of imperial grandeur, baroque splendor, and la dolce vita—the eternal city for timeless celebrations.",
+  "metaDescription": "Plan your dream destination wedding in Rome and Lazio, Italy. Discover luxury historic villas, Renaissance palazzos, and countryside estates near Rome, Frascati, and the Tyrrhenian coast.",
+  
+  "about": {
+    "intro": "Rome is the Eternal City—a living museum of 2,800 years of history where ancient ruins, baroque fountains, and Renaissance palaces create the most dramatic urban wedding backdrop on earth. Yet just beyond the Aurelian Walls, the Roman countryside (Castelli Romani, Frascati, and the Tyrrhenian coast) offers tranquil villas, vineyards, and seaside estates—combining imperial grandeur with Italian countryside charm.",
+    "landscape": "Rome itself is a tapestry of iconic monuments—the Colosseum, Trevi Fountain, Spanish Steps, Vatican—set among tree-lined cobblestone streets and piazzas. Within 30–60 minutes, the landscape transforms: hilltop towns of the Castelli Romani, Lake Bracciano's volcanic shores, Frascati's vine-covered hills, and coastal gems like Fregene and Santa Marinella. This diversity makes Rome ideal for multi-day celebrations blending city and country.",
+    "culture": "Rome invented la dolce vita. The city's wedding culture is steeped in opera, haute couture, and Michelin-starred dining (more Michelin stars than any Italian city). Weddings here feel grand and cinematic—think Fellini, Audrey Hepburn on a Vespa, and sunset aperitivo on rooftop terraces overlooking the Pantheon. The region's artisan traditions include goldsmithing, marble sculpture, and bespoke tailoring.",
+    "cuisine": "Roman cuisine is bold and rustic: carbonara, cacio e pepe, saltimbocca, artichokes alla giudia, and porchetta. Lazio wines—Frascati Superiore, Cesanese, Est! Est!! Est!!!—pair perfectly with wedding feasts. Many countryside villas feature farm-to-table dining with estate-grown produce, olive oil, and wine. City venues offer refined haute cuisine with views of illuminated monuments."
+  },
+
+  "climate": {
+    "summary": "Rome enjoys a Mediterranean climate with hot, dry summers and mild winters. The best wedding months are May, June, and September–October, offering warm weather and fewer crowds than peak summer.",
+    "seasons": [
+      {
+        "months": "May – June",
+        "avgTemp": "20–28°C",
+        "rainfall": "Low",
+        "daylight": "14–15 hours",
+        "description": "Ideal wedding season. Warm, sunny days with blooming roses and jasmine. June offers golden evening light perfect for terrace receptions. Rome is lively but manageable before peak summer crowds."
+      },
+      {
+        "months": "July – August",
+        "avgTemp": "26–32°C",
+        "rainfall": "Very Low",
+        "daylight": "14–15 hours",
+        "description": "High summer. Hot and dry. Many Romans leave for Ferragosto (mid-August), so the city feels quieter. Countryside villas with pools and coastal venues are ideal. Late dinners under the stars are magical."
+      },
+      {
+        "months": "September – October",
+        "avgTemp": "20–26°C",
+        "rainfall": "Moderate",
+        "daylight": "12–13 hours",
+        "description": "Peak wedding season. Comfortable temperatures, harvest-season cuisine, and beautiful light. September is especially popular. Fewer tourists make for better photos and easier logistics."
+      },
+      {
+        "months": "November – April",
+        "avgTemp": "10–18°C",
+        "rainfall": "High",
+        "daylight": "9–11 hours",
+        "description": "Off-season. Cooler and wetter, but Rome's indoor palazzos and villa ballrooms offer cozy elegance. Winter weddings enjoy lower rates and exclusive access to monuments."
+      }
+    ],
+    "bestMonths": "May, June, and September are the best months for Rome weddings—warm, beautiful, and less crowded than peak summer. October is also stunning for countryside celebrations."
+  },
+
+  "accessibility": {
+    "airports": [
+      { "name": "Rome Fiumicino Airport (FCO)", "distance": "30 km from city center", "description": "Major international hub and Italy's largest airport, with connections worldwide. 30–45 minutes to central Rome." },
+      { "name": "Rome Ciampino Airport (CIA)", "distance": "15 km from city center", "description": "Smaller airport for European budget carriers and private charters. 20–30 minutes to Rome." },
+      { "name": "Naples International Airport (NAP)", "distance": "225 km", "description": "Alternative for southern Lazio coastal venues, 2h30 by car" }
+    ],
+    "transport": "Rome is Italy's best-connected city. High-speed trains link to Florence (1h30), Milan (3h), and Naples (1h). Private chauffeurs, luxury buses, and vintage cars (Fiat 500, Alfa Romeo) offer elegant transfers. Helicopter service is available for VIP arrivals. Rome's metro, taxis, and car services make city navigation seamless.",
+    "driving": "Rome is easily accessible via the A1 (north-south), A24 (east), and coastal SS1 (west). Countryside venues are 30–60 minutes from the city center. Professional drivers are recommended for navigating Rome's traffic and ZTL (limited traffic zones)."
+  },
+
+  "serviceAreas": [
+    "Rome (city center)",
+    "Frascati & Castelli Romani",
+    "Lake Bracciano",
+    "Tyrrhenian Coast (Fregene, Santa Marinella)",
+    "Tivoli",
+    "Civitavecchia",
+    "Viterbo",
+    "Sabina Hills",
+    "Ostia Antica"
+  ],
+
+  "distancesFromMajorCities": {
+    "Florence": "280 km / 1h30 by high-speed train, 3h by car",
+    "Naples": "225 km / 1h by high-speed train, 2h30 by car",
+    "Milan": "575 km / 3h by high-speed train, 6h by car",
+    "Perugia": "165 km / 2h by car",
+    "Sorrento": "270 km / 3h by car"
+  },
+
+  "featuredVenues": [
+    {
+      "name": "La Posta Vecchia",
+      "slug": "la-posta-vecchia",
+      "setting": "Historic Seaside Villa",
+      "location": "Ladispoli (40 km from Rome)",
+      "maxGuests": 160,
+      "usp": "Jean Paul Getty's former mansion with Roman ruins, private beach, and museum-quality art collection",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl",
+      "featured": true
+    },
+    {
+      "name": "Castello di Tor Crescenza",
+      "slug": "castello-di-tor-crescenza",
+      "setting": "Medieval Castle",
+      "location": "Rome (city limits)",
+      "maxGuests": 300,
+      "usp": "11th-century castle with frescoed halls, terraced gardens, and views of the Roman countryside",
+      "image": "https://images.unsplash.com/photo-1519167758481-83f29da8c8a0?w=800&q=80",
+      "featured": false
+    },
+    {
+      "name": "Villa Miani",
+      "slug": "villa-miani",
+      "setting": "Hilltop Villa",
+      "location": "Rome (Monte Mario)",
+      "maxGuests": 500,
+      "usp": "Panoramic rooftop terrace with 360° views of Rome, including St. Peter's and the Colosseum",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+      "featured": false
+    },
+    {
+      "name": "Castello Odescalchi",
+      "slug": "castello-odescalchi",
+      "setting": "Lakeside Castle",
+      "location": "Lake Bracciano",
+      "maxGuests": 250,
+      "usp": "15th-century papal fortress on volcanic lake, famous for celebrity weddings (Tom Cruise, Katie Holmes)",
+      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
+      "featured": false
+    }
+  ],
+
+  "localExperience": {
+    "intro": "A Rome wedding is a cinematic experience—imagine champagne toasts overlooking the Colosseum at sunset, private tours of the Vatican at night, and feasting on carbonara under the stars in a Renaissance courtyard. Your guests will live la dolce vita.",
+    "activities": [
+      "Private after-hours tours of the Vatican Museums and Sistine Chapel",
+      "Colosseum and Roman Forum VIP access with archaeologist guides",
+      "Vespa tours through Rome's historic center and Trastevere",
+      "Cooking classes with Roman chefs (carbonara, cacio e pepe, tiramisu)",
+      "Wine tastings in Frascati and Castelli Romani vineyards",
+      "Day trips to Tivoli's Villa d'Este and Hadrian's Villa",
+      "Sunset aperitivo on rooftop terraces overlooking the Pantheon",
+      "Private boat tours on Lake Bracciano",
+      "Shopping tours in Via Condotti and Via del Corso",
+      "Opera nights at Teatro dell'Opera or Caracalla Baths"
+    ],
+    "vendors": "Rome is home to Italy's top wedding planners, including Exclusive Italy Weddings, Italian Wedding Company, and Weddings in Rome. The city's fashion district provides access to haute couture designers, artisan florists, and luxury stationery ateliers. Photographers excel at capturing iconic monuments and golden hour light.",
+    "accommodations": "Guests can stay at five-star hotels like Hotel Hassler, Hotel de Russie, St. Regis Rome, or boutique properties like Palazzo Manfredi (with Colosseum views). Many countryside villas offer room blocks or full buyouts for multi-day celebrations."
+  },
+
+  "comparisonInsights": {
+    "vsTuscany": "Tuscany offers rolling hills and vineyards; Rome delivers monumental history and urban grandeur. Rome is more dramatic and iconic, ideal for couples wanting a cinematic, once-in-a-lifetime setting with world-famous backdrops.",
+    "vsFlorence": "Florence is Renaissance elegance; Rome is imperial power and baroque opulence. Rome offers more variety—city palazzos, countryside villas, and coastal estates—all within 1 hour. Rome is also better connected internationally.",
+    "vsVenice": "Venice is intimate and romantic; Rome is grand and cinematic. Rome offers more space, better weather, and easier logistics for 100+ guest weddings. Venice is ideal for micro-weddings; Rome suits larger celebrations.",
+    "whyRome": "Rome is the ultimate Italian wedding destination for couples seeking history, grandeur, and cultural immersion. Nowhere else combines 2,800 years of monuments, Michelin dining, world-class hotels, and countryside beauty—all within an hour. It's la dolce vita at its most cinematic."
+  },
+
+  "seoKeywords": [
+    "Rome wedding venues",
+    "destination weddings Rome",
+    "Rome luxury wedding villas",
+    "Lazio wedding venues",
+    "Castelli Romani weddings",
+    "Rome wedding planners",
+    "historic Rome wedding venues",
+    "countryside villas Rome",
+    "La Posta Vecchia wedding",
+    "Rome castle weddings"
+  ],
+
+  "cta": {
+    "primary": "Explore Rome Wedding Venues",
+    "secondary": "Request a Tailored Rome Wedding Quote",
+    "enquiryLink": "#contact"
+  }
+}
+
