@@ -1,0 +1,168 @@
+{
+  "name": "Seaside Weddings",
+  "slug": "seaside",
+  "country": "Italy",
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+  "heroTitle": "Seaside Wedding Venues in Italy: Where Azure Waters Meet Mediterranean Romance",
+  "heroDescription": "From clifftop Amalfi Coast terraces to Tuscan coastal resorts and volcanic island retreats, Italy's seaside wedding venues offer breathtaking ocean views, fresh Mediterranean cuisine, and la dolce vita.",
+  "metaDescription": "Discover Italy's most stunning seaside wedding venues. Coastal villas, beach clubs, and waterfront estates across the Amalfi Coast, Tuscany, Ischia, and Sicily.",
+  
+  "about": {
+    "intro": "A seaside wedding in Italy is pure Mediterranean magic—where the scent of salt air mixes with lemon groves, where terraced ceremonies overlook turquoise waters, and where sunset receptions unfold to the sound of gentle waves. Italy's coastlines offer some of the world's most dramatic wedding settings: the UNESCO cliffs of the Amalfi Coast, the refined Tyrrhenian shores of Tuscany, and the volcanic island paradises of Ischia and Capri.",
+    "philosophy": "Italian seaside weddings embrace la dolce vita coastal style—effortless elegance, fresh flavors, and natural beauty. Think barefoot luxury: linen suits, bougainvillea cascades, seafood feasts, and golden hour photographs with the Mediterranean as your backdrop. It's sophisticated yet relaxed, glamorous yet authentic.",
+    "characteristics": "Seaside venues in Italy typically feature: outdoor terraces or gardens overlooking the sea, direct beach access (private or public), fresh seafood-focused menus, Mediterranean gardens with olive and lemon trees, infinity pools, boat arrival options, and spectacular sunset views. Many offer both ceremony and reception spaces at the water's edge.",
+    "atmosphere": "Italian coastal weddings feel romantic and cinematic—imagine Positano's pastel cliffside villages, the refined elegance of Porto Ercole's bays, or the wild beauty of Ischia's volcanic shores. Every venue offers that quintessential Italian coastal moment: aperitivo with prosecco as the sun sets over the Mediterranean."
+  },
+
+  "characteristics": {
+    "summary": "What defines a seaside wedding venue in Italy? Stunning water views, Mediterranean architecture, fresh coastal cuisine, and that unmistakable sense of Italian coastal elegance.",
+    "features": [
+      {
+        "title": "Panoramic Sea Views",
+        "description": "Ceremonies and receptions with unobstructed views of the Mediterranean, Tyrrhenian, or Adriatic seas. Many venues are perched on cliffs or positioned directly on the shoreline."
+      },
+      {
+        "title": "Beach Access",
+        "description": "Private beaches, beach clubs, or direct access to sandy coves and rocky shores. Some venues offer boat arrivals and sunset cruises for guests."
+      },
+      {
+        "title": "Fresh Coastal Cuisine",
+        "description": "Menus featuring the day's catch: local seafood, shellfish, octopus, sea bass, and Mediterranean vegetables. Often paired with crisp white wines and limoncello."
+      },
+      {
+        "title": "Mediterranean Gardens",
+        "description": "Terraced gardens with lemon trees, olive groves, bougainvillea, oleander, and jasmine creating fragrant, colorful settings for ceremonies."
+      },
+      {
+        "title": "Outdoor Living Spaces",
+        "description": "Multiple terraces, patios, poolside areas, and covered pergolas designed for alfresco dining and entertaining under the stars."
+      },
+      {
+        "title": "Sunset Celebrations",
+        "description": "Strategic positioning to capture the golden hour and sunset over the water—the most magical moment of any coastal Italian wedding."
+      }
+    ]
+  },
+
+  "featuredVenues": [
+    {
+      "name": "Hotel Il Pellicano",
+      "slug": "hotel-il-pellicano",
+      "setting": "Clifftop Coastal Resort",
+      "location": "Porto Ercole, Tuscany",
+      "maxGuests": 120,
+      "usp": "Legendary 1960s retreat with 1* Michelin restaurant, private beach with elevator, and heated seawater infinity pool",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl",
+      "featured": true,
+      "seasideFeatures": ["Private beach with elevator", "Heated seawater pool", "Clifftop terrace dining", "1* Michelin seafood", "Tyrrhenian Sea views"]
+    },
+    {
+      "name": "La Posta Vecchia",
+      "slug": "la-posta-vecchia",
+      "setting": "Historic Seaside Villa",
+      "location": "Ladispoli, Rome",
+      "maxGuests": 160,
+      "usp": "Jean Paul Getty's former mansion on the Tyrrhenian coast with private beach, Roman ruins, and Mediterranean gardens",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl",
+      "featured": true,
+      "seasideFeatures": ["Private beach", "Seaside pool", "Coastal gardens", "Ocean-view terraces", "Fresh seafood dining"]
+    },
+    {
+      "name": "Mezzatorre Hotel & Thermal Spa",
+      "slug": "mezzatorre-hotel-thermal-spa",
+      "setting": "Island Castle & Spa",
+      "location": "Ischia Island, Amalfi Coast",
+      "maxGuests": 200,
+      "usp": "16th-century watchtower on volcanic island with thermal beach, Mediterranean gardens, and Bay of Naples views",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl",
+      "featured": true,
+      "seasideFeatures": ["Thermal beach", "Island setting", "Bay of Naples views", "Mediterranean gardens", "Boat access"]
+    },
+    {
+      "name": "Monastero Santa Rosa",
+      "slug": "monastero-santa-rosa",
+      "setting": "Clifftop Monastery",
+      "location": "Conca dei Marini, Amalfi Coast",
+      "maxGuests": 80,
+      "usp": "17th-century monastery perched 300 feet above the sea with infinity pool and Michelin-starred coastal dining",
+      "image": "https://images.unsplash.com/photo-1582719508461-905c673771fd?w=800&q=80",
+      "featured": false,
+      "seasideFeatures": ["Clifftop infinity pool", "Michelin dining", "Sea-level spa", "Amalfi Coast views", "Private boat access"]
+    }
+  ],
+
+  "seasonalConsiderations": {
+    "summary": "Seaside weddings in Italy shine brightest from May through October, with each season offering distinct coastal advantages.",
+    "seasons": [
+      {
+        "months": "May – June",
+        "description": "Perfect coastal season. Warm but not hot, calm seas, blooming bougainvillea, and long daylight hours. Sea temperature reaches 20-22°C by June."
+      },
+      {
+        "months": "July – August",
+        "description": "Peak summer. Hot, dry, and crowded, but ideal for beach clubs, pool parties, and late-night seaside receptions. Sea temperature 24-26°C. Book 18-24 months ahead."
+      },
+      {
+        "months": "September – October",
+        "description": "The BEST months for seaside weddings. Warm sea (23-25°C), fewer crowds, golden light, and perfect weather. September is especially magical on the Amalfi Coast."
+      },
+      {
+        "months": "November – April",
+        "description": "Off-season. Cooler and wetter, but dramatic winter seas and stormy skies create cinematic backdrops. Some beach clubs close, but villas remain open."
+      }
+    ]
+  },
+
+  "seasideExperiences": {
+    "intro": "Seaside weddings in Italy are about more than the ceremony—they're immersive coastal experiences featuring private yacht charters, beach clubs, and Mediterranean culinary adventures.",
+    "activities": [
+      "Private yacht charters along the Amalfi Coast or Tuscan Archipelago",
+      "Sunset aperitivo cruises with prosecco and seafood antipasti",
+      "Beach club welcome parties with DJ and Mediterranean buffets",
+      "Boat trips to Capri, Positano, or the Blue Grotto",
+      "Scuba diving and snorkeling in hidden coves",
+      "Coastal hiking along cliff paths with panoramic views",
+      "Fishing excursions followed by chef-prepared catch dinners",
+      "Limoncello tastings at seaside lemon groves",
+      "Thermal spa treatments with volcanic spring waters (Ischia)",
+      "Sailing lessons and Riva speedboat tours",
+      "Beach bonfires with guitar music and Italian folk songs",
+      "Farewell brunches at beach clubs with live music"
+    ],
+    "vendors": "Italy's coastal wedding vendors specialize in Mediterranean elegance: flowing fabrics, nautical palettes (white, navy, gold), citrus-forward florals (lemons, oranges, bougainvillea), and seafood-focused catering. Top planners include The Amalfi Experience, Weddings in Campania, and Sugokuii Events.",
+    "accommodations": "Guests can stay at five-star coastal hotels like Le Sirenuse Positano, Belmond Hotel Caruso (Ravello), or boutique beach resorts. Many seaside venues offer room blocks or exclusive use with all suites."
+  },
+
+  "planningConsiderations": {
+    "timeline": "Coastal venues in peak locations (Amalfi Coast, Capri) book 18–24 months in advance for May–September. Tuscan coast and island venues offer more flexibility with 12–18 months.",
+    "weatherContingency": "Always have an indoor backup plan or covered terrace for unexpected weather. Most seaside venues have glass-walled pavilions or tented areas with ocean views.",
+    "logistics": "Coastal venues often require boat transfers or winding coastal roads. Arrange shuttle services, valet parking, or private boat charters. Helicopter transfers are available for VIP guests.",
+    "soundLimits": "Some coastal towns (especially Amalfi Coast) have noise ordinances—music typically ends by midnight or 1am. Check with venues about amplification restrictions."
+  },
+
+  "comparisonInsights": {
+    "vsInlandVenues": "Seaside venues offer unmatched water views and fresh seafood, but can be windier and subject to weather. Inland venues (Tuscany, Umbria) offer more predictable weather and wine-focused menus. Choose seaside for dramatic beauty and Mediterranean cuisine.",
+    "vsInternationalCoastal": "Italy's coastal weddings offer better value and authenticity than comparable French Riviera or Greek island venues. Superior food, richer culture, and more diverse landscapes make Italy the premier coastal wedding destination.",
+    "whySeaside": "Seaside weddings in Italy are for couples who dream of turquoise waters, sunset ceremonies, fresh seafood feasts, and that ineffable Mediterranean elegance. It's romance distilled to its essence—sea, sun, and la dolce vita."
+  },
+
+  "seoKeywords": [
+    "seaside wedding venues Italy",
+    "coastal weddings Italy",
+    "beach wedding venues Italy",
+    "Amalfi Coast weddings",
+    "Tuscan coast weddings",
+    "Mediterranean wedding venues",
+    "waterfront weddings Italy",
+    "ocean view wedding venues Italy",
+    "island weddings Italy",
+    "seaside villas Italy weddings"
+  ],
+
+  "cta": {
+    "primary": "Explore Seaside Wedding Venues",
+    "secondary": "Request a Seaside Wedding Quote",
+    "enquiryLink": "#contact"
+  }
+}
+
