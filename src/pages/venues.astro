@@ -1,0 +1,627 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Aggregate all venues from all sources
+const allVenues = [
+  // From Tuscany
+  {
+    name: "Hotel Il Pellicano",
+    slug: "hotel-il-pellicano",
+    setting: "Seaside Resort",
+    location: "Porto Ercole, Tuscany",
+    region: "Tuscany",
+    maxGuests: 120,
+    usp: "Legendary 1960s clifftop retreat with 1* Michelin dining and private beach access",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl",
+    hasDetailPage: true,
+    tags: ["luxury", "seaside", "coastal", "michelin", "beach"],
+    exclusiveUse: true,
+    priceIndicator: "€€€€"
+  },
+  {
+    name: "Castello di Vincigliata",
+    slug: "castello-di-vincigliata",
+    setting: "Medieval Castle",
+    location: "Fiesole, Florence",
+    region: "Tuscany",
+    maxGuests: 200,
+    usp: "Authentic 11th-century fortress with panoramic views over Florence",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/492085f9-2d4e-4c60-737a-85551e589100/cardlg",
+    hasDetailPage: false,
+    tags: ["castle", "historic", "florence", "medieval"],
+    exclusiveUse: true,
+    priceIndicator: "€€€"
+  },
+  {
+    name: "Borgo Santo Pietro",
+    slug: "borgo-santo-pietro",
+    setting: "Luxury Villa & Estate",
+    location: "Chiusdino, Siena",
+    region: "Tuscany",
+    maxGuests: 150,
+    usp: "Five-star Relais & Châteaux property with Michelin-starred dining and organic farm",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/77acf364-4124-4cd5-38ce-a8dad33b2100/cardlg",
+    hasDetailPage: false,
+    tags: ["luxury", "villa", "michelin", "countryside"],
+    exclusiveUse: true,
+    priceIndicator: "€€€€"
+  },
+  {
+    name: "Villa La Foce",
+    slug: "villa-la-foce",
+    setting: "Historic Villa",
+    location: "Val d'Orcia",
+    region: "Tuscany",
+    maxGuests: 100,
+    usp: "Iconic Renaissance villa surrounded by UNESCO World Heritage landscapes",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/f89bc39a-a918-43f8-f9d9-1a36bd07ca00/cardlg",
+    hasDetailPage: false,
+    tags: ["villa", "historic", "unesco", "countryside"],
+    exclusiveUse: true,
+    priceIndicator: "€€€"
+  },
+  // From Amalfi Coast
+  {
+    name: "Le Sirenuse",
+    slug: "le-sirenuse",
+    setting: "Luxury Clifftop Hotel",
+    location: "Positano",
+    region: "Amalfi Coast",
+    maxGuests: 120,
+    usp: "Iconic 18th-century palazzo in the heart of Positano with panoramic terraces, Michelin-starred dining, and legendary Italian glamour",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/14f7cff1-9191-4ea1-5829-bf0014b5c500/cardlg",
+    hasDetailPage: false,
+    tags: ["luxury", "coastal", "positano", "michelin"],
+    exclusiveUse: false,
+    priceIndicator: "€€€€"
+  },
+  {
+    name: "Mezzatorre Hotel & Thermal Spa",
+    slug: "mezzatorre-hotel-thermal-spa",
+    setting: "Island Castle & Spa",
+    location: "Ischia Island",
+    region: "Amalfi Coast",
+    maxGuests: 200,
+    usp: "16th-century Aragonese watchtower on volcanic island with thermal spa and private beach",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl",
+    hasDetailPage: true,
+    tags: ["luxury", "island", "spa", "beach", "thermal"],
+    exclusiveUse: true,
+    priceIndicator: "€€€€"
+  },
+  {
+    name: "Belmond Hotel Caruso",
+    slug: "belmond-hotel-caruso",
+    setting: "Clifftop Palace",
+    location: "Ravello",
+    region: "Amalfi Coast",
+    maxGuests: 150,
+    usp: "11th-century palazzo with infinity pool overlooking the Bay of Salerno",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/8fcf520b-ad19-4ca1-5a67-e9a43e1c5b00/cardlg",
+    hasDetailPage: false,
+    tags: ["luxury", "clifftop", "ravello", "pool"],
+    exclusiveUse: false,
+    priceIndicator: "€€€€"
+  },
+  {
+    name: "Monastero Santa Rosa",
+    slug: "monastero-santa-rosa",
+    setting: "Cliffside Monastery",
+    location: "Conca dei Marini",
+    region: "Amalfi Coast",
+    maxGuests: 80,
+    usp: "17th-century monastery perched 300 feet above the sea with Michelin-starred dining",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/ddc85b7f-d917-4bfb-264d-45467393be00/cardlg",
+    hasDetailPage: false,
+    tags: ["luxury", "clifftop", "monastery", "michelin", "intimate"],
+    exclusiveUse: true,
+    priceIndicator: "€€€€"
+  },
+  {
+    name: "Villa Cimbrone",
+    slug: "villa-cimbrone",
+    setting: "Historic Villa & Gardens",
+    location: "Ravello",
+    region: "Amalfi Coast",
+    maxGuests: 120,
+    usp: "Iconic Terrace of Infinity with panoramic views and centuries-old gardens",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/89bf976c-2846-4ca0-4ecb-62c77ec38400/cardlg",
+    hasDetailPage: false,
+    tags: ["villa", "historic", "gardens", "ravello"],
+    exclusiveUse: false,
+    priceIndicator: "€€€"
+  },
+  // From Lake Como
+  {
+    name: "Villa del Balbianello",
+    slug: "villa-del-balbianello",
+    setting: "Historic Lakeside Villa",
+    location: "Lenno, Lake Como",
+    region: "Lake Como",
+    maxGuests: 120,
+    usp: "18th-century villa on a wooded promontory with terraced gardens and panoramic lake views (Star Wars & Bond filming location)",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    hasDetailPage: false,
+    tags: ["villa", "historic", "lakeside", "gardens", "famous"],
+    exclusiveUse: true,
+    priceIndicator: "€€€"
+  },
+  {
+    name: "Villa d'Este",
+    slug: "villa-deste",
+    setting: "Luxury Palace Hotel",
+    location: "Cernobbio, Lake Como",
+    region: "Lake Como",
+    maxGuests: 180,
+    usp: "16th-century Renaissance palace with floating garden, Michelin dining, and legendary luxury service",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4500557d-7c6d-4894-c0b0-bb41e39cf900/cardlg",
+    hasDetailPage: false,
+    tags: ["luxury", "palace", "lakeside", "michelin", "gardens"],
+    exclusiveUse: false,
+    priceIndicator: "€€€€"
+  },
+  {
+    name: "Villa Pizzo",
+    slug: "villa-pizzo",
+    setting: "Aristocratic Villa",
+    location: "Cernobbio, Lake Como",
+    region: "Lake Como",
+    maxGuests: 200,
+    usp: "Private 16th-century villa with neoclassical gardens, frescoed ballrooms, and exclusive lakefront access",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/858c2b77-90b0-4016-ed38-4845be059600/cardlg",
+    hasDetailPage: false,
+    tags: ["villa", "aristocratic", "lakeside", "private"],
+    exclusiveUse: true,
+    priceIndicator: "€€€€"
+  },
+  {
+    name: "Grand Hotel Tremezzo",
+    slug: "grand-hotel-tremezzo",
+    setting: "Belle Époque Palace",
+    location: "Tremezzo, Lake Como",
+    region: "Lake Como",
+    maxGuests: 150,
+    usp: "Art Nouveau grandeur with floating pool, terraced gardens, and views of Bellagio across the water",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/3b9fb372-2b73-470c-a150-b9eacb50d400/cardlg",
+    hasDetailPage: false,
+    tags: ["luxury", "palace", "lakeside", "pool", "belle-epoque"],
+    exclusiveUse: false,
+    priceIndicator: "€€€€"
+  },
+  // From Rome
+  {
+    name: "La Posta Vecchia",
+    slug: "la-posta-vecchia",
+    setting: "Historic Seaside Villa",
+    location: "Ladispoli, Rome",
+    region: "Rome",
+    maxGuests: 160,
+    usp: "Jean Paul Getty's former mansion with Roman ruins, private beach, and museum-quality art collection",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl",
+    hasDetailPage: true,
+    tags: ["luxury", "historic", "seaside", "beach", "museum", "getty"],
+    exclusiveUse: true,
+    priceIndicator: "€€€€"
+  },
+  {
+    name: "Castello di Tor Crescenza",
+    slug: "castello-di-tor-crescenza",
+    setting: "Medieval Castle",
+    location: "Rome (city limits)",
+    region: "Rome",
+    maxGuests: 300,
+    usp: "11th-century castle with frescoed halls, terraced gardens, and views of the Roman countryside",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7a242456-3484-46ae-a7e6-b272c9821300/cardlg",
+    hasDetailPage: false,
+    tags: ["castle", "medieval", "countryside", "large"],
+    exclusiveUse: true,
+    priceIndicator: "€€€"
+  },
+  {
+    name: "Villa Miani",
+    slug: "villa-miani",
+    setting: "Hilltop Villa",
+    location: "Rome (Monte Mario)",
+    region: "Rome",
+    maxGuests: 500,
+    usp: "Panoramic rooftop terrace with 360° views of Rome, including St. Peter's and the Colosseum",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/956ebf67-6945-4420-2dab-82afa86b2d00/cardlg",
+    hasDetailPage: false,
+    tags: ["villa", "panoramic", "rome", "large", "views"],
+    exclusiveUse: false,
+    priceIndicator: "€€€"
+  },
+  {
+    name: "Villa Aurelia",
+    slug: "villa-aurelia",
+    setting: "Historic Hilltop Villa",
+    location: "Janiculum Hill, Rome",
+    region: "Rome",
+    maxGuests: 200,
+    usp: "17th-century villa with sweeping views over Rome's rooftops, frescoed interiors, and terraced gardens",
+    image: "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/049db06d-9a71-44b6-b140-d18110fa3000/cardlg",
+    hasDetailPage: false,
+    tags: ["villa", "historic", "rome", "views", "gardens"],
+    exclusiveUse: true,
+    priceIndicator: "€€€"
+  }
+];
+---
+
+<BaseLayout 
+  title="Italian Wedding Venues Directory | Luxury Venues Across Italy | ItalianVenues"
+  description="Browse our curated collection of luxury wedding venues across Italy. Filter by location, capacity, and style to find your perfect venue in Tuscany, Amalfi Coast, Lake Como, and Rome."
+>
+  <!-- HERO SECTION -->
+  <section class="relative bg-black py-20 md:py-28">
+    <div class="absolute inset-0 bg-gradient-to-b from-zinc-900 to-black opacity-90"></div>
+    
+    <div class="relative z-10 container mx-auto px-6 max-w-6xl text-center">
+      <p class="text-[#a78656] text-sm md:text-base font-medium tracking-wider uppercase mb-4">Venue Directory</p>
+      <h1 class="heading-h1 text-white mb-6">
+        Discover Italy's Finest Wedding Venues
+      </h1>
+      <p class="text-white/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
+        From medieval castles to seaside villas, explore our curated collection of luxury venues across Tuscany, Amalfi Coast, Lake Como, and Rome.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="bg-white py-16 md:py-24">
+    <div class="container mx-auto px-6 max-w-7xl">
+      <div class="flex flex-col lg:flex-row gap-12">
+        
+        <!-- FILTERS SIDEBAR -->
+        <aside class="lg:w-80 flex-shrink-0">
+          <div class="lg:sticky lg:top-24 space-y-8">
+            <div>
+              <h3 class="text-lg font-semibold mb-4 text-zinc-900">Filter Venues</h3>
+              <p class="text-sm text-zinc-600 mb-6">Showing <span id="venue-count">{allVenues.length}</span> venues</p>
+            </div>
+
+            <!-- Location Filter -->
+            <div class="filter-group">
+              <h4 class="text-sm font-semibold mb-3 text-zinc-900 uppercase tracking-wide">Location</h4>
+              <div class="space-y-2">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="region" value="Tuscany" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">Tuscany</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="region" value="Amalfi Coast" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">Amalfi Coast</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="region" value="Lake Como" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">Lake Como</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="region" value="Rome" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">Rome & Lazio</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="border-t border-zinc-200"></div>
+
+            <!-- Capacity Filter -->
+            <div class="filter-group">
+              <h4 class="text-sm font-semibold mb-3 text-zinc-900 uppercase tracking-wide">Guest Capacity</h4>
+              <div class="space-y-2">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="capacity" value="50-100" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">50-100 guests</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="capacity" value="100-150" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">100-150 guests</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="capacity" value="150-200" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">150-200 guests</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="capacity" value="200+" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">200+ guests</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="border-t border-zinc-200"></div>
+
+            <!-- Style Filter -->
+            <div class="filter-group">
+              <h4 class="text-sm font-semibold mb-3 text-zinc-900 uppercase tracking-wide">Venue Style</h4>
+              <div class="space-y-2">
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="style" value="luxury" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">Luxury</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="style" value="seaside" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">Seaside</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="style" value="castle" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">Castle</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="style" value="villa" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">Villa</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer group">
+                  <input type="checkbox" class="filter-checkbox" data-filter-type="style" value="historic" 
+                    class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                  <span class="text-zinc-700 group-hover:text-zinc-900">Historic</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="border-t border-zinc-200"></div>
+
+            <!-- Exclusive Use Filter -->
+            <div class="filter-group">
+              <h4 class="text-sm font-semibold mb-3 text-zinc-900 uppercase tracking-wide">Availability</h4>
+              <label class="flex items-center gap-3 cursor-pointer group">
+                <input type="checkbox" id="filter-exclusive" class="filter-checkbox" data-filter-type="exclusive" value="true" 
+                  class="w-4 h-4 rounded border-zinc-300 text-[#a78656] focus:ring-[#a78656]" />
+                <span class="text-zinc-700 group-hover:text-zinc-900">Exclusive Use Available</span>
+              </label>
+            </div>
+
+            <button 
+              id="clear-filters" 
+              class="w-full px-4 py-3 border-2 border-zinc-300 text-zinc-700 font-medium hover:border-zinc-400 hover:bg-zinc-50 transition-all duration-200 rounded-lg"
+            >
+              Clear All Filters
+            </button>
+          </div>
+        </aside>
+
+        <!-- VENUE GRID -->
+        <div class="flex-1">
+          <div id="venue-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {allVenues.map((venue) => (
+              <a 
+                href={venue.hasDetailPage ? `/venues/${venue.slug}` : `#contact`}
+                class="venue-card group block bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:border-[#a78656] transition-all hover:shadow-2xl"
+                data-region={venue.region}
+                data-capacity={venue.maxGuests}
+                data-tags={venue.tags.join(',')}
+                data-exclusive={venue.exclusiveUse}
+              >
+                <div class="relative h-64 overflow-hidden">
+                  <img 
+                    src={venue.image} 
+                    alt={`${venue.name} - ${venue.setting} wedding venue in ${venue.location}`}
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                  {venue.hasDetailPage && (
+                    <div class="absolute top-4 right-4 px-3 py-1.5 bg-[#a78656] text-white text-xs font-semibold rounded-full shadow-lg">
+                      View Details
+                    </div>
+                  )}
+                  <div class="absolute top-4 left-4 px-3 py-1.5 bg-white/90 backdrop-blur-sm text-zinc-900 text-xs font-medium rounded-full">
+                    {venue.region}
+                  </div>
+                </div>
+                
+                <div class="p-6">
+                  <h3 class="text-xl font-semibold mb-2 text-zinc-900 group-hover:text-[#a78656] transition-colors">
+                    {venue.name}
+                  </h3>
+                  <p class="text-sm text-zinc-600 mb-3 flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                    {venue.location}
+                  </p>
+                  <p class="text-zinc-700 text-sm mb-4 leading-relaxed line-clamp-2">
+                    {venue.usp}
+                  </p>
+                  <div class="flex items-center justify-between pt-4 border-t border-zinc-200">
+                    <span class="text-sm text-zinc-600">Up to {venue.maxGuests} guests</span>
+                    <span class="text-sm font-semibold text-[#a78656]">{venue.priceIndicator}</span>
+                  </div>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          <!-- No Results Message -->
+          <div id="no-results" class="hidden text-center py-16">
+            <svg class="w-16 h-16 mx-auto text-zinc-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <h3 class="text-xl font-semibold text-zinc-900 mb-2">No venues match your filters</h3>
+            <p class="text-zinc-600 mb-6">Try adjusting your search criteria</p>
+            <button 
+              onclick="document.getElementById('clear-filters').click()"
+              class="inline-flex items-center px-6 py-3 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-all"
+            >
+              Clear All Filters
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  // Get all filter checkboxes and venue cards
+  const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
+  const venueCards = document.querySelectorAll('.venue-card');
+  const clearFiltersBtn = document.getElementById('clear-filters');
+  const venueCount = document.getElementById('venue-count');
+  const noResults = document.getElementById('no-results');
+
+  // Parse URL parameters on load
+  function parseURLParams() {
+    const params = new URLSearchParams(window.location.search);
+    
+    // Parse regions
+    const regions = params.get('region')?.split(',') || [];
+    regions.forEach(region => {
+      const checkbox = document.querySelector(`input[data-filter-type="region"][value="${region}"]`);
+      if (checkbox) checkbox.checked = true;
+    });
+
+    // Parse capacity
+    const capacity = params.get('capacity');
+    if (capacity) {
+      const checkbox = document.querySelector(`input[data-filter-type="capacity"][value="${capacity}"]`);
+      if (checkbox) checkbox.checked = true;
+    }
+
+    // Parse styles
+    const styles = params.get('style')?.split(',') || [];
+    styles.forEach(style => {
+      const checkbox = document.querySelector(`input[data-filter-type="style"][value="${style}"]`);
+      if (checkbox) checkbox.checked = true;
+    });
+
+    // Parse exclusive
+    if (params.get('exclusive') === 'true') {
+      document.getElementById('filter-exclusive').checked = true;
+    }
+
+    // Apply filters after parsing
+    filterVenues();
+  }
+
+  // Filter venues based on selected filters
+  function filterVenues() {
+    const activeFilters = {
+      regions: [],
+      capacities: [],
+      styles: [],
+      exclusive: false
+    };
+
+    // Collect active filters
+    filterCheckboxes.forEach(checkbox => {
+      if (checkbox.checked) {
+        const filterType = checkbox.getAttribute('data-filter-type');
+        const value = checkbox.value;
+
+        if (filterType === 'region') activeFilters.regions.push(value);
+        else if (filterType === 'capacity') activeFilters.capacities.push(value);
+        else if (filterType === 'style') activeFilters.styles.push(value);
+        else if (filterType === 'exclusive') activeFilters.exclusive = true;
+      }
+    });
+
+    // Update URL
+    updateURL(activeFilters);
+
+    let visibleCount = 0;
+
+    // Filter venue cards
+    venueCards.forEach(card => {
+      const cardRegion = card.getAttribute('data-region');
+      const cardCapacity = parseInt(card.getAttribute('data-capacity'));
+      const cardTags = card.getAttribute('data-tags').split(',');
+      const cardExclusive = card.getAttribute('data-exclusive') === 'true';
+
+      let matches = true;
+
+      // Check region filter
+      if (activeFilters.regions.length > 0) {
+        matches = matches && activeFilters.regions.includes(cardRegion);
+      }
+
+      // Check capacity filter
+      if (activeFilters.capacities.length > 0) {
+        const capacityMatch = activeFilters.capacities.some(range => {
+          if (range === '50-100') return cardCapacity >= 50 && cardCapacity <= 100;
+          if (range === '100-150') return cardCapacity > 100 && cardCapacity <= 150;
+          if (range === '150-200') return cardCapacity > 150 && cardCapacity <= 200;
+          if (range === '200+') return cardCapacity > 200;
+          return false;
+        });
+        matches = matches && capacityMatch;
+      }
+
+      // Check style filter
+      if (activeFilters.styles.length > 0) {
+        const styleMatch = activeFilters.styles.some(style => cardTags.includes(style));
+        matches = matches && styleMatch;
+      }
+
+      // Check exclusive filter
+      if (activeFilters.exclusive) {
+        matches = matches && cardExclusive;
+      }
+
+      // Show/hide card
+      if (matches) {
+        card.style.display = 'block';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Update count
+    venueCount.textContent = visibleCount;
+
+    // Show/hide no results message
+    if (visibleCount === 0) {
+      noResults.classList.remove('hidden');
+    } else {
+      noResults.classList.add('hidden');
+    }
+  }
+
+  // Update URL with active filters
+  function updateURL(filters) {
+    const params = new URLSearchParams();
+
+    if (filters.regions.length > 0) params.set('region', filters.regions.join(','));
+    if (filters.capacities.length > 0) params.set('capacity', filters.capacities.join(','));
+    if (filters.styles.length > 0) params.set('style', filters.styles.join(','));
+    if (filters.exclusive) params.set('exclusive', 'true');
+
+    const newURL = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
+    window.history.replaceState({}, '', newURL);
+  }
+
+  // Clear all filters
+  clearFiltersBtn.addEventListener('click', () => {
+    filterCheckboxes.forEach(checkbox => checkbox.checked = false);
+    filterVenues();
+  });
+
+  // Add event listeners to all checkboxes
+  filterCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', filterVenues);
+  });
+
+  // Parse URL params on page load
+  parseURLParams();
+</script>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
+
