@@ -5,6 +5,9 @@ const locationData = await import('../../data/locations/tuscany.json');
 const {
   name, heroImage, heroTitle, heroDescription, metaDescription, about, climate, accessibility, serviceAreas, distancesFromMajorCities, featuredVenues, localExperience, comparisonInsights, seoKeywords, cta
 } = locationData.default;
+
+// List of venues with actual detail pages
+const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa', 'hotel-il-pellicano'];
 ---
 
 <BaseLayout 
@@ -154,7 +157,7 @@ const {
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {featuredVenues.map((venue) => (
           <a 
-            href={venue.featured ? `/venues/${venue.slug}` : `#contact`}
+            href={availableVenueSlugs.includes(venue.slug) ? `/venues/${venue.slug}` : `#contact`}
             class="group block bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:border-[#a78656] transition-all hover:shadow-2xl"
           >
             <div class="relative h-80 overflow-hidden">
