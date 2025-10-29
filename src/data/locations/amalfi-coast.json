@@ -82,13 +82,13 @@
 
   "featuredVenues": [
     {
-      "name": "Mezzatorre Hotel & Thermal Spa",
-      "slug": "mezzatorre-hotel-thermal-spa",
-      "setting": "Coastal Castle & Spa",
-      "location": "Ischia Island (near Amalfi)",
-      "maxGuests": 200,
-      "usp": "16th-century Aragonese watchtower on a volcanic island with thermal spa and private beach",
-      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl",
+      "name": "Le Sirenuse",
+      "slug": "le-sirenuse",
+      "setting": "Luxury Clifftop Hotel",
+      "location": "Positano",
+      "maxGuests": 120,
+      "usp": "Iconic 18th-century palazzo in the heart of Positano with panoramic terraces, Michelin-starred dining, and legendary Italian glamour",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
       "featured": true
     },
     {
