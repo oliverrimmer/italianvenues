@@ -1,11 +1,44 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-// Featured venue cards - luxury venues with minimal text
+// Featured venue cards - rich venue information
 const featuredCards = [
-  { title: "La Posta Vecchia", imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/featured', link: '/venues/la-posta-vecchia' },
-  { title: 'Mezzatorre Hotel & Thermal Spa', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/featured', link: '/venues/mezzatorre-hotel-thermal-spa' },
-  { title: 'Hotel Il Pellicano', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/featured', link: '/venues/hotel-il-pellicano' },
+  { 
+    name: "La Posta Vecchia", 
+    setting: "Seaside Palace", 
+    location: "Ladispoli, Rome",
+    region: "Rome",
+    usp: "16th-century villa turned luxury hotel on a private beach with Roman ruins beneath the spa",
+    maxGuests: 120,
+    priceIndicator: "€€€€",
+    imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl', 
+    link: '/venues/la-posta-vecchia',
+    hasDetailPage: true
+  },
+  { 
+    name: 'Mezzatorre Hotel & Thermal Spa', 
+    setting: "Island Castle & Spa", 
+    location: "Ischia Island",
+    region: "Ischia",
+    usp: "16th-century Aragonese watchtower on volcanic island with thermal spa and private beach",
+    maxGuests: 200,
+    priceIndicator: "€€€€",
+    imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl', 
+    link: '/venues/mezzatorre-hotel-thermal-spa',
+    hasDetailPage: true
+  },
+  { 
+    name: 'Hotel Il Pellicano', 
+    setting: "Seaside Resort", 
+    location: "Porto Ercole, Tuscany",
+    region: "Tuscany",
+    usp: "Legendary 1960s clifftop retreat with 1* Michelin dining and private beach access",
+    maxGuests: 120,
+    priceIndicator: "€€€€",
+    imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl', 
+    link: '/venues/hotel-il-pellicano',
+    hasDetailPage: true
+  },
 ];
 
 // Location cards - 4 locations
@@ -44,27 +77,48 @@ const allLocationCards = [
     </div>
   </section>
 
-  <!-- FEATURED VENUES - Porsche-style minimal cards -->
+  <!-- FEATURED VENUES - Rich venue cards -->
   <section id="featured-venues" class="bg-white py-20 md:py-28">
     <div class="container mx-auto px-6 max-w-[1400px]">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-        {featuredCards.map((card) => (
-          <a href={card.link} class="group block relative overflow-hidden rounded-2xl transition-all duration-500 hover:shadow-xl">
-            <!-- Porsche aspect ratio -->
-            <div class="aspect-[16/10] relative bg-black">
-              <img src={card.imgSrc} alt={card.title} class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-              
-              <!-- Gradient overlay for text -->
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
-              
-              <!-- Title and arrow at bottom-left - Porsche style -->
-              <div class="absolute bottom-6 left-6 right-6 flex items-center justify-between">
-                <h3 class="text-white text-lg md:text-xl font-normal">
-                  {card.title}
-                </h3>
-                <svg class="w-6 h-6 text-white transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        {featuredCards.map((venue) => (
+          <a 
+            href={venue.link} 
+            class="group block bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:border-[#a78656] transition-all hover:shadow-2xl"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img 
+                src={venue.imgSrc} 
+                alt={`${venue.name} - ${venue.setting} wedding venue in ${venue.location}`}
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              {venue.hasDetailPage && (
+                <div class="absolute top-4 right-4 px-3 py-1.5 bg-[#a78656] text-white text-xs font-semibold rounded-full shadow-lg">
+                  View Details
+                </div>
+              )}
+              <div class="absolute top-4 left-4 px-3 py-1.5 bg-white/90 backdrop-blur-sm text-zinc-900 text-xs font-medium rounded-full">
+                {venue.region}
+              </div>
+            </div>
+            
+            <div class="p-6">
+              <h3 class="text-xl font-semibold mb-2 text-zinc-900 group-hover:text-[#a78656] transition-colors">
+                {venue.name}
+              </h3>
+              <p class="text-sm text-zinc-600 mb-3 flex items-center gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
+                {venue.location}
+              </p>
+              <p class="text-zinc-700 text-sm mb-4 leading-relaxed line-clamp-2">
+                {venue.usp}
+              </p>
+              <div class="flex items-center justify-between pt-4 border-t border-zinc-200">
+                <span class="text-sm text-zinc-600">Up to {venue.maxGuests} guests</span>
+                <span class="text-sm font-semibold text-[#a78656]">{venue.priceIndicator}</span>
               </div>
             </div>
           </a>
