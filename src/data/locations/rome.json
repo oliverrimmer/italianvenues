@@ -111,13 +111,13 @@
       "featured": false
     },
     {
-      "name": "Castello Odescalchi",
-      "slug": "castello-odescalchi",
-      "setting": "Lakeside Castle",
-      "location": "Lake Bracciano",
-      "maxGuests": 250,
-      "usp": "15th-century papal fortress on volcanic lake, famous for celebrity weddings (Tom Cruise, Katie Holmes)",
-      "image": "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
+      "name": "Villa Aurelia",
+      "slug": "villa-aurelia",
+      "setting": "Historic Hilltop Villa",
+      "location": "Janiculum Hill, Rome",
+      "maxGuests": 200,
+      "usp": "17th-century villa with sweeping views over Rome's rooftops, frescoed interiors, and terraced gardens",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/049db06d-9a71-44b6-b140-d18110fa3000/cardlg",
       "featured": false
     }
   ],
