@@ -64,6 +64,28 @@ const allLocationCards = [
       <h1 class="heading-h1 text-white text-center">
         Italy's most exclusive venues.
       </h1>
+      
+      <!-- Elegant search bar - hidden on mobile -->
+      <div class="hidden md:block w-full max-w-2xl">
+        <form id="hero-search-form" class="relative">
+          <input
+            type="text"
+            id="hero-search-input"
+            placeholder="Search by location, style, or guest count..."
+            class="w-full px-6 py-4 bg-white/95 backdrop-blur-sm text-zinc-900 placeholder-zinc-500 rounded-lg shadow-xl border-2 border-transparent focus:border-[#a78656] focus:outline-none focus:ring-2 focus:ring-[#a78656]/50 transition-all duration-200"
+          />
+          <button
+            type="submit"
+            class="absolute right-2 top-1/2 -translate-y-1/2 p-2 text-zinc-400 hover:text-[#a78656] transition-colors"
+            aria-label="Search"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </button>
+        </form>
+      </div>
+
       <a href="#featured-venues" class="inline-flex items-center px-6 py-3 md:px-8 md:py-4 border-2 border-white text-white text-sm md:text-base font-medium hover:border-zinc-400 hover:bg-white/5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white rounded">
         Discover
       </a>
@@ -348,13 +370,9 @@ const allLocationCards = [
     document.body.style.overflow = '';
   });
 
-  // Smart Search Parser
-  const searchForm = document.getElementById('venue-search-form');
-  const searchInput = document.getElementById('venue-search-input');
-
-  searchForm?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const query = searchInput.value.toLowerCase().trim();
+  // Smart Search Parser - Shared function
+  function handleSearch(query) {
+    query = query.toLowerCase().trim();
     
     if (!query) {
       window.location.href = '/venues';
