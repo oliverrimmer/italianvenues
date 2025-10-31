@@ -36,22 +36,24 @@ export const POST: APIRoute = async ({ request }) => {
       );
     }
 
-    // Prepare Airtable record
+    // Prepare Airtable record with correct field types matching Airtable structure
     const airtableData = {
       fields: {
         'Name': name,
         'Email': email,
+        'Message': message,
+        'Source Page': sourcePage,
+        'Status': 'New',
         ...(phone && { 'Phone': phone }),
         ...(weddingDate && { 'Wedding Date': weddingDate }),
-        ...(guests && { 'Number of Guests': parseInt(guests) || 0 }),
+        ...(guests && { 'Number of Guests': parseInt(guests) }),
         ...(location && { 'Preferred Location': location }),
         ...(budget && { 'Budget Range': budget }),
-        ...(message && { 'Message': message }),
-        ...(sourcePage && { 'Source Page': sourcePage }),
-        ...(venueName && { 'Venue Name': venueName }),
-        'Status': 'New'
+        ...(venueName && { 'Venue Name': venueName })
       }
     };
+    
+    console.log('Sending to Airtable:', JSON.stringify(airtableData, null, 2));
 
     // Send to Airtable
     const airtableResponse = await fetch(
