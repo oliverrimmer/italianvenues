@@ -408,6 +408,8 @@ const allVenues = [
                     src={venue.image} 
                     alt={`${venue.name} - ${venue.setting} wedding venue in ${venue.location}`}
                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
                   />
                   {venue.hasDetailPage && (
                     <div class="absolute top-4 right-4 px-3 py-1.5 bg-[#a78656] text-white text-xs font-semibold rounded-full shadow-lg">
