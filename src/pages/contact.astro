@@ -452,5 +452,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   input:focus, textarea:focus, select:focus {
     @apply ring-2 ring-[#a78656] border-transparent;
   }
+
+  /* Fix date picker visibility on dark background */
+  input[type="date"] {
+    color-scheme: dark;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+  }
 </style>
 

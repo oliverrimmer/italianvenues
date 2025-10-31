@@ -646,6 +646,16 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
     color: white;
     box-shadow: 0 2px 4px rgba(167, 134, 86, 0.2);
   }
+
+  /* Fix date picker visibility */
+  input[type="date"] {
+    color-scheme: dark;
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+  }
 </style>
 
 <script>
