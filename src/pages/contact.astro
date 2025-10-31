@@ -132,7 +132,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               <p class="text-zinc-600 leading-relaxed">Share a few details and we'll connect you with the perfect venues for your celebration.</p>
             </div>
 
-            <form id="contact-form" class="space-y-6">
+            <form id="contact-form" class="space-y-6" method="POST">
               <!-- Name & Email Row -->
               <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -204,11 +204,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                     class="w-full px-4 py-3 border-2 border-zinc-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent transition-all"
                   >
                     <option value="">Select a region</option>
-                    <option value="tuscany">Tuscany</option>
-                    <option value="amalfi-coast">Amalfi Coast</option>
-                    <option value="lake-como">Lake Como</option>
-                    <option value="rome">Rome & Lazio</option>
-                    <option value="not-sure">Not sure yet</option>
+                    <option value="Tuscany">Tuscany</option>
+                    <option value="Amalfi Coast">Amalfi Coast</option>
+                    <option value="Lake Como">Lake Como</option>
+                    <option value="Rome">Rome & Lazio</option>
+                    <option value="Not sure yet">Not sure yet</option>
                   </select>
                 </div>
                 <div>
@@ -219,14 +219,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                     class="w-full px-4 py-3 border-2 border-zinc-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent transition-all"
                   >
                     <option value="">Prefer not to say</option>
-                    <option value="50k-100k">€50,000 - €100,000</option>
-                    <option value="100k-150k">€100,000 - €150,000</option>
-                    <option value="150k-250k">€150,000 - €250,000</option>
-                    <option value="250k-500k">€250,000 - €500,000</option>
-                    <option value="500k+">€500,000+</option>
+                    <option value="€50,000 - €100,000">€50,000 - €100,000</option>
+                    <option value="€100,000 - €150,000">€100,000 - €150,000</option>
+                    <option value="€150,000 - €250,000">€150,000 - €250,000</option>
+                    <option value="€250,000 - €500,000">€250,000 - €500,000</option>
+                    <option value="€500,000+">€500,000+</option>
                   </select>
                 </div>
               </div>
+
+              <!-- Hidden source field -->
+              <input type="hidden" name="source" value="Contact">
 
               <!-- Message -->
               <div>
@@ -377,24 +380,50 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </BaseLayout>
 
 <script>
-  // Form submission handler (placeholder - connect to your backend)
+  // Form submission handler
   const contactForm = document.getElementById('contact-form');
+  const submitButton = contactForm?.querySelector('button[type="submit"]') as HTMLButtonElement;
   
-  contactForm?.addEventListener('submit', (e) => {
+  contactForm?.addEventListener('submit', async (e) => {
     e.preventDefault();
     
-    // Get form data
-    const formData = new FormData(contactForm as HTMLFormElement);
-    const data = Object.fromEntries(formData);
+    if (!submitButton) return;
     
-    console.log('Form submitted:', data);
+    // Disable button and show loading state
+    const originalText = submitButton.textContent;
+    submitButton.disabled = true;
+    submitButton.textContent = 'Sending...';
+    submitButton.style.opacity = '0.6';
     
-    // TODO: Connect to your backend/email service
-    // For now, show success message
-    alert('Thank you for your enquiry! We\'ll be in touch within 24 hours.');
-    
-    // Reset form
-    (contactForm as HTMLFormElement).reset();
+    try {
+      // Get form data
+      const formData = new FormData(contactForm as HTMLFormElement);
+      
+      // Submit to API
+      const response = await fetch('/api/submit-enquiry', {
+        method: 'POST',
+        body: formData
+      });
+      
+      const result = await response.json();
+      
+      if (response.ok) {
+        // Success
+        alert('✅ Thank you for your enquiry! We\'ll be in touch within 24 hours.');
+        (contactForm as HTMLFormElement).reset();
+      } else {
+        // Error from API
+        alert('❌ ' + (result.error || 'Something went wrong. Please try again or contact us directly.'));
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      alert('❌ Unable to submit form. Please check your connection and try again.');
+    } finally {
+      // Re-enable button
+      submitButton.disabled = false;
+      submitButton.textContent = originalText;
+      submitButton.style.opacity = '1';
+    }
   });
 </script>
 
