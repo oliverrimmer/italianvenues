@@ -460,7 +460,105 @@ const allLocationCards = [
 
     // Fallback: redirect to venues page with search query
     window.location.href = `/venues?q=${encodeURIComponent(query)}`;
-  });
+  }
+
+  // Hero search form handler
+  const heroSearchForm = document.getElementById('hero-search-form');
+  const heroSearchInput = document.getElementById('hero-search-input');
+
+  if (heroSearchForm && heroSearchInput) {
+    heroSearchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const query = heroSearchInput.value.toLowerCase().trim();
+      
+      if (!query) {
+        window.location.href = '/venues';
+        return;
+      }
+
+      // Location keywords mapping
+      const locationMap = {
+        'tuscany': '/locations/tuscany',
+        'tuscan': '/locations/tuscany',
+        'florence': '/locations/tuscany',
+        'siena': '/locations/tuscany',
+        'chianti': '/locations/tuscany',
+        'amalfi': '/locations/amalfi-coast',
+        'positano': '/locations/amalfi-coast',
+        'ravello': '/locations/amalfi-coast',
+        'sorrento': '/locations/amalfi-coast',
+        'como': '/locations/lake-como',
+        'bellagio': '/locations/lake-como',
+        'varenna': '/locations/lake-como',
+        'rome': '/locations/rome',
+        'lazio': '/locations/rome',
+        'roman': '/locations/rome'
+      };
+
+      // Style keywords mapping
+      const styleMap = {
+        'luxury': '/styles/luxury',
+        'luxurious': '/styles/luxury',
+        'exclusive': '/styles/luxury',
+        'michelin': '/styles/luxury',
+        'seaside': '/styles/seaside',
+        'coastal': '/styles/seaside',
+        'beach': '/styles/seaside',
+        'sea': '/styles/seaside',
+        'ocean': '/styles/seaside'
+      };
+
+      // Check for location match
+      for (const [keyword, url] of Object.entries(locationMap)) {
+        if (query.includes(keyword)) {
+          window.location.href = url;
+          return;
+        }
+      }
+
+      // Check for style match
+      for (const [keyword, url] of Object.entries(styleMap)) {
+        if (query.includes(keyword)) {
+          window.location.href = url;
+          return;
+        }
+      }
+
+      // Extract capacity number
+      const capacityMatch = query.match(/(\d+)/);
+      if (capacityMatch) {
+        const capacity = parseInt(capacityMatch[1]);
+        let capacityRange = '';
+        
+        if (capacity >= 50 && capacity <= 100) capacityRange = '50-100';
+        else if (capacity > 100 && capacity <= 150) capacityRange = '100-150';
+        else if (capacity > 150 && capacity <= 200) capacityRange = '150-200';
+        else if (capacity > 200) capacityRange = '200+';
+        
+        if (capacityRange) {
+          window.location.href = `/venues?capacity=${capacityRange}`;
+          return;
+        }
+      }
+
+      // Check for venue type keywords
+      if (query.includes('castle')) {
+        window.location.href = '/venues?style=castle';
+        return;
+      }
+      if (query.includes('villa')) {
+        window.location.href = '/venues?style=villa';
+        return;
+      }
+      if (query.includes('hotel')) {
+        window.location.href = '/venues?style=luxury';
+        return;
+      }
+
+      // Fallback: redirect to venues page with search query
+      window.location.href = `/venues?q=${encodeURIComponent(query)}`;
+    });
+  }
 
   // Porsche-style background transition - triggers at specific point
   const discoverySection = document.getElementById('discovery-section');
