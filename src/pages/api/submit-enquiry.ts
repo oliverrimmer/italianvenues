@@ -4,6 +4,13 @@ export const prerender = false;
 
 export const POST: APIRoute = async ({ request }) => {
   try {
+    console.log('API endpoint hit!');
+    console.log('Environment check:', {
+      hasApiKey: !!import.meta.env.AIRTABLE_API_KEY,
+      hasBaseId: !!import.meta.env.AIRTABLE_BASE_ID,
+      hasTableId: !!import.meta.env.AIRTABLE_TABLE_ID
+    });
+    
     const formData = await request.formData();
     
     // Extract form fields
@@ -18,8 +25,11 @@ export const POST: APIRoute = async ({ request }) => {
     const sourcePage = formData.get('source')?.toString() || 'Contact';
     const venueName = formData.get('venue')?.toString() || '';
 
+    console.log('Form data received:', { name, email, location, guests });
+
     // Validate required fields
     if (!name || !email || !message) {
+      console.log('Validation failed - missing required fields');
       return new Response(
         JSON.stringify({ error: 'Missing required fields' }),
         { status: 400, headers: { 'Content-Type': 'application/json' } }
