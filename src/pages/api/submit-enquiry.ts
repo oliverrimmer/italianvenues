@@ -77,33 +77,47 @@ export const POST: APIRoute = async ({ request }) => {
     const airtableResult = await airtableResponse.json();
     console.log('Successfully created Airtable record:', airtableResult.id);
 
-    // TODO: Send WhatsApp notification via Twilio
-    // Uncomment when Twilio credentials are added
-    /*
-    if (import.meta.env.TWILIO_ACCOUNT_SID && import.meta.env.TWILIO_AUTH_TOKEN) {
-      const twilioMessage = `🎉 New Enquiry!\n\nName: ${name}\nEmail: ${email}\nGuests: ${guests || 'N/A'}\nLocation: ${location || 'N/A'}\nBudget: ${budget || 'N/A'}\n\nMessage: ${message.substring(0, 100)}${message.length > 100 ? '...' : ''}`;
-      
-      const twilioAuth = Buffer.from(
-        `${import.meta.env.TWILIO_ACCOUNT_SID}:${import.meta.env.TWILIO_AUTH_TOKEN}`
-      ).toString('base64');
+    // Send WhatsApp notification via Twilio
+    try {
+      const twilioAccountSid = import.meta.env.TWILIO_ACCOUNT_SID;
+      const twilioAuthToken = import.meta.env.TWILIO_AUTH_TOKEN;
+      const twilioWhatsAppFrom = import.meta.env.TWILIO_WHATSAPP_FROM;
+      const twilioWhatsAppTo = import.meta.env.TWILIO_WHATSAPP_TO;
 
-      await fetch(
-        `https://api.twilio.com/2010-04-01/Accounts/${import.meta.env.TWILIO_ACCOUNT_SID}/Messages.json`,
-        {
-          method: 'POST',
-          headers: {
-            'Authorization': `Basic ${twilioAuth}`,
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: new URLSearchParams({
-            From: import.meta.env.TWILIO_WHATSAPP_FROM,
-            To: import.meta.env.TWILIO_WHATSAPP_TO,
-            Body: twilioMessage
-          })
-        }
-      );
+      if (twilioAccountSid && twilioAuthToken && twilioWhatsAppFrom && twilioWhatsAppTo) {
+        console.log('Sending WhatsApp notification...');
+        
+        const twilio = await import('twilio');
+        const client = twilio.default(twilioAccountSid, twilioAuthToken);
+
+        // Format the WhatsApp message with rich details
+        const whatsappMessage = `🎉 *New ItalianVenues Enquiry!*
+
+👤 *Name:* ${name}
+📧 *Email:* ${email}
+${phone ? `📞 *Phone:* ${phone}\n` : ''}${weddingDate ? `💒 *Wedding Date:* ${weddingDate}\n` : ''}${guests ? `👥 *Guests:* ${guests}\n` : ''}${location ? `📍 *Location:* ${location}\n` : ''}${budget ? `💰 *Budget:* ${budget}\n` : ''}${venueName ? `🏰 *Venue:* ${venueName}\n` : ''}
+📄 *Source:* ${sourcePage}
+
+💬 *Message:*
+${message.substring(0, 300)}${message.length > 300 ? '...' : ''}
+
+🔗 View in Airtable: https://airtable.com/${import.meta.env.AIRTABLE_BASE_ID}/${import.meta.env.AIRTABLE_TABLE_ID}`;
+
+        const messageResponse = await client.messages.create({
+          from: twilioWhatsAppFrom,
+          to: twilioWhatsAppTo,
+          body: whatsappMessage
+        });
+
+        console.log('WhatsApp notification sent successfully! Message SID:', messageResponse.sid);
+      } else {
+        console.warn('Twilio credentials not fully configured. Skipping WhatsApp notification.');
+      }
+    } catch (twilioError: any) {
+      // Don't fail the whole request if WhatsApp notification fails
+      console.error('Failed to send WhatsApp notification:', twilioError.message);
+      console.error('Twilio error details:', twilioError);
     }
-    */
 
     return new Response(
       JSON.stringify({ 
