@@ -84,8 +84,17 @@ export const POST: APIRoute = async ({ request }) => {
       const twilioWhatsAppFrom = import.meta.env.TWILIO_WHATSAPP_FROM;
       const twilioWhatsAppTo = import.meta.env.TWILIO_WHATSAPP_TO;
 
+      console.log('Twilio env check:', {
+        hasSid: !!twilioAccountSid,
+        hasToken: !!twilioAuthToken,
+        hasFrom: !!twilioWhatsAppFrom,
+        hasTo: !!twilioWhatsAppTo,
+        from: twilioWhatsAppFrom,
+        to: twilioWhatsAppTo
+      });
+
       if (twilioAccountSid && twilioAuthToken && twilioWhatsAppFrom && twilioWhatsAppTo) {
-        console.log('Sending WhatsApp notification...');
+        console.log('✅ All Twilio credentials present. Sending WhatsApp notification...');
         
         const twilio = await import('twilio');
         const client = twilio.default(twilioAccountSid, twilioAuthToken);
