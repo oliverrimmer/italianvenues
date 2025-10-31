@@ -552,13 +552,17 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
       <h2 class="heading-h2 font-semibold mb-6 text-center">{contact?.cta || `Enquire About ${name}`}</h2>
       <p class="text-center text-zinc-400 mb-12">Fill out the form below and we'll respond within 24 hours.</p>
       
-      <form class="space-y-6">
+      <form id="venue-enquiry-form" method="POST" class="space-y-6">
+        <!-- Hidden fields for tracking -->
+        <input type="hidden" name="venue" value={name} />
+        <input type="hidden" name="source" value={`Venue: ${name}`} />
+        
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label for="name" class="block text-sm font-medium text-zinc-300 mb-2">Full Name *</label>
+            <label for="venue-name" class="block text-sm font-medium text-zinc-300 mb-2">Full Name *</label>
             <input
               type="text"
-              id="name"
+              id="venue-name"
               name="name"
               required
               class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
@@ -566,10 +570,10 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
             />
           </div>
           <div>
-            <label for="email" class="block text-sm font-medium text-zinc-300 mb-2">Email *</label>
+            <label for="venue-email" class="block text-sm font-medium text-zinc-300 mb-2">Email *</label>
             <input
               type="email"
-              id="email"
+              id="venue-email"
               name="email"
               required
               class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
@@ -580,30 +584,30 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <label for="guests" class="block text-sm font-medium text-zinc-300 mb-2">Number of Guests</label>
+            <label for="venue-guests" class="block text-sm font-medium text-zinc-300 mb-2">Number of Guests</label>
             <input
               type="number"
-              id="guests"
+              id="venue-guests"
               name="guests"
               class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
               placeholder="150"
             />
           </div>
           <div>
-            <label for="date" class="block text-sm font-medium text-zinc-300 mb-2">Preferred Date</label>
+            <label for="venue-date" class="block text-sm font-medium text-zinc-300 mb-2">Preferred Date</label>
             <input
               type="date"
-              id="date"
-              name="date"
+              id="venue-date"
+              name="wedding-date"
               class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
             />
           </div>
         </div>
 
         <div>
-          <label for="message" class="block text-sm font-medium text-zinc-300 mb-2">Message *</label>
+          <label for="venue-message" class="block text-sm font-medium text-zinc-300 mb-2">Message *</label>
           <textarea
-            id="message"
+            id="venue-message"
             name="message"
             rows="6"
             required
@@ -757,6 +761,52 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
           });
         }
       });
+    });
+
+    // Handle venue enquiry form submission
+    const venueForm = document.getElementById('venue-enquiry-form');
+    const submitButton = venueForm?.querySelector('button[type="submit"]') as HTMLButtonElement;
+    
+    venueForm?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      if (!submitButton) return;
+      
+      // Disable button and show loading state
+      const originalText = submitButton.textContent;
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+      submitButton.style.opacity = '0.6';
+      
+      try {
+        // Get form data
+        const formData = new FormData(venueForm as HTMLFormElement);
+        
+        // Submit to API
+        const response = await fetch('/api/submit-enquiry', {
+          method: 'POST',
+          body: formData
+        });
+        
+        const result = await response.json();
+        
+        if (response.ok) {
+          // Success
+          alert('✅ Thank you for your enquiry! We\'ll be in touch within 24 hours.');
+          (venueForm as HTMLFormElement).reset();
+        } else {
+          // Error from API
+          alert('❌ ' + (result.error || 'Something went wrong. Please try again or contact us directly.'));
+        }
+      } catch (error) {
+        console.error('Submission error:', error);
+        alert('❌ Unable to submit form. Please check your connection and try again.');
+      } finally {
+        // Re-enable button
+        submitButton.disabled = false;
+        submitButton.textContent = originalText;
+        submitButton.style.opacity = '1';
+      }
     });
   });
 </script>
