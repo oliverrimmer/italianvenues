@@ -453,7 +453,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     @apply ring-2 ring-[#a78656] border-transparent;
   }
 
-  /* Fix date picker visibility on dark background */
+  /* Fix date picker calendar icon visibility */
   input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(0.8);
     cursor: pointer;
@@ -462,25 +462,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   
   input[type="date"]::-webkit-calendar-picker-indicator:hover {
     opacity: 1;
-  }
-  
-  /* Ensure date input text is visible */
-  input[type="date"]::-webkit-datetime-edit {
-    color: white;
-  }
-  
-  input[type="date"]::-webkit-datetime-edit-fields-wrapper {
-    color: white;
-  }
-  
-  input[type="date"]::-webkit-datetime-edit-text {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  
-  input[type="date"]::-webkit-datetime-edit-month-field,
-  input[type="date"]::-webkit-datetime-edit-day-field,
-  input[type="date"]::-webkit-datetime-edit-year-field {
-    color: white;
   }
 </style>
 

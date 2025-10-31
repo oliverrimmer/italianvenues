@@ -647,7 +647,7 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
     box-shadow: 0 2px 4px rgba(167, 134, 86, 0.2);
   }
 
-  /* Fix date picker visibility */
+  /* Fix date picker calendar icon visibility */
   input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(0.8);
     cursor: pointer;
@@ -656,25 +656,6 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
   
   input[type="date"]::-webkit-calendar-picker-indicator:hover {
     opacity: 1;
-  }
-  
-  /* Ensure date input text is visible */
-  input[type="date"]::-webkit-datetime-edit {
-    color: white;
-  }
-  
-  input[type="date"]::-webkit-datetime-edit-fields-wrapper {
-    color: white;
-  }
-  
-  input[type="date"]::-webkit-datetime-edit-text {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  
-  input[type="date"]::-webkit-datetime-edit-month-field,
-  input[type="date"]::-webkit-datetime-edit-day-field,
-  input[type="date"]::-webkit-datetime-edit-year-field {
-    color: white;
   }
 </style>
 
