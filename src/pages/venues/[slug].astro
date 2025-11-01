@@ -1,6 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 
+// Prerender venue pages as static HTML
+export const prerender = true;
+
 // Generate static paths for all venue JSON files
 export async function getStaticPaths() {
   const venueFiles = import.meta.glob('../../data/venues/*.json');
