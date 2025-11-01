@@ -220,7 +220,12 @@
       "Alberobello": "20 km",
       "Ostuni": "30 km",
       "Lecce": "60 km"
-    }
+    },
+    "coordinates": {
+      "lat": 40.8068194,
+      "lng": 17.3986678
+    },
+    "mapEmbed": "https://www.google.com/maps?q=40.8068194,17.3986678&hl=en&z=15&output=embed"
   },
   "exclusiveUseDetails": {
     "included": [
