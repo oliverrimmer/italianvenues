@@ -1,0 +1,170 @@
+{
+  "name": "Puglia",
+  "slug": "puglia",
+  "country": "Italy",
+  "heroImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=85",
+  "heroTitle": "Weddings in Puglia: Where Adriatic Elegance Meets Ancient Tradition",
+  "heroDescription": "From whitewashed trulli and baroque palazzos to dramatic clifftop towns and endless olive groves, Puglia offers an authentic, sun-drenched canvas for your Italian destination wedding.",
+  "metaDescription": "Plan your dream destination wedding in Puglia, Italy. Discover luxury masserie, coastal venues, baroque palazzos, and trulli estates across the heel of Italy's Adriatic and Ionian coasts.",
+
+  "about": {
+    "intro": "Puglia—the heel of Italy's boot—is a revelation for couples seeking authenticity, natural beauty, and culinary excellence without the crowds of Tuscany or the Amalfi Coast. This sun-baked region stretches along 800 kilometers of Adriatic and Ionian coastline, where ancient olive groves meet crystal-clear waters, and UNESCO-protected trulli villages sit alongside baroque masterpieces. A Puglia wedding offers barefoot elegance, farm-to-table feasts, and venues that feel like secrets you've discovered yourself.",
+    "landscape": "The landscape of Puglia is uniquely Mediterranean: endless silver-green olive groves (some trees over 2,000 years old), whitewashed towns perched on limestone cliffs, cone-shaped trulli houses dotting the Valle d'Itria, and dramatic coastal caves and coves carved by the Adriatic. From the chalk-white town of Ostuni to the turquoise waters of Polignano a Mare and the sandy beaches of Salento, Puglia's scenery is both raw and refined—perfect for couples who want natural beauty with character.",
+    "culture": "Puglia's culture is deeply rooted in agriculture, fishing, and craftsmanship. Lecce is known as the 'Florence of the South' for its stunning Baroque architecture carved from local golden limestone. The region is also home to UNESCO World Heritage sites like the trulli of Alberobello and Castel del Monte. But what truly defines Puglia is its warm, unpretentious hospitality—locals celebrate life through food, wine, and communal gatherings, making it ideal for immersive, multi-day wedding celebrations.",
+    "cuisine": "Puglian cuisine is honest, rustic, and unforgettable. Think handmade orecchiette with cime di rapa, burrata di Andria, octopus slow-cooked in terracotta pots, panzerotti, focaccia barese, and pasticciotto pastries. Paired with Primitivo di Manduria, Negroamaro, or crisp Verdeca whites, and finished with locally pressed extra virgin olive oil (Puglia produces 40% of Italy's olive oil), your wedding feast will be as memorable as the ceremony itself."
+  },
+
+  "climate": {
+    "summary": "Puglia enjoys a Mediterranean climate with long, hot, dry summers and mild winters. The best wedding months are May through October, with June and September offering ideal conditions—warm but not oppressive, with lower tourist numbers.",
+    "seasons": [
+      {
+        "months": "May – June",
+        "avgTemp": "22–28°C",
+        "rainfall": "Low",
+        "daylight": "14–15 hours",
+        "description": "Perfect wedding weather. Warm, sunny days with gentle breezes from the Adriatic. Wildflowers bloom across the countryside, and olive trees are lush."
+      },
+      {
+        "months": "July – August",
+        "avgTemp": "28–34°C",
+        "rainfall": "Very Low",
+        "daylight": "14–15 hours",
+        "description": "Peak summer. Hot and dry with intense sunshine—ideal for beach and poolside celebrations. Evenings cool down beautifully for outdoor dining."
+      },
+      {
+        "months": "September – October",
+        "avgTemp": "22–27°C",
+        "rainfall": "Moderate",
+        "daylight": "12–13 hours",
+        "description": "Harvest season. Comfortable temperatures, golden light, and the olive harvest in full swing. September is especially magical for masseria weddings."
+      },
+      {
+        "months": "November – April",
+        "avgTemp": "10–18°C",
+        "rainfall": "Moderate to High",
+        "daylight": "9–11 hours",
+        "description": "Off-season. Cooler and wetter, but still milder than northern Italy. Intimate indoor celebrations in historic masserie offer charm and value."
+      }
+    ],
+    "bestMonths": "June and September are ideal for Puglia weddings—warm, scenic, and less crowded than peak summer. May and early October are also excellent."
+  },
+
+  "accessibility": {
+    "airports": [
+      { "name": "Bari Karol Wojtyła Airport (BRI)", "distance": "8 km from Bari", "description": "Main gateway to Puglia with connections to major European cities and domestic flights" },
+      { "name": "Brindisi Airport (BDS)", "distance": "6 km from Brindisi", "description": "Ideal for southern Puglia, Salento, and coastal venues" },
+      { "name": "Naples International Airport (NAP)", "distance": "250 km from Bari", "description": "Larger international hub, 2.5–3 hours by car to northern Puglia" }
+    ],
+    "transport": "From Bari or Brindisi, private chauffeur services, luxury minibuses, or rental cars provide easy access to wedding venues. Puglia's coastal highway (SS16) and inland routes (SS100) are scenic and well-maintained. High-speed trains connect Bari to Rome (4 hours) and Naples (3 hours). Helicopter transfers are available for VIP arrivals.",
+    "driving": "Puglia is best explored by car. From Bari, most venues are within 1–1.5 hours. The drive from Bari to Lecce (2 hours) passes through iconic Valle d'Itria and coastal towns. Traffic is light outside peak tourist season."
+  },
+
+  "serviceAreas": [
+    "Bari",
+    "Polignano a Mare",
+    "Ostuni",
+    "Valle d'Itria (Alberobello, Locorotondo, Martina Franca)",
+    "Lecce",
+    "Salento Peninsula",
+    "Monopoli",
+    "Brindisi",
+    "Fasano",
+    "Otranto"
+  ],
+
+  "distancesFromMajorCities": {
+    "Bari": "Regional capital and main gateway",
+    "Rome": "430 km / 4h30 by car, 4h by train",
+    "Naples": "260 km / 2h30 by car, 3h by train",
+    "Matera (Basilicata)": "65 km / 1h by car",
+    "Lecce": "150 km from Bari / 1h45 by car"
+  },
+
+  "featuredVenues": [
+    {
+      "name": "Masseria Torre Maizza",
+      "slug": "masseria-torre-maizza",
+      "setting": "Luxury Masseria Resort",
+      "location": "Savelletri, Fasano",
+      "maxGuests": 180,
+      "usp": "16th-century fortified farmhouse turned Rocco Forte resort with Michelin-starred dining and private beach club",
+      "image": "https://images.unsplash.com/photo-1519974719765-e6559eac2575?w=800&q=85",
+      "featured": true
+    },
+    {
+      "name": "Borgo Egnazia",
+      "slug": "borgo-egnazia",
+      "setting": "Luxury Village Resort",
+      "location": "Savelletri, Fasano",
+      "maxGuests": 250,
+      "usp": "Award-winning resort designed as a traditional Puglian village with world-class spa and multiple event spaces",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=85",
+      "featured": true
+    },
+    {
+      "name": "Masseria San Domenico",
+      "slug": "masseria-san-domenico",
+      "setting": "Historic Masseria & Golf Resort",
+      "location": "Savelletri, Fasano",
+      "maxGuests": 200,
+      "usp": "15th-century Knights of Malta stronghold with thalassotherapy spa, golf course, and private beach",
+      "image": "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=800&q=85",
+      "featured": false
+    },
+    {
+      "name": "Masseria Montenapoleone",
+      "slug": "masseria-montenapoleone",
+      "setting": "Countryside Estate",
+      "location": "Pezze di Greco, Brindisi",
+      "maxGuests": 150,
+      "usp": "Intimate 17th-century masseria surrounded by ancient olive groves with exclusive-use options",
+      "image": "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=85",
+      "featured": false
+    }
+  ],
+
+  "localExperience": {
+    "intro": "A Puglia wedding is an immersive experience—a celebration of slow living, artisan traditions, and Mediterranean abundance. Your guests will fall in love with Puglia's authenticity, warmth, and beauty.",
+    "activities": [
+      "Private olive oil tastings and mill tours at centuries-old estates",
+      "Cooking classes: handmade orecchiette, burrata-making, and traditional bread baking",
+      "Boat trips to sea caves and grottoes along the Adriatic coast",
+      "Wine tours through Primitivo and Negroamaro vineyards in Salento",
+      "Trulli village tours in UNESCO-protected Alberobello",
+      "Exploring the baroque architecture of Lecce with a private guide",
+      "Sunset aperitivos on the cliffs of Polignano a Mare",
+      "Beach days on the Ionian coast with private cabana service",
+      "Cycling or Vespa tours through the Valle d'Itria countryside",
+      "Ceramics workshops in Grottaglie, Puglia's pottery capital"
+    ],
+    "vendors": "Puglia is home to a growing network of talented wedding planners specializing in luxury destination events—such as Apulia Wedding and The Informal Wedding. The region's florists, photographers, and artisan suppliers bring a rustic-luxe aesthetic that's uniquely Puglian. Many masserie and luxury estates offer in-house event coordination, farm-to-table catering, and connections to local musicians and entertainers.",
+    "accommodations": "Guests can stay in boutique masserie like Masseria Torre Coccaro, luxury resorts like Borgo Egnazia, or charming B&Bs in whitewashed towns like Ostuni and Locorotondo. For coastal weddings, resorts in Savelletri, Monopoli, and Polignano a Mare offer beachfront access and five-star amenities."
+  },
+
+  "comparisonInsights": {
+    "vsTuscany": "While Tuscany is iconic and well-established, Puglia offers a more unspoiled, authentic experience. Venues are often more affordable, with better value for money. Puglia's coastal access and unique architecture (trulli, masserie) set it apart from Tuscany's inland estates.",
+    "vsAmalfiCoast": "The Amalfi Coast is dramatic and glamorous; Puglia is warm, rustic, and spacious. Puglia's masserie offer more privacy and exclusivity, with sprawling estates and lower density. The region is also more accessible and less crowded, making it ideal for multi-day celebrations.",
+    "vsSicily": "Both are southern Italian gems, but Puglia is flatter, quieter, and more cohesive for travel. Sicily offers more dramatic volcanic landscapes and ancient ruins, while Puglia delivers olive groves, beaches, and a uniquely baroque-meets-rustic aesthetic.",
+    "whyPuglia": "Puglia is Italy's best-kept secret for destination weddings. It offers Tuscan charm without the crowds, Amalfi beauty without the cliffs, and a culinary and cultural authenticity that feels refreshingly unpretentious. With world-class masserie, 800 km of coastline, and unbeatable hospitality, Puglia is perfect for couples seeking something special, soulful, and undiscovered."
+  },
+
+  "seoKeywords": [
+    "Puglia wedding venues",
+    "destination weddings in Puglia",
+    "luxury weddings Puglia Italy",
+    "masseria weddings Puglia",
+    "Apulia wedding venues",
+    "Ostuni wedding venues",
+    "Polignano a Mare weddings",
+    "Lecce wedding venues",
+    "trulli weddings Puglia",
+    "Puglia wedding planners"
+  ],
+
+  "cta": {
+    "primary": "Explore Puglia Wedding Venues",
+    "secondary": "Request a Tailored Puglia Wedding Quote",
+    "enquiryLink": "#contact"
+  }
+}
+
