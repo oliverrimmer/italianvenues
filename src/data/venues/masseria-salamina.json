@@ -1,0 +1,286 @@
+{
+  "name": "Masseria Salamina",
+  "city": "Puglia",
+  "region": "Puglia",
+  "maxGuests": 120,
+  "exclusiveUse": true,
+  "startingPriceEur": 15000,
+  "heroImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=85",
+  "heroDescription": "An ancient 17th-century Masseria immersed in the Apulian countryside among rows of almond and centuries-old olive trees. Experience the authentic charm of Puglia in a place of suggestive beauty, filled with Mediterranean scents of lavender and oregano.",
+  "intro": "An ancient Masseria of the 1600s, immersed in the Apulian countryside among rows of almond and centuries-old olive trees, surrounded by Mediterranean scents of lavender and oregano. Imagine celebrating your most important day with the people you love in a place of suggestive beauty, with tables full of fresh and genuine products, prepared with wisdom and authenticity.",
+  "history": {
+    "description": "Masseria Salamina is a stunning 17th-century fortified farmhouse that has been lovingly restored to preserve its historical character while offering modern luxury. Built as a defensive agricultural estate, it has witnessed centuries of Puglian history and has evolved into one of the region's most exclusive wedding destinations.",
+    "artCollection": "The Masseria showcases traditional Puglian architecture with thick stone walls, vaulted ceilings, and characteristic arches. Each space tells a story of the region's rich agricultural heritage."
+  },
+  "usps": [
+    "20 Rooms in 3 Types",
+    "Exclusive Use Available",
+    "11 Unique Event Spaces",
+    "Centuries-Old Olive Grove",
+    "Swimming Pool",
+    "Organic Vegetable Garden",
+    "Traditional Puglian Cuisine",
+    "Multiple Courtyards",
+    "The Greenhouse - Modern Glass Conservatory",
+    "Lush Mediterranean Gardens"
+  ],
+  "gallery": [
+    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=85",
+    "https://images.unsplash.com/photo-1519974719765-e6559eac2575?w=800&q=85",
+    "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=800&q=85",
+    "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=85",
+    "https://images.unsplash.com/photo-1519974719765-e6559eac2575?w=800&q=85",
+    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=85",
+    "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=800&q=85",
+    "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=85"
+  ],
+  "spaces": [
+    {
+      "name": "Uliveto Secolare - Ancient Olive Grove",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 80,
+        "buffet": 100,
+        "ceremony": 120
+      },
+      "description": "The magical centuries-old olive grove, illuminated in the evening, perfect for late afternoon ceremonies and receptions under the stars."
+    },
+    {
+      "name": "La Serra - The Greenhouse",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 120,
+        "buffet": 100,
+        "ceremony": 0
+      },
+      "description": "A stunning modern glass conservatory offering an elegant indoor-outdoor dining experience with panoramic views."
+    },
+    {
+      "name": "La Corte Interna - Inner Court",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 120,
+        "buffet": 80,
+        "ceremony": 0
+      },
+      "description": "The elegant inner courtyard, perfect for intimate dinners and grand receptions."
+    },
+    {
+      "name": "Sala Interna Grande - Large Indoor Dining Room",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 120,
+        "buffet": 100,
+        "ceremony": 0
+      },
+      "description": "Spacious indoor dining room with impressive vaulted ceilings and grand fireplace."
+    },
+    {
+      "name": "Cortiletto della Cappella - Chapel Courtyard",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 60,
+        "buffet": 50,
+        "ceremony": 100
+      },
+      "description": "Intimate courtyard perfect for romantic symbolic or civil ceremonies."
+    },
+    {
+      "name": "Cortile Bouganvillea - Bougainvillea Courtyard",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 60,
+        "buffet": 50,
+        "ceremony": 80
+      },
+      "description": "Charming courtyard adorned with bougainvillea, ideal for late afternoon ceremonies."
+    },
+    {
+      "name": "Cortiletto Porta Carraia - Carriage Gate Courtyard",
+      "capacities": {
+        "cocktail": 60,
+        "seated": 50,
+        "buffet": 40,
+        "ceremony": 50
+      },
+      "description": "Historic entrance courtyard with original carriage gate, perfect for intimate gatherings."
+    },
+    {
+      "name": "Piazzale Ala Padronale - Manor House Courtyard",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 100,
+        "buffet": 100,
+        "ceremony": 120
+      },
+      "description": "Grand courtyard in front of the manor house, ideal for evening receptions with beautiful illumination."
+    },
+    {
+      "name": "Patio Piscina - Pool Patio",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 80,
+        "buffet": 80,
+        "ceremony": 100
+      },
+      "description": "Elegant poolside area with canopy for evening receptions and buffets."
+    },
+    {
+      "name": "Ulivo Piscina - Century-Old Olive Tree by Pool",
+      "capacities": {
+        "cocktail": 30,
+        "seated": 20,
+        "buffet": 30,
+        "ceremony": 40
+      },
+      "description": "Enchanting spot centered around an ancient olive tree, perfect for intimate ceremonies or romantic cake-cutting moments."
+    },
+    {
+      "name": "Saletta degli Archi - Arched Room",
+      "capacities": {
+        "cocktail": 40,
+        "seated": 30,
+        "buffet": 30,
+        "ceremony": 0
+      },
+      "description": "Intimate indoor space with charming stone arches and vaulted ceilings, ideal for intimate dinners or bar area."
+    }
+  ],
+  "ancillaryServices": [
+    "Cooking classes with authentic Puglian recipes",
+    "Olive oil tastings from century-old groves",
+    "BBQ events in the olive grove",
+    "Country chic picnics",
+    "Focaccia party",
+    "Pool parties",
+    "Wine tastings",
+    "Gardening workshops in organic vegetable garden",
+    "Traditional Puglian music and entertainment",
+    "Local market tours"
+  ],
+  "outlets": [
+    "La Serra - The Greenhouse",
+    "La Corte Interna - Inner Court",
+    "Sala Interna Grande - Large Dining Room",
+    "Saletta degli Archi - Arched Room",
+    "Patio Piscina - Pool Patio"
+  ],
+  "facilities": [
+    {
+      "name": "Swimming Pool",
+      "description": "Beautiful outdoor swimming pool with sun loungers, perfect for guest relaxation and daytime events."
+    },
+    {
+      "name": "Mediterranean Garden",
+      "description": "Lush gardens filled with lavender, oregano, and other aromatic Mediterranean herbs."
+    },
+    {
+      "name": "Italian Garden",
+      "description": "Formal Italian-style garden with manicured hedges and elegant landscaping."
+    },
+    {
+      "name": "Citrus Garden",
+      "description": "Beautiful citrus grove with lemon and orange trees."
+    },
+    {
+      "name": "Organic Vegetable Garden",
+      "description": "Working vegetable garden providing fresh produce for the kitchen."
+    },
+    {
+      "name": "Centuries-Old Olive Trees Grove",
+      "description": "Magnificent ancient olive trees creating a magical setting for ceremonies and events."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Mezzanine Rooms",
+        "count": 6,
+        "capacity": "2-4 people each",
+        "description": "Charming rooms designed with a mezzanine level, offering flexible space for couples or small families."
+      },
+      {
+        "name": "Farm House Apartments",
+        "count": 8,
+        "capacity": "2-4 people each",
+        "description": "Spacious apartments reflecting traditional Puglian farmhouse style, perfect for guests seeking comfort and authenticity."
+      },
+      {
+        "name": "Manor's House Rooms",
+        "count": 6,
+        "description": "Elegant rooms in the main manor house, including Superior Double Rooms, Junior Suites, and Suite Superior options."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Puglia, Italy",
+    "distances": {
+      "Bari Karol Wojtyła Airport": "70 km / 1h15",
+      "Brindisi Salento Airport": "40 km / 45min",
+      "Alberobello": "20 km",
+      "Ostuni": "30 km",
+      "Lecce": "60 km"
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3018.5!2d17.2!3d40.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!5e0!3m2!1sen!2sit!4v1234567890"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Use of all 20 rooms for 3 nights minimum",
+      "Accommodation for 40+ guests",
+      "Access to all 11 event spaces",
+      "Use of swimming pool",
+      "Access to gardens and olive groves",
+      "Wedding planning assistance",
+      "Flexible ceremony options (civil rite or symbolic ceremony)",
+      "Customizable wedding reception menus",
+      "Staff and service team",
+      "Wi-Fi connection",
+      "Complimentary parking"
+    ],
+    "description": "Experience complete privacy with exclusive use of Masseria Salamina. Accommodation for 40 or more people across 20 beautifully appointed rooms for a minimum stay of 3 nights. Access to all 11 unique event spaces, from the magical olive grove to the modern greenhouse, ensuring your celebration is truly one-of-a-kind."
+  },
+  "faqs": [
+    {
+      "q": "What is the minimum stay for exclusive use?",
+      "a": "3 nights minimum stay is required for exclusive use events."
+    },
+    {
+      "q": "How many guests can be accommodated overnight?",
+      "a": "Accommodation is available for 40 or more people across 20 rooms of 3 different types: Mezzanine rooms, Farm House apartments, and Manor's House rooms."
+    },
+    {
+      "q": "What ceremony options are available?",
+      "a": "We offer both civil rite and symbolic ceremonies in various beautiful locations across the estate."
+    },
+    {
+      "q": "Can you accommodate different reception styles?",
+      "a": "Yes, our team will work with you to choose the style and menu that best suits your wedding vision, from elegant plated dinners to traditional Puglian buffets."
+    },
+    {
+      "q": "What pre and post-wedding events can be organized?",
+      "a": "We offer BBQ events, country chic picnics in the olive grove, Focaccia parties, pool parties, cooking classes, olive oil tastings, and more."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability & receive a tailored quote",
+    "name": "Chiara de Miccolis Angelini",
+    "email": "info@masseriasalamina.it",
+    "phone": "+39 080 4897307",
+    "mobile": "+39 335 8124698",
+    "website": "www.masseriasalamina.it"
+  },
+  "metaDescription": "Plan your dream Puglian wedding at Masseria Salamina, a stunning 17th-century estate with 20 luxury rooms, 11 event spaces, ancient olive groves, and authentic Italian cuisine. Exclusive use available.",
+  "seoKeywords": [
+    "Masseria Salamina",
+    "Puglia wedding venues",
+    "luxury masseria Puglia",
+    "Italian destination wedding",
+    "exclusive use Puglia",
+    "ancient olive grove wedding",
+    "traditional Puglian estate",
+    "17th century masseria",
+    "wedding venues Puglia",
+    "greenhouse wedding venue"
+  ]
+}
+
