@@ -41,14 +41,14 @@ const featuredCards = [
   },
 ];
 
-// Location cards - 6 locations
+// Location cards - 6 locations (ordered for 2x3 grid: Row1, Row2, Row3)
 const allLocationCards = [
   { name: 'Amalfi Coast', tag: 'Coastal', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg', link: '/locations/amalfi-coast' },
   { name: 'Lake Como', tag: 'Lakeside', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg', link: '/locations/lake-como' },
-  { name: 'Puglia', tag: 'Authentic', imgSrc: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=85', link: '/locations/puglia' },
   { name: 'Tuscany', tag: 'Vineyards', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/1b934f50-6f77-4c03-0ddc-fde1fcdf3d00/cardlg', link: '/locations/tuscany' },
-  { name: 'Umbria', tag: 'Green Heart', imgSrc: 'https://images.unsplash.com/photo-1544641272-d1d8e7e07036?w=800&q=85', link: '/locations/umbria' },
   { name: 'Rome', tag: 'Historic', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg', link: '/locations/rome' },
+  { name: 'Puglia', tag: 'Authentic', imgSrc: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=85', link: '/locations/puglia' },
+  { name: 'Umbria', tag: 'Green Heart', imgSrc: 'https://images.unsplash.com/photo-1544641272-d1d8e7e07036?w=800&q=85', link: '/locations/umbria' },
 ];
 ---
 
@@ -304,7 +304,7 @@ const allLocationCards = [
       <!-- Trigger point for background transition to black (after row 1) -->
       <div id="transition-trigger" class="h-px my-4 md:my-6"></div>
       
-      <!-- Row 2: Puglia, Tuscany -->
+      <!-- Row 2: Tuscany, Rome -->
       <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 mb-6 md:mb-8 lg:mb-12">
         {allLocationCards.slice(2, 4).map((location) => (
           <a href={location.link} class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
@@ -334,7 +334,7 @@ const allLocationCards = [
         ))}
       </div>
 
-      <!-- Row 3: Umbria, Rome -->
+      <!-- Row 3: Puglia, Umbria -->
       <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
         {allLocationCards.slice(4, 6).map((location) => (
           <a href={location.link} class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
