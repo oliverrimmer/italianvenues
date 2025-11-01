@@ -1,0 +1,160 @@
+{
+  "name": "Umbria",
+  "slug": "umbria",
+  "country": "Italy",
+  "heroImage": "https://images.unsplash.com/photo-1544641272-d1d8e7e07036?w=1920&q=85",
+  "heroTitle": "Weddings in Umbria: Italy's Enchanting Green Heart",
+  "heroDescription": "Amidst rolling hills, medieval hilltop towns, and endless olive groves, Umbria offers an intimate and authentic Italian wedding experience in the peaceful heart of the country.",
+  "metaDescription": "Plan your dream destination wedding in Umbria, Italy. Discover luxury agriturismi, historic farmhouses, medieval towns, and authentic countryside venues across Perugia, Assisi, and the Valnerina.",
+
+  "about": {
+    "intro": "Umbria—often called 'Italy's green heart'—is a serene and enchanting region offering an authentic, unspoiled wedding destination. Tucked between Tuscany and Lazio, Umbria's rolling hills are dotted with medieval hilltop towns, ancient olive groves, and vineyards producing some of Italy's finest wines. This is a region where time slows down, where celebrations are truly immersive, and where hospitality feels deeply personal. A Umbria wedding promises intimacy, natural beauty, and a genuine connection to Italian rural life.",
+    "landscape": "Umbria's landscape is characterized by gentle hills blanketed in olive groves and vineyards, punctuated by mystical medieval towns like Assisi, Perugia, Spoleto, and Orvieto. The dramatic Valnerina valley cuts through the region, offering stunning gorges and waterfalls. Lake Trasimeno, Italy's fourth-largest lake, provides serene waterfront wedding settings. From hilltop estates with panoramic views to rustic agriturismi nestled among olive trees, Umbria's venues blend seamlessly with the natural beauty that surrounds them.",
+    "culture": "Umbria is the birthplace of saints and mystics—St. Francis of Assisi, St. Benedict, and many others found spiritual inspiration in this landscape. But beyond its religious heritage, Umbria thrives on its agricultural traditions, artisan crafts, and slow-living philosophy. The region is home to world-class ceramics from Deruta, hand-woven textiles from Norcia, and some of Italy's finest cured meats. Your wedding celebration here will be enriched by these authentic traditions, with local artisans often contributing to your event's decor and ambiance.",
+    "cuisine": "Umbrian cuisine is simple yet sublime, focusing on premium local ingredients: black truffles from Norcia, lentils from Castelluccio, wild boar, porchetta, and pecorino cheeses. The region is also renowned for its wines—Sagrantino di Montefalco, Grechetto, and Orvieto DOC—perfect for toasting your marriage. Wedding menus here celebrate the harvest, with olive oil pressed on ancient estates and vegetables grown in kitchen gardens, creating meals that are both rustic and refined."
+  },
+
+  "climate": {
+    "summary": "Umbria enjoys a continental climate with warm summers and mild winters. The best wedding months are May through October, with June and September offering perfect weather—warm days, cool evenings, and spectacular natural beauty.",
+    "seasons": [
+      {
+        "months": "May – June",
+        "avgTemp": "20–26°C",
+        "rainfall": "Moderate",
+        "daylight": "14–15 hours",
+        "description": "Ideal wedding weather. Warm days, cool evenings, and lush green landscapes. Wildflowers bloom across meadows, and the countryside is vibrant."
+      },
+      {
+        "months": "July – August",
+        "avgTemp": "25–32°C",
+        "rainfall": "Low",
+        "daylight": "14–15 hours",
+        "description": "Peak summer. Hot days with occasional cooling breezes. Perfect for outdoor celebrations and evening receptions under the stars."
+      },
+      {
+        "months": "September – October",
+        "avgTemp": "18–24°C",
+        "rainfall": "Moderate",
+        "daylight": "11–13 hours",
+        "description": "Harvest season. Comfortable temperatures, golden light, and grape harvests in full swing. October brings stunning autumn colors."
+      },
+      {
+        "months": "November – April",
+        "avgTemp": "5–14°C",
+        "rainfall": "High",
+        "daylight": "9–11 hours",
+        "description": "Off-season. Cooler and wetter, but ideal for intimate indoor celebrations in historic farmhouses with roaring fireplaces."
+      }
+    ],
+    "bestMonths": "June and September are the perfect months for Umbria weddings—beautiful weather, stunning landscapes, and fewer crowds than neighboring Tuscany."
+  },
+
+  "accessibility": {
+    "airports": [
+      { "name": "Rome Fiumicino (FCO)", "distance": "180 km from Perugia", "description": "Major international gateway, 2–2.5 hours by car or train to Umbria" },
+      { "name": "Rome Ciampino (CIA)", "distance": "160 km from Perugia", "description": "Budget airline hub with domestic and European connections" },
+      { "name": "Perugia San Francesco d'Assisi (PEG)", "distance": "12 km from Perugia", "description": "Regional airport with connections to Rome, Milan, and select European cities" }
+    ],
+    "transport": "From Rome, private chauffeur services or car rentals provide scenic drives through the Umbrian countryside. High-speed trains connect Rome to Orte in under an hour, with regional connections to Perugia, Assisi, and Spoleto. Helicopter transfers are available for VIP arrivals.",
+    "driving": "Umbria is best explored by car. The region's scenic roads wind through picturesque hills and valleys. From Perugia, most venues are within 1–1.5 hours, making multi-location celebrations feasible."
+  },
+
+  "serviceAreas": [
+    "Perugia",
+    "Assisi",
+    "Spoleto",
+    "Orvieto",
+    "Todi",
+    "Gubbio",
+    "Città di Castello",
+    "Valnerina",
+    "Lake Trasimeno",
+    "Montefalco"
+  ],
+
+  "distancesFromMajorCities": {
+    "Perugia": "Regional capital and cultural heart",
+    "Rome": "180 km / 2h by car, 1h by train",
+    "Florence": "160 km / 2h by car, 2h by train",
+    "Siena": "110 km / 1h30 by car",
+    "Arezzo": "100 km / 1h15 by car"
+  },
+
+  "featuredVenues": [
+    {
+      "name": "Castello di Petroia",
+      "slug": "castello-di-petroia",
+      "setting": "Medieval Castle & Vineyard",
+      "location": "Gubbio",
+      "maxGuests": 120,
+      "usp": "13th-century castle perched on a hill with panoramic views, vineyards, and elegant Renaissance interiors",
+      "image": "https://images.unsplash.com/photo-1544641272-d1d8e7e07036?w=800&q=85",
+      "featured": true
+    },
+    {
+      "name": "Relais Villa Monte Solare",
+      "slug": "relais-villa-monte-solare",
+      "setting": "Historic Villa & Olives",
+      "location": "Panicale",
+      "maxGuests": 150,
+      "usp": "18th-century villa surrounded by 15 hectares of olive groves with infinity pool and stunning lake views",
+      "image": "https://images.unsplash.com/photo-1556817411-31ae3b27db46?w=800&q=85",
+      "featured": true
+    },
+    {
+      "name": "Agriturismo Locanda Rovicciano",
+      "slug": "agriturismo-locanda-rovicciano",
+      "setting": "Countryside Farmhouse",
+      "location": "Spoleto",
+      "maxGuests": 100,
+      "usp": "Authentic restored farmhouse with organic farm, traditional Umbrian cuisine, and intimate garden ceremonies",
+      "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=85",
+      "featured": false
+    }
+  ],
+
+  "localExperience": {
+    "intro": "An Umbria wedding is an invitation to slow down and savor every moment. Your guests will discover a region rich in art, history, and natural beauty, all while enjoying the warm hospitality that Umbrians are known for.",
+    "activities": [
+      "Private wine tastings at Montefalco vineyards specializing in Sagrantino",
+      "Truffle hunting excursions in the forests of Norcia",
+      "Cooking classes featuring traditional Umbrian dishes in historic kitchens",
+      "Ceramic workshops in Deruta, the region's pottery capital",
+      "Hot air balloon rides over Lake Trasimeno at sunrise",
+      "Private tours of Assisi's Basilica of St. Francis and medieval frescoes",
+      "Olive oil tastings and mill tours at family-run estates",
+      "Pilgrimage walks along the ancient Franciscan paths",
+      "Boat trips on Lake Trasimeno with sunset aperitifs",
+      "Artisan visits: Deruta ceramics, Norcia textiles, and local crafts"
+    ],
+    "vendors": "Umbria is home to a network of talented wedding planners specializing in intimate, authentic celebrations. The region's florists, photographers, and suppliers embrace a rustic-luxe aesthetic that perfectly complements Umbria's natural beauty. Many venues offer in-house coordination and connections to local musicians, artisans, and entertainers, ensuring every detail reflects the region's authentic character.",
+    "accommodations": "Guests can stay in luxurious agriturismi, converted farmhouses, elegant country hotels, or historic monasteries turned boutique properties. Options range from intimate family-run inns to grand countryside estates, all offering genuine Umbrian hospitality and access to the region's stunning landscapes."
+  },
+
+  "comparisonInsights": {
+    "vsTuscany": "While Tuscany is famous and established, Umbria offers greater intimacy and authenticity. Venues are often more affordable, and the crowds are smaller. Umbria's hilltop towns and medieval character provide a distinctly different aesthetic from Tuscany's Renaissance grandeur.",
+    "vsPuglia": "Puglia is coastal and expansive; Umbria is inland, intimate, and hilly. Puglia offers beach access and masserie life; Umbria delivers castle-topped hills and deep agricultural traditions. Both are authentic, but Umbria feels more secluded and mystical.",
+    "vsLazio": "Umbria is Tuscany's quieter neighbor—more pastoral, less imperial. While Lazio is dominated by Rome's grandeur, Umbria offers peaceful countryside and medieval hill towns, ideal for couples seeking an escape from city energy.",
+    "whyUmbria": "Umbria is Italy's best-kept secret for destination weddings. It offers Tuscany's charm without the crowds, stunning medieval architecture, world-class wine and cuisine, and venues that feel both historic and intimate. Perfect for couples seeking authenticity, tranquility, and natural beauty."
+  },
+
+  "seoKeywords": [
+    "Umbria wedding venues",
+    "destination weddings in Umbria",
+    "luxury weddings Umbria Italy",
+    "Umbria agriturismo weddings",
+    "Perugia wedding venues",
+    "Assisi wedding venues",
+    "medieval castle weddings Umbria",
+    "Umbria countryside weddings",
+    "Italian green heart weddings",
+    "Umbria wedding planners"
+  ],
+
+  "cta": {
+    "primary": "Explore Umbria Wedding Venues",
+    "secondary": "Request a Tailored Umbria Wedding Quote",
+    "enquiryLink": "#contact"
+  }
+}
+
