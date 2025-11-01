@@ -271,9 +271,9 @@ const allLocationCards = [
         Your Italian venue discovery starts now.
       </h2>
       
-      <!-- All 6 location cards: Porsche-style with dynamic hover expansion -->
-      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12 mb-6 md:mb-8 lg:mb-12">
-        {allLocationCards.slice(0, 3).map((location, index) => (
+      <!-- Row 1: Amalfi Coast, Lake Como -->
+      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 mb-6 md:mb-8 lg:mb-12">
+        {allLocationCards.slice(0, 2).map((location, index) => (
           <a href={location.link} class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
             <img src={location.imgSrc} alt={location.name} class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
             <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
@@ -304,9 +304,39 @@ const allLocationCards = [
       <!-- Trigger point for background transition to black (after row 1) -->
       <div id="transition-trigger" class="h-px my-4 md:my-6"></div>
       
-      <!-- Remaining 3 location cards (row 2) -->
-      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-12">
-        {allLocationCards.slice(3, 6).map((location) => (
+      <!-- Row 2: Puglia, Tuscany -->
+      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 mb-6 md:mb-8 lg:mb-12">
+        {allLocationCards.slice(2, 4).map((location) => (
+          <a href={location.link} class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
+            <img src={location.imgSrc} alt={location.name} class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
+            <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
+            
+            <!-- Location name at TOP - Porsche style -->
+            <div class="absolute top-0 left-0 right-0 p-6 md:p-10">
+              <h3 class="text-white text-4xl md:text-5xl lg:text-6xl font-semibold tracking-tight font-display">
+                {location.name}
+              </h3>
+            </div>
+            
+            <!-- Tag and Explore at bottom -->
+            <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+              <div class="flex items-end justify-between">
+                <span class="text-xs font-medium text-white bg-white/15 px-3 py-1.5 rounded backdrop-blur-sm">{location.tag}</span>
+                <div class="explore-indicator flex items-center gap-2 text-white opacity-0 transition-opacity duration-300">
+                  <span class="text-sm font-light">Explore</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <!-- Row 3: Umbria, Rome -->
+      <div class="location-card-row grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+        {allLocationCards.slice(4, 6).map((location) => (
           <a href={location.link} class="location-card block relative aspect-[16/10] rounded-lg overflow-hidden transition-all duration-700 ease-out">
             <img src={location.imgSrc} alt={location.name} class="absolute inset-0 w-full h-full object-cover" loading="lazy" decoding="async" />
             <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/70"></div>
