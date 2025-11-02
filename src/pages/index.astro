@@ -556,6 +556,18 @@ const allLocationCards = [
     });
   }
 
+  // Venue search form handler (bottom of page)
+  const venueSearchForm = document.getElementById('venue-search-form');
+  const venueSearchInput = document.getElementById('venue-search-input');
+
+  if (venueSearchForm && venueSearchInput) {
+    venueSearchForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const query = venueSearchInput.value.trim();
+      handleSearch(query);
+    });
+  }
+
   // Porsche-style background transition - triggers at specific point
   const discoverySection = document.getElementById('discovery-section');
   const discoveryTitle = document.getElementById('discovery-title');
