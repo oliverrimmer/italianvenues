@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         display: ['Playfair Display', 'serif'],
         sans: ['Inter', 'sans-serif'],
+        emitha: ['Emitha', 'serif'],
       },
       screens: {
         'mobile': '375px',
