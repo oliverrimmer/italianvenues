@@ -40,29 +40,16 @@ const sections = {
 
   <!-- Menu Container - Full width on mobile, 70% on desktop -->
   <div class="relative h-full w-full md:w-[70%] bg-white shadow-2xl flex flex-col md:flex-row">
-    <!-- Close button - positioned at right edge of menu for subtle look -->
+    <!-- Close button - positioned at top right -->
     <button
       id="close-menu-button"
-      class="absolute top-0 right-0 w-16 h-16 flex items-center justify-center text-zinc-400 hover:text-black transition-colors focus:outline-none z-20"
+      class="absolute top-4 right-4 md:top-0 md:right-0 w-10 h-10 md:w-16 md:h-16 flex items-center justify-center text-zinc-400 hover:text-black transition-colors focus:outline-none focus:ring-2 focus:ring-black rounded z-20"
       aria-label="Close menu"
     >
       <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
       </svg>
     </button>
-
-    <!-- Close button - top right (mobile) - subtle Porsche style -->
-    <div class="md:hidden absolute top-6 right-6 z-20">
-      <button
-        id="close-menu-button-mobile"
-        class="w-8 h-8 flex items-center justify-center text-zinc-400 hover:text-black transition-colors focus:outline-none focus:ring-2 focus:ring-black rounded"
-        aria-label="Close menu"
-      >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-      </button>
-    </div>
 
     <!-- Mobile: Simple list view (Porsche style) -->
     <div class="md:hidden h-full overflow-y-auto">
@@ -129,7 +116,7 @@ const sections = {
         </div>
 
         <!-- About Section -->
-        <div>
+        <div class="mb-3">
           <a
             href="/about"
             class="w-full text-left py-3 border-b border-zinc-200 hover:bg-zinc-100 transition-colors focus:outline-none"
@@ -332,7 +319,7 @@ const sections = {
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const overlayMenu = document.getElementById('overlay-menu-component');
-    const closeButtonMobile = document.getElementById('close-menu-button-mobile');
+    const closeButton = document.getElementById('close-menu-button');
     const backdrop = document.getElementById('menu-backdrop');
     const menuButtons = document.querySelectorAll('.menu-section');
     const contentSections = document.querySelectorAll('.menu-content');
@@ -351,9 +338,8 @@ const sections = {
       overlayMenu.classList.remove('hidden');
     });
 
-    // Close handlers - desktop button gets handled by the same button, mobile has separate handler
-    const closeButtons = document.querySelectorAll('#close-menu-button, #close-menu-button-mobile');
-    closeButtons.forEach(btn => btn.addEventListener('click', closeMenu));
+    // Close handlers
+    closeButton?.addEventListener('click', closeMenu);
     backdrop?.addEventListener('click', closeMenu);
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && !overlayMenu.classList.contains('hidden')) {
