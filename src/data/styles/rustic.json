@@ -1,0 +1,157 @@
+{
+  "name": "Rustic Weddings",
+  "slug": "rustic",
+  "country": "Italy",
+  "heroImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=85",
+  "heroTitle": "Rustic Wedding Venues in Italy: Authentic Charm & Countryside Romance",
+  "heroDescription": "From centuries-old masserie to farmhouses, olive groves, and vineyard estates, Italy's rustic wedding venues offer authentic Italian countryside charm, natural beauty, and timeless simplicity.",
+  "metaDescription": "Discover Italy's most charming rustic wedding venues. Masserie, farmhouses, olive groves, and countryside estates across Puglia, Tuscany, Umbria, and the Italian countryside.",
+  
+  "about": {
+    "intro": "A rustic wedding in Italy is a celebration of authentic Italian countryside—where centuries-old masserie welcome guests with their thick stone walls and terracotta roofs, where ceremonies unfold among ancient olive groves, and where receptions honor regional traditions with farm-to-table cuisine and local wines. Italy's rustic venues are treasures of tradition, many dating back centuries as fortified farmhouses or agricultural estates.",
+    "philosophy": "Rustic Italian weddings embrace natural beauty and authentic charm. Think terracotta tiles, weathered stone, wildflower bouquets, long wooden tables under pergolas, and the genuine warmth of Italian hospitality. It's elegance without pretense—sophisticated simplicity rooted in the land.",
+    "serviceStandards": "Rustic venues in Italy typically feature: centuries-old stone architecture (masserie, farmhouses, trulli), extensive grounds with olive groves, orchards, or vineyards, indoor and outdoor dining spaces with terracotta floors, courtyards and outdoor pergolas for ceremonies, authentic regional design with local materials, working agricultural elements (olive presses, wine cellars), and natural settings that celebrate the Italian countryside.",
+    "investment": "Rustic weddings in Italy typically range from €40,000 to €180,000 for 60–150 guests, offering excellent value. Puglian masserie command €50,000–€150,000, while Tuscan farmhouses offer options from €40,000–€120,000. Rustic venues provide authentic charm and farm-to-table cuisine at a more accessible price point than luxury or seaside venues."
+  },
+
+  "characteristics": {
+    "summary": "What defines a rustic wedding venue in Italy? Authentic country architecture, agricultural heritage, natural settings, and that genuine warmth of Italian countryside charm.",
+    "features": [
+      {
+        "title": "Agricultural Heritage",
+        "description": "Centuries-old masserie, farmhouses, or estate properties with deep connections to the land—working olive groves, vineyards, or farms."
+      },
+      {
+        "title": "Natural Materials",
+        "description": "Weathered stone, terracotta tiles, exposed beams, aged wood, and local building materials that create authentic countryside character."
+      },
+      {
+        "title": "Outdoor Spaces",
+        "description": "Courtyards, olive groves, vineyard terraces, or meadow settings perfect for ceremonies, receptions, and alfresco dining under the stars."
+      },
+      {
+        "title": "Regional Cuisine",
+        "description": "Farm-to-table menus featuring local produce, regional specialties, estate wines, and traditional Italian recipes passed through generations."
+      },
+      {
+        "title": "Intimate Atmosphere",
+        "description": "Cozy indoor dining halls, fireplaces for cooler evenings, and welcoming spaces that feel like a home away from home."
+      },
+      {
+        "title": "Authentic Charm",
+        "description": "That ineffable Italian countryside warmth—genuine hospitality, regional traditions, and celebrations that honor the land and its bounty."
+      }
+    ]
+  },
+
+  "featuredVenues": [
+    {
+      "name": "Masseria Salamina",
+      "slug": "masseria-salamina",
+      "setting": "Historic Masseria Estate",
+      "location": "Puglia",
+      "maxGuests": 120,
+      "usp": "17th-century fortified farmhouse with 11 unique event spaces, centuries-old olive groves, and modern glass conservatory",
+      "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=85",
+      "featured": true,
+      "rusticFeatures": ["17th-century masseria", "Olive groves", "11 event spaces", "Glass conservatory", "Authentic Puglia"]
+    },
+    {
+      "name": "Borgo Santo Pietro",
+      "slug": "borgo-santo-pietro",
+      "setting": "Luxury Villa & Estate",
+      "location": "Chiusdino, Siena",
+      "maxGuests": 150,
+      "usp": "Five-star Relais & Châteaux property with Michelin-starred dining and organic farm",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/77acf364-4124-4cd5-38ce-a8dad33b2100/cardlg",
+      "featured": false,
+      "rusticFeatures": ["Organic farm", "Michelin dining", "Countryside setting", "Agricultural heritage", "Tuscan charm"]
+    },
+    {
+      "name": "Villa La Foce",
+      "slug": "villa-la-foce",
+      "setting": "Historic Villa",
+      "location": "Val d'Orcia",
+      "maxGuests": 100,
+      "usp": "Iconic Renaissance villa surrounded by UNESCO World Heritage landscapes in the heart of Tuscany",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/f89bc39a-a918-43f8-f9d9-1a36bd07ca00/cardlg",
+      "featured": false,
+      "rusticFeatures": ["UNESCO landscapes", "Countryside setting", "Natural beauty", "Historic farmstead", "Tuscan fields"]
+    }
+  ],
+
+  "seasonalConsiderations": {
+    "summary": "Rustic weddings in Italy are beautiful year-round, with each season offering distinct countryside charm and agricultural beauty.",
+    "seasons": [
+      {
+        "months": "May – June",
+        "description": "Ideal rustic season. Blossoming countryside, perfect weather, olive groves in bloom. Book 12–18 months in advance."
+      },
+      {
+        "months": "September – October",
+        "description": "Perfect for rustic venues. Harvest season with olives, grapes, and produce. Golden autumn light and comfortable temperatures."
+      },
+      {
+        "months": "July – August",
+        "description": "Hot but manageable with evening events. Cypress trees and pergolas provide natural shade. Early morning ceremonies recommended."
+      },
+      {
+        "months": "November – April",
+        "description": "Cooler but cozy. Indoor fireplaces, olive oil harvest experiences, and authentic countryside atmosphere. Budget-friendly."
+      }
+    ]
+  },
+
+  "rusticExperiences": {
+    "intro": "Rustic weddings are immersive countryside experiences featuring farm tours, cooking classes, and authentic Italian agricultural traditions.",
+    "activities": [
+      "Olive oil tastings and estate tours",
+      "Farm-to-table cooking classes with local chefs",
+      "Wine tastings in estate cellars or vineyards",
+      "Harvest experiences (olives, grapes, or seasonal produce)",
+      "Long table dinners under pergolas or olive groves",
+      "Wildflower bouquet workshops",
+      "Farm animal encounters (when applicable)",
+      "Bocce tournaments in courtyards",
+      "Sunset ceremonies in orchards or meadows",
+      "Farewell breakfasts with estate produce",
+      "Cycling tours through countryside paths",
+      "Authentic local market visits"
+    ],
+    "vendors": "Rustic weddings favor natural florals (wildflowers, olives, herbs), earth-tone palettes (sage, terracotta, sunflower yellow), local artisans, and planners specializing in countryside weddings like Rustic Italy Weddings and Countryside Celebrations.",
+    "accommodations": "Many rustic venues offer on-site accommodation. Nearby options include converted farmhouses, agriturismi, or boutique country inns. Guests often stay in charming villages nearby."
+  },
+
+  "planningConsiderations": {
+    "timeline": "Popular rustic venues book 12–18 months in advance for peak season. Less famous locations offer more flexibility. Puglia and Tuscany are especially sought-after.",
+    "budgetGuidance": "Expect €400–€1,200 per person for rustic weddings including venue, farm-to-table catering, local wines, and entertainment. Puglian masserie range €800–€1,500 per person, while Tuscan farmhouses offer excellent value at €400–€1,000 per person.",
+    "guestExperience": "Rustic weddings prioritize authentic, warm celebrations with long table dinners, local produce tastings, and countryside charm. Olive oil workshops, wine tastings, harvest experiences, and local market visits create genuine Italian memories.",
+    "legalRequirements": "Civil ceremonies require 60 days' advance notice. Catholic ceremonies require 6+ months. Many rustic venues are family-owned and provide personal coordination with local officials for legal paperwork."
+  },
+
+  "comparisonInsights": {
+    "vsOtherStyles": "Rustic venues offer charm and value with authentic atmosphere. Luxury venues offer Michelin dining and spas. Villas feel aristocratic and refined. Choose rustic for authentic farming heritage and natural settings.",
+    "vsInternational": "Italian rustic weddings offer unparalleled authenticity compared to French countryside or Spanish farm venues. Superior farm-to-table cuisine, centuries-old agricultural traditions, and genuine warmth make Italy the premier rustic wedding destination.",
+    "whyRustic": "Rustic weddings in Italy are for couples seeking authentic countryside romance, farm-to-table cuisine, and celebrations rooted in the land. It's sophistication through simplicity."
+  },
+
+  "seoKeywords": [
+    "rustic wedding venues Italy",
+    "masserie wedding venues Italy",
+    "countryside weddings Italy",
+    "farmhouse weddings Italy",
+    "Puglia masserie weddings",
+    "Tuscan countryside weddings",
+    "rustic Italian weddings",
+    "olive grove weddings Italy",
+    "authentic Italian wedding venues",
+    "countryside wedding planners Italy"
+  ],
+
+  "cta": {
+    "primary": "Explore Rustic Wedding Venues",
+    "secondary": "Request a Rustic Wedding Quote",
+    "enquiryLink": "#contact"
+  }
+}
+

@@ -1,0 +1,168 @@
+{
+  "name": "Villa Weddings",
+  "slug": "villa",
+  "country": "Italy",
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4500557d-7c6d-4894-c0b0-bb41e39cf900/heroxl",
+  "heroTitle": "Villa Wedding Venues in Italy: Timeless Elegance & Romantic Gardens",
+  "heroDescription": "From Renaissance palazzos to aristocratic estates and hillside retreats, Italy's villa wedding venues offer historic charm, lush gardens, and authentic Italian romance.",
+  "metaDescription": "Discover Italy's most beautiful villa wedding venues. Historic estates, Renaissance palaces, and romantic hilltop villas across Tuscany, Lake Como, Rome, and the Amalfi Coast.",
+  
+  "about": {
+    "intro": "A villa wedding in Italy is the quintessential Italian romance—where stone archways frame sunset ceremonies, Renaissance frescoes adorn intimate dining halls, and fragrant gardens bloom with lavender and roses. Italy's villas are living monuments to Italian elegance, many dating back to the 15th and 16th centuries, when wealthy families commissioned architects to design their summer retreats and country estates.",
+    "philosophy": "Italian villa weddings celebrate understated sophistication and authentic charm. Think garden parties with citrus trees, al fresco dinners under pergolas, twilight ceremonies in courtyards, and receptions in frescoed halls. It's refined without pretense—timeless elegance that feels like home.",
+    "serviceStandards": "Villa venues in Italy typically feature: extensive gardens with ancient olive groves and formal parterres, multiple outdoor ceremony and reception spaces, frescoed or vaulted indoor halls for dining, panoramic views (hillsides, lakes, or coastlines), pool areas for daytime relaxation, terraced areas for alfresco dining, and authentic Italian architecture with stone, terracotta, and weathered wood.",
+    "investment": "Villa weddings in Italy typically range from €60,000 to €300,000+ for 80–200 guests, depending on location, exclusivity, and season. Famous Lake Como villas command €150,000–€400,000+, while Tuscan hillside villas offer excellent value at €60,000–€180,000. Peak season (May–June, September) requires booking 12–18 months in advance."
+  },
+
+  "characteristics": {
+    "summary": "What defines a villa wedding venue in Italy? Historic architecture, extensive gardens, multiple event spaces, and that unmistakable sense of Italian aristocratic elegance.",
+    "features": [
+      {
+        "title": "Historic Architecture",
+        "description": "Renaissance, Baroque, or Neoclassical architecture featuring frescoes, vaulted ceilings, stone archways, and original architectural details preserved for centuries."
+      },
+      {
+        "title": "Extensive Gardens",
+        "description": "Formal Italian gardens, citrus groves, olive orchards, rose gardens, and terraced landscapes designed for ceremonies, receptions, and strolling."
+      },
+      {
+        "title": "Multiple Event Spaces",
+        "description": "Diverse venues for ceremonies (gardens, terraces, courtyards), receptions (ballrooms, pavilions, pergolas), and cocktail hours (loggias, pool areas)."
+      },
+      {
+        "title": "Panoramic Views",
+        "description": "Hillside or lakeside positions offering spectacular vistas of Italian landscapes—vineyards, olive groves, mountain ranges, or shimmering lakes."
+      },
+      {
+        "title": "Pool & Outdoor Living",
+        "description": "Infinity pools, terraced patios, covered pergolas, and outdoor dining areas designed for warm-weather entertaining and guest relaxation."
+      },
+      {
+        "title": "Authentic Charm",
+        "description": "Weathered stone, terracotta tiles, ornate ironwork, and centuries-old details that create an unmistakably Italian atmosphere."
+      }
+    ]
+  },
+
+  "featuredVenues": [
+    {
+      "name": "Villa del Balbianello",
+      "slug": "villa-del-balbianello",
+      "setting": "Historic Lakeside Villa",
+      "location": "Lenno, Lake Como",
+      "maxGuests": 120,
+      "usp": "18th-century villa on wooded promontory with terraced gardens and panoramic lake views (Star Wars & Bond filming location)",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+      "featured": true,
+      "villaFeatures": ["Famous film location", "Terraced gardens", "Lake views", "Boat arrival", "Historic elegance"]
+    },
+    {
+      "name": "Villa d'Este",
+      "slug": "villa-deste",
+      "setting": "Renaissance Palace",
+      "location": "Cernobbio, Lake Como",
+      "maxGuests": 180,
+      "usp": "16th-century cardinal's palace with floating garden, Michelin dining, and 500-year hospitality legacy",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4500557d-7c6d-4894-c0b0-bb41e39cf900/cardlg",
+      "featured": true,
+      "villaFeatures": ["Floating garden", "Michelin dining", "Historic pool", "500+ year heritage", "Lake Como views"]
+    },
+    {
+      "name": "Villa La Foce",
+      "slug": "villa-la-foce",
+      "setting": "Iconic Renaissance Villa",
+      "location": "Val d'Orcia, Tuscany",
+      "maxGuests": 100,
+      "usp": "Iconic Renaissance villa surrounded by UNESCO World Heritage landscapes in the heart of Val d'Orcia",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/f89bc39a-a918-43f8-f9d9-1a36bd07ca00/cardlg",
+      "featured": false,
+      "villaFeatures": ["UNESCO landscapes", "Renaissance architecture", "Tuscan gardens", "Val d'Orcia views", "Historic charm"]
+    },
+    {
+      "name": "Villa Aurelia",
+      "slug": "villa-aurelia",
+      "setting": "Historic Hilltop Villa",
+      "location": "Janiculum Hill, Rome",
+      "maxGuests": 200,
+      "usp": "17th-century villa with sweeping views over Rome's rooftops, frescoed interiors, and terraced gardens",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/049db06d-9a71-44b6-b140-d18110fa3000/cardlg",
+      "featured": false,
+      "villaFeatures": ["Rome skyline views", "Frescoed halls", "Terraced gardens", "Historic architecture", "City access"]
+    }
+  ],
+
+  "seasonalConsiderations": {
+    "summary": "Villa weddings in Italy are beautiful year-round, with spring and fall offering the perfect balance of weather, scenery, and garden blooms.",
+    "seasons": [
+      {
+        "months": "May – June",
+        "description": "Peak villa season. Gardens in full bloom, perfect temperatures, long evenings for outdoor dining. Book 12–18 months in advance."
+      },
+      {
+        "months": "September – October",
+        "description": "Ideal for villas. Harvest season, golden light, comfortable temperatures, and stunning autumnal gardens. September especially magical."
+      },
+      {
+        "months": "July – August",
+        "description": "High summer. Hot days but cool evenings. Perfect for poolside events and late-night garden receptions. Some inland areas can be very hot."
+      },
+      {
+        "months": "November – April",
+        "description": "Off-season. Cooler weather but garden greenery remains. Indoor halls with fireplaces shine. Christmas decorations make villas especially romantic."
+      }
+    ]
+  },
+
+  "villaExperiences": {
+    "intro": "Villa weddings extend beyond the ceremony—they're immersive experiences featuring garden tours, al fresco dining, and authentic Italian living.",
+    "activities": [
+      "Private garden tours with estate horticulturists",
+      "Al fresco dinner parties under pergolas and loggias",
+      "Poolside welcome celebrations with local wines",
+      "Sunset ceremonies in olive groves or rose gardens",
+      "Frescoed ballroom receptions with string quartets",
+      "Terraced terrace cocktail hours with panoramic views",
+      "Cooking classes with estate chefs in villa kitchens",
+      "Wine tastings in ancient cellars or vineyards",
+      "Lakeside strolls and boat tours (Lake Como villas)",
+      "Historic tours of frescoed halls and art collections",
+      "Morning yoga sessions in gardens",
+      "Farewell brunches in orangeries or poolside pavilions"
+    ],
+    "vendors": "Italian villa weddings favor garden-inspired florals (roses, peonies, lavender), natural color palettes (sage, blush, terracotta), al fresco catering with regional cuisine, and planners specializing in historic estates like Lily and Bass Events and Italian Villa Weddings.",
+    "accommodations": "Many villas offer exclusive use with all rooms included. Nearby hotels include Villa d'Este, Grand Hotel Tremezzo, or boutique properties like Castello di Casole."
+  },
+
+  "planningConsiderations": {
+    "timeline": "Popular villa venues book 12–24 months in advance for peak season (May–June, September). Lake Como and Tuscany are especially competitive. Less famous villas offer more flexibility.",
+    "budgetGuidance": "Expect €600–€2,000+ per person for villa weddings including venue, catering, wine, florals, and entertainment. Peak season Lake Como villas range €1,500–€3,000+ per person, while Tuscan hillside villas offer better value at €600–€1,500 per person.",
+    "guestExperience": "Villa weddings prioritize warm, intimate celebrations with garden ceremonies, al fresco dining, and poolside relaxation. Welcome drinks in courtyards, private garden tours, wine tastings, and farewell brunches create memorable experiences.",
+    "legalRequirements": "Civil ceremonies require 60 days' advance notice. Catholic ceremonies require 6+ months. Most villa venues have relationships with local wedding coordinators who handle all legal paperwork and documentation."
+  },
+
+  "comparisonInsights": {
+    "vsOtherStyles": "Villas offer elegance with more approachable pricing and intimate atmosphere. Luxury estates offer Michelin dining and exclusive amenities. Castles are theatrical and fortress-like. Villas prioritize garden romance and historic charm.",
+    "vsInternational": "Italian villa weddings offer better value and authenticity than comparable French or Spanish villa venues. Superior food, richer culture, and more diverse landscapes make Italy the premier villa wedding destination.",
+    "whyVilla": "Villa weddings in Italy are for couples seeking timeless romance, garden celebrations, and authentic Italian charm without breaking the bank. It's sophistication made accessible."
+  },
+
+  "seoKeywords": [
+    "villa wedding venues Italy",
+    "Italian villa weddings",
+    "garden weddings Italy",
+    "Renaissance villa weddings",
+    "Tuscan villa weddings",
+    "Lake Como villa weddings",
+    "hilltop villa weddings Italy",
+    "historic villa venues Italy",
+    "villa wedding planners Italy",
+    "outdoor villa weddings Italy"
+  ],
+
+  "cta": {
+    "primary": "Explore Villa Wedding Venues",
+    "secondary": "Request a Villa Wedding Quote",
+    "enquiryLink": "#contact"
+  }
+}
+

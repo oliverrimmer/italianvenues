@@ -1,0 +1,157 @@
+{
+  "name": "Castle Weddings",
+  "slug": "castle",
+  "country": "Italy",
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/492085f9-2d4e-4c60-737a-85551e589100/cardlg",
+  "heroTitle": "Castle Wedding Venues in Italy: Medieval Grandeur & Timeless Drama",
+  "heroDescription": "From 11th-century fortresses to island watchtowers and medieval strongholds, Italy's castle wedding venues offer unparalleled drama, historic authenticity, and fairy-tale romance.",
+  "metaDescription": "Discover Italy's most impressive castle wedding venues. Medieval fortresses, island castles, and historic strongholds across Tuscany, Rome, and the Amalfi Coast.",
+  
+  "about": {
+    "intro": "A castle wedding in Italy is a journey into history—where medieval walls echo with tales of knights and nobility, where torchlit courtyards host dramatic ceremonies, and where ancient halls resonate with the grandeur of centuries past. Italy's castles range from imposing mountain fortresses to elegant island retreats, each offering a unique blend of dramatic architecture and authentic medieval atmosphere.",
+    "philosophy": "Castle weddings embrace theatrical elegance and historic grandeur. Think torchlit ceremonies in courtyards, feasts in vaulted halls, dramatic archways, and panoramic battlements. It's romance with an edge—sophistication meets medieval drama.",
+    "serviceStandards": "Castle venues in Italy typically feature: imposing medieval architecture with stone towers and battlements, dramatic courtyard spaces for ceremonies and receptions, vaulted halls and ballrooms for grand dining, panoramic views from ramparts and terraces, extensive grounds with gardens and ancient trees, historic authenticity with original stonework and architectural details, and unique character born from centuries of history.",
+    "investment": "Castle weddings in Italy typically range from €50,000 to €350,000+ for 100–300+ guests, depending on exclusivity and location. Historic Roman or Tuscan castles command €100,000–€400,000+, while lesser-known fortresses offer excellent value at €50,000–€150,000. Castle venues shine year-round, with spring and autumn offering ideal weather for outdoor ceremonies."
+  },
+
+  "characteristics": {
+    "summary": "What defines a castle wedding venue in Italy? Imposing medieval architecture, dramatic courtyards, historic authenticity, and that unmistakable sense of grand drama.",
+    "features": [
+      {
+        "title": "Medieval Architecture",
+        "description": "Imposing stone towers, battlements, fortified walls, and authentic medieval construction dating from the 11th–16th centuries with original features preserved."
+      },
+      {
+        "title": "Dramatic Courtyards",
+        "description": "Central courtyards perfect for ceremonies, receptions, and dancing—surrounded by ancient stone arches, colonnades, and historic facades."
+      },
+      {
+        "title": "Vaulted Halls",
+        "description": "Grand ballrooms and dining halls with towering stone vaults, frescoes, fireplaces, and medieval details creating an unforgettable atmosphere."
+      },
+      {
+        "title": "Ramparts & Terraces",
+        "description": "Elevated terraces and battlements offering panoramic views of countryside, mountains, or coastlines—perfect for ceremonies and cocktails."
+      },
+      {
+        "title": "Historic Authenticity",
+        "description": "Original stonework, ancient wells, secret passages, courtyards, and architectural details that tell centuries-old stories."
+      },
+      {
+        "title": "Unforgettable Drama",
+        "description": "That ineffable castle magic—torchlit evenings, echoing halls, dramatic entrances, and an atmosphere that transports guests to another era."
+      }
+    ]
+  },
+
+  "featuredVenues": [
+    {
+      "name": "Castello di Vincigliata",
+      "slug": "castello-di-vincigliata",
+      "setting": "Medieval Castle",
+      "location": "Fiesole, Florence",
+      "maxGuests": 200,
+      "usp": "Authentic 11th-century fortress with panoramic views over Florence and the Tuscan hills",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/492085f9-2d4e-4c60-737a-85551e589100/cardlg",
+      "featured": true,
+      "castleFeatures": ["11th-century fortress", "Panoramic Florence views", "Medieval architecture", "Historic courtyards", "Tuscan location"]
+    },
+    {
+      "name": "Castello di Tor Crescenza",
+      "slug": "castello-di-tor-crescenza",
+      "setting": "Medieval Castle",
+      "location": "Rome (city limits)",
+      "maxGuests": 300,
+      "usp": "11th-century castle with frescoed halls, terraced gardens, and views of the Roman countryside",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7a242456-3484-46ae-a7e6-b272c9821300/cardlg",
+      "featured": true,
+      "castleFeatures": ["11th-century origins", "Frescoed halls", "Large capacity", "Roman countryside", "Historic gardens"]
+    },
+    {
+      "name": "Mezzatorre Hotel & Thermal Spa",
+      "slug": "mezzatorre-hotel-thermal-spa",
+      "setting": "Island Castle & Spa",
+      "location": "Ischia Island, Amalfi Coast",
+      "maxGuests": 200,
+      "usp": "16th-century Aragonese watchtower on volcanic island with thermal spa and private beach",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl",
+      "featured": true,
+      "castleFeatures": ["16th-century watchtower", "Island setting", "Thermal spa", "Private beach", "Volcanic springs"]
+    }
+  ],
+
+  "seasonalConsiderations": {
+    "summary": "Castle weddings in Italy are majestic year-round, with spring and fall offering ideal weather for outdoor ceremonies and dramatic light.",
+    "seasons": [
+      {
+        "months": "May – June",
+        "description": "Ideal castle season. Perfect weather, blooming gardens, long daylight. Book 12–18 months ahead for popular locations."
+      },
+      {
+        "months": "September – October",
+        "description": "Perfect for castles. Golden autumn light, comfortable temperatures, dramatic skies enhancing medieval atmosphere."
+      },
+      {
+        "months": "July – August",
+        "description": "Hot but manageable in mountains. Evening ceremonies and vaulted halls offer natural cooling. Island castles benefit from sea breezes."
+      },
+      {
+        "months": "November – April",
+        "description": "Dramatic winter atmosphere. Towering castles in mist, cozy fires in halls, and authentic medieval ambiance enhanced by cooler weather."
+      }
+    ]
+  },
+
+  "castleExperiences": {
+    "intro": "Castle weddings are immersive medieval experiences featuring historic tours, torchlit dinners, and authentic ceremonies.",
+    "activities": [
+      "Private guided tours of castle grounds and historic chambers",
+      "Torchlit ceremonies in courtyards at sunset",
+      "Medieval-themed welcome dinners in vaulted halls",
+      "Wine tastings in ancient cellars",
+      "Photography sessions on ramparts and battlements",
+      "Sunset receptions with panoramic views",
+      "Historic sword-fighting demonstrations",
+      "Morning breakfasts in medieval gardens",
+      "Evening dancing in grand courtyards",
+      "Greeting guests at portcullis entrances",
+      "Farewell brunches in orangeries or conservatories",
+      "Private tours of secret passages and historic artifacts"
+    ],
+    "vendors": "Castle weddings benefit from dramatic florals (thistles, roses, branches), rich color palettes (burgundy, gold, forest green), historic styling, and planners specializing in historic venues like Castle Wedding Planners and Historical Venue Specialists.",
+    "accommodations": "Many castles offer exclusive use with accommodation. Nearby options include historic inns, converted monasteries, or luxury hotels in nearby towns."
+  },
+
+  "planningConsiderations": {
+    "timeline": "Popular castles book 12–24 months in advance for peak season. Less famous castles offer more flexibility. Island castles are especially sought-after.",
+    "budgetGuidance": "Expect €500–€2,500+ per person for castle weddings including venue, catering, wine, florals, and entertainment. Historic Roman or Tuscan castles range €1,000–€3,000+ per person, while lesser-known fortresses offer better value at €500–€1,200 per person.",
+    "guestExperience": "Castle weddings prioritize dramatic, memorable celebrations with torchlit ceremonies, grand feasts in vaulted halls, and medieval-themed experiences. Welcome dinners, wine cellars, rampart photography, and historic tours create unforgettable moments.",
+    "legalRequirements": "Civil ceremonies require 60 days' advance notice. Catholic ceremonies require 6+ months. Most castle venues have relationships with local coordinators who handle legal paperwork and historic venue regulations."
+  },
+
+  "comparisonInsights": {
+    "vsOtherStyles": "Castles offer grand drama and theatrical atmosphere. Villas provide intimate charm. Luxury venues offer Michelin dining and spa amenities. Choose castles for epic scale and medieval romance.",
+    "vsInternational": "Italian castle weddings offer better value and authenticity than comparable French chateaux or Scottish castles. Superior food, richer history, and Mediterranean climate make Italy the premier castle wedding destination.",
+    "whyCastle": "Castle weddings in Italy are for couples seeking historic grandeur, dramatic architecture, and authentic medieval atmosphere. It's romance on an epic scale."
+  },
+
+  "seoKeywords": [
+    "castello wedding venues Italy",
+    "castle weddings Italy",
+    "medieval castle weddings Italy",
+    "fortress wedding venues Italy",
+    "castello venue Italy",
+    "historic castle weddings",
+    "Tuscany castle weddings",
+    "Rome castle weddings",
+    "medieval wedding venues Italy",
+    "castle wedding planners Italy"
+  ],
+
+  "cta": {
+    "primary": "Explore Castle Wedding Venues",
+    "secondary": "Request a Castle Wedding Quote",
+    "enquiryLink": "#contact"
+  }
+}
+

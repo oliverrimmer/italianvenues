@@ -1,0 +1,551 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const styleData = await import('../../data/styles/castle.json');
+const {
+  name, heroImage, heroTitle, heroDescription, metaDescription, about, characteristics, featuredVenues, seasonalConsiderations, castleExperiences, planningConsiderations, comparisonInsights, seoKeywords, cta
+} = styleData.default;
+
+// List of venues with actual detail pages
+const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa', 'hotel-il-pellicano'];
+---
+
+<BaseLayout 
+  title={`${heroTitle} | ItalianVenues`}
+  description={metaDescription}
+>
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": `${name} in Italy`,
+    "description": metaDescription,
+    "keywords": seoKeywords.join(', ')
+  })} />
+
+  <!-- HERO SECTION -->
+  <section class="relative h-screen bg-black">
+    <img
+      src={heroImage}
+      alt="Castle Italian wedding venues - Medieval fortresses and historic grandeur"
+      class="absolute inset-0 w-full h-full object-cover opacity-60"
+      fetchpriority="high"
+      loading="eager"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70"></div>
+    
+    <div class="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
+      <p class="text-[#a78656] text-sm md:text-base font-medium tracking-wider uppercase mb-4">Italian Wedding Styles</p>
+      <h1 class="heading-h1 text-white mb-6 max-w-5xl">
+        {heroTitle}
+      </h1>
+      <p class="text-white/90 text-lg md:text-2xl max-w-4xl mb-10 leading-relaxed">
+        {heroDescription}
+      </p>
+      <div class="flex gap-4 flex-wrap justify-center">
+        <a href="#venues" class="inline-flex items-center px-8 py-4 bg-[#a78656] text-white font-semibold hover:bg-[#8f6d47] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#a78656] rounded-lg">
+          View Castle Venues
+        </a>
+        <a href="#contact" class="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold hover:bg-white hover:text-black transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white rounded-lg">
+          Plan Your Castle Wedding
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STICKY NAVIGATION BAR -->
+  <nav id="sticky-nav" class="sticky top-0 z-40 bg-white border-b border-zinc-200 shadow-sm transition-all duration-200">
+    <div class="container mx-auto px-6 max-w-7xl">
+      <div class="flex items-center gap-3 overflow-x-auto scrollbar-hide py-4">
+        <a href="#overview" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Overview</a>
+        <a href="#characteristics" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">What is a Castle</a>
+        <a href="#venues" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Venues</a>
+        <a href="#experiences" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Experiences</a>
+        <a href="#planning" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Planning</a>
+        <a href="#insights" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Why Castles</a>
+        <a href="#contact" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- OVERVIEW SECTION -->
+  <section id="overview" class="bg-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="text-center mb-16">
+        <h2 class="heading-h2 font-semibold mb-6 text-zinc-900">The Pinnacle of Italian Wedding Excellence</h2>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="space-y-6">
+          <p class="text-lg leading-relaxed text-zinc-700">{about.intro}</p>
+          <p class="text-lg leading-relaxed text-zinc-700">{about.philosophy}</p>
+        </div>
+        <div class="space-y-6">
+          <p class="text-lg leading-relaxed text-zinc-700">{about.serviceStandards}</p>
+          <p class="text-lg leading-relaxed text-zinc-700">{about.investment}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARACTERISTICS SECTION -->
+  <section id="characteristics" class="bg-gradient-to-b from-zinc-50 to-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">What Defines a Castle Wedding in Italy</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto leading-relaxed">{characteristics.summary}</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {characteristics.features.map((feature) => (
+          <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm hover:shadow-lg transition-shadow">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-[#a78656]/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-6 h-6 text-[#a78656]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-zinc-900">{feature.title}</h3>
+            </div>
+            <p class="text-zinc-700 leading-relaxed">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED VENUES SECTION -->
+  <section id="venues" class="bg-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-7xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Italy's Most Beautiful Castle Wedding Venues</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">From Renaissance palazzos to hilltop estates and lakeside retreats</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        {featuredVenues.map((venue) => (
+          <a 
+            href={availableVenueSlugs.includes(venue.slug) ? `/venues/${venue.slug}` : `#contact`}
+            class="group block bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:border-[#a78656] transition-all hover:shadow-2xl"
+          >
+            <div class="relative h-80 overflow-hidden">
+              <img 
+                src={venue.image} 
+                alt={`${venue.name} - ${venue.setting} wedding venue in ${venue.location}`}
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
+                decoding="async"
+              />
+              {venue.featured && (
+                <div class="absolute top-4 right-4 px-4 py-2 bg-[#a78656] text-white text-sm font-semibold rounded-full shadow-lg">
+                  Featured
+                </div>
+              )}
+            </div>
+            <div class="p-8">
+              <div class="flex items-start justify-between mb-3">
+                <h3 class="text-2xl font-semibold text-zinc-900 group-hover:text-[#a78656] transition-colors">{venue.name}</h3>
+                <svg class="w-6 h-6 text-[#a78656] transition-transform group-hover:translate-x-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </div>
+              <p class="text-zinc-600 font-medium mb-2">{venue.setting} • {venue.location}</p>
+              <p class="text-zinc-700 leading-relaxed mb-4">{venue.usp}</p>
+              
+              {venue.castleFeatures && (
+                <div class="border-t border-zinc-200 pt-4 mt-4">
+                  <p class="text-sm font-semibold text-zinc-900 mb-2">Castle Features:</p>
+                  <div class="flex flex-wrap gap-2">
+                    {venue.castleFeatures.slice(0, 3).map((feature) => (
+                      <span class="text-xs px-3 py-1 bg-[#a78656]/10 text-[#a78656] rounded-full font-medium">{feature}</span>
+                    ))}
+                  </div>
+                </div>
+              )}
+              
+              <div class="flex items-center gap-4 text-sm mt-4">
+                <div class="flex items-center gap-2">
+                  <svg class="w-5 h-5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                  </svg>
+                  <span class="text-zinc-600">Up to {venue.maxGuests} guests</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="/venues?style=castle" class="inline-flex items-center px-8 py-4 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-colors duration-200">
+          View All Castle Venues
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VILLA EXPERIENCES SECTION -->
+  <section id="experiences" class="bg-gradient-to-b from-zinc-50 to-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Authentic Castle Experiences</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto leading-relaxed">{castleExperiences.intro}</p>
+      </div>
+
+      <!-- Activities Grid -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-semibold text-zinc-900 mb-8">Curated Guest Experiences</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {castleExperiences.activities.map((activity) => (
+            <div class="flex items-start gap-4 bg-white p-6 rounded-xl border border-zinc-200 shadow-sm hover:shadow-md transition-shadow">
+              <svg class="w-6 h-6 text-[#a78656] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span class="text-zinc-800 leading-relaxed">{activity}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Vendors & Accommodations -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <svg class="w-8 h-8 text-[#a78656]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <h4 class="text-xl font-semibold text-zinc-900">Castle Wedding Vendors</h4>
+          </div>
+          <p class="text-zinc-700 leading-relaxed">{castleExperiences.vendors}</p>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
+          <div class="flex items-center gap-3 mb-4">
+            <svg class="w-8 h-8 text-[#a78656]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+            <h4 class="text-xl font-semibold text-zinc-900">Five-Star Accommodations</h4>
+          </div>
+          <p class="text-zinc-700 leading-relaxed">{castleExperiences.accommodations}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANNING CONSIDERATIONS SECTION -->
+  <section id="planning" class="bg-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Planning Your Castle Wedding</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">Essential guidance for creating a flawless celebration</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-zinc-50 p-8 rounded-2xl border border-zinc-200">
+          <h3 class="text-2xl font-semibold text-zinc-900 mb-4">Timeline</h3>
+          <p class="text-zinc-700 leading-relaxed">{planningConsiderations.timeline}</p>
+        </div>
+        <div class="bg-zinc-50 p-8 rounded-2xl border border-zinc-200">
+          <h3 class="text-2xl font-semibold text-zinc-900 mb-4">Investment</h3>
+          <p class="text-zinc-700 leading-relaxed">{planningConsiderations.budgetGuidance}</p>
+        </div>
+        <div class="bg-zinc-50 p-8 rounded-2xl border border-zinc-200">
+          <h3 class="text-2xl font-semibold text-zinc-900 mb-4">Guest Experience</h3>
+          <p class="text-zinc-700 leading-relaxed">{planningConsiderations.guestExperience}</p>
+        </div>
+        <div class="bg-zinc-50 p-8 rounded-2xl border border-zinc-200">
+          <h3 class="text-2xl font-semibold text-zinc-900 mb-4">Legal Requirements</h3>
+          <p class="text-zinc-700 leading-relaxed">{planningConsiderations.legalRequirements}</p>
+        </div>
+      </div>
+
+      <!-- Seasonal Considerations -->
+      <div class="bg-gradient-to-br from-zinc-50 to-zinc-100 rounded-2xl p-10 border border-zinc-200">
+        <h3 class="text-2xl font-semibold text-zinc-900 mb-6 text-center">Best Seasons for Castle Weddings</h3>
+        <p class="text-lg text-zinc-700 text-center mb-8 max-w-3xl mx-auto">{seasonalConsiderations.summary}</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {seasonalConsiderations.seasons.map((season) => (
+            <div class="bg-white p-6 rounded-xl border border-zinc-200">
+              <h4 class="text-lg font-semibold text-zinc-900 mb-2">{season.months}</h4>
+              <p class="text-zinc-700 leading-relaxed">{season.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON INSIGHTS SECTION -->
+  <section id="insights" class="bg-gradient-to-b from-zinc-50 to-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-6xl">
+      <div class="text-center mb-12">
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Why Choose a Castle Wedding in Italy?</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">The ultimate investment in perfection and cultural immersion</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
+          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Castles vs. Other Styles</h4>
+          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsOtherStyles}</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
+          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Italy vs. International</h4>
+          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsInternational}</p>
+        </div>
+      </div>
+
+      <div class="bg-white p-10 rounded-2xl border border-zinc-200 shadow-sm">
+        <h4 class="text-2xl font-semibold text-zinc-900 mb-4">The Castle Advantage</h4>
+        <p class="text-lg text-zinc-700 leading-relaxed">{comparisonInsights.whyCastle}</p>
+      </div>
+
+      <div class="bg-[#a78656] text-white p-10 rounded-2xl text-center mt-12">
+        <h3 class="text-3xl font-semibold mb-4">Ready to Plan Your Castle Wedding?</h3>
+        <p class="text-xl text-white/90 mb-6 max-w-3xl mx-auto">
+          Let us connect you with Italy's finest villa venues and create an unforgettable garden celebration
+        </p>
+        <a href="#contact" class="inline-flex items-center px-8 py-4 bg-white text-[#a78656] font-semibold rounded-lg hover:bg-zinc-100 transition-colors duration-200">
+          Get Started
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="bg-[hsl(0,0%,3%)] text-white py-24 md:py-32">
+    <div class="container mx-auto px-6 max-w-2xl">
+      <h2 class="heading-h2 font-semibold mb-6 text-center">Request a Castle Wedding Quote</h2>
+      <p class="text-center text-zinc-400 mb-12">Tell us about your vision and we'll connect you with Italy's most beautiful villa venues.</p>
+      
+      <form class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-zinc-300 mb-2">Full Name *</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
+              placeholder="Your name"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-zinc-300 mb-2">Email *</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
+              placeholder="your.email@domain.com"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="guests" class="block text-sm font-medium text-zinc-300 mb-2">Number of Guests</label>
+            <input
+              type="number"
+              id="guests"
+              name="guests"
+              class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
+              placeholder="150"
+            />
+          </div>
+          <div>
+            <label for="date" class="block text-sm font-medium text-zinc-300 mb-2">Preferred Date</label>
+            <input
+              type="date"
+              id="date"
+              name="date"
+              class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
+            />
+          </div>
+        </div>
+
+        <div>
+          <label for="budget" class="block text-sm font-medium text-zinc-300 mb-2">Estimated Budget (EUR)</label>
+          <select
+            id="budget"
+            name="budget"
+            class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
+          >
+            <option value="" class="text-black">Select budget range...</option>
+            <option value="200-350k" class="text-black">€200,000 - €350,000</option>
+            <option value="350-500k" class="text-black">€350,000 - €500,000</option>
+            <option value="500-750k" class="text-black">€500,000 - €750,000</option>
+            <option value="750k-1m" class="text-black">€750,000 - €1,000,000</option>
+            <option value="1m+" class="text-black">€1,000,000+</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-zinc-300 mb-2">Tell Us About Your Vision *</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            required
+            class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent resize-none"
+            placeholder="Describe your dream villa wedding: style, preferences, must-haves, special requests..."
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="w-full px-8 py-4 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:ring-offset-2 focus:ring-offset-[hsl(0,0%,3%)]"
+        >
+          Send Enquiry
+        </button>
+      </form>
+
+      <p class="text-center text-zinc-500 text-sm mt-8">
+        We'll respond within 24 hours with curated villa venue options and planning recommendations.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+
+  * {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .nav-link.active {
+    background-color: #a78656;
+    color: white;
+    box-shadow: 0 2px 4px rgba(167, 134, 86, 0.2);
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const stickyNav = document.getElementById('sticky-nav');
+
+    let activeSection: string | null = null;
+    let scrollTimeout: number | null = null;
+    let isScrolling = false;
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!isScrolling) return;
+        
+        let highestSection: string | null = null;
+        let highestRatio = 0;
+        
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio > highestRatio) {
+            highestRatio = entry.intersectionRatio;
+            highestSection = entry.target.getAttribute('id');
+          }
+        });
+        
+        if (highestSection && highestSection !== activeSection) {
+          activeSection = highestSection;
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${highestSection}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      },
+      {
+        threshold: 0.3,
+        rootMargin: '-120px 0px -60% 0px',
+      }
+    );
+    
+    let scrollUpdateTimeout: number | null = null;
+    window.addEventListener('scroll', () => {
+      isScrolling = true;
+      
+      if (scrollUpdateTimeout) {
+        clearTimeout(scrollUpdateTimeout);
+      }
+      
+      scrollUpdateTimeout = window.setTimeout(() => {
+        isScrolling = false;
+        
+        const scrollPosition = window.scrollY + 150;
+        
+        let currentSection: string | null = null;
+        let closestSection: string | null = null;
+        let minDistance = Infinity;
+        
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          const sectionTop = window.scrollY + rect.top;
+          const distance = Math.abs(scrollPosition - sectionTop);
+          
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + rect.height) {
+            currentSection = section.getAttribute('id');
+          }
+          
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestSection = section.getAttribute('id');
+          }
+        });
+        
+        const targetSection = currentSection || closestSection;
+        
+        if (targetSection && targetSection !== activeSection) {
+          activeSection = targetSection;
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${targetSection}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      }, 150);
+    }, { passive: true });
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    if (navLinks.length > 0) {
+      navLinks[0].classList.add('active');
+    }
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          navLinks.forEach((l) => l.classList.remove('active'));
+          link.classList.add('active');
+          
+          activeSection = targetId.substring(1);
+          
+          const offsetTop = targetSection.offsetTop - (stickyNav?.offsetHeight || 0);
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth',
+          });
+        }
+      });
+    });
+  });
+</script>
