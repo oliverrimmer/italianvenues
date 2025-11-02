@@ -402,7 +402,7 @@ const allLocationCards = [
     document.body.style.overflow = '';
   });
 
-  // Smart Search Parser - Shared function
+  // Smart Search Parser - Parses multiple criteria and redirects accordingly
   function handleSearch(query) {
     query = query.toLowerCase().trim();
     
@@ -411,51 +411,63 @@ const allLocationCards = [
       return;
     }
 
-    // Location keywords mapping
-    const locationMap = {
-      'tuscany': '/locations/tuscany',
-      'tuscan': '/locations/tuscany',
-      'florence': '/locations/tuscany',
-      'siena': '/locations/tuscany',
-      'chianti': '/locations/tuscany',
-      'amalfi': '/locations/amalfi-coast',
-      'positano': '/locations/amalfi-coast',
-      'ravello': '/locations/amalfi-coast',
-      'sorrento': '/locations/amalfi-coast',
-      'como': '/locations/lake-como',
-      'bellagio': '/locations/lake-como',
-      'varenna': '/locations/lake-como',
-      'rome': '/locations/rome',
-      'lazio': '/locations/rome',
-      'roman': '/locations/rome'
+    // Location keywords mapping - map to filter values, not URLs
+    const locationKeywords = {
+      'tuscany': 'Tuscany',
+      'tuscan': 'Tuscany',
+      'florence': 'Tuscany',
+      'siena': 'Tuscany',
+      'chianti': 'Tuscany',
+      'amalfi': 'Amalfi Coast',
+      'positano': 'Amalfi Coast',
+      'ravello': 'Amalfi Coast',
+      'sorrento': 'Amalfi Coast',
+      'como': 'Lake Como',
+      'bellagio': 'Lake Como',
+      'varenna': 'Lake Como',
+      'rome': 'Rome',
+      'lazio': 'Rome',
+      'roman': 'Rome',
+      'puglia': 'Puglia',
+      'umbria': 'Umbria'
     };
 
-    // Style keywords mapping
-    const styleMap = {
-      'luxury': '/styles/luxury',
-      'luxurious': '/styles/luxury',
-      'exclusive': '/styles/luxury',
-      'michelin': '/styles/luxury',
-      'seaside': '/styles/seaside',
-      'coastal': '/styles/seaside',
-      'beach': '/styles/seaside',
-      'sea': '/styles/seaside',
-      'ocean': '/styles/seaside'
+    // Style/venue type keywords mapping
+    const styleKeywords = {
+      'luxury': 'luxury',
+      'luxurious': 'luxury',
+      'exclusive': 'luxury',
+      'michelin': 'luxury',
+      'seaside': 'seaside',
+      'coastal': 'seaside',
+      'beach': 'seaside',
+      'sea': 'seaside',
+      'ocean': 'seaside',
+      'castle': 'castle',
+      'villa': 'villa',
+      'hotel': 'luxury'
     };
 
-    // Check for location match
-    for (const [keyword, url] of Object.entries(locationMap)) {
+    // Parse all criteria from query
+    const foundCriteria = {
+      location: null,
+      capacity: null,
+      style: null
+    };
+
+    // Check for location
+    for (const [keyword, region] of Object.entries(locationKeywords)) {
       if (query.includes(keyword)) {
-        window.location.href = url;
-        return;
+        foundCriteria.location = region;
+        break;
       }
     }
 
-    // Check for style match
-    for (const [keyword, url] of Object.entries(styleMap)) {
+    // Check for style/venue type
+    for (const [keyword, style] of Object.entries(styleKeywords)) {
       if (query.includes(keyword)) {
-        window.location.href = url;
-        return;
+        foundCriteria.style = style;
+        break;
       }
     }
 
@@ -463,30 +475,56 @@ const allLocationCards = [
     const capacityMatch = query.match(/(\d+)/);
     if (capacityMatch) {
       const capacity = parseInt(capacityMatch[1]);
-      let capacityRange = '';
-      
-      if (capacity >= 50 && capacity <= 100) capacityRange = '50-100';
-      else if (capacity > 100 && capacity <= 150) capacityRange = '100-150';
-      else if (capacity > 150 && capacity <= 200) capacityRange = '150-200';
-      else if (capacity > 200) capacityRange = '200+';
-      
-      if (capacityRange) {
-        window.location.href = `/venues?capacity=${capacityRange}`;
-        return;
+      if (capacity >= 50) {
+        if (capacity <= 100) foundCriteria.capacity = '50-100';
+        else if (capacity <= 150) foundCriteria.capacity = '100-150';
+        else if (capacity <= 200) foundCriteria.capacity = '150-200';
+        else foundCriteria.capacity = '200+';
       }
     }
 
-    // Check for venue type keywords
-    if (query.includes('castle')) {
-      window.location.href = '/venues?style=castle';
+    // Build redirect URL based on what was found
+    const criteriaCount = Object.values(foundCriteria).filter(v => v !== null).length;
+
+    // If multiple criteria found, go to venues page with filters
+    if (criteriaCount > 1) {
+      const params = new URLSearchParams();
+      if (foundCriteria.location) params.append('region', foundCriteria.location);
+      if (foundCriteria.capacity) params.append('capacity', foundCriteria.capacity);
+      if (foundCriteria.style) params.append('style', foundCriteria.style);
+      window.location.href = `/venues?${params.toString()}`;
       return;
     }
-    if (query.includes('villa')) {
-      window.location.href = '/venues?style=villa';
+
+    // If only location found, go to location page
+    if (foundCriteria.location) {
+      const locationSlugMap = {
+        'Tuscany': '/locations/tuscany',
+        'Amalfi Coast': '/locations/amalfi-coast',
+        'Lake Como': '/locations/lake-como',
+        'Rome': '/locations/rome',
+        'Puglia': '/locations/puglia',
+        'Umbria': '/locations/umbria'
+      };
+      window.location.href = locationSlugMap[foundCriteria.location] || '/venues';
       return;
     }
-    if (query.includes('hotel')) {
-      window.location.href = '/venues?style=luxury';
+
+    // If only capacity found, go to venues with capacity filter
+    if (foundCriteria.capacity) {
+      window.location.href = `/venues?capacity=${foundCriteria.capacity}`;
+      return;
+    }
+
+    // If only style found, go to style page or venues with style filter
+    if (foundCriteria.style) {
+      if (foundCriteria.style === 'luxury') {
+        window.location.href = '/styles/luxury';
+      } else if (foundCriteria.style === 'seaside') {
+        window.location.href = '/styles/seaside';
+      } else {
+        window.location.href = `/venues?style=${foundCriteria.style}`;
+      }
       return;
     }
 
@@ -501,94 +539,8 @@ const allLocationCards = [
   if (heroSearchForm && heroSearchInput) {
     heroSearchForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      const query = heroSearchInput.value.toLowerCase().trim();
-      
-      if (!query) {
-        window.location.href = '/venues';
-        return;
-      }
-
-      // Location keywords mapping
-      const locationMap = {
-        'tuscany': '/locations/tuscany',
-        'tuscan': '/locations/tuscany',
-        'florence': '/locations/tuscany',
-        'siena': '/locations/tuscany',
-        'chianti': '/locations/tuscany',
-        'amalfi': '/locations/amalfi-coast',
-        'positano': '/locations/amalfi-coast',
-        'ravello': '/locations/amalfi-coast',
-        'sorrento': '/locations/amalfi-coast',
-        'como': '/locations/lake-como',
-        'bellagio': '/locations/lake-como',
-        'varenna': '/locations/lake-como',
-        'rome': '/locations/rome',
-        'lazio': '/locations/rome',
-        'roman': '/locations/rome'
-      };
-
-      // Style keywords mapping
-      const styleMap = {
-        'luxury': '/styles/luxury',
-        'luxurious': '/styles/luxury',
-        'exclusive': '/styles/luxury',
-        'michelin': '/styles/luxury',
-        'seaside': '/styles/seaside',
-        'coastal': '/styles/seaside',
-        'beach': '/styles/seaside',
-        'sea': '/styles/seaside',
-        'ocean': '/styles/seaside'
-      };
-
-      // Check for location match
-      for (const [keyword, url] of Object.entries(locationMap)) {
-        if (query.includes(keyword)) {
-          window.location.href = url;
-          return;
-        }
-      }
-
-      // Check for style match
-      for (const [keyword, url] of Object.entries(styleMap)) {
-        if (query.includes(keyword)) {
-          window.location.href = url;
-          return;
-        }
-      }
-
-      // Extract capacity number
-      const capacityMatch = query.match(/(\d+)/);
-      if (capacityMatch) {
-        const capacity = parseInt(capacityMatch[1]);
-        let capacityRange = '';
-        
-        if (capacity >= 50 && capacity <= 100) capacityRange = '50-100';
-        else if (capacity > 100 && capacity <= 150) capacityRange = '100-150';
-        else if (capacity > 150 && capacity <= 200) capacityRange = '150-200';
-        else if (capacity > 200) capacityRange = '200+';
-        
-        if (capacityRange) {
-          window.location.href = `/venues?capacity=${capacityRange}`;
-          return;
-        }
-      }
-
-      // Check for venue type keywords
-      if (query.includes('castle')) {
-        window.location.href = '/venues?style=castle';
-        return;
-      }
-      if (query.includes('villa')) {
-        window.location.href = '/venues?style=villa';
-        return;
-      }
-      if (query.includes('hotel')) {
-        window.location.href = '/venues?style=luxury';
-        return;
-      }
-
-      // Fallback: redirect to venues page with search query
-      window.location.href = `/venues?q=${encodeURIComponent(query)}`;
+      const query = heroSearchInput.value.trim();
+      handleSearch(query);
     });
   }
 
