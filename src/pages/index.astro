@@ -54,7 +54,7 @@ const allLocationCards = [
 
 <BaseLayout>
   <!-- HERO - Full screen dark image with centered text -->
-  <section class="relative h-screen bg-black">
+  <section class="relative h-screen bg-black pb-24 md:pb-0">
     <img
       src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4500557d-7c6d-4894-c0b0-bb41e39cf900/heroxl"
       alt="Italian venue"
@@ -92,12 +92,15 @@ const allLocationCards = [
     </div>
 
     <!-- Get in Touch button at bottom center -->
-    <div class="absolute bottom-8 md:bottom-12 left-1/2 -translate-x-1/2 z-20 px-4">
-      <a href="/contact" class="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-black/80 backdrop-blur-sm border-2 border-[#a78656] text-[#a78656] font-medium hover:bg-[#a78656] hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#a78656] rounded-lg shadow-lg min-w-[200px] md:min-w-0">
+    <div class="absolute bottom-4 md:bottom-12 left-1/2 -translate-x-1/2 z-20 px-4 w-full max-w-xs" style="padding-bottom: env(safe-area-inset-bottom, 0);">
+      <a href="/contact" class="inline-flex items-center justify-center w-full px-6 md:px-8 py-3 md:py-4 bg-black/80 backdrop-blur-sm border-2 border-[#a78656] text-[#a78656] font-medium hover:bg-[#a78656] hover:text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#a78656] rounded-lg shadow-lg">
         Get in Touch
       </a>
     </div>
   </section>
+  
+  <!-- Add padding spacer on mobile to ensure button visibility and prevent overlap -->
+  <div class="h-24 md:h-0"></div>
 
   <!-- FEATURED VENUES - Rich venue cards -->
   <section id="featured-venues" class="bg-white pt-20 md:pt-28 pb-12 md:pb-16">
