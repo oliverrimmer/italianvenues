@@ -13,6 +13,7 @@
     "@astrojs/vercel": "^9.0.0",
     "@fontsource/cormorant-garamond": "^5.2.11",
     "@fontsource/lato": "^5.2.7",
+    "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "astro": "^5.15.1",
     "twilio": "^5.10.4"
