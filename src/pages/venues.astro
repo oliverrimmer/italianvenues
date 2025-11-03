@@ -285,13 +285,48 @@ const allVenues = [
   <!-- MAIN CONTENT -->
   <section class="bg-white py-16 md:py-24">
     <div class="container mx-auto px-6 max-w-7xl">
+      <!-- Mobile Filter Button - Sticky at top -->
+      <div class="lg:hidden sticky top-0 z-30 bg-white border-b border-zinc-200 mb-6 -mx-6 px-6 py-4">
+        <button 
+          id="mobile-filter-toggle"
+          class="w-full flex items-center justify-between px-4 py-3 bg-zinc-50 border-2 border-zinc-300 rounded-lg hover:border-[#a78656] transition-colors"
+        >
+          <div class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-zinc-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+            </svg>
+            <span class="font-medium text-zinc-900">Filters</span>
+            <span id="active-filter-count" class="px-2 py-0.5 bg-[#a78656] text-white text-xs font-semibold rounded-full hidden">0</span>
+          </div>
+          <svg id="filter-chevron" class="w-5 h-5 text-zinc-600 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+          </svg>
+        </button>
+      </div>
+
       <div class="flex flex-col lg:flex-row gap-12">
         
         <!-- FILTERS SIDEBAR -->
-        <aside class="lg:w-80 flex-shrink-0">
-          <div class="lg:sticky lg:top-24 flex flex-col lg:max-h-[calc(100vh-8rem)]">
-            <!-- Sticky Header Section -->
-            <div class="flex-shrink-0 pb-4 border-b border-zinc-200 mb-4">
+        <!-- Mobile Overlay -->
+        <div id="mobile-filter-overlay" class="lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
+        
+        <aside id="filters-sidebar" class="lg:w-80 flex-shrink-0 fixed lg:relative inset-0 lg:inset-auto top-0 left-0 w-[85%] max-w-sm lg:w-auto h-full lg:h-auto bg-white z-50 lg:z-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out lg:block overflow-y-auto shadow-2xl lg:shadow-none">
+          <div class="lg:sticky lg:top-24 flex flex-col lg:max-h-[calc(100vh-8rem)] p-6 lg:p-0">
+            <!-- Mobile Header with Close Button -->
+            <div class="lg:hidden flex items-center justify-between mb-6 pb-4 border-b border-zinc-200">
+              <h3 class="text-xl font-semibold text-zinc-900">Filter Venues</h3>
+              <button 
+                id="mobile-filter-close"
+                class="p-2 hover:bg-zinc-100 rounded-lg transition-colors"
+                aria-label="Close filters"
+              >
+                <svg class="w-6 h-6 text-zinc-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <!-- Sticky Header Section (Desktop Only) -->
+            <div class="hidden lg:block flex-shrink-0 pb-4 border-b border-zinc-200 mb-4">
               <h3 class="text-lg font-semibold mb-4 text-zinc-900">Filter Venues</h3>
               <p class="text-sm text-zinc-600 mb-4">Showing <span id="venue-count">{allVenues.length}</span> venues</p>
               
@@ -302,6 +337,11 @@ const allVenues = [
               >
                 Clear All Filters
               </button>
+            </div>
+            
+            <!-- Mobile Venue Count -->
+            <div class="lg:hidden mb-4 pb-4 border-b border-zinc-200">
+              <p class="text-sm text-zinc-600">Showing <span id="venue-count-mobile">{allVenues.length}</span> venues</p>
             </div>
             
             <!-- Scrollable Filters Section -->
@@ -498,11 +538,63 @@ const allVenues = [
 </BaseLayout>
 
 <script>
+  // Mobile Filter Toggle Functionality
+  const mobileFilterToggle = document.getElementById('mobile-filter-toggle');
+  const mobileFilterClose = document.getElementById('mobile-filter-close');
+  const mobileFilterOverlay = document.getElementById('mobile-filter-overlay');
+  const filtersSidebar = document.getElementById('filters-sidebar');
+  const filterChevron = document.getElementById('filter-chevron');
+  const activeFilterCount = document.getElementById('active-filter-count');
+
+  function openMobileFilters() {
+    filtersSidebar.classList.remove('-translate-x-full');
+    mobileFilterOverlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+    filterChevron.style.transform = 'rotate(180deg)';
+  }
+
+  function closeMobileFilters() {
+    filtersSidebar.classList.add('-translate-x-full');
+    mobileFilterOverlay.classList.add('hidden');
+    document.body.style.overflow = '';
+    filterChevron.style.transform = 'rotate(0deg)';
+  }
+
+  if (mobileFilterToggle) {
+    mobileFilterToggle.addEventListener('click', () => {
+      if (filtersSidebar.classList.contains('-translate-x-full')) {
+        openMobileFilters();
+      } else {
+        closeMobileFilters();
+      }
+    });
+  }
+
+  if (mobileFilterClose) {
+    mobileFilterClose.addEventListener('click', closeMobileFilters);
+  }
+
+  if (mobileFilterOverlay) {
+    mobileFilterOverlay.addEventListener('click', closeMobileFilters);
+  }
+
+  // Update active filter count badge
+  function updateActiveFilterCount() {
+    const checkedCount = document.querySelectorAll('.filter-checkbox:checked').length;
+    if (checkedCount > 0) {
+      activeFilterCount.textContent = checkedCount;
+      activeFilterCount.classList.remove('hidden');
+    } else {
+      activeFilterCount.classList.add('hidden');
+    }
+  }
+
   // Get all filter checkboxes and venue cards
   const filterCheckboxes = document.querySelectorAll('.filter-checkbox');
   const venueCards = document.querySelectorAll('.venue-card');
   const clearFiltersBtn = document.getElementById('clear-filters');
   const venueCount = document.getElementById('venue-count');
+  const venueCountMobile = document.getElementById('venue-count-mobile');
   const noResults = document.getElementById('no-results');
 
   // Parse URL parameters on load
@@ -612,8 +704,12 @@ const allVenues = [
       }
     });
 
-    // Update count
-    venueCount.textContent = visibleCount;
+    // Update count (desktop and mobile)
+    if (venueCount) venueCount.textContent = visibleCount;
+    if (venueCountMobile) venueCountMobile.textContent = visibleCount;
+
+    // Update active filter badge
+    updateActiveFilterCount();
 
     // Show/hide no results message
     if (visibleCount === 0) {
@@ -646,6 +742,9 @@ const allVenues = [
   filterCheckboxes.forEach(checkbox => {
     checkbox.addEventListener('change', filterVenues);
   });
+
+  // Initialize filter count badge on page load
+  updateActiveFilterCount();
 
   // Parse URL params on page load
   parseURLParams();
