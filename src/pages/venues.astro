@@ -304,14 +304,14 @@ const allVenues = [
         </button>
       </div>
 
-      <div class="flex flex-col lg:flex-row gap-12">
+      <div class="flex flex-col lg:flex-row gap-12 lg:items-start">
         
         <!-- FILTERS SIDEBAR -->
         <!-- Mobile Overlay -->
         <div id="mobile-filter-overlay" class="lg:hidden fixed inset-0 bg-black/50 z-40 hidden"></div>
         
         <aside id="filters-sidebar" class="lg:w-80 flex-shrink-0 fixed lg:relative inset-0 lg:inset-auto top-0 left-0 w-[85%] max-w-sm lg:w-auto h-full lg:h-auto bg-white z-50 lg:z-auto transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out lg:block overflow-y-auto shadow-2xl lg:shadow-none">
-          <div class="lg:sticky lg:top-24 flex flex-col lg:max-h-[calc(100vh-8rem)] p-6 lg:p-0">
+          <div class="lg:sticky lg:top-0 flex flex-col lg:max-h-[calc(100vh-8rem)] p-6 lg:p-0">
             <!-- Mobile Header with Close Button -->
             <div class="lg:hidden flex items-center justify-between mb-6 pb-4 border-b border-zinc-200">
               <h3 class="text-xl font-semibold text-zinc-900">Filter Venues</h3>
@@ -327,8 +327,8 @@ const allVenues = [
             </div>
             <!-- Sticky Header Section (Desktop Only) -->
             <div class="hidden lg:block flex-shrink-0 pb-4 border-b border-zinc-200 mb-4">
-              <h3 class="text-lg font-semibold mb-4 text-zinc-900">Filter Venues</h3>
-              <p class="text-sm text-zinc-600 mb-4">Showing <span id="venue-count">{allVenues.length}</span> venues</p>
+              <h3 class="text-lg font-semibold mb-3 text-zinc-900">Filter Venues</h3>
+              <p class="text-sm text-zinc-600 mb-3">Showing <span id="venue-count">{allVenues.length}</span> venues</p>
               
               <!-- Clear All Filters Button - at top for easy access -->
               <button 
