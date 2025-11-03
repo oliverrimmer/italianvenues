@@ -79,8 +79,7 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
     } : undefined,
     "maximumAttendeeCapacity": maxGuests,
     "url": `https://italianvenues.com/venues/${slug}`,
-    ...(contact?.hotelPhone && { "telephone": contact.hotelPhone }),
-    ...(contact?.hotelEmail && { "email": contact.hotelEmail }),
+    "email": "contact@italianvenues.com",
     ...(startingPriceEur && { "priceRange": `€${startingPriceEur.toLocaleString()} and up` }),
     ...(facilities && facilities.length > 0 && {
       "amenityFeature": facilities.map(f => ({
