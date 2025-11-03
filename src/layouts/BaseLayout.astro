@@ -8,12 +8,18 @@ import '../styles/globals.css';
 interface Props {
   title?: string;
   description?: string;
+  ogImage?: string;
 }
 
 const { 
   title = "ItalianVenues — Luxury Italian Wedding Venues",
-  description = "Explore Italy's most exclusive and storied wedding venues — curated, verified, and ready for your unforgettable event."
+  description = "Explore Italy's most exclusive and storied wedding venues — curated, verified, and ready for your unforgettable event.",
+  ogImage = "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4500557d-7c6d-4894-c0b0-bb41e39cf900/heroxl"
 } = Astro.props;
+
+// Get current page URL for canonical and OG tags
+const siteUrl = Astro.site || 'https://italianvenues.com';
+const currentUrl = new URL(Astro.url.pathname, siteUrl).href;
 ---
 
 <!doctype html>
@@ -29,21 +35,21 @@ const {
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://italianvenues.com/" />
+    <meta property="og:url" content={currentUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content="/images/hero.jpg" />
+    <meta property="og:image" content={ogImage} />
     <meta property="og:site_name" content="ItalianVenues" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://italianvenues.com/" />
+    <meta property="twitter:url" content={currentUrl} />
     <meta property="twitter:title" content={title} />
     <meta property="twitter:description" content={description} />
-    <meta property="twitter:image" content="/images/hero.jpg" />
+    <meta property="twitter:image" content={ogImage} />
     
     <!-- Canonical -->
-    <link rel="canonical" href="https://italianvenues.com/" />
+    <link rel="canonical" href={currentUrl} />
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TR5XNKVNM"></script>

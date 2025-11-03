@@ -57,6 +57,7 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
 <BaseLayout 
   title={`${name} — Exclusive Luxury Wedding Venue in ${city}, ${region} | ItalianVenues`}
   description={metaDescription}
+  ogImage={heroImage}
 >
   <!-- Schema.org JSON-LD for SEO -->
   <script type="application/ld+json" set:html={JSON.stringify({
