@@ -568,6 +568,20 @@ const allLocationCards = [
   const venueSearchForm = document.getElementById('venue-search-form');
   const venueSearchInput = document.getElementById('venue-search-input');
 
+  if (venueSearchInput) {
+    // Set mobile-optimized placeholder to match hero search
+    const updateVenuePlaceholder = () => {
+      if (window.innerWidth < 768) {
+        venueSearchInput.placeholder = "Try: Tuscany 100 guests";
+      } else {
+        venueSearchInput.placeholder = "e.g. Tuscany, 150 guests, coastal villa";
+      }
+    };
+    
+    updateVenuePlaceholder();
+    window.addEventListener('resize', updateVenuePlaceholder);
+  }
+
   if (venueSearchForm && venueSearchInput) {
     venueSearchForm.addEventListener('submit', (e) => {
       e.preventDefault();
