@@ -10,9 +10,8 @@ Your sitemap configuration includes:
 - **Legal Pages**: Priority 0.3 - Yearly updates
 - **API endpoints**: Excluded from crawling
 
-**Sitemap URLs:**
-- Main: `https://italianvenues.com/sitemap-index.xml`
-- Pages: `https://italianvenues.com/sitemap-0.xml`
+**Sitemap URL:**
+- `https://italianvenues.com/sitemap.xml`
 
 **Expected Pages in Sitemap (20+ pages):**
 - Homepage
@@ -64,7 +63,7 @@ You have two options:
 
 ### Step 4: Submit Your Sitemap
 1. Once verified, go to **"Sitemaps"** in the left sidebar
-2. Add a new sitemap: `sitemap-index.xml`
+2. Add a new sitemap: `sitemap.xml`
 3. Click **"Submit"**
 4. Google will start crawling within 24-48 hours
 
@@ -104,7 +103,7 @@ Your `robots.txt` is already configured:
 **Within 24 hours:**
 - [ ] Verify domain in Google Search Console
 - [ ] Submit sitemap
-- [ ] Check `italianvenues.com/sitemap-index.xml` loads correctly
+- [ ] Check `italianvenues.com/sitemap.xml` loads correctly
 - [ ] Check `italianvenues.com/robots.txt` loads correctly
 
 **Within 1 week:**
@@ -166,7 +165,7 @@ Your Schema.org markup is already in place:
 
 **Sitemap not found?**
 - Wait 5-10 minutes after deployment
-- Check it's accessible: `https://italianvenues.com/sitemap-index.xml`
+- Check it's accessible: `https://italianvenues.com/sitemap.xml`
 - Resubmit in Search Console
 
 **Pages not indexing?**

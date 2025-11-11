@@ -8,8 +8,7 @@ Allow: /
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://italianvenues.com/sitemap-index.xml
-Sitemap: https://italianvenues.com/sitemap-0.xml
+Sitemap: https://italianvenues.com/sitemap.xml
 
 # Crawl delay (optional - be nice to servers)
 Crawl-delay: 1
