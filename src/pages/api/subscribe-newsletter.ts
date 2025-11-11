@@ -10,6 +10,13 @@ export const POST: APIRoute = async ({ request }) => {
     const email = formData.get('email')?.toString() || '';
 
     console.log('Newsletter subscription received:', { email });
+    
+    // DEBUG: Log what we're actually sending
+    console.log('DEBUG - API Key length:', import.meta.env.AIRTABLE_API_KEY?.length);
+    console.log('DEBUG - API Key starts with:', import.meta.env.AIRTABLE_API_KEY?.substring(0, 10));
+    console.log('DEBUG - Base ID:', import.meta.env.AIRTABLE_BASE_ID);
+    console.log('DEBUG - Table ID:', import.meta.env.AIRTABLE_TABLE_ID);
+    console.log('DEBUG - Full URL:', `https://api.airtable.com/v0/${import.meta.env.AIRTABLE_BASE_ID}/${import.meta.env.AIRTABLE_TABLE_ID}`);
 
     // Validate email
     if (!email || !email.includes('@')) {
@@ -33,12 +40,16 @@ export const POST: APIRoute = async ({ request }) => {
     console.log('Sending to Airtable:', JSON.stringify(airtableData, null, 2));
 
     // Send to Airtable (same table as enquiries)
+    const authHeader = `Bearer ${import.meta.env.AIRTABLE_API_KEY}`;
+    console.log('DEBUG - Auth header length:', authHeader.length);
+    console.log('DEBUG - Auth header starts with:', authHeader.substring(0, 20));
+    
     const airtableResponse = await fetch(
       `https://api.airtable.com/v0/${import.meta.env.AIRTABLE_BASE_ID}/${import.meta.env.AIRTABLE_TABLE_ID}`,
       {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer ${import.meta.env.AIRTABLE_API_KEY}`,
+          'Authorization': authHeader,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(airtableData)
