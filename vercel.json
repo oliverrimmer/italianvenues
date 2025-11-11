@@ -8,12 +8,12 @@
     {
       "source": "/inspiration/:path*",
       "destination": "/about",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/post-category/:path*",
       "destination": "/about",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/listing/hotel-il-pellicano",
@@ -33,7 +33,7 @@
     {
       "source": "/listing/:slug",
       "destination": "/venues",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/category/luxury",
@@ -63,47 +63,47 @@
     {
       "source": "/category/:slug",
       "destination": "/venues",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/tag/:slug",
       "destination": "/venues",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/discover-affordable-wedding-venues-in-italy-celebrate-your-big-day-without-breaking-the-bank",
       "destination": "/about",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/unique-wedding-venues-in-italy-for-couples-who-want-something-different-part-2",
       "destination": "/about",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/unique-wedding-venues-in-italy-for-couples-who-want-something-different",
       "destination": "/about",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/top-wedding-villas-in-italy-with-on-site-accommodation-2025-guide",
       "destination": "/venues",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/mama-shelter-lake-como-a-trendy-modern-wedding-venue-in-italy",
       "destination": "/locations/lake-como",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/villa-cetinale-siena-tuscany",
       "destination": "/locations/tuscany",
-      "permanent": false
+      "permanent": true
     },
     {
       "source": "/how-to-pick-an-italian-wedding-venue",
       "destination": "/about",
-      "permanent": false
+      "permanent": true
     }
   ]
 }
