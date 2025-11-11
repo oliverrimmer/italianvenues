@@ -1,0 +1,110 @@
+{
+  "redirects": [
+    {
+      "source": "/explore-5/:path*",
+      "destination": "/venues",
+      "permanent": true
+    },
+    {
+      "source": "/inspiration/:path*",
+      "destination": "/about",
+      "permanent": false
+    },
+    {
+      "source": "/post-category/:path*",
+      "destination": "/about",
+      "permanent": false
+    },
+    {
+      "source": "/listing/hotel-il-pellicano",
+      "destination": "/venues/hotel-il-pellicano",
+      "permanent": true
+    },
+    {
+      "source": "/listing/mezzatorre-hotel-thermal-spa",
+      "destination": "/venues/mezzatorre-hotel-thermal-spa",
+      "permanent": true
+    },
+    {
+      "source": "/listing/la-posta-vecchia",
+      "destination": "/venues/la-posta-vecchia",
+      "permanent": true
+    },
+    {
+      "source": "/listing/:slug",
+      "destination": "/venues",
+      "permanent": false
+    },
+    {
+      "source": "/category/luxury",
+      "destination": "/styles/luxury",
+      "permanent": true
+    },
+    {
+      "source": "/category/rustic",
+      "destination": "/styles/rustic",
+      "permanent": true
+    },
+    {
+      "source": "/category/villa",
+      "destination": "/styles/villa",
+      "permanent": true
+    },
+    {
+      "source": "/category/castle",
+      "destination": "/styles/castle",
+      "permanent": true
+    },
+    {
+      "source": "/category/coastal",
+      "destination": "/styles/seaside",
+      "permanent": true
+    },
+    {
+      "source": "/category/:slug",
+      "destination": "/venues",
+      "permanent": false
+    },
+    {
+      "source": "/tag/:slug",
+      "destination": "/venues",
+      "permanent": false
+    },
+    {
+      "source": "/discover-affordable-wedding-venues-in-italy-celebrate-your-big-day-without-breaking-the-bank",
+      "destination": "/about",
+      "permanent": false
+    },
+    {
+      "source": "/unique-wedding-venues-in-italy-for-couples-who-want-something-different-part-2",
+      "destination": "/about",
+      "permanent": false
+    },
+    {
+      "source": "/unique-wedding-venues-in-italy-for-couples-who-want-something-different",
+      "destination": "/about",
+      "permanent": false
+    },
+    {
+      "source": "/top-wedding-villas-in-italy-with-on-site-accommodation-2025-guide",
+      "destination": "/venues",
+      "permanent": false
+    },
+    {
+      "source": "/mama-shelter-lake-como-a-trendy-modern-wedding-venue-in-italy",
+      "destination": "/locations/lake-como",
+      "permanent": false
+    },
+    {
+      "source": "/villa-cetinale-siena-tuscany",
+      "destination": "/locations/tuscany",
+      "permanent": false
+    },
+    {
+      "source": "/how-to-pick-an-italian-wedding-venue",
+      "destination": "/about",
+      "permanent": false
+    }
+  ]
+}
+
