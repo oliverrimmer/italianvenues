@@ -53,6 +53,110 @@ const allLocationCards = [
 ---
 
 <BaseLayout>
+  <!-- Schema.org JSON-LD for SEO -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "ItalianVenues",
+        "url": "https://italianvenues.com",
+        "logo": "https://italianvenues.com/favicon.svg",
+        "description": "Curated luxury wedding venues across Italy. From medieval castles to seaside villas, we connect couples with Italy's most exclusive event spaces.",
+        "email": "contact@italianvenues.com",
+        "telephone": "+447438221720",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "GB"
+        },
+        "sameAs": [
+          "https://instagram.com/italianvenues",
+          "https://wa.me/447438221720"
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "Italy"
+        },
+        "serviceType": [
+          "Wedding Venue Booking",
+          "Event Venue Curation",
+          "Luxury Wedding Planning"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "ItalianVenues",
+        "url": "https://italianvenues.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://italianvenues.com/venues?search={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Service",
+        "serviceType": "Wedding Venue Curation",
+        "provider": {
+          "@type": "Organization",
+          "name": "ItalianVenues"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Italy"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Italian Wedding Venues",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Luxury Wedding Venues",
+                "description": "Exclusive luxury hotels, villas, and historic estates"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Seaside Wedding Venues",
+                "description": "Coastal venues on the Amalfi Coast, Tuscany, and beyond"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Villa Wedding Venues",
+                "description": "Historic villas and estates across Italian regions"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Castle Wedding Venues",
+                "description": "Medieval castles and fortified estates"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Rustic Wedding Venues",
+                "description": "Authentic farmhouses, masserias, and countryside estates"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  })} />
+
   <!-- HERO - Full screen dark image with centered text -->
   <section class="relative min-h-screen bg-black flex flex-col">
     <img
