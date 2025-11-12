@@ -1,0 +1,253 @@
+{
+  "name": "Belmond Hotel Caruso",
+  "city": "Ravello",
+  "region": "Amalfi Coast",
+  "maxGuests": 150,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/heroxl",
+  "heroDescription": "An 11th-century palace floating 350 meters above the Mediterranean, where terraced gardens cascade toward the sea, an infinity pool seems carved from the sky itself, and every celebration unfolds against views that stretch from Salerno to Capri.",
+  "intro": "Ravello sits above the Amalfi Coast like a secret the cliffs decided to keep—higher, quieter, more ethereal than the villages hugging the shoreline below. And at Ravello's crown sits Belmond Hotel Caruso, an 11th-century palazzo where history and luxury have merged so seamlessly you stop noticing which century you're standing in. Walk through frescoed halls where noble families once entertained, step onto terraces where the Mediterranean appears to start at your feet, discover the infinity pool that's become one of the world's most photographed—not through Instagram fame but because that view genuinely stops your breath. The Wagner Gardens spill down the hillside in a riot of Mediterranean flora, creating ceremony spaces where the backdrop needs no decoration beyond what nature and architecture already provide. With fifty rooms ensuring intimate scale, Belmond service setting the standard for Italian hospitality, and exclusive use transforming the entire property into your private cliff-top kingdom, Caruso delivers the Amalfi Coast wedding at its most refined.",
+  "history": {
+    "description": "The palazzo's foundations were laid in the 11th century, when Ravello flourished as a wealthy maritime republic. Noble families built their residences at this elevated position—high enough to see approaching ships, close enough to the sky to feel removed from earthly concerns. For centuries, the building served as a private palace, its halls echoing with the conversations of aristocrats, artists, and thinkers drawn to Ravello's otherworldly beauty.",
+    "loveStory": "The transformation into a hotel began in the early 20th century, but it wasn't until Belmond's meticulous restoration that Caruso reached its current perfection. Every fresco was carefully preserved, every garden terrace rebuilt to period specifications, every modern luxury incorporated without compromising the historic soul. The infinity pool—now the hotel's icon—was designed to appear as though it had always existed at precisely this point where earth meets sky.",
+    "inauguration": "Today, Belmond Hotel Caruso represents the ideal balance: genuine 11th-century architecture housing contemporary five-star luxury. The frescoes are real, the antiques authentic, the views unchanged since medieval times. But the comfort, service, and attention to detail reflect modern perfection. It's this combination that makes celebrations here feel both timeless and utterly present."
+  },
+  "usps": [
+    "11th-Century Restored Palace",
+    "50 Rooms & Suites with Period Details",
+    "World-Famous Infinity Pool",
+    "Wagner Terraced Gardens",
+    "350 Meters Above Mediterranean",
+    "Belvedere Restaurant with Sea Views",
+    "Historic Frescoed Event Halls",
+    "Caruso Wellness Spa",
+    "Private Boat for Excursions",
+    "Ravello's Prime Clifftop Position",
+    "Belmond Legendary Service",
+    "Views from Salerno to Capri",
+    "Piano Bar & Pool Bar",
+    "Exclusive Buyout Available",
+    "Walking Distance to Ravello Center"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Wagner Gardens",
+      "capacities": {
+        "cocktail": 180,
+        "seated": 140,
+        "buffet": 140,
+        "ceremony": 150
+      },
+      "description": "Named for the composer who found inspiration in Ravello, these terraced gardens descend the hillside in layers of citrus, jasmine, and bougainvillea. With exclusive use, they become your ceremony and reception canvas—multiple levels offering different perspectives, the Mediterranean providing the horizon, and that sense of floating between earth and heaven that defines Ravello."
+    },
+    {
+      "name": "The Colonne Room",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 140,
+        "buffet": 120,
+        "ceremony": 100
+      },
+      "description": "The palace's grand hall, where ancient columns support vaulted ceilings and restored frescoes tell stories in faded pigments. This becomes your elegant backup plan or preferred indoor celebration space—historic grandeur with modern lighting and acoustics, where dinner feels like you've traveled back to noble banquets of centuries past."
+    },
+    {
+      "name": "Belvedere Restaurant & Terrace",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 60,
+        "buffet": 60,
+        "ceremony": 0
+      },
+      "description": "The hotel's main restaurant, where floor-to-ceiling windows and an expansive terrace bring those legendary views right to your table. For smaller celebrations, this offers refined Mediterranean dining with the Amalfi Coast spread before you like a painting someone forgot to frame."
+    },
+    {
+      "name": "Infinity Pool Terrace",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 0,
+        "buffet": 70,
+        "ceremony": 80
+      },
+      "description": "The icon. The pool appears to drop straight into the Mediterranean 350 meters below, creating that impossible optical illusion that's launched countless photographs. The surrounding terrace offers another celebration dimension—perfect for sunset cocktails, late-night dancing under stars, or ceremonies where your guests will spend half the time watching you and half simply staring at that view."
+    },
+    {
+      "name": "Arcade Bar & Piano Lounge",
+      "capacities": {
+        "cocktail": 50,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "An intimate space for pre-dinner aperitivos or late-night cognac, where live piano music drifts through arched doorways and the atmosphere whispers rather than shouts elegance."
+    },
+    {
+      "name": "Grand Gallery",
+      "capacities": {
+        "cocktail": 180,
+        "seated": 0,
+        "buffet": 120,
+        "ceremony": 0
+      },
+      "description": "A light-filled corridor connecting the palazzo's historic spaces, lined with period details and opening onto garden views. Perfect for cocktail receptions where guests flow naturally between indoor elegance and outdoor terraces."
+    }
+  ],
+  "ancillaryServices": [
+    "Dedicated wedding planning and coordination",
+    "Bespoke menu creation for celebrations",
+    "Professional event lighting and sound",
+    "Floral design using Mediterranean blooms",
+    "Ceremony setup in gardens or indoor spaces",
+    "Private boat excursions on hotel vessel",
+    "Spa treatments and pre-wedding wellness",
+    "Welcome dinner and farewell brunch hosting",
+    "Entertainment and live music coordination",
+    "Photography access to all spaces and grounds",
+    "Hair and makeup team coordination",
+    "Guest activities and excursions to Amalfi, Capri, Pompeii",
+    "Private transfers from Naples",
+    "Late-night pool terrace access for dancing",
+    "Wine pairings from regional cellars"
+  ],
+  "outlets": [
+    "Belvedere Restaurant - Fine Mediterranean Dining",
+    "Pool Restaurant & Bar",
+    "Piano Bar",
+    "Arcade Bar",
+    "In-Room Dining"
+  ],
+  "facilities": [
+    {
+      "name": "The Infinity Pool",
+      "description": "Not just a pool but an architectural statement—heated year-round, positioned at the cliff's edge where it seems to merge with the sea and sky. Surrounded by loungers and that view that somehow never gets old no matter how many times you see it. The single most iconic element of Belmond Hotel Caruso."
+    },
+    {
+      "name": "Caruso Wellness Spa",
+      "description": "A sanctuary carved into the ancient palazzo, offering treatments that blend modern techniques with Mediterranean traditions. Sauna, steam rooms, and massage therapies overlooking the gardens—where your wedding party retreats for pre-celebration serenity."
+    },
+    {
+      "name": "Wagner Gardens",
+      "description": "Multiple terraced levels descending the hillside, each planted with Mediterranean flora that perfumes the air. Stone pathways wind between lemon trees and jasmine, hidden benches offer private moments, and every level frames that commanding view. The gardens are both event space and experience—guests explore them throughout your celebration, discovering new vantage points and quiet corners."
+    },
+    {
+      "name": "Historic Frescoed Halls",
+      "description": "Throughout the palazzo, preserved frescoes and period details remind you this isn't a recreation of history—it is history. Walking from your suite to the terrace means passing through centuries, and that authenticity creates an atmosphere no modern construction could replicate."
+    },
+    {
+      "name": "Private Boat",
+      "description": "The hotel's vessel offers excursions along the coast—sunset cruises, day trips to Capri, arrivals by sea that let guests experience the dramatic coastline from water level before ascending to Ravello's heights."
+    },
+    {
+      "name": "Fitness Center",
+      "description": "State-of-the-art equipment in a space where even the treadmill comes with those views. Maintaining your wellness routine becomes considerably easier when the alternative to exercise is simply staring at the Mediterranean."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Village View Rooms",
+        "count": 20,
+        "description": "Overlooking Ravello's cobbled piazza and the medieval architecture that makes this town feel suspended in time. Each room decorated in classic Neapolitan style with antiques, local ceramics, and modern comforts seamlessly integrated into period settings."
+      },
+      {
+        "name": "Sea View Rooms & Suites",
+        "count": 25,
+        "description": "The rooms everyone requests—where you wake to that view stretching across the coast and fall asleep to moonlight on the Mediterranean. Private terraces or balconies become your morning coffee ritual spot and evening refuge. Furnished with the same attention to period detail and contemporary luxury that defines the entire property."
+      },
+      {
+        "name": "Premium Suites",
+        "count": 5,
+        "description": "Larger accommodations with separate living areas, private gardens or expansive terraces, and those views amplified by floor-to-ceiling windows. Some suites interconnect, perfect for families or wedding parties wanting proximity. Each one feels like a private apartment in an 11th-century palace—because essentially, that's what it is."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Piazza San Giovanni del Toro 2, 84010 Ravello, Amalfi Coast, Italy",
+    "distances": {
+      "Ravello Center": "2 min walk",
+      "Amalfi": "7 km / 15 min",
+      "Positano": "25 km / 50 min",
+      "Sorrento": "30 km / 45 min",
+      "Naples": "60 km / 1h15",
+      "Capri (by boat)": "1h15",
+      "Naples International Airport": "60 km / 1h15",
+      "Rome Fiumicino Airport": "270 km / 3h30"
+    },
+    "coordinates": {
+      "lat": 40.6490,
+      "lng": 14.6121
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4!2d14.6121!3d40.6490!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b97f4c1d1e8e7%3A0x2c8c5b5e7f8d9a0b!2sBelmond%20Hotel%20Caruso!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive access to all 50 rooms and suites",
+      "Complete privacy across entire palazzo and gardens",
+      "Wagner Gardens for ceremony and reception",
+      "The Colonne Room and all indoor event spaces",
+      "Infinity pool terrace for celebrations",
+      "Belvedere Restaurant for private dining",
+      "Piano Bar and Arcade Bar access",
+      "All garden terraces and viewpoints",
+      "Historic frescoed halls",
+      "Caruso Wellness Spa facilities",
+      "Fitness center and all amenities",
+      "Dedicated Belmond wedding planning team",
+      "Custom menu creation and catering",
+      "Professional lighting and sound setup",
+      "Floral design coordination",
+      "Private boat excursions for couple/VIP guests",
+      "Flexibility for late-night celebrations",
+      "Multi-day event hosting capability"
+    ],
+    "description": "Exclusive buyout of Belmond Hotel Caruso transforms this 11th-century palace into your private Ravello retreat. All fifty rooms become yours, accommodating up to 150 overnight guests in spaces that range from elegant doubles to sprawling suites with private terraces. Your celebration flows freely between the Wagner Gardens (where ceremonies against that Mediterranean backdrop become the stuff of legend), the frescoed Colonne Room (your elegant indoor alternative), the Belvedere Restaurant (for intimate seated dinners with views), and the infinity pool terrace (where late-night dancing feels suspended between earth and sky). The Belmond team—renowned for service excellence across their legendary properties worldwide—orchestrates every detail with the precision and warmth that's made Caruso an Amalfi Coast icon. With complete property access, your guests explore multiple garden levels, discover hidden viewpoints, and experience the palace exactly as you would if it were truly yours.",
+    "transfers": "Private transfers from Naples Airport (1 hour 15 minutes) wind along the dramatic coastal road before ascending to Ravello's heights. Private boat arrivals at Amalfi or Maiori (15-20 minutes) followed by scenic drive up the mountain offer another layer of drama."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "With exclusive use, the Wagner Gardens accommodate up to 140 guests for seated dinners and 150 for ceremonies. Cocktail receptions can welcome up to 180 guests flowing between gardens, terraces, and the grand gallery."
+    },
+    {
+      "q": "How many guests can stay at the hotel?",
+      "a": "The fifty rooms and suites accommodate approximately 120-150 overnight guests depending on room configurations and whether suites are interconnected for families."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "For parties of 91-150 guests, exclusive use is required and gives you complete access to the entire property. Smaller celebrations can be accommodated within the hotel's standard operations, though exclusive use offers the most flexibility and privacy."
+    },
+    {
+      "q": "Can we celebrate at the famous infinity pool?",
+      "a": "Yes, the infinity pool terrace is available for events including cocktail receptions, dancing, and celebrations. There's a venue fee for evening events at the pool, but the experience of celebrating at one of the world's most iconic pools is incomparable."
+    },
+    {
+      "q": "What about weather backup?",
+      "a": "The Colonne Room provides an elegant indoor alternative, seating up to 140 guests under vaulted ceilings with restored frescoes. The covered sections of the Belvedere Restaurant and Grand Gallery offer additional weather-protected spaces."
+    },
+    {
+      "q": "Does Ravello require a steep climb?",
+      "a": "Ravello sits 350 meters above sea level—the elevation that creates those extraordinary views. The drive up from Amalfi takes about 15 minutes along winding mountain roads. Once in Ravello, the hotel is an easy walk from the town center, and the property itself has elevators connecting different levels."
+    },
+    {
+      "q": "Are there activities for guests?",
+      "a": "The hotel arranges private boat excursions, visits to Amalfi and Positano, day trips to Capri and Pompeii, wine tastings, spa treatments, and guided tours of Ravello's historic villas and gardens. The town itself offers concerts, restaurants, and that perpetual entertainment of simply watching the coastline change light from dawn to midnight."
+    },
+    {
+      "q": "What makes Belmond Hotel Caruso special?",
+      "a": "It's the convergence of authentic 11th-century architecture, that elevation creating views unlike anywhere else on the coast, the legendary infinity pool, Wagner's terraced gardens, and Belmond's global standard for service excellence. Ravello itself feels different from busier coastal towns—quieter, more contemplative, somehow more timeless. Caruso captures all of that while delivering modern luxury and wedding flexibility."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Belmond Hotel Caruso",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "reservations.car@belmond.com",
+    "hotelPhone": "+39 089 858 801"
+  }
+}
+
