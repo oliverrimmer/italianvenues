@@ -1,0 +1,266 @@
+{
+  "name": "Villa Cimbrone",
+  "city": "Ravello",
+  "region": "Amalfi Coast",
+  "maxGuests": 160,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/heroxl",
+  "heroDescription": "An 11th-century villa transformed into an open-air museum, where six hectares of UNESCO-protected gardens lead to the legendary Terrazza dell'Infinito—a marble-balustraded terrace floating 365 meters above the Mediterranean that's become the single most photographed viewpoint on the Amalfi Coast.",
+  "intro": "Walk through Ravello's medieval streets until they narrow to a footpath climbing toward Villa Cimbrone, and you're following in the steps of everyone from Wagner to Virginia Woolf to Gore Vidal—all drawn by rumors of the villa's extraordinary beauty. Then you reach the gardens and understand the pilgrimage. Six hectares of terraced paradise unfold across the clifftop—classical temples hidden among roses, marble sculptures emerging from cypress groves, walkways winding past lemon trees and wisteria toward that moment when you round the final corner and discover the Terrazza dell'Infinito. Eighteen marble busts line the terrace's edge, and beyond them: nothing. Just infinite blue where sea and sky merge 365 meters below. The villa itself—dating to the 11th century but reimagined by Lord Grimthorpe in the early 1900s—mixes Gothic arches, Renaissance details, and Moorish influences into something that shouldn't work but creates pure romance. With nineteen rooms ensuring intimate scale, event spaces ranging from the dramatic crypt to elegant halls to those legendary gardens, and Ravello's elevated serenity setting the tone, Villa Cimbrone offers celebrations that feel suspended between earth and heaven.",
+  "history": {
+    "description": "Villa Cimbrone's story begins in the 11th century as a noble residence perched at Ravello's highest point. For centuries it remained relatively modest—a family villa with terraced gardens taking advantage of that commanding position. The views were always there, the location always spectacular, but it took an Englishman's obsession to unlock the full potential.",
+    "loveStory": "In the early 1900s, British peer Lord Grimthorpe purchased the property and devoted years to its transformation. He didn't simply restore—he reimagined, adding Gothic arches and Moorish touches, creating the crypt, extending gardens across every available terrace, commissioning those eighteen marble busts that now define the Infinity Terrace. Grimthorpe collected art and architectural elements from across Italy, incorporating them into a villa that became part museum, part palazzo, part fantasy. He understood that the gardens should be experienced as a journey, each turn revealing new perspectives on the infinite blue beyond.",
+    "inauguration": "Today, Villa Cimbrone stands as Lord Grimthorpe's enduring gift—a UNESCO World Heritage Site that draws visitors from around the world yet remains intimate enough for private celebration. The villa operates as a boutique hotel, ensuring that those extraordinary gardens and viewpoints can be experienced not just as day-trippers but as overnight guests who watch sunrise from the Infinity Terrace and discover corners of the property that feel entirely undiscovered."
+  },
+  "usps": [
+    "11th-Century Historic Villa",
+    "6 Hectares of UNESCO Gardens",
+    "Legendary Terrazza dell'Infinito",
+    "19 Individually Designed Rooms & Suites",
+    "365 Meters Above Mediterranean",
+    "Gothic Architecture & Classical Sculptures",
+    "Dramatic Event Crypt",
+    "Elegant Gothic Events Hall",
+    "Multiple Garden Ceremony Spaces",
+    "Swimming Pool with Coastal Views",
+    "Ravello's Prime Clifftop Position",
+    "Private Helipad",
+    "TechnoGym Fitness Center",
+    "Exclusive Buyout for Weekend Weddings",
+    "Late Night Celebrations (Until 1am)"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Terrazza dell'Infinito (Infinity Terrace)",
+      "capacities": {
+        "cocktail": 160,
+        "seated": 0,
+        "buffet": 100,
+        "ceremony": 150
+      },
+      "description": "The icon. Eighteen marble busts line the terrace's edge, each one framing a different slice of that impossible view—the Gulf of Salerno spreading to the horizon, the Amalfi Coast curving away in both directions, distant mountains floating in haze. This is where most couples exchange vows, because how do you choose anywhere else when this exists? As afternoon softens toward evening and the light turns everything gold, you understand why this single terrace has appeared in thousands of photographs yet never feels clichéd."
+    },
+    {
+      "name": "Gothic Events Hall",
+      "capacities": {
+        "cocktail": 180,
+        "seated": 150,
+        "buffet": 150,
+        "ceremony": 100
+      },
+      "description": "Lord Grimthorpe's architectural fantasy made real—soaring Gothic arches, ornate details, and that particular blend of gravitas and romance that Gothic spaces deliver. Your elegant backup plan that guests hope you'll use because dinner here feels like stepping into another century. The hall accommodates up to 150 for seated dinners, transforming into your grand reception space where history and celebration merge."
+    },
+    {
+      "name": "The Crypt",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 60,
+        "buffet": 60,
+        "ceremony": 0
+      },
+      "description": "Dramatic, atmospheric, unlike anywhere else—this semi-open Gothic space beneath the villa creates the most unique party setting on the coast. Stone vaults, dim lighting, that sense of being in a space designed for mystery. Perfect for after-dinner dancing where the energy feels both elegant and slightly transgressive, or intimate dinners for smaller groups who want maximum atmosphere."
+    },
+    {
+      "name": "Garden Ceremony Spaces",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 0,
+        "buffet": 120,
+        "ceremony": 120
+      },
+      "description": "Beyond the famous Infinity Terrace, six hectares offer countless ceremony and reception possibilities. The Rose Garden where blooms frame views. The Temple of Bacchus hidden among cypress. Lawn terraces that cascade down the hillside. Pergola-covered walkways perfect for cocktail hours where guests wander rather than stand in one spot. Every corner photographs beautifully because Lord Grimthorpe designed these gardens specifically to create discovery and delight."
+    },
+    {
+      "name": "Tea Garden & Seaview Terraces",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 80,
+        "buffet": 80,
+        "ceremony": 80
+      },
+      "description": "More intimate garden spaces where the villa's English influence shows—manicured lawns, carefully placed benches, that sense of being in a private estate rather than a venue. Perfect for ceremonies sized for genuine closeness or afternoon cocktail receptions where the formality relaxes and conversation flows."
+    },
+    {
+      "name": "Pool Terrace",
+      "capacities": {
+        "cocktail": 60,
+        "seated": 0,
+        "buffet": 40,
+        "ceremony": 0
+      },
+      "description": "The swimming pool sits in its own garden level, surrounded by loungers and those ever-present views. While not the primary celebration space, it offers another dimension for multi-day events—welcome pool parties, next-day brunches, or simply a retreat for guests wanting sun and serenity."
+    },
+    {
+      "name": "Convention Hall",
+      "capacities": {
+        "cocktail": 50,
+        "seated": 40,
+        "buffet": 40,
+        "ceremony": 0
+      },
+      "description": "A more intimate indoor space perfect for smaller dinners, rehearsal meals, or private gatherings. When your celebration spans multiple days, having varied spaces allows different moods and group sizes."
+    }
+  ],
+  "ancillaryServices": [
+    "Dedicated wedding planning and coordination",
+    "Custom menu creation for celebrations",
+    "Professional lighting and sound throughout gardens",
+    "Floral design using Mediterranean blooms",
+    "Ceremony setup at Infinity Terrace or garden spaces",
+    "Weather backup coordination",
+    "Entertainment booking and management",
+    "Wine pairings from curated cellar",
+    "Sommelier-led tastings",
+    "Guided garden tours for guests",
+    "Photography access to entire property",
+    "Hair and makeup coordination",
+    "Multi-day event hosting",
+    "Welcome dinners and farewell brunches",
+    "Excursions to Amalfi, Positano, Capri",
+    "Private transfers and helipad access",
+    "Late-night celebrations (until 1am with exclusive use)"
+  ],
+  "outlets": [
+    "Main Restaurant - Mediterranean Fine Dining",
+    "Poolside Dining",
+    "Garden Tea Service",
+    "In-Room Dining"
+  ],
+  "facilities": [
+    {
+      "name": "Six Hectares of UNESCO Gardens",
+      "description": "These aren't simply beautiful grounds—they're a UNESCO World Heritage Site, protected for their historical and cultural significance. Lord Grimthorpe created a walking experience where classical elements (those marble statues, miniature temples, ornate fountains) merge with Mediterranean planting and that omnipresent view. Your guests don't just see the gardens—they explore them, discovering new perspectives at every turn. The gardens are both venue and experience."
+    },
+    {
+      "name": "The Terrazza dell'Infinito",
+      "description": "So famous it deserves its own mention beyond being a ceremony space. This terrace has become one of Italy's most iconic viewpoints—those eighteen marble busts, that impossible perspective, the way it seems to hover unsupported above the void. People travel to Ravello specifically to stand here, yet with exclusive use, it becomes entirely yours."
+    },
+    {
+      "name": "Swimming Pool",
+      "description": "Positioned at one of the garden's many levels, the pool offers another vantage point on the coastal views. Heated during cooler months, surrounded by Mediterranean plantings, it's where guests retreat between celebration events or spend next-day mornings recovering in style."
+    },
+    {
+      "name": "TechnoGym Fitness Center",
+      "description": "State-of-the-art equipment in a setting where even the fitness center has views. For guests who maintain wellness routines regardless of celebration schedules."
+    },
+    {
+      "name": "Private Helipad",
+      "description": "Villa Cimbrone's clifftop position and exclusive clientele mean helicopter arrivals are possible—the most dramatic entrance imaginable, dropping from the sky directly into these garden paradises."
+    },
+    {
+      "name": "The Gothic Crypt",
+      "description": "Beyond its function as event space, the crypt represents Lord Grimthorpe's architectural ambition—creating atmospheric spaces that feel centuries older than they actually are. It's become legendary for after-parties where the vaulted stone setting and mood lighting create energy impossible in standard ballrooms."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Classic & Superior Rooms",
+        "count": 10,
+        "description": "The villa's entry accommodations, though 'entry' undersells their character. Each room individually designed, mixing period antiques with contemporary comfort. Marble bathrooms, garden or sea views, that sense of sleeping in a historic residence rather than a hotel. Some look across the gardens, others frame coastal panoramas."
+      },
+      {
+        "name": "Deluxe Rooms & Junior Suites",
+        "count": 6,
+        "description": "More spacious quarters where separate seating areas and larger terraces create room to breathe. The views amplify—bigger windows, better vantage points, those mornings where you sit on your private terrace with coffee and genuinely don't want to leave for breakfast."
+      },
+      {
+        "name": "Prestige Suites",
+        "count": 3,
+        "description": "The villa's signature accommodations, each with its own legend. The Greta Garbo Suite (where the actress famously stayed seeking solitude) and Lord Beckett Suite offer the most dramatic spaces—expansive terraces, separate living areas, bathrooms that feel like private spas, and views that somehow exceed even Villa Cimbrone's already impossible standard. These become your VIP accommodation or the couple's private sanctuary within the celebration."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via Santa Chiara 26, 84010 Ravello, Amalfi Coast, Italy",
+    "distances": {
+      "Ravello Center": "10 min walk",
+      "Amalfi": "7 km / 15 min",
+      "Positano": "25 km / 45 min",
+      "Naples": "60 km / 1h15",
+      "Salerno": "25 km / 40 min",
+      "Pompeii": "35 km / 50 min",
+      "Capri (by boat from Amalfi)": "1h",
+      "Naples International Airport": "60 km / 1h15",
+      "Salerno Airport": "30 km / 45 min"
+    },
+    "coordinates": {
+      "lat": 40.6505,
+      "lng": 14.6138
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4!2d14.6138!3d40.6505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b97f4c1d1e8e7%3A0x2c8c5b5e7f8d9a0b!2sVilla%20Cimbrone!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive access to all 19 rooms and suites",
+      "Complete privacy across villa and six hectares of gardens",
+      "Terrazza dell'Infinito for ceremony and events",
+      "Gothic Events Hall for reception dining",
+      "The Crypt for after-parties or intimate dinners",
+      "All garden ceremony and event spaces",
+      "Tea Garden and seaview terraces",
+      "Pool terrace and facilities",
+      "Convention hall for smaller gatherings",
+      "Main restaurant for private dining",
+      "Dedicated wedding coordination team",
+      "Custom catering and menu design",
+      "Professional lighting throughout gardens",
+      "Sound system for ceremony and reception",
+      "Floral design coordination",
+      "Late-night celebrations (until 1am)",
+      "Multi-day event capability",
+      "Complete flexibility for celebration timing",
+      "Helipad access for arrivals"
+    ],
+    "description": "Exclusive use of Villa Cimbrone—required for Friday and Saturday weddings—transforms this UNESCO World Heritage property into your private Ravello estate. All nineteen rooms become yours, accommodating up to 38-45 overnight guests in spaces ranging from classic elegance to the legendary Greta Garbo Suite. The two-night minimum for weekend buyouts allows proper celebration: welcome dinner Friday evening as guests explore the gardens at sunset, ceremony Saturday on the Terrazza dell'Infinito (where that view provides the only decoration needed), reception dinner in the Gothic Events Hall or under stars in the gardens, late-night dancing in the atmospheric Crypt, and Sunday recovery where your closest friends have the pool and property to themselves. Six hectares of gardens mean your celebration never feels crowded—guests discover hidden temples, stumble upon perfect photo opportunities, and experience the property as Lord Grimthorpe intended: as a journey of continuous discovery. The dedicated team orchestrates every detail while maintaining the sense that you've simply invited everyone to your impossibly beautiful Italian villa for the weekend.",
+    "transfers": "Private transfers from Naples Airport (1 hour 15 minutes) wind through the Amalfi Coast before ascending to Ravello's heights. Helicopter arrivals at the private helipad offer maximum drama. The villa also arranges transport for guest excursions to Amalfi, Positano, and coastal attractions."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "The Gothic Events Hall accommodates 150 guests for seated dinners, while the Terrazza dell'Infinito and gardens can host up to 160 for ceremonies and cocktail receptions. The property's multiple spaces allow celebrations to flow naturally between indoor elegance and outdoor magnificence."
+    },
+    {
+      "q": "How many guests can stay at Villa Cimbrone?",
+      "a": "The nineteen rooms and suites accommodate approximately 38-45 overnight guests depending on configurations. For larger wedding parties, nearby Ravello hotels provide additional luxury accommodation."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "Yes, for Friday and Saturday weddings, exclusive use is mandatory (two-night minimum booking all nineteen rooms). This ensures complete privacy and allows your celebration to unfold across the entire property without restriction. Weekday events may have more flexible arrangements."
+    },
+    {
+      "q": "Can we have our ceremony at the famous Infinity Terrace?",
+      "a": "Absolutely—and most couples do. The Terrazza dell'Infinito accommodates up to 150 guests for ceremonies, though even larger groups feel intimate when everyone's facing those views. It's the single most requested ceremony location on the Amalfi Coast for good reason."
+    },
+    {
+      "q": "What about the UNESCO World Heritage status?",
+      "a": "Villa Cimbrone's gardens are protected as part of the Amalfi Coast's UNESCO World Heritage designation, recognizing their historical and cultural significance. This means the gardens are preserved exactly as Lord Grimthorpe designed them, ensuring they'll remain extraordinary forever. For your wedding, it means celebrating in spaces of genuine world importance."
+    },
+    {
+      "q": "Can we celebrate late into the evening?",
+      "a": "With exclusive use, celebrations can continue until 1am—generous for a clifftop location where sound travels. The Crypt in particular offers an atmospheric late-night venue where music and dancing feel natural rather than disruptive."
+    },
+    {
+      "q": "How do guests reach Villa Cimbrone?",
+      "a": "Ravello sits 365 meters above sea level, reached by winding roads from Amalfi (15 minutes). Once in Ravello, the villa is a scenic 10-minute walk from the town center along a pedestrian path—cars can't access the property. This creates natural anticipation: guests walk through medieval Ravello, following signs toward the villa, until suddenly those gardens appear. Luggage and mobility-impaired guests can be accommodated via service access."
+    },
+    {
+      "q": "What makes Villa Cimbrone special compared to other Amalfi venues?",
+      "a": "It's the combination of elements: genuine 11th-century origins, Lord Grimthorpe's architectural fantasy, six hectares of UNESCO gardens, that legendary Infinity Terrace, Ravello's elevated serenity, and intimate scale (just nineteen rooms). Other venues may have one or two of these qualities—Villa Cimbrone has them all. It's an open-air museum that happens to host the world's most beautiful weddings."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Villa Cimbrone",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@villacimbrone.com",
+    "hotelPhone": "+39 089 857 459"
+  }
+}
+
