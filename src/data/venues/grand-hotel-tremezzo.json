@@ -1,0 +1,283 @@
+{
+  "name": "Grand Hotel Tremezzo",
+  "city": "Tremezzina",
+  "region": "Lake Como",
+  "maxGuests": 120,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/heroxl",
+  "heroDescription": "An Art Nouveau palace from 1910 commanding Lake Como's most panoramic position—where three pools including the legendary floating platform, eighty-four elegant rooms, five restaurants, and that particular Italian grand hotel glamour create celebrations that feel suspended between Belle Époque elegance and contemporary luxury.",
+  "intro": "Grand Hotel Tremezzo announces itself from across the lake—that distinctive Art Nouveau façade in cream and terracotta rising from the shoreline, Belle Époque towers framing Como's most commanding views, and if you time it right, you'll catch sight of the floating pool hovering over the water like some impossible architectural dream. Since 1910, this has been Lake Como's definition of grand hotel luxury: not the largest, not the most ancient, but capturing that particular moment when early 20th-century optimism created palaces designed purely for pleasure. The position helps—directly across from Bellagio, close enough to appreciate its beauty, far enough to maintain your own space. Three pools (including that Instagram-famous floating one), eighty-four rooms ranging from classic elegance to rooftop suites with private jacuzzis, five restaurants led by La Terrazza Gualtiero Marchesi honoring the legendary three-Michelin-star chef, T Spa where wellness meets Art Nouveau architecture, and private Villa Sola Cabiati nearby for overflow guests or intimate pre-wedding gatherings. For celebrations, the scale works beautifully: formal dinners for 120 in Sala Regina, terraced receptions for 60 overlooking Bellagio, garden ceremonies for 80, and wine bar after-parties until 2am where Belle Époque elegance finally gives way to uninhibited joy. With accommodations for 180 overnight guests, direct ferry connections to everywhere on Como, and service refined across 115 years of hosting the world's elite, Grand Hotel Tremezzo delivers the Lake Como grand hotel experience at its most polished.",
+  "history": {
+    "description": "In 1910, as the Belle Époque reached its zenith and Lake Como established itself as Europe's summer playground for aristocracy, Grand Hotel Tremezzo opened its doors. The timing was perfect: wealthy Europeans sought grand hotels offering elegance without stuffiness, natural beauty paired with sophisticated comfort, and that particular sense of being at the center of social life. The Art Nouveau architecture captured the era's optimism—graceful lines, ornamental details, spaces designed to frame views rather than close them off.",
+    "loveStory": "Through the 20th century, Tremezzo evolved without abandoning its roots. Where other grand hotels either fossilized into museums or modernized past recognition, Tremezzo found balance. The Art Nouveau bones remained intact—those soaring public spaces, the relationship between building and lake, the sense of arrival and grandeur. But each generation added contemporary luxury: modern spa, additional pools, updated rooms, restaurants honoring culinary innovation while respecting tradition.",
+    "inauguration": "Today, Grand Hotel Tremezzo represents something increasingly rare: a genuine grand hotel that's neither trapped in the past nor severed from it. You still feel that 1910 Belle Époque energy when you arrive—the scale, the position, the particular Italian grace. But the comfort, cuisine, and service reflect current luxury standards. It's this dual timeline that makes celebrations here feel both classic and contemporary, traditional and fresh."
+  },
+  "usps": [
+    "Art Nouveau Palace (Opened 1910)",
+    "84 Rooms & Suites",
+    "Famous Floating Pool on Lake Como",
+    "Three Swimming Pools",
+    "Direct Views of Bellagio",
+    "Five Onsite Restaurants",
+    "La Terrazza Gualtiero Marchesi Fine Dining",
+    "T Spa Wellness Center",
+    "Villa Sola Cabiati Private Estate",
+    "Sala Regina Grand Ballroom",
+    "Lakeside Terrace Reception Space",
+    "T Beach Club",
+    "Private Boat Dock",
+    "Direct Ferry to Bellagio",
+    "Rooftop Suites with Jacuzzis",
+    "Accommodates 180 Overnight Guests",
+    "Music Until 2am in Wine Bar",
+    "Belle Époque Architecture"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Sala Regina (Grand Ballroom)",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 120,
+        "buffet": 120,
+        "ceremony": 80
+      },
+      "description": "The hotel's grand ballroom capturing that Belle Époque spirit—high ceilings, elegant proportions, crystal chandeliers, and those windows framing Bellagio and the lake beyond. This becomes your formal reception space for up to 120 seated guests, where dinner and dancing unfold in a room designed precisely for this purpose over a century ago. The acoustics, the lighting, the flow from dining to dance floor—all considered when grand hotels understood celebrations as their primary purpose."
+    },
+    {
+      "name": "Lakeside Glass Terrace",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 60,
+        "buffet": 70,
+        "ceremony": 60
+      },
+      "description": "A covered terrace where glass walls protect without obscuring those panoramic views across to Bellagio. Accommodates sixty for seated dinners or a hundred for cocktails, offering that particular thrill of being suspended over water while completely comfortable. Perfect for couples wanting intimacy with drama, smaller numbers with spectacular setting."
+    },
+    {
+      "name": "Hotel Gardens",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 0,
+        "buffet": 80,
+        "ceremony": 80
+      },
+      "description": "Terraced gardens descending toward the lake, carefully planted to create both privacy and views. Ceremonies for up to eighty guests happen with Bellagio providing the backdrop—those colorful buildings stacked on the distant hillside, the lake stretching in both directions, and that sense of being precisely at Como's most beautiful vantage point. Post-ceremony, the gardens become exploration spaces where guests discover hidden corners, lakeside paths, and constantly changing perspectives."
+    },
+    {
+      "name": "L'Escale Wine Bar",
+      "capacities": {
+        "cocktail": 70,
+        "seated": 50,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "The hotel's sophisticated wine bar becomes your after-party venue—where formal celebration gives way to relaxed enjoyment, where music can play until 2am, where the evening's last hours unfold in spaces designed for exactly this kind of unwinding. Intimate enough to feel personal, equipped enough to handle proper celebration."
+    },
+    {
+      "name": "La Terrazza Gualtiero Marchesi",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 60,
+        "buffet": 60,
+        "ceremony": 0
+      },
+      "description": "The hotel's fine dining restaurant honoring legendary three-Michelin-star chef Gualtiero Marchesi. For smaller celebrations or welcome dinners, this offers exceptional cuisine in elegant surroundings. The terrace extends outdoor seating over the lake, creating that suspended-over-water dining experience Como does better than anywhere."
+    },
+    {
+      "name": "T Beach Club",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 40,
+        "buffet": 50,
+        "ceremony": 0
+      },
+      "description": "The lakeside beach club offers casual celebration space—perfect for next-day brunches, welcome lunches, or that relaxed gathering before formal events begin. Right at water level with views up toward the floating pool, down toward gardens, across to Bellagio."
+    },
+    {
+      "name": "Intimate Salon",
+      "capacities": {
+        "cocktail": 50,
+        "seated": 40,
+        "buffet": 40,
+        "ceremony": 30
+      },
+      "description": "A smaller reception room maintaining Belle Époque elegance at intimate scale—perfect for rehearsal dinners, smaller celebrations, or when your gathering requires sophistication without overwhelming size."
+    }
+  ],
+  "ancillaryServices": [
+    "Dedicated wedding planning and coordination",
+    "Full and partial hotel buyout arrangements",
+    "Five restaurant dining experiences",
+    "Custom menu creation by hotel chefs",
+    "Wine pairings from extensive cellar",
+    "La Terrazza Gualtiero Marchesi fine dining",
+    "Floral design and event styling",
+    "Professional lighting and sound systems",
+    "Ceremony setup in gardens or terraces",
+    "Weather backup coordination",
+    "T Spa treatments for wedding party",
+    "Private boat tours on Lake Como",
+    "Direct ferry connections to Bellagio",
+    "Entertainment booking and management",
+    "Late-night celebrations (wine bar until 2am)",
+    "Photography access to entire property",
+    "Villa Sola Cabiati bookings for overflow guests",
+    "Multi-day event hosting",
+    "Transportation from Milan airports"
+  ],
+  "outlets": [
+    "La Terrazza Gualtiero Marchesi - Fine Dining",
+    "L'Escale Fondues & Wine Bar",
+    "T Bar - Cocktails",
+    "T Beach - Casual Lakeside Dining",
+    "Pool Bar",
+    "In-Room Dining"
+  ],
+  "facilities": [
+    {
+      "name": "The Floating Pool",
+      "description": "Grand Hotel Tremezzo's icon—a swimming pool literally floating on Lake Como, anchored offshore, accessed by a pontoon walkway. This isn't Villa d'Este's floating pool (that one's at the shore); Tremezzo's floats genuinely in the lake, creating that surreal experience of swimming in heated water while surrounded by Como's natural waters. It's become one of Italy's most photographed hotel features, appearing in countless magazines and Instagram feeds. For your celebration, it's both attraction for guests and dramatic photo location."
+    },
+    {
+      "name": "Three Pools Total",
+      "description": "Beyond the famous floating pool, there's an indoor spa pool (heated year-round, connected to T Spa) and a garden pool (surrounded by loungers and lake views). This gives guests options throughout your multi-day celebration—active floating pool, contemplative spa pool, family-friendly garden pool. Each serves different moods and moments."
+    },
+    {
+      "name": "T Spa Wellness Center",
+      "description": "A comprehensive spa built into the hotel's lower levels—treatments, sauna, steam rooms, massage therapies, indoor heated pool. The 'T' stands for Tremezzo, and the philosophy blends traditional Italian wellness with contemporary techniques. Where your wedding party retreats for pre-celebration pampering or post-party recovery, discovering that even the spa maintains Art Nouveau architectural details."
+    },
+    {
+      "name": "Art Nouveau Architecture",
+      "description": "The 1910 building captures Belle Époque optimism in physical form—graceful towers, ornamental details, that particular early-20th-century belief that beauty should be democratic and joyful rather than intimidating. Walking Tremezzo's halls means experiencing architecture from the last moment before modernism simplified everything. The style creates natural elegance without trying."
+    },
+    {
+      "name": "Villa Sola Cabiati",
+      "description": "The hotel's private villa located nearby—available for booking by wedding parties needing overflow accommodation or intimate gathering spaces. Historic building, beautifully appointed, offering that sense of having your own Lake Como villa while maintaining connection to the hotel's services and amenities."
+    },
+    {
+      "name": "Private Boat Dock & Ferry Access",
+      "description": "The hotel's lakefront position means direct boat access—private launches, water taxis, and public ferries all stop here. Bellagio sits directly across the lake (20 minutes by ferry), making guest excursions effortless. Many couples arrange boat arrivals for dramatic entrances, or use the hotel's vessels for couple photoshoots on the water."
+    },
+    {
+      "name": "The Bellagio View",
+      "description": "Tremezzo's position directly across from Bellagio creates Lake Como's most iconic perspective. Every terrace, most rooms, the floating pool, the gardens—all frame Bellagio's colorful buildings stacked on the distant hillside. That view becomes backdrop to your entire celebration, present but never overwhelming, constantly changing light from dawn to midnight."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Lake View Rooms & Suites",
+        "count": 60,
+        "description": "The majority of accommodations face the lake and Bellagio—ranging from elegant doubles to junior suites with separate living areas to full suites with terraces and elevated luxury. Each room maintains Art Nouveau elegance while delivering contemporary comfort. Marble bathrooms, period-inspired furniture mixed with modern pieces, and those windows or balconies where Bellagio and lake views become your morning ritual."
+      },
+      {
+        "name": "Park View Rooms",
+        "count": 14,
+        "description": "Overlooking the hotel's lush parkland rather than lake—these offer serenity over drama, gardens over water. Still beautifully appointed with the same attention to detail, at slightly gentler price points for budget-conscious guests."
+      },
+      {
+        "name": "Rooftop Suites",
+        "count": 6,
+        "description": "The hotel's crown jewels—expansive suites at the building's highest levels, some featuring private jacuzzis on terraces with 360-degree views. These become your VIP accommodations where key family or the couple themselves enjoy the ultimate Tremezzo experience."
+      },
+      {
+        "name": "Villa Sola Cabiati",
+        "count": 4,
+        "description": "For overflow guests or intimate wedding party gatherings, this separate historic villa offers four luxurious rooms. Still under hotel management, still full-service, but with that sense of having your own private Como villa."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via Regina 8, 22016 Tremezzina, Lake Como, Italy",
+    "distances": {
+      "Bellagio (by ferry)": "20 min",
+      "Tremezzo Center": "Walking distance",
+      "Como": "25 km / 25 min",
+      "Lugano, Switzerland": "75 km / 1h",
+      "Milan": "80 km / 1h",
+      "Milan Malpensa Airport": "80 km / 1h",
+      "Milan Linate Airport": "90 km / 1h15",
+      "Bergamo Orio al Serio Airport": "120 km / 1h30"
+    },
+    "coordinates": {
+      "lat": 45.9842,
+      "lng": 9.2119
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.5!2d9.2119!3d45.9842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478154c3f8b3c8c5%3A0x9e8f7d6c5b4a3b2c!2sGrand%20Hotel%20Tremezzo!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive access to all 84 rooms and suites",
+      "Complete privacy across entire hotel",
+      "Sala Regina grand ballroom for receptions",
+      "Lakeside glass terrace for dining",
+      "Hotel gardens for ceremonies",
+      "All five restaurants and bars",
+      "La Terrazza Gualtiero Marchesi fine dining",
+      "L'Escale Wine Bar for after-parties",
+      "T Beach club access",
+      "All three swimming pools including floating pool",
+      "T Spa wellness center facilities",
+      "Private boat dock",
+      "Direct ferry access to Bellagio",
+      "Villa Sola Cabiati availability",
+      "Dedicated wedding coordination team",
+      "Custom catering and menu design",
+      "Professional event lighting and sound",
+      "Floral design throughout property",
+      "Late-night celebrations (wine bar until 2am)",
+      "Multi-day event capability",
+      "Photography access to all spaces"
+    ],
+    "description": "Exclusive buyout of Grand Hotel Tremezzo transforms this Art Nouveau palace into your private Lake Como resort. All eighty-four rooms become yours, accommodating up to 180 overnight guests in spaces ranging from elegant doubles to rooftop suites with private jacuzzis and Bellagio views. Your celebration flows between venues that showcase the hotel's full range: ceremonies of eighty in gardens framing Bellagio across the water, terraced receptions for sixty on the glass-enclosed lakefront, grand dinners for 120 in Sala Regina where Belle Époque ballroom elegance meets contemporary celebration, after-parties in the wine bar where music plays until 2am and formality finally relaxes into joy. Between events, guests explore three pools (including that legendary floating platform), T Spa's wellness facilities, five restaurants led by La Terrazza Gualtiero Marchesi, direct ferry connections to Bellagio for afternoon exploration, and those lake views that change hourly as light shifts across mountains and water. The Grand Hotel Tremezzo team—refined across 115 years of hosting international elite—orchestrates everything while maintaining that particular Italian grand hotel warmth where service is impeccable but never stiff. With Villa Sola Cabiati nearby for overflow or intimate gatherings, the entire Tremezzo experience becomes your multi-day celebration canvas.",
+    "transfers": "Private transfers from Milan Malpensa (1 hour), Linate (1.25 hours), or Bergamo (1.5 hours) airports deliver guests directly to the hotel. The hotel also coordinates private boat transfers for dramatic water arrivals, and guests use the direct ferry service to explore Bellagio, Varenna, and other Como towns throughout your celebration."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "Sala Regina accommodates 120 guests for seated dinners with dancing. The lakeside glass terrace seats 60 for more intimate receptions. Garden ceremonies can host up to 80 guests. The scale works beautifully for both substantial and intimate celebrations."
+    },
+    {
+      "q": "How many guests can stay at the hotel?",
+      "a": "The eighty-four rooms and suites accommodate approximately 180 overnight guests. Including Villa Sola Cabiati nearby adds capacity for larger wedding parties, allowing most celebrations to house all guests within the Tremezzo family of properties."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "For larger weddings or multi-day celebrations, exclusive use ensures complete privacy and flexibility. Smaller events can be accommodated within the hotel's normal operations, though most couples prefer buyout for the freedom it provides."
+    },
+    {
+      "q": "What about the famous floating pool?",
+      "a": "The floating pool is accessible to hotel guests throughout your stay—a genuine highlight where swimming happens in heated water literally floating on Lake Como. It's become one of Italy's most photographed hotel features and makes for stunning couple and guest photos. Beyond the floating pool, there's also an indoor spa pool and garden pool."
+    },
+    {
+      "q": "Can we celebrate late into the evening?",
+      "a": "The wine bar allows celebrations until 2am—exceptional for Italian hotels where noise restrictions typically end festivities earlier. Your wedding has natural rhythm without forced early conclusions, allowing that full arc from formal ceremony through elegant dinner to late-night celebration."
+    },
+    {
+      "q": "What makes the Bellagio view special?",
+      "a": "Tremezzo sits directly across from Bellagio at the lake's widest point, creating Como's most iconic perspective. Every major space—Sala Regina, the lakeside terrace, gardens, floating pool, most rooms—frames Bellagio's colorful buildings stacked on the distant hillside. That view becomes constant backdrop to your celebration, present in every photo, changing constantly as light shifts from dawn to dusk."
+    },
+    {
+      "q": "Does the hotel have Michelin-starred dining?",
+      "a": "La Terrazza Gualtiero Marchesi honors the legendary three-Michelin-star Italian chef (now deceased) whose innovations transformed Italian cuisine. While the restaurant itself doesn't hold stars, it maintains exceptional standards and creates bespoke wedding menus that honor both tradition and innovation."
+    },
+    {
+      "q": "Why choose Grand Hotel Tremezzo?",
+      "a": "It's the combination of Belle Époque grandeur, that Bellagio-framing position, the floating pool's uniqueness, five restaurants offering dining variety, T Spa's wellness facilities, Villa Sola Cabiati for overflow, 180-guest capacity, and service refined across 115 years. Tremezzo delivers the classic Lake Como grand hotel experience with contemporary luxury and celebration expertise. You're in genuine Art Nouveau architecture that's neither museum nor modernized past recognition—just beautifully balanced between past and present."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Grand Hotel Tremezzo",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@grandhoteltremezzo.com",
+    "hotelPhone": "+39 0344 42491"
+  }
+}
+
