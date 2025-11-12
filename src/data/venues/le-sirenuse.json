@@ -1,0 +1,253 @@
+{
+  "name": "Le Sirenuse",
+  "city": "Positano",
+  "region": "Amalfi Coast",
+  "maxGuests": 150,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/heroxl",
+  "heroDescription": "Perched seventy meters above the Mediterranean, this legendary boutique hotel cascades down Positano's most coveted clifftop—where Michelin-starred dining, hand-painted majolica tiles, and terraces framing endless blue horizons create the Amalfi Coast's most iconic celebration setting.",
+  "intro": "There's a moment when you first step onto Le Sirenuse's sea-facing terrace—past the lemon trees and bougainvillea, beyond the famous pool—when Positano reveals itself in full glory below and the Mediterranean stretches to infinity. That view has captivated guests since 1951, when the aristocratic Sersale family opened their summer villa as a hotel and accidentally created an icon. Today, Le Sirenuse remains family-run and feels exactly like what it is: an impossibly elegant private home that happens to welcome the world's most discerning travelers. The hand-painted tiles tell stories, the antiques have provenance, the staff remember your name, and dinner at Michelin-starred La Sponda unfolds by the light of four hundred candles flickering against frescoed walls. For weddings, this means exchanging vows on terraces where the sunset turns the sea to gold, dancing in spaces that blend classic Italian grandeur with effortless sophistication, and giving your guests an experience they'll recount for decades.",
+  "history": {
+    "description": "The Sersale family's Positano villa had been their private summer escape for generations—an 18th-century palazzo clinging to the cliffside where family gathered each summer to swim, dine on the terraces, and watch the sun set over the Mediterranean. It was paradise, but paradise with just one family enjoying it.",
+    "loveStory": "In 1951, the family made the decision to share their beloved home with the world. Rather than simply opening a hotel, they created something that retained the soul of a private residence—furnishing rooms with family antiques, commissioning local artisans to create hand-painted majolica tiles throughout, maintaining gardens and terraces exactly as they'd always been kept. Guests arrived not as customers but as friends invited into an extraordinary home.",
+    "inauguration": "Over seven decades, Le Sirenuse has expanded thoughtfully—adding rooms, creating the Michelin-starred La Sponda, building the iconic pool, developing partnerships with private beach clubs—but never losing that sense of being welcomed into the family's world. Today, three generations later, the Sersales still personally oversee every detail. It's that continuity of vision and genuine warmth that makes Le Sirenuse feel different from every other luxury hotel—and what makes celebrations here feel like you've been given the keys to the most beautiful home on the Amalfi Coast."
+  },
+  "usps": [
+    "58 Rooms, Suites & Junior Suites",
+    "Michelin-Starred La Sponda Restaurant",
+    "Oyster Bar & Champagne Bar",
+    "Sersale Family-Owned Since 1951",
+    "Heated Infinity Pool Overlooking Sea",
+    "Gae Aulenti-Designed Spa",
+    "70 Meters Above Mediterranean",
+    "Hand-Painted Majolica Tiles Throughout",
+    "Private Riva Yacht for Excursions",
+    "Partnership with Private Beach Clubs",
+    "TechnoGym Fitness Center",
+    "Award-Winning Wine Collection",
+    "Lemon Grove Terraces",
+    "Consistently Ranked World's Best Hotels",
+    "Exclusive Buyout Available"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Main Sea-Facing Terrace",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 80,
+        "buffet": 80,
+        "ceremony": 100
+      },
+      "description": "The terrace that launched a thousand Instagram posts—and for good reason. Positioned at the perfect vantage point above Positano's cascade of pastel houses, this becomes your ceremony and reception space. As afternoon softens to evening, the Mediterranean catches fire with sunset colors, and you're standing exactly where you always imagined an Amalfi Coast wedding would be."
+    },
+    {
+      "name": "La Sponda Restaurant",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 60,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "Four hundred candles illuminate this Michelin-starred space each evening—a ritual that transforms dinner into theater. Frescoed ceilings, arched windows framing the twinkling lights of Positano below, and cuisine that honors both tradition and innovation. Your reception becomes the meal of your guests' lives."
+    },
+    {
+      "name": "Oyster Bar & Terrace",
+      "capacities": {
+        "cocktail": 60,
+        "seated": 40,
+        "buffet": 40,
+        "ceremony": 0
+      },
+      "description": "Overlooking the pool and sea beyond, the Oyster Bar offers a more relaxed celebration vibe—perfect for welcome lunches, rehearsal dinners, or next-day gatherings where guests linger over seafood and Champagne in the Mediterranean sun."
+    },
+    {
+      "name": "Pool Terrace",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 0,
+        "buffet": 60,
+        "ceremony": 50
+      },
+      "description": "Le Sirenuse's iconic heated infinity pool has appeared in countless magazines—for good reason. The terrace surrounding it offers another celebration dimension, particularly for cocktail hours when guests want to drift between spaces with drinks in hand and that impossible view always present."
+    },
+    {
+      "name": "Private Indoor Salons",
+      "capacities": {
+        "cocktail": 50,
+        "seated": 30,
+        "buffet": 30,
+        "ceremony": 0
+      },
+      "description": "Elegant rooms filled with the family's antiques, original artwork, and those signature hand-painted tiles. Perfect for intimate dinners, smaller celebrations, or as sophisticated backup spaces that never feel like plan B."
+    },
+    {
+      "name": "Champagne Bar & Lounge",
+      "capacities": {
+        "cocktail": 40,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "An intimate space for pre-dinner drinks or late-night gatherings, where the wine list is extraordinary and the atmosphere whispers rather than shouts luxury."
+    }
+  ],
+  "ancillaryServices": [
+    "Dedicated wedding planning and coordination",
+    "Michelin-starred custom menu creation",
+    "Wine pairing from award-winning cellar",
+    "Floral design and event styling",
+    "Professional lighting for evening celebrations",
+    "Private Riva yacht excursions",
+    "Beach club access arrangements",
+    "Spa treatments and pre-wedding pampering",
+    "Custom entertainment booking",
+    "Photography access to all spaces",
+    "Hair and makeup coordination",
+    "Welcome dinner arrangements",
+    "Day-after brunch hosting",
+    "Guest room block management",
+    "Excursions to Capri, Ravello, Amalfi",
+    "Private boat transfers from Naples/Sorrento"
+  ],
+  "outlets": [
+    "La Sponda - Michelin-Starred Restaurant",
+    "Oyster Bar",
+    "Champagne Bar",
+    "Poolside Dining",
+    "In-Room Dining"
+  ],
+  "facilities": [
+    {
+      "name": "Heated Infinity Pool",
+      "description": "Perhaps the most photographed pool in Italy—and once you see it, you understand why. Seemingly carved from the cliffside, it appears to spill straight into the Mediterranean seventy meters below. Surrounded by sun loungers, umbrellas, and those ubiquitous lemon trees."
+    },
+    {
+      "name": "Gae Aulenti Spa",
+      "description": "Designed by the legendary Italian architect, the spa offers hammam, sauna, steam rooms, and treatments that blend traditional Mediterranean wellness with modern luxury. Where your wedding party retreats for pre-celebration pampering."
+    },
+    {
+      "name": "TechnoGym Fitness Center",
+      "description": "State-of-the-art equipment in a space that somehow makes working out feel civilized. Floor-to-ceiling windows ensure even treadmill time comes with that view."
+    },
+    {
+      "name": "Private Riva Yacht",
+      "description": "Le Sirenuse's classic wooden Riva offers the most stylish way to explore the coast—vintage elegance skimming across turquoise waters. Perfect for welcome excursions, couple photoshoots, or sunset cruises to Capri."
+    },
+    {
+      "name": "Beach Club Partnerships",
+      "description": "While Le Sirenuse sits dramatically on the cliff, partnerships with Positano's exclusive beach clubs mean your guests have access to the town's best beach loungers, restaurants, and water activities."
+    },
+    {
+      "name": "Lemon Grove Terraces",
+      "description": "Scattered throughout the property, intimate garden spaces shaded by lemon and orange trees offer quiet corners for guests to escape—and perfect backdrops for that golden-hour portrait session."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Sea View Rooms & Suites",
+        "count": 40,
+        "description": "The signature accommodation—where you wake to views across the Mediterranean and fall asleep to the sound of waves against cliffs far below. Hand-painted majolica tiles in every bathroom, antique furniture mixed with contemporary comfort, terraces or balconies for private sunset watching. Each room feels curated rather than decorated."
+      },
+      {
+        "name": "Pool Terrace Rooms",
+        "count": 10,
+        "description": "Opening directly onto the pool terrace, these rooms offer immediate access to Le Sirenuse's most iconic space. Perfect for guests who want to slip from breakfast to poolside without navigating stairs."
+      },
+      {
+        "name": "Interior Courtyard Rooms",
+        "count": 8,
+        "description": "Overlooking the hotel's quiet interior garden, these rooms trade sea views for serenity. Still luxuriously appointed with the same attention to detail, at slightly gentler price points for budget-conscious guests."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via Cristoforo Colombo 30, 84017 Positano, Amalfi Coast, Italy",
+    "distances": {
+      "Positano Center": "3 min walk",
+      "Sorrento": "15 km / 30 min",
+      "Amalfi": "16 km / 35 min",
+      "Ravello": "25 km / 50 min",
+      "Naples": "65 km / 1h30",
+      "Capri (by boat)": "45 min",
+      "Naples International Airport": "65 km / 1h30",
+      "Rome Fiumicino Airport": "270 km / 3h30"
+    },
+    "coordinates": {
+      "lat": 40.6281,
+      "lng": 14.4847
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4!2d14.4847!3d40.6281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b97f4c1d1e8e7%3A0x2c8c5b5e7f8d9a0b!2sLe%20Sirenuse!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive access to all 58 rooms and suites",
+      "Complete privacy across entire property",
+      "Main sea-facing terrace for ceremony and reception",
+      "La Sponda Michelin-starred restaurant (full access)",
+      "Oyster Bar and Champagne Bar",
+      "Heated infinity pool and all terraces",
+      "Gae Aulenti spa and fitness facilities",
+      "Private indoor salons and lounges",
+      "Lemon grove garden spaces",
+      "Dedicated wedding coordination team",
+      "Custom menu creation by Michelin-starred chef",
+      "Professional event lighting and setup",
+      "Floral design using local blooms",
+      "Private Riva yacht for couple/VIP use",
+      "Beach club access coordination",
+      "Complete flexibility for celebration timing",
+      "Multi-day celebration hosting"
+    ],
+    "description": "Exclusive buyout of Le Sirenuse transforms this legendary hotel into your private Amalfi Coast palazzo. All 58 rooms become yours, accommodating up to 150 overnight guests in spaces ranging from sea-view doubles to sprawling suites with private terraces. Your celebration flows seamlessly from ceremony on the main terrace (where Positano provides the backdrop) to Michelin-starred dinner at La Sponda illuminated by four hundred candles, to late-night dancing overlooking the Mediterranean. The Sersale family's team—who've perfected the art of hospitality over seven decades—orchestrates every detail while maintaining that sense of being guests in an extraordinary private home rather than hotel clients. With complete property access, you can host welcome drinks by the pool, ceremony at sunset on the main terrace, reception in La Sponda, and after-party in the Oyster Bar, all while your guests wander between spaces discovering new perspectives on that endless blue view.",
+    "transfers": "Private boat transfers from Naples (hydrofoil to Positano, 1 hour) or Sorrento (30 minutes) offer the most romantic arrival. Private car service also available from Naples Airport (1.5 hours along the dramatic coastal road)."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "The main sea-facing terrace accommodates up to 80 guests for seated dinners and 100 for ceremonies. La Sponda restaurant seats 60 for intimate receptions. With cocktail-style events utilizing multiple terraces, you can host up to 150 guests."
+    },
+    {
+      "q": "How many guests can stay at the hotel?",
+      "a": "Le Sirenuse has 58 rooms and suites, accommodating approximately 150 overnight guests depending on room configurations."
+    },
+    {
+      "q": "Is exclusive use available?",
+      "a": "Yes, Le Sirenuse offers full property buyouts for weddings and celebrations. This provides complete privacy and access to all spaces, creating the feeling of celebrating in your own cliffside villa."
+    },
+    {
+      "q": "Does the restaurant have a Michelin star?",
+      "a": "Yes, La Sponda holds one Michelin star. The restaurant is famous for its nightly ritual of lighting four hundred candles at sunset, creating an atmosphere as memorable as the cuisine."
+    },
+    {
+      "q": "What makes Le Sirenuse special?",
+      "a": "It's the combination of location, legacy, and genuine warmth. The Sersale family has owned and operated Le Sirenuse since 1951, maintaining the sense of a private home while consistently ranking among the world's finest hotels. That view, those hand-painted tiles, the Michelin-starred dining, the iconic pool—everything works together to create something irreplaceable."
+    },
+    {
+      "q": "Can guests access the beach?",
+      "a": "While Le Sirenuse sits majestically on the cliff, the hotel has partnerships with Positano's best beach clubs, arranging access and reservations for your guests. The walk down to Positano's main beach is about 10 minutes through the village."
+    },
+    {
+      "q": "Are boat excursions available?",
+      "a": "Yes, Le Sirenuse has a private Riva yacht for guest excursions. Day trips to Capri, sunset cruises, or simply exploring the coast by boat can be arranged. This also makes for stunning couple photography."
+    },
+    {
+      "q": "How do guests arrive in Positano?",
+      "a": "The most scenic route is by boat from Naples or Sorrento. Private car transfers from Naples Airport (1.5 hours) take you along the legendary Amalfi Coast road. Positano has no train station—the journey is part of the experience."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Le Sirenuse",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@sirenuse.it",
+    "hotelPhone": "+39 089 875 066"
+  }
+}
+
