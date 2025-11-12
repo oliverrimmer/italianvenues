@@ -1,0 +1,247 @@
+{
+  "name": "Villa del Balbianello",
+  "city": "Lenno",
+  "region": "Lake Como",
+  "maxGuests": 150,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/heroxl",
+  "heroDescription": "The single most cinematic villa on Lake Como—perched on a wooded promontory accessible only by boat, where 18th-century loggias frame impossible views across the water, terraced gardens cascade toward private docks, and every angle looks exactly like that scene from James Bond you're remembering.",
+  "intro": "There's a moment during every Balbianello wedding when the boats approach the villa's private dock—vintage wooden launches cutting across Como's mirror-still water, the promontory rising ahead wrapped in cypress and laurel, those iconic loggias visible through the trees—and guests realize they're not attending a wedding so much as living inside a film. Which makes sense, because this is precisely where James Bond recovered in Casino Royale, where Anakin and Padmé married secretly in Star Wars, where countless movies and fashion shoots have captured that particular magic that happens when 18th-century architecture, world-class gardens, and alpine lake scenery converge. Built in the 1700s by Cardinal Durini on the ruins of a Franciscan monastery, later restored by explorer Guido Monzino who filled it with art and adventure memorabilia, Balbianello now belongs to FAI (Italy's National Trust)—preserved forever and available for celebrations that honor both its history and drama. No one stays here overnight; it's pure event venue where you arrive by boat, marry in loggias overlooking the lake, dine on terraces hung with wisteria, and leave as the sun sets behind the mountains. With spaces accommodating intimate gatherings of forty to receptions of 150 under marquees, exclusive use ensuring privacy, and gardens so photogenic your photographer will cry with joy, Balbianello delivers the Lake Como wedding at its most legendary.",
+  "history": {
+    "description": "In the late 1700s, Cardinal Angelo Maria Durini chose this promontory jutting into Lake Como for his villa—not just for the views (though those were extraordinary) but for the symbolism. The site held the ruins of a Franciscan monastery, and Durini wanted to build something that honored contemplation while embracing worldly beauty. He created a villa that balanced those impulses: elegant but not ostentatious, positioned to capture every perspective on the lake and mountains.",
+    "loveStory": "The villa passed through various hands until the mid-20th century, when Italian explorer and mountaineer Guido Monzino purchased it and began a loving restoration. Monzino had climbed Everest, explored the North Pole, and filled the villa with maps, artifacts, and memories of adventures. He understood drama—both in life and in architecture. He extended the gardens, preserved every historic detail, and ensured Balbianello would be extraordinary forever by leaving it to FAI upon his death.",
+    "inauguration": "Today, FAI maintains Balbianello as one of Italy's most treasured properties—open to daily visitors who arrive by boat to tour the gardens, and available for private events that meet the Trust's standards for respecting the villa's significance. This dual purpose means Balbianello never feels commercialized. It remains exactly what Durini and Monzino intended: a place of beauty and contemplation that happens to host some of the world's most spectacular celebrations."
+  },
+  "usps": [
+    "18th-Century Cardinal's Villa",
+    "Boat-Only Access (No Road Entry)",
+    "Filming Location (James Bond, Star Wars)",
+    "FAI (National Trust) Protected Property",
+    "Terraced Lakeside Gardens",
+    "Iconic Loggias with Mountain Views",
+    "Private Villa Dock for Boat Arrivals",
+    "Historic San Giacomo Chapel",
+    "Loggia Durini & Loggia Segre Event Spaces",
+    "Garden Terraces for Marquee Receptions",
+    "Exclusive Day-Use for Events",
+    "Late Night Celebrations (Until 2am)",
+    "Guido Monzino Museum Collections",
+    "UNESCO World Heritage Lake Setting",
+    "Maximum 150 Guest Capacity"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Loggia Durini (Old Loggia)",
+      "capacities": {
+        "cocktail": 50,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 40
+      },
+      "description": "Cardinal Durini's original open-air loggia—the villa's architectural heart and most photographed space. Stone arches frame Lake Como and the mountains beyond in three perfect compositions. This is where most couples exchange vows, standing where centuries of contemplation have created an atmosphere that feels inherently sacred. Accommodates up to forty guests, which sounds limiting until you experience how that intimacy amplifies the moment."
+    },
+    {
+      "name": "Loggia Segre",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 75,
+        "buffet": 75,
+        "ceremony": 75
+      },
+      "description": "The covered loggia added during later renovations—glass arches protecting without obscuring those views, space for larger ceremonies or elegant seated dinners. When weather threatens or you simply want sophistication with a roof, this becomes your ceremony or reception space where seventy-five guests dine overlooking the water."
+    },
+    {
+      "name": "Lower Garden Terrace",
+      "capacities": {
+        "cocktail": 180,
+        "seated": 150,
+        "buffet": 150,
+        "ceremony": 0
+      },
+      "description": "The expansive lawn terrace closest to the lake, where marquees are erected for larger receptions. This transforms into your grand dining space—elegant tenting with transparent sides ensuring views remain central, seating for 150, and that particular magic of dining outdoors on Lake Como while completely protected. The terrace's position means every table has water and mountain perspectives."
+    },
+    {
+      "name": "Lake Terrace",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 150,
+        "buffet": 120,
+        "ceremony": 0
+      },
+      "description": "Closer to the water's edge, this terrace offers another dimension for cocktail receptions or dinners. The proximity to the lake means you hear water lapping against stone, see boats gliding past, feel that particular atmospheric quality that makes Como evenings unforgettable."
+    },
+    {
+      "name": "San Giacomo Chapel",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 30
+      },
+      "description": "The tiny historic chapel perched above the gardens—intimate, authentic, perfect for small religious or symbolic ceremonies where your closest family witnesses vows in a space that's seen centuries of prayer and celebration."
+    },
+    {
+      "name": "Terraced Gardens",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 0,
+        "buffet": 80,
+        "ceremony": 80
+      },
+      "description": "Multiple levels of manicured gardens descending the promontory toward the lake—cypress alleys, wisteria pergolas, hidden statuary, carefully placed benches with curated views. These aren't just pretty backgrounds but spaces guests actively explore, discovering new perspectives at every turn. Perfect for cocktail hours where movement and discovery replace standing in one spot."
+    }
+  ],
+  "ancillaryServices": [
+    "Exclusive day-use venue booking",
+    "Private boat transfers for guests",
+    "Vintage wooden launch arrangements",
+    "Wedding planning coordination (external partners)",
+    "Premium catering setup and service",
+    "Marquee and tent rental for larger events",
+    "Professional lighting and sound systems",
+    "Floral design throughout gardens",
+    "Ceremony setup in loggias or gardens",
+    "Weather backup planning and execution",
+    "Photography access to entire property",
+    "Videography including aerial drone footage",
+    "Entertainment booking and management",
+    "Bar service and sommelier pairings",
+    "Late-night celebrations (until 2am with exclusive use)",
+    "FAI staff and security throughout event",
+    "Multi-course seated dinner service",
+    "Guest transportation logistics from Como hotels"
+  ],
+  "outlets": [
+    "External Premium Catering Only",
+    "Full Bar Service Available",
+    "No Onsite Restaurant or Dining"
+  ],
+  "facilities": [
+    {
+      "name": "Boat-Only Access",
+      "description": "This isn't an inconvenience—it's the experience. No cars can reach Balbianello; everyone arrives by boat from nearby Lenno or other lake towns. Guests step off vintage wooden launches at the villa's private dock and climb stairs through gardens toward the loggias. That arrival—crossing water with the villa rising ahead—creates anticipation and drama that no land-based entrance could match. It's why films choose Balbianello: the approach is inherently cinematic."
+    },
+    {
+      "name": "Terraced Gardens",
+      "description": "Cardinal Durini and later Guido Monzino understood that gardens should be journeys. Multiple levels cascade down the promontory, each planted with Mediterranean flora, each offering new lake perspectives. Cypress trees frame views like natural columns, wisteria drapes pergolas in purple blooms, stone pathways wind past camellias and azaleas. These gardens are both venue and experience—guests don't just see them but explore them throughout your celebration."
+    },
+    {
+      "name": "The Loggias",
+      "description": "Open-air rooms without walls—just stone arches framing those impossible views. The architecture forces you to look outward toward lake and mountains, creating natural contemplation. Stand in the Loggia Durini and you understand why Cardinal Durini chose this exact spot: every sight line is perfect, every perspective curated by the building itself."
+    },
+    {
+      "name": "Guido Monzino Museum",
+      "description": "Throughout the villa, Monzino's collection remains—maps from his expeditions, artifacts from Everest and the North Pole, period furniture and art. During cocktail hours or villa tours, guests discover these treasures, adding layers of story to the celebration. You're not just in a beautiful villa but in an explorer's home, surrounded by evidence of lives lived with purpose and adventure."
+    },
+    {
+      "name": "Private Villa Dock",
+      "description": "The wooden dock where boats arrive and depart becomes its own event space—that moment when newlyweds board their launch for the departure, guests waving from the terrace above, the lake spreading before them. Some of the most iconic wedding photographs happen here, where water, stone, and human emotion converge."
+    },
+    {
+      "name": "FAI Preservation",
+      "description": "Being owned by Italy's National Trust means Balbianello is preserved exactly as it was—no commercialization, no modernization that compromises historic integrity. Every event must meet FAI standards for respecting the property. This creates parameters, yes, but also ensures Balbianello remains extraordinary. You're not renting a venue; you're being entrusted with a national treasure for one perfect day."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "No Onsite Accommodation",
+        "count": 0,
+        "description": "Villa del Balbianello operates exclusively as a day-use event venue—no overnight stays possible. This is by design, preserving the villa's character while making it accessible for celebrations. Guests stay in the extraordinary hotels and villas surrounding Lake Como, from luxury properties in nearby Lenno and Tremezzina to the legendary Grand Hotel Tremezzo or Villa d'Este. Most wedding parties book entire hotels or villa complexes, creating multi-day celebrations where Balbianello becomes the spectacular centerpiece rather than the only location."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via Guido Monzino 1, 22016 Lenno, Tremezzina, Lake Como, Italy",
+    "distances": {
+      "Lenno (boat access point)": "1 km / 5 min by boat",
+      "Tremezzina": "2 km",
+      "Bellagio": "15 km / 30 min by boat",
+      "Como": "38 km / 40 min",
+      "Lugano, Switzerland": "45 km / 45 min",
+      "Milan": "81 km / 1h30",
+      "Milan Malpensa Airport": "80 km / 1h30",
+      "Bergamo Orio al Serio Airport": "110 km / 2h"
+    },
+    "coordinates": {
+      "lat": 45.9614,
+      "lng": 9.2103
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.5!2d9.2103!3d45.9614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478154c3f8b3c8c5%3A0x9e8f7d6c5b4a3b2c!2sVilla%20del%20Balbianello!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive day-use access to entire villa and gardens",
+      "Private use of all loggias and terraces",
+      "Loggia Durini for intimate ceremonies",
+      "Loggia Segre for larger ceremonies or dining",
+      "Garden terraces for cocktail receptions",
+      "Lake terrace for lakeside events",
+      "San Giacomo Chapel for religious ceremonies",
+      "Access to all gardens and pathways",
+      "Private villa dock for boat arrivals/departures",
+      "Setup time before event",
+      "Breakdown time after event",
+      "FAI staff and security throughout",
+      "Flexibility for event timing (day to evening)",
+      "Late-night celebrations (until 2am with arrangements)",
+      "Photography access to entire property",
+      "Marquee setup on garden terraces for larger receptions",
+      "Complete privacy during your event"
+    ],
+    "description": "Exclusive use of Villa del Balbianello means the entire promontory becomes yours for the day—from morning setup through evening celebrations until departure. Your event unfolds across the spaces that best suit your vision: intimate ceremonies of forty in the Loggia Durini (that iconic space framing lake and mountains), larger gatherings in Loggia Segre, elegant marquee dinners for 150 on the garden terrace, cocktail receptions flowing through multiple levels of the historic gardens. Guests arrive by private boat transfers—vintage wooden launches creating that cinematic approach across the water—and discover the property as explorers, wandering paths Guido Monzino himself walked. Because Balbianello is day-use only, your celebration has defined rhythm: arrival by boat mid-morning or afternoon, ceremony as light softens, reception as sunset paints the mountains, departure under stars. This focused timeline creates intensity and presence—everyone's completely immersed for those hours, then returns to hotels carrying memories of something extraordinary. FAI's preservation standards mean your team works within parameters that honor the villa's significance, but those parameters ensure Balbianello remains what it's always been: a place of beauty so perfect it barely seems real.",
+    "transfers": "All guest transport to and from Balbianello happens by boat—part of the experience rather than logistics. Vintage wooden launches or modern water taxis depart from Lenno (5 minutes) or other lake towns, delivering guests to the villa's private dock. Many couples arrange for a fleet of matching boats, creating arrivals and departures that feel choreographed. Hotels around Como coordinate closely with Balbianello events, making water transport seamless."
+  },
+  "faqs": [
+    {
+      "q": "Can guests stay overnight at Villa del Balbianello?",
+      "a": "No, Balbianello operates exclusively as a day-use event venue. This is actually an advantage—it forces celebrations to be intensely present and focused, and it means guests stay in Lake Como's extraordinary hotels and villas, experiencing more of the region rather than remaining in one location."
+    },
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "The Loggia Durini accommodates intimate ceremonies up to 40 guests, while Loggia Segre can host 75. For larger celebrations, garden terraces with marquees accommodate up to 150 for seated dinners. Events over 50 guests or those extending past 6pm require exclusive use."
+    },
+    {
+      "q": "How do guests reach the villa?",
+      "a": "Only by boat—there's no road access. Guests depart from Lenno or other lake towns on private water taxis or vintage wooden launches, arriving at Balbianello's private dock. This boat-only access creates the arrival experience that's made Balbianello legendary. It's not inconvenient; it's transformative."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "For weddings over 50 guests or events extending past 6pm, yes. Smaller daytime events may share the property with daily visitors (the villa is open to the public), though most couples prefer exclusive use for privacy and flexibility."
+    },
+    {
+      "q": "Can we have a religious ceremony?",
+      "a": "Yes, the historic San Giacomo Chapel accommodates small Catholic ceremonies (up to 30 guests). Symbolic ceremonies happen in the loggias or gardens. Civil ceremonies require other venues (Balbianello doesn't host legal marriages), though couples often have the legal ceremony elsewhere and hold their celebration here."
+    },
+    {
+      "q": "Why is Balbianello so famous?",
+      "a": "Beyond its inherent beauty, Balbianello has appeared in major films—James Bond's Casino Royale (the recovery scenes), Star Wars Episode II (Anakin and Padmé's secret wedding), and numerous fashion shoots and productions. Directors choose it for the same reasons couples do: that boat arrival, the loggias framing impossible views, gardens that photograph like dreams. Being FAI-protected also ensures it's preserved perfectly forever."
+    },
+    {
+      "q": "What about catering and dining?",
+      "a": "Balbianello has no restaurant or kitchen—all catering is provided by approved external companies specializing in luxury events. This actually works beautifully: your caterer brings everything needed, sets up in designated areas, and delivers world-class cuisine in one of the world's most beautiful settings."
+    },
+    {
+      "q": "Can we celebrate late into the evening?",
+      "a": "Yes, with exclusive use, celebrations can extend until 2am. This allows full dinner service, dancing, and that magical experience of being at Balbianello after dark when the lake reflects moonlight and distant villages sparkle across the water."
+    },
+    {
+      "q": "What makes Balbianello special compared to other Como villas?",
+      "a": "It's the convergence of elements: the boat-only access creating arrivals unlike anywhere else, Cardinal Durini's architectural genius in those loggias, Monzino's passion in restoration and collection, FAI's protection ensuring permanent preservation, those gardens that feel designed by film directors, and that particular position on the promontory where every sightline is perfect. Other Como villas are extraordinary—Balbianello is legendary."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Villa del Balbianello",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "faibalbianello@fondoambiente.it",
+    "hotelPhone": "+39 0344 56110"
+  }
+}
+
