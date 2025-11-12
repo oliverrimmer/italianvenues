@@ -1,0 +1,249 @@
+{
+  "name": "Monastero Santa Rosa",
+  "city": "Conca dei Marini",
+  "region": "Amalfi Coast",
+  "maxGuests": 60,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/heroxl",
+  "heroDescription": "A 17th-century Dominican monastery transformed into the Amalfi Coast's most intimate luxury retreat, where just twenty rooms cascade down the cliffside through tiered gardens, an otherworldly infinity pool floats above the Mediterranean, and Michelin-starred dining unfolds in spaces where sisters once gathered in prayer.",
+  "intro": "Some places on the Amalfi Coast announce themselves—grand hotels visible from every angle, bustling with energy and guests. Monastero Santa Rosa does the opposite. Tucked into the cliffs of tiny Conca dei Marini, accessible only by a narrow coastal road, this former 17th-century monastery reveals itself slowly. First come the gardens—four terraced levels descending the precipice, planted with the herbs and flowers Dominican sisters once cultivated. Then the infinity pool materializes, seeming to levitate over the Gulf of Salerno in a way that defies both physics and reason. Finally, you discover the monastery itself, beautifully restored to honor its contemplative past while embracing contemporary luxury. With just twenty rooms ensuring genuine intimacy, Il Refettorio's Michelin-starred cuisine served in the former refectory, and an atmosphere that still carries echoes of the peace those cloistered sisters sought, Monastero Santa Rosa creates weddings unlike anywhere else—smaller by design, quieter by nature, and somehow both sacred and sensual in ways that larger venues can never replicate.",
+  "history": {
+    "description": "In the 1600s, Dominican sisters chose this dramatic clifftop for their monastery—seeking isolation, contemplation, and perhaps that view which even then must have felt like looking directly into heaven. For centuries they lived here in prayer and work, cultivating gardens on the terraced hillside, tending to the sick, and maintaining rhythms unchanged by the world beyond these walls.",
+    "loveStory": "When the monastery closed in the early 1900s, the buildings slowly succumbed to time and weather—walls crumbling, gardens reverting to wild. The bones remained beautiful, but it took visionaries to see what this place could become. The restoration preserved every authentic element: vaulted ceilings and stone floors, the former chapel with its sacred geometry, corridors designed for contemplation, garden terraces following their original layout. But into this historic shell came modern luxury—that impossible infinity pool, a world-class spa, rooms that balance monastic simplicity with sensual comfort.",
+    "inauguration": "Today, Monastero Santa Rosa stands as proof that transformation doesn't require abandoning history. The peaceful atmosphere those sisters created still permeates every corner. You feel it walking the garden paths, dining in the former refectory, watching sunset from the pool. This isn't a monastery turned party venue—it's a sacred space that's learned to celebrate love without losing its soul."
+  },
+  "usps": [
+    "17th-Century Dominican Monastery",
+    "Only 20 Rooms & Suites",
+    "Michelin-Starred Il Refettorio Restaurant",
+    "Legendary Cliffside Infinity Pool",
+    "Four Levels of Terraced Gardens",
+    "Santa Maria Novella Spa",
+    "Panoramic Gulf of Salerno Views",
+    "Former Chapel for Symbolic Ceremonies",
+    "Convivio Terrace Event Space",
+    "Secluded Conca dei Marini Location",
+    "Exclusive Buyout Available",
+    "Maximum 60 Guest Capacity",
+    "Boutique Intimate Atmosphere",
+    "Preserved Monastic Architecture",
+    "Private Shuttle to Amalfi"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Convivio Terrace",
+      "capacities": {
+        "cocktail": 50,
+        "seated": 35,
+        "buffet": 40,
+        "ceremony": 50
+      },
+      "description": "The main celebration terrace, positioned where the monastery meets the sky. Intimate by design rather than limitation—thirty-five seated guests means everyone sees the ceremony clearly, hears every word of the vows, shares conversations across tables rather than shouting over crowds. As evening descends and lights twinkle in villages dotting the distant coastline, you understand why smaller can mean more magical."
+    },
+    {
+      "name": "Infinity Pool Terrace",
+      "capacities": {
+        "cocktail": 40,
+        "seated": 0,
+        "buffet": 30,
+        "ceremony": 30
+      },
+      "description": "The pool that launched a thousand magazine spreads—appearing to float unsupported above the Mediterranean, its edge vanishing into blue infinity. The terrace surrounding it offers another dimension for your celebration: sunset cocktails where guests drift between loungers and the bar, intimate ceremonies with just closest family, or that magic hour when your photographer captures you seemingly suspended between earth and heaven."
+    },
+    {
+      "name": "The Tiered Gardens",
+      "capacities": {
+        "cocktail": 60,
+        "seated": 0,
+        "buffet": 40,
+        "ceremony": 50
+      },
+      "description": "Four distinct levels carved from the cliffside, each planted with Mediterranean herbs, citrus, and flowers that perfume the air. Paths wind between terraces, creating natural flow for guests to explore. Perfect for ceremonies in the upper garden with all of Conca dei Marini spread below, or cocktail hours where discovering each new level feels like a small adventure."
+    },
+    {
+      "name": "Il Refettorio Restaurant",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 35,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "The former refectory where sisters gathered for meals in silence—now a Michelin-starred restaurant where conversation and exceptional cuisine replace contemplation. Vaulted ceilings, simple elegant architecture, and those views through arched windows. Your reception becomes a culinary journey that honors both the space's history and contemporary Italian innovation."
+    },
+    {
+      "name": "Former Chapel",
+      "capacities": {
+        "cocktail": 30,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 30
+      },
+      "description": "The monastery's spiritual heart, beautifully preserved with its sacred proportions and peaceful atmosphere intact. Available for symbolic ceremonies, it offers something rare—a space designed for commitment and devotion, where hundreds of years of prayer have created an atmosphere words struggle to capture."
+    },
+    {
+      "name": "Bar la Brocca",
+      "capacities": {
+        "cocktail": 25,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "The poolside café where afternoon aperitivos stretch into evening cocktails. Casual elegance with those omnipresent views, perfect for welcome drinks or next-day gatherings when everyone's too relaxed to venture beyond the property."
+    }
+  ],
+  "ancillaryServices": [
+    "Dedicated wedding planning and coordination",
+    "Michelin-starred custom menu creation",
+    "Ceremony setup in gardens, terrace, or chapel",
+    "Floral design using Mediterranean blooms",
+    "Professional lighting for evening events",
+    "Sound system for ceremony and reception",
+    "Santa Maria Novella spa treatments for wedding party",
+    "Pre-wedding wellness programs",
+    "Welcome dinner hosting",
+    "Day-after brunch arrangements",
+    "Private boat excursions along coast",
+    "Transfers from Naples or Salerno",
+    "Guided tours to Amalfi, Positano, Ravello",
+    "Wine tastings with house sommelier",
+    "Culinary workshops with chef",
+    "Photography access to all levels and spaces"
+  ],
+  "outlets": [
+    "Il Refettorio - Michelin-Starred Restaurant",
+    "Bar la Brocca - Poolside Café",
+    "Convivio Terrace - Private Events",
+    "In-Room Dining"
+  ],
+  "facilities": [
+    {
+      "name": "The Infinity Pool",
+      "description": "Not the largest pool on the coast, but arguably the most breathtaking—heated year-round, positioned at the cliff's absolute edge where it seems to merge with sea and sky. The perspective from the water is surreal: swimming toward what appears to be open air, the Gulf of Salerno spreading endlessly below. This isn't just a photo opportunity—it's an experience that changes how you understand the relationship between architecture and nature."
+    },
+    {
+      "name": "Santa Maria Novella Spa",
+      "description": "Carved into the lower levels of the monastery, the spa embraces the building's contemplative DNA. Treatments using the legendary Santa Maria Novella products—natural, historical, effective. Sauna, steam rooms, and massage spaces all designed for the kind of deep relaxation the sisters once sought through prayer. Your wedding party discovers this is where you come not just for beauty treatments but for genuine restoration."
+    },
+    {
+      "name": "Four-Level Gardens",
+      "description": "The terraces descend the cliff in stages, each level offering new perspectives and plantings. The Dominican sisters designed these gardens for both beauty and utility—herbs for healing, flowers for altar decorations, citrus for sustenance. Today they're maintained in that same spirit, creating spaces that feel both cultivated and wild, formal yet full of life."
+    },
+    {
+      "name": "The Library",
+      "description": "A quiet corner filled with books, comfortable seating, and windows framing those inescapable views. Where guests retreat when the social energy of a multi-day celebration needs a pause—reading, thinking, or simply sitting with the silence that seems built into these walls."
+    },
+    {
+      "name": "Fitness Room",
+      "description": "Even maintaining wellness routines feels different here—working out in a space that was built for contemplation and physical discipline, where the sisters once labored and prayed. Modern equipment, but that atmosphere of purposeful movement remains."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Superior & Deluxe Rooms",
+        "count": 12,
+        "description": "The entry-level accommodations, though 'entry-level' understates their beauty. Each room balances the monastery's contemplative simplicity—whitewashed walls, vaulted ceilings, minimal ornamentation—with sensual modern luxury. Sea views through arched windows, bathrooms that blend historic tile with rainfall showers, beds that somehow honor both monastic restraint and contemporary comfort. Some open to private terraces where morning coffee becomes meditation."
+      },
+      {
+        "name": "Sea View Suites",
+        "count": 6,
+        "description": "Larger spaces where the living areas flow naturally into bedrooms, and every window frames that impossible blue. Terraces or balconies feel like private observation decks suspended over the Mediterranean. Perfect for VIP guests or couples wanting room to breathe within the celebration."
+      },
+      {
+        "name": "Specialty Suites",
+        "count": 2,
+        "description": "The monastery's crown jewels—expansive suites with separate living spaces, oversized terraces, and those views amplified to cinematic scale. These can accommodate families or connect for wedding parties, but their real magic is in how they capture the building's dual nature: sacred simplicity meeting earthly luxury."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via Roma 2, 84010 Conca dei Marini, Amalfi Coast, Italy",
+    "distances": {
+      "Amalfi": "4 km / 10 min",
+      "Positano": "12 km / 25 min",
+      "Ravello": "8 km / 15 min",
+      "Naples": "75 km / 1h30",
+      "Salerno": "30 km / 45 min",
+      "Capri (by boat)": "1h",
+      "Naples International Airport": "75 km / 1h30",
+      "Salerno Airport": "35 km / 50 min"
+    },
+    "coordinates": {
+      "lat": 40.6172,
+      "lng": 14.5628
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.4!2d14.5628!3d40.6172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133b97f4c1d1e8e7%3A0x2c8c5b5e7f8d9a0b!2sMonastero%20Santa%20Rosa!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive access to all 20 rooms and suites",
+      "Complete privacy across entire monastery",
+      "Convivio Terrace for ceremony and reception",
+      "Infinity pool terrace for celebrations",
+      "All four levels of terraced gardens",
+      "Il Refettorio Michelin-starred restaurant (private use)",
+      "Bar la Brocca poolside café",
+      "Former chapel for symbolic ceremonies",
+      "Santa Maria Novella spa facilities",
+      "Library and all common spaces",
+      "Fitness room access",
+      "Dedicated wedding coordination team",
+      "Michelin-starred custom menu creation",
+      "Professional event setup and breakdown",
+      "Floral design and décor coordination",
+      "Flexibility for multi-day celebrations",
+      "Private shuttle service to Amalfi and area",
+      "Photography access to entire property"
+    ],
+    "description": "Exclusive use of Monastero Santa Rosa transforms this cliffside sanctuary into your private coastal refuge. All twenty rooms become yours, accommodating up to forty overnight guests in spaces that honor the building's contemplative past while delivering modern luxury. Your intimate celebration—because this venue simply won't accommodate crowds, and that's precisely its magic—flows between the Convivio Terrace (where thirty-five seated guests means genuine intimacy), the terraced gardens (where ceremonies feel suspended between earth and sky), the infinity pool (where cocktail hours become sublime), and Il Refettorio (where Michelin-starred cuisine is served in a space designed centuries ago for communal meals). The monastery's scale creates natural closeness—guests don't get lost in distant rooms or overwhelmed by numbers. Instead, they experience what the Dominican sisters understood: that beauty, peace, and celebration are amplified when shared in deliberate, human-scaled spaces. The dedicated team orchestrates every detail while preserving that sense of tranquil escape.",
+    "transfers": "Private transfers from Naples Airport (1.5 hours) along the dramatic coastal road. The monastery's shuttle service provides transport to Amalfi (10 minutes) for guests wanting to explore. Boat arrivals at Amalfi followed by short drives offer another atmospheric option."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "Monastero Santa Rosa is intentionally intimate—the Convivio Terrace accommodates 35 guests for seated dinners, and garden spaces can host up to 60 for ceremonies or cocktail receptions. This isn't a limitation but the venue's defining feature: celebrations here are smaller by design, creating the kind of genuine closeness larger venues can't replicate."
+    },
+    {
+      "q": "How many guests can stay at the monastery?",
+      "a": "The twenty rooms and suites accommodate approximately forty overnight guests. For celebrations of this size, having everyone stay on property creates a multi-day house party atmosphere—breakfast together in the morning, spa treatments throughout the day, dinners that stretch late into evening."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "For weddings, yes—exclusive use ensures the intimate, private atmosphere that defines the Monastero Santa Rosa experience. This isn't just a policy but a philosophy: the monastery was built for contemplation and community, qualities that require genuine privacy to maintain."
+    },
+    {
+      "q": "Does the restaurant have a Michelin star?",
+      "a": "Yes, Il Refettorio holds one Michelin star. The restaurant operates in the monastery's original refectory—where sisters once shared simple meals in silence, world-class Italian cuisine is now served with views that somehow make exceptional food taste even better."
+    },
+    {
+      "q": "Can we have a ceremony in the chapel?",
+      "a": "The former chapel is available for symbolic ceremonies. While it's no longer consecrated for religious services, the space retains its sacred atmosphere—centuries of prayer have created an energy that's palpable. Many couples find this offers something unique: a ceremony space designed for devotion, without the constraints of official religious requirements."
+    },
+    {
+      "q": "Is the famous infinity pool available for events?",
+      "a": "Absolutely. The pool terrace accommodates up to forty guests for cocktails and smaller ceremonies. Sunset hours there are particularly magical—that moment when the pool seems to catch fire with reflected light and the entire Gulf of Salerno turns gold."
+    },
+    {
+      "q": "What if we want a larger wedding?",
+      "a": "Then Monastero Santa Rosa probably isn't your venue—and that's okay. This monastery was built for a small community of sisters who chose contemplative intimacy over scale. Today it creates the same experience for celebrations: smaller numbers, deeper connections, more meaningful presence. If you're planning for hundreds, other spectacular Amalfi Coast venues can accommodate you. If you're planning for your closest forty people, nowhere else captures this particular magic."
+    },
+    {
+      "q": "How do we reach Conca dei Marini?",
+      "a": "Conca dei Marini sits between Amalfi and Positano on the coastal road—ten minutes from either. The monastery arranges transfers from Naples Airport (1.5 hours) and operates a shuttle to Amalfi for guest convenience. The relative remoteness is part of the appeal: you're on the famous Amalfi Coast but in a quieter, more secluded corner of it."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Monastero Santa Rosa",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@monasterosantarosa.com",
+    "hotelPhone": "+39 089 832 1199"
+  }
+}
+
