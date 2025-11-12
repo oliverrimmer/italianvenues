@@ -1,0 +1,232 @@
+{
+  "name": "Castello di Vincigliata",
+  "city": "Fiesole",
+  "region": "Tuscany",
+  "maxGuests": 200,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/492085f9-2d4e-4c60-737a-85551e589100/heroxl",
+  "heroDescription": "Rising from the hills above Florence, Castello di Vincigliata captures the romance of medieval Tuscany. This authentic 11th-century fortress offers sweeping views across the city and countryside, where ancient stone walls and terraced gardens create an unforgettable backdrop for your celebration.",
+  "intro": "Perched above Fiesole with Florence spread below like a Renaissance painting, Castello di Vincigliata embodies everything couples dream of when imagining an Italian castle wedding. Built in 1031 and lovingly restored in the 1800s, the fortress has evolved from defensive stronghold to one of Tuscany's most sought-after celebration venues. Stone courtyards catch the golden afternoon light, terraced gardens cascade down the hillside through ancient olive groves, and every terrace frames a postcard view of the Duomo and Tuscan hills beyond.",
+  "history": {
+    "description": "The castle's story begins nearly a thousand years ago with the noble Visdomini family, passing through generations of Tuscan aristocracy—the Cattani da Diacceto, the influential Alessandri—each adding their chapter to these ancient walls. For centuries it stood as both fortress and family seat, witnessing the Renaissance unfold in Florence below.",
+    "loveStory": "Legend speaks of Bianca, whose romantic tale has echoed through the castle for generations. These stone walls have sheltered countless love stories across the centuries, and that history makes every wedding here feel like joining an unbroken tradition of celebration and devotion.",
+    "inauguration": "By the 1800s, Vincigliata had fallen to romantic ruin—until British expatriate John Temple-Leader discovered it and devoted years to its restoration. He reimagined the castle in a feudal style that captured the soul of medieval Tuscany while creating spaces grand enough for modern celebration. Today, Temple-Leader's vision lives on as couples from around the world choose Vincigliata for that rare combination of authentic history and breathtaking beauty."
+  },
+  "usps": [
+    "Authentic 11th-century medieval castle",
+    "Panoramic views over Florence",
+    "Multiple event spaces (indoor & outdoor)",
+    "Capacity for up to 200 ceremony guests",
+    "Ancient olive groves and terraced gardens",
+    "16th-century frescoes and antique furniture",
+    "Historic weapons room",
+    "Stone-walled courtyard",
+    "Exclusive use available",
+    "Only 15 minutes from Florence center",
+    "Gourmet Tuscan catering",
+    "In-house wedding planning services"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/492085f9-2d4e-4c60-737a-85551e589100/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/492085f9-2d4e-4c60-737a-85551e589100/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/492085f9-2d4e-4c60-737a-85551e589100/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/492085f9-2d4e-4c60-737a-85551e589100/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Castle Gardens",
+      "capacities": {
+        "cocktail": 200,
+        "seated": 0,
+        "buffet": 200,
+        "ceremony": 200
+      },
+      "description": "Tiered gardens flowing down the hillside through centuries-old olive groves, every level offering new perspectives on Florence and the rolling hills beyond. The natural amphitheater creates an intimate ceremony space beneath the Tuscan sky."
+    },
+    {
+      "name": "Stone Courtyard",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 150,
+        "buffet": 150,
+        "ceremony": 150
+      },
+      "description": "Medieval courtyard enclosed by weathered stone walls that have stood for nearly a millennium. As evening falls and candles flicker against ancient stone, this becomes one of Tuscany's most romantic dinner settings."
+    },
+    {
+      "name": "Castle Hall (Main Hall)",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 150,
+        "buffet": 0,
+        "ceremony": 150
+      },
+      "description": "The castle's grand hall transports you straight into medieval Tuscany—vaulted ceilings soaring overhead, 16th-century frescoes adorning the walls, period furniture arranged as if the noble families just stepped away. Your backup plan becomes the centerpiece."
+    },
+    {
+      "name": "Formal Dining Room",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 150,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "Elegant period-decorated room with historical charm, ideal for intimate seated dinners and refined wedding receptions."
+    },
+    {
+      "name": "Panoramic Terrace",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 0,
+        "buffet": 100,
+        "ceremony": 0
+      },
+      "description": "Breathtaking outdoor terrace overlooking Florence, perfect for welcome cocktails, aperitifs, and sunset photography with unmatched views of the city and countryside."
+    },
+    {
+      "name": "Historic Weapons Room",
+      "capacities": {
+        "cocktail": 40,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "Unique medieval room displaying original period arms and armor, offering an atmospheric space for intimate gatherings or cocktails with historical character."
+    }
+  ],
+  "ancillaryServices": [
+    "Comprehensive wedding planning and coordination",
+    "Customizable décor and floral arrangements",
+    "Gourmet Tuscan catering with fresh local ingredients",
+    "Professional photography coordination with iconic backdrops",
+    "Entertainment and music coordination",
+    "Guided tours of castle's historic spaces",
+    "Themed medieval décor options",
+    "Luxury accommodation partnerships in Fiesole and Florence",
+    "Transportation coordination from Florence",
+    "Wine pairings featuring Tuscan vintages",
+    "Personalized menu creation",
+    "Guest activity coordination",
+    "Airport transfer arrangements"
+  ],
+  "outlets": [
+    "Castle Hall Fine Dining",
+    "Garden Terrace Dining",
+    "Courtyard Reception Area",
+    "Panoramic Terrace Bar Service"
+  ],
+  "facilities": [
+    {
+      "name": "Historic Castle Halls",
+      "description": "Authentic medieval interiors featuring 16th-century frescoes, vaulted ceilings, antique furniture, and period décor throughout multiple rooms and spaces."
+    },
+    {
+      "name": "Terraced Gardens",
+      "description": "Beautifully landscaped gardens on multiple levels surrounded by ancient olive groves, offering stunning photo opportunities and romantic outdoor spaces."
+    },
+    {
+      "name": "Stone Courtyard",
+      "description": "Enclosed medieval courtyard with original stone walls creating an intimate, atmospheric setting for ceremonies and dining under the stars."
+    },
+    {
+      "name": "Panoramic Terrace",
+      "description": "Elevated outdoor terrace providing 180-degree views of Florence and the Tuscan countryside, ideal for cocktails and sunset moments."
+    },
+    {
+      "name": "Weapons Room",
+      "description": "Historic room displaying authentic medieval arms and armor, adding unique character and photo opportunities to your celebration."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Partner Hotels in Fiesole",
+        "description": "The castle collaborates with nearby luxury hotels including Hotel Villa dei Bosconi in Fiesole, offering elegant rooms with pool access just minutes from the venue. Perfect for guests seeking comfort while staying close to the celebration."
+      },
+      {
+        "name": "Florence City Hotels",
+        "description": "Extensive selection of boutique hotels, luxury properties, and historic accommodations in Florence city center, just 15 minutes away. The wedding team provides recommendations and can assist with group bookings."
+      },
+      {
+        "name": "Tuscan Villas",
+        "description": "For larger wedding parties or guests desiring privacy, the venue partners with exclusive Tuscan villas and estates in the surrounding countryside for overnight stays and multi-day celebrations."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via di Vincigliata 21, 50014 Fiesole, Florence, Tuscany, Italy",
+    "distances": {
+      "Florence City Center": "8 km / 15 min",
+      "Florence Airport (Amerigo Vespucci)": "13 km / 25 min",
+      "Fiesole Center": "2 km / 5 min",
+      "Pisa International Airport": "95 km / 1h15",
+      "Siena": "70 km / 1h",
+      "Bologna": "110 km / 1h30"
+    },
+    "coordinates": {
+      "lat": 43.8089,
+      "lng": 11.3158
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2876.5!2d11.3158!3d43.8089!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a5614f1a2e4c9%3A0x1e2d3c4b5a6f7e8d!2sCastello%20di%20Vincigliata!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive use of entire castle and grounds",
+      "Access to all event spaces (halls, gardens, courtyards, terraces)",
+      "Medieval castle halls with historic frescoes",
+      "Terraced gardens and olive groves",
+      "Stone courtyard for ceremonies and dining",
+      "Panoramic terrace with Florence views",
+      "Historic weapons room access",
+      "Flexible use of indoor and outdoor spaces",
+      "Wedding planning assistance and coordination",
+      "Setup and breakdown services",
+      "Private celebration without other events",
+      "Full day access for preparations and photography"
+    ],
+    "description": "Exclusive use of Castello di Vincigliata provides complete privacy for your medieval fairy-tale wedding. The entire castle, grounds, gardens, and all event spaces become yours for the day, allowing your celebration to unfold across multiple atmospheric settings. From intimate ceremonies in the stone courtyard to grand receptions in the castle hall, aperitifs in the terraced gardens, and sunset cocktails on the panoramic terrace overlooking Florence, every corner of this 11th-century fortress is yours to enjoy. The venue accommodates up to 200 guests for ceremonies and 150 for seated receptions, with flexibility to customize the day's flow across indoor and outdoor spaces.",
+    "transfers": "Transportation can be arranged from Florence city center (15 minutes) and Florence Airport (25 minutes). The venue team can coordinate luxury bus transfers, private cars, or vintage vehicle options for your guests."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "The castle can accommodate up to 200 guests for outdoor ceremonies in the gardens, and up to 150 guests for seated receptions in the courtyard or castle halls."
+    },
+    {
+      "q": "Are there overnight accommodations at the castle?",
+      "a": "The castle does not offer overnight accommodations on-site. However, we partner with luxury hotels in nearby Fiesole (5 minutes away) and Florence (15 minutes away) to ensure your guests have comfortable, convenient lodging options. We're happy to assist with recommendations and group bookings."
+    },
+    {
+      "q": "Is exclusive use available?",
+      "a": "Yes, the castle is available for exclusive use, providing complete privacy for your celebration with access to all spaces, gardens, halls, and terraces."
+    },
+    {
+      "q": "What ceremony options are available?",
+      "a": "You can choose from multiple ceremony locations: the terraced gardens with Florence views (up to 200 guests), the romantic stone courtyard (up to 150 guests), or the grand castle hall for indoor ceremonies (up to 150 guests)."
+    },
+    {
+      "q": "How far is the castle from Florence?",
+      "a": "Castello di Vincigliata is just 8 km (15 minutes by car) from Florence city center and 13 km (25 minutes) from Florence Airport, making it extremely accessible for destination wedding guests while offering a true countryside castle experience."
+    },
+    {
+      "q": "What dining options are provided?",
+      "a": "The venue offers gourmet Tuscan catering featuring traditional cuisine with modern touches, using fresh, locally sourced ingredients. Menus are customizable to accommodate various themes and dietary requirements."
+    },
+    {
+      "q": "Can we have both indoor and outdoor spaces for our event?",
+      "a": "Absolutely! The castle's multiple spaces allow you to create a dynamic celebration flowing between the gardens, terraces, courtyard, and grand halls. This flexibility ensures your wedding can adapt to any weather while taking advantage of the stunning outdoor settings."
+    },
+    {
+      "q": "Do you provide wedding planning services?",
+      "a": "Yes, in-house wedding planning services are available to assist with every detail including décor, logistics, entertainment, catering coordination, and personalized touches to bring your vision to life."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability & receive a tailored quote",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@vincigliatacastle.com",
+    "hotelPhone": "+39 055 597 049"
+  }
+}
+
