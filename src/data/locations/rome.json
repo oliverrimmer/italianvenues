@@ -96,8 +96,8 @@
       "setting": "Medieval Castle",
       "location": "Rome (city limits)",
       "maxGuests": 300,
-      "usp": "11th-century castle with frescoed halls, terraced gardens, and views of the Roman countryside",
-      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7a242456-3484-46ae-a7e6-b272c9821300/cardlg",
+      "usp": "15th-century fortress on medieval watchtower with Winter Garden, frescoed halls, and private parkland within Rome",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/a1260c43-ab15-45c9-29f4-d4f68ea2e000/cardlg",
       "featured": false
     },
     {
@@ -105,19 +105,19 @@
       "slug": "villa-miani",
       "setting": "Hilltop Villa",
       "location": "Rome (Monte Mario)",
-      "maxGuests": 500,
-      "usp": "Panoramic rooftop terrace with 360° views of Rome, including St. Peter's and the Colosseum",
-      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/956ebf67-6945-4420-2dab-82afa86b2d00/cardlg",
-      "featured": false
+      "maxGuests": 550,
+      "usp": "1837 neoclassical villa atop Monte Mario with panoramic Rome views, 3,000sqm event space, and capacity up to 550",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/cfa930d3-8122-4247-0ead-3219ced3fb00/cardlg",
+      "featured": true
     },
     {
       "name": "Villa Aurelia",
       "slug": "villa-aurelia",
       "setting": "Historic Hilltop Villa",
       "location": "Janiculum Hill, Rome",
-      "maxGuests": 200,
-      "usp": "17th-century villa with sweeping views over Rome's rooftops, frescoed interiors, and terraced gardens",
-      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/049db06d-9a71-44b6-b140-d18110fa3000/cardlg",
+      "maxGuests": 230,
+      "usp": "1650 Baroque cardinal's villa atop Janiculum Hill with St. Peter's dome at eye level and three terraced gardens",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bbaa2f88-c2f2-42a9-f17f-11f151d5e800/cardlg",
       "featured": false
     }
   ],
