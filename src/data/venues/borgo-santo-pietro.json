@@ -1,0 +1,259 @@
+{
+  "name": "Borgo Santo Pietro",
+  "city": "Chiusdino",
+  "region": "Tuscany",
+  "maxGuests": 140,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/77acf364-4124-4cd5-38ce-a8dad33b2100/heroxl",
+  "heroDescription": "A 13th-century villa transformed into a Relais & Châteaux sanctuary, where 300 acres of organic gardens, Michelin-starred dining, and holistic wellness create an extraordinary backdrop for intimate celebrations in the heart of Tuscany.",
+  "intro": "Deep in the Val di Merse, where medieval villages cling to hilltops and cypress-lined roads wind through untouched countryside, Borgo Santo Pietro spreads across 300 acres of organic farmland like a private Tuscan kingdom. This isn't just a luxury hotel—it's a working estate where vines climb ancient walls, herbs perfume the air from terraced gardens, and your wedding unfolds across rose-filled cloisters, lakeside islands, and candlelit orangeries. A Michelin star in the dining room, a world-class spa drawing from the estate's own botanicals, and just 22 exquisite rooms ensure your celebration feels exclusive, intimate, and utterly removed from the everyday world.",
+  "history": {
+    "description": "The bones of Borgo Santo Pietro date back to the 13th century, when this medieval villa served the farming communities of the Val di Merse. For hundreds of years it stood witness to the rhythms of Tuscan rural life—harvests and festivals, saints' days and family celebrations.",
+    "loveStory": "The current owners discovered the property in a state of romantic ruin and devoted themselves to a painstaking restoration that honors every original detail. Artisan craftsmen revived ancient frescoes, local stone masons rebuilt crumbling walls, and master gardeners coaxed life back into the terraced gardens. They didn't just restore a building—they brought a whole Tuscan world back to life.",
+    "inauguration": "Today, Borgo Santo Pietro stands as a Relais & Châteaux property that somehow feels entirely undiscovered. The 300-acre estate operates as it would have centuries ago—an organic farm, vineyard, and garden—while offering the kind of refined luxury that earns Michelin stars and fills wedding albums with images that look like oil paintings come to life."
+  },
+  "usps": [
+    "22 Individually Designed Rooms & Suites",
+    "Michelin-Starred Saporium Restaurant",
+    "Trattoria Sull'Albero (Built Around Ancient Oak)",
+    "300-Acre Organic Estate",
+    "World-Class Holistic Spa",
+    "Private Chapel (Saint Peter)",
+    "Heated Infinity Pool",
+    "Working Vineyard & Farm",
+    "Cooking School",
+    "Rose Cloister & Private Lake Island",
+    "Tennis, Basketball, Volleyball Courts",
+    "Relais & Châteaux Member",
+    "Exclusive Use Available"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/77acf364-4124-4cd5-38ce-a8dad33b2100/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/77acf364-4124-4cd5-38ce-a8dad33b2100/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/77acf364-4124-4cd5-38ce-a8dad33b2100/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/77acf364-4124-4cd5-38ce-a8dad33b2100/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Terraced Lawns",
+      "capacities": {
+        "cocktail": 140,
+        "seated": 140,
+        "buffet": 140,
+        "ceremony": 140
+      },
+      "description": "Sweeping lawns terraced into the hillside, framed by cypress and olive trees with the entire Val di Merse valley spreading beyond. As the sun sets over distant medieval towers, this becomes pure Tuscan magic."
+    },
+    {
+      "name": "The Limonaia (Orangery)",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 90,
+        "buffet": 90,
+        "ceremony": 0
+      },
+      "description": "The estate's elegant orangery, where glass walls bring the gardens inside and candlelight reflects off whitewashed walls. Intimate enough to feel personal, grand enough to take your breath away."
+    },
+    {
+      "name": "Saporium Restaurant",
+      "capacities": {
+        "cocktail": 140,
+        "seated": 118,
+        "buffet": 100,
+        "ceremony": 0
+      },
+      "description": "The Michelin-starred heart of the estate, flowing seamlessly from intimate dining room to covered terrace to garden seating beneath the stars. Your reception becomes a culinary journey through Tuscany."
+    },
+    {
+      "name": "Trattoria Sull'Albero",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 62,
+        "buffet": 50,
+        "ceremony": 0
+      },
+      "description": "Built around an ancient oak tree that's been standing longer than the villa itself, this rustic-elegant space offers intimate dinners where nature becomes part of the architecture."
+    },
+    {
+      "name": "Chapel of Saint Peter",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 40
+      },
+      "description": "The estate's private chapel, simple and beautiful, where both symbolic and religious ceremonies unfold in an atmosphere of genuine sanctity and peace."
+    },
+    {
+      "name": "Rose Cloister",
+      "capacities": {
+        "cocktail": 60,
+        "seated": 40,
+        "buffet": 40,
+        "ceremony": 60
+      },
+      "description": "An intimate courtyard where climbing roses frame every photograph and the scent of lavender drifts on the breeze. Perfect for smaller ceremonies or cocktail hours that feel like stepping into a secret garden."
+    },
+    {
+      "name": "Private Lake Island",
+      "capacities": {
+        "cocktail": 30,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 30
+      },
+      "description": "Reached by a small bridge across the estate's private lake, this hidden island creates the most romantic of ceremony settings—completely secluded, utterly unforgettable."
+    },
+    {
+      "name": "Infinity Pool Terrace",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 0,
+        "buffet": 60,
+        "ceremony": 0
+      },
+      "description": "The pool terrace offers another dimension for your celebration, where the infinity edge seems to drop straight into the Tuscan countryside and sunset aperitifs feel suspended between earth and sky."
+    }
+  ],
+  "ancillaryServices": [
+    "Bespoke wedding planning and design services",
+    "Michelin-starred culinary experiences",
+    "Wine tastings from the estate vineyard",
+    "Cooking classes with estate chefs",
+    "Holistic spa treatments using estate botanicals",
+    "Guided excursions to San Galgano Abbey",
+    "Private yoga and wellness sessions",
+    "Estate tours and garden walks",
+    "Mountain biking and hiking trails",
+    "Tennis and sports court access",
+    "Private yacht charters (arranged)",
+    "Children's activities and playground",
+    "Farm-to-table foraging experiences",
+    "Floral design using estate flowers"
+  ],
+  "outlets": [
+    "Saporium - Michelin-Starred Restaurant",
+    "Trattoria Sull'Albero",
+    "Garden Terrace Dining",
+    "Pool Bar & Lounge"
+  ],
+  "facilities": [
+    {
+      "name": "World-Class Holistic Spa",
+      "description": "A sanctuary dedicated to wellness, using products created from botanicals grown on the estate. The spa philosophy blends ancient healing traditions with modern luxury—every treatment becomes a journey toward balance and renewal."
+    },
+    {
+      "name": "Heated Infinity Pool",
+      "description": "Seemingly carved from the hillside itself, the infinity pool offers views that stretch across the Val di Merse. Surrounded by loungers and fragrant gardens, it's where pre-wedding relaxation reaches perfection."
+    },
+    {
+      "name": "Organic Farm & Vineyard",
+      "description": "The working 300-acre estate produces wine, olive oil, honey, vegetables, and herbs that appear on your wedding menu. This isn't decoration—it's a living philosophy of sustainability and beauty."
+    },
+    {
+      "name": "Cooking School",
+      "description": "Estate kitchens where expert chefs share the secrets of Tuscan cuisine. Groups can arrange pre-wedding cooking experiences that become their own kind of celebration."
+    },
+    {
+      "name": "Sports Facilities",
+      "description": "Tennis, basketball, and volleyball courts tucked into the grounds, plus miles of hiking and biking trails. Your guests discover the estate at their own pace."
+    },
+    {
+      "name": "Children's Playground",
+      "description": "Thoughtfully designed play areas ensure younger guests have their own adventures while parents relax and celebrate."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Villa Rooms & Suites",
+        "count": 9,
+        "description": "In the main villa, nine rooms ranging from deluxe to the grand suite—each one individually designed with restored frescoes, artisan textiles, and antiques that tell stories. Every detail speaks to the property's history while offering contemporary comfort."
+      },
+      {
+        "name": "Garden Suites",
+        "count": 13,
+        "description": "Scattered through the gardens, thirteen private suites offer another level of seclusion. Some feature private pools, others have gardens that feel like personal kingdoms. Perfect for VIP guests or couples wanting their own retreat within the estate."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Località Palazzetto 110, 53012 Chiusdino, Siena, Tuscany, Italy",
+    "distances": {
+      "Siena": "40 km / 45 min",
+      "Florence": "90 km / 1h15",
+      "San Galgano Abbey": "5 km / 10 min",
+      "Florence Airport (Peretola)": "100 km / 1h30",
+      "Pisa International Airport": "110 km / 1h30",
+      "Rome Fiumicino Airport": "210 km / 2h30"
+    },
+    "coordinates": {
+      "lat": 43.1547,
+      "lng": 11.0944
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.7!2d11.0944!3d43.1547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a2f8b3c4d5e6f%3A0x9e8f7d6c5b4a3b2c!2sBorgo%20Santo%20Pietro!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive use of entire estate and all 22 accommodations",
+      "All 9 villa rooms and suites",
+      "All 13 garden suites (some with private pools)",
+      "Access to all event spaces and grounds",
+      "Chapel of Saint Peter for ceremonies",
+      "Rose cloister and private lake island",
+      "Terraced lawns and gardens",
+      "The Limonaia orangery",
+      "Both restaurants (Saporium & Trattoria)",
+      "Full spa and wellness center access",
+      "Infinity pool and sports facilities",
+      "Dedicated wedding planning team",
+      "Bespoke event design and florals",
+      "Complete privacy across 300 acres",
+      "Late evening celebrations (until 2am available)"
+    ],
+    "description": "Exclusive use of Borgo Santo Pietro transforms the entire 300-acre estate into your private Tuscan world. All 22 rooms and suites become yours, accommodating up to 48 overnight guests in extraordinary comfort. Your celebration flows freely between the Michelin-starred Saporium, the rustic Trattoria Sull'Albero, the elegant Limonaia, the terraced lawns overlooking the valley, and hidden gems like the rose cloister and lake island. The dedicated team crafts every detail—from ceremony in the private chapel to multi-course dinners featuring estate-grown ingredients to late-night dancing under the stars. This is total immersion in Tuscan luxury, where the only schedule is yours and every corner of the estate welcomes your guests.",
+    "transfers": "Private transfers can be arranged from Florence (1.5 hours) and Pisa (1.5 hours) airports. The estate team coordinates luxury transport, ensuring guests arrive relaxed and ready to celebrate."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "Outdoor celebrations on the terraced lawns accommodate up to 140 guests, while indoor receptions in the Limonaia or Saporium restaurant can host 90-118 guests depending on configuration."
+    },
+    {
+      "q": "How many guests can stay overnight on the estate?",
+      "a": "The 22 rooms and suites accommodate up to 48 overnight guests. For larger wedding parties, the team can recommend nearby luxury accommodations."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "Yes, for celebrations over 15 guests, exclusive use of the estate is required. This ensures complete privacy and allows your event to unfold across all the property's extraordinary spaces."
+    },
+    {
+      "q": "Do you have a Michelin-starred restaurant?",
+      "a": "Yes, Saporium has earned a Michelin star for its innovative approach to Tuscan cuisine. Every dish celebrates the estate's organic gardens and local traditions, creating wedding menus that become culinary journeys."
+    },
+    {
+      "q": "What ceremony locations are available?",
+      "a": "Multiple options include the Chapel of Saint Peter (religious and symbolic ceremonies), the rose cloister, the private island on the lake, the terraced lawns with valley views, and the poolside terrace. Each offers its own atmosphere and beauty."
+    },
+    {
+      "q": "Can we celebrate late into the evening?",
+      "a": "Yes, the estate allows celebrations until 1-2am, rare for rural Tuscany. Your wedding day extends into a magical night under the stars."
+    },
+    {
+      "q": "What makes Borgo Santo Pietro special?",
+      "a": "It's the combination of authenticity and luxury—a genuine working organic farm that's also a Relais & Châteaux property with Michelin-starred dining. The 300 acres offer complete privacy, the accommodations are extraordinary, and every detail from spa products to wedding florals comes from the estate itself."
+    },
+    {
+      "q": "Are there activities for guests?",
+      "a": "The estate offers cooking classes, wine tastings, spa treatments, hiking and biking trails, sports courts, and excursions to nearby San Galgano Abbey. Guests can be as active or relaxed as they choose within this private Tuscan paradise."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability & receive a tailored quote",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@borgosantopietro.com",
+    "hotelPhone": "+39 0577 751 222"
+  }
+}
+
