@@ -1,0 +1,244 @@
+{
+  "name": "Villa Pizzo",
+  "city": "Cernobbio",
+  "region": "Lake Como",
+  "maxGuests": 200,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/heroxl",
+  "heroDescription": "Claiming the longest stretch of private lakefront on Lake Como, this 15th-century villa unfolds across terraced gardens descending to the water—where neoclassical elegance, secret gardens hidden behind ancient walls, and a celebrity pedigree create Lake Como's most coveted private celebration setting.",
+  "intro": "Villa Pizzo doesn't announce itself from the lake road—a discreet gate, a narrow driveway, and then suddenly you're descending through gardens toward a villa that commands more private waterfront than any other property on Como. That's the first hint of what makes Pizzo extraordinary: scale combined with intimacy, grandeur wrapped in genuine privacy. Built in 1435 by the Muggiasca family and reimagined through centuries of aristocratic owners, the villa reached its current neoclassical perfection through 17th and 18th-century renovations that added those dramatic double staircases, connected reception halls with soaring ceilings, and gardens that flow seamlessly from formal Italian terraces to secret enclosed spaces to boat docks where guests arrive across water. Today, Villa Pizzo operates purely as an event venue—no hotel, no restaurant, just this extraordinary property available for exclusive celebrations that honor both its history and the particular magic that comes from being surrounded by water on three sides. Ceremonies happen in multiple garden settings accommodating up to 200, receptions unfold in the central courtyard or connected halls for up to 150, and when John Legend, Chrissy Teigen, Kanye West, and Stevie Wonder have all chosen this villa for their most important celebrations, you understand you're dealing with something special.",
+  "history": {
+    "description": "In 1435, the Muggiasca family chose this promontory jutting into Lake Como for their estate—protected position, commanding views, enough flat land for proper gardens, and that extraordinary stretch of lakefront that would become Pizzo's defining feature. For centuries it remained a noble family retreat, passed between aristocratic owners who each added refinements while preserving the essential character.",
+    "loveStory": "The transformation into its current neoclassical elegance came through 17th and 18th-century renovations, when owners commissioned those dramatic double staircases flanking the courtyard, expanded the reception halls into interconnected spaces perfect for grand entertaining, and reimagined the gardens as journey from formal to secret to wild. Each generation understood they were custodians of something significant—not just a beautiful property but a complete world unto itself, isolated by water and walls yet connected to Como's finest traditions.",
+    "inauguration": "In modern times, Villa Pizzo transitioned from private residence to exclusive event venue, a decision that preserved the property's character while sharing it with those celebrating life's most important moments. The current custodians maintain the villa exactly as it was—no commercialization, no hotel additions, no restaurant that would compromise the sense of complete privacy. When you book Villa Pizzo, you're not renting a venue; you're being entrusted with a 600-year-old estate for one perfect celebration."
+  },
+  "usps": [
+    "15th-Century Villa (Built 1435)",
+    "Longest Private Lakefront on Lake Como",
+    "Exclusive Event-Only Venue",
+    "Terraced Italian Gardens",
+    "Secret Enclosed Gardens",
+    "Boat House & Private Dock",
+    "Dramatic Double Staircase Courtyard",
+    "Four Connected Neoclassical Reception Halls",
+    "Boat Arrivals from Como",
+    "Celebrity Wedding Pedigree",
+    "Maximum 200 Guest Capacity",
+    "Complete Privacy & Seclusion",
+    "Late Night Celebrations (2am Outdoor)",
+    "Bridal Suite for Preparations",
+    "Exclusive Use Required"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Italian Garden & Terraces",
+      "capacities": {
+        "cocktail": 200,
+        "seated": 0,
+        "buffet": 150,
+        "ceremony": 200
+      },
+      "description": "The villa's signature ceremony space—formal Italian terraces descending toward the lake in geometric perfection, ancient cypress framing views, Lake Como providing the backdrop. Accommodates up to 200 guests, with that particular sense of being surrounded by water on three sides that only Pizzo's unique position provides. As afternoon softens toward evening and mountains across the lake catch golden light, your ceremony unfolds exactly where centuries of aristocratic celebrations have taken place."
+    },
+    {
+      "name": "Secret Garden",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 0,
+        "buffet": 80,
+        "ceremony": 100
+      },
+      "description": "Hidden behind ancient walls, this enclosed garden creates intimate ceremony space for those wanting something smaller and more secluded. Climbing roses, carefully placed statuary, and that sense of discovering a space meant only for you—perfect for couples valuing privacy over scale, or for cocktail hours where guests explore multiple garden levels discovering new perspectives."
+    },
+    {
+      "name": "Boat House Terrace",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 0,
+        "buffet": 80,
+        "ceremony": 120
+      },
+      "description": "At water level where the villa's private dock welcomes boat arrivals, this terrace offers another ceremony dimension—more casual than the formal Italian gardens but equally romantic, with Lake Como lapping at stone edges and that immediate connection to water. Where many guests arrive and depart, creating natural gathering energy throughout your celebration."
+    },
+    {
+      "name": "Villa Courtyard",
+      "capacities": {
+        "cocktail": 180,
+        "seated": 150,
+        "buffet": 150,
+        "ceremony": 0
+      },
+      "description": "The villa's architectural heart—a courtyard flanked by those dramatic double staircases ascending to the main floors, creating natural theater for grand entrances and that particular Italian drama of celebrating between historic walls under open sky. With marquee cover, this becomes your main reception space for up to 150 seated guests, where dinner unfolds surrounded by centuries of neoclassical elegance."
+    },
+    {
+      "name": "Connected Reception Halls",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 120,
+        "buffet": 120,
+        "ceremony": 80
+      },
+      "description": "Four interconnected salons flowing naturally from one to another—the largest seating 60, smaller rooms perfect for 10-30 guests each. These become your elegant indoor alternative or preferred choice for those wanting the formality of dining within historic walls. High ceilings, period details, chandeliers, and that sense of moving through a noble residence rather than a single banquet hall. Total capacity of 120 when using all four rooms allows flexibility in table arrangements and natural flow between spaces."
+    },
+    {
+      "name": "Bridal Suite",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "A private suite for the couple's preparations—hair, makeup, those moments of calm before celebration begins. Elegantly furnished with lake views, creating a sanctuary within the larger event where you can retreat, breathe, and transition from getting ready to being ready."
+    }
+  ],
+  "ancillaryServices": [
+    "Exclusive day-use venue booking",
+    "Private boat arrivals and departures",
+    "Wedding planning coordination (external partners)",
+    "Premium catering setup and service",
+    "Marquee rental for courtyard receptions",
+    "Professional lighting throughout gardens and spaces",
+    "Sound systems for ceremony and reception",
+    "Floral design using Italian blooms",
+    "Ceremony setup in gardens or halls",
+    "Weather backup planning",
+    "Photography access to entire property",
+    "Videography including aerial footage",
+    "Entertainment booking and management",
+    "Bar service and sommelier pairings",
+    "Late-night celebrations (outdoor until 2am)",
+    "Villa staff and security throughout",
+    "Guest transportation from Como hotels",
+    "Multi-course seated dinner service"
+  ],
+  "outlets": [
+    "External Premium Catering Only",
+    "Full Bar Service Available",
+    "No Onsite Restaurant"
+  ],
+  "facilities": [
+    {
+      "name": "The Longest Private Lakefront",
+      "description": "Villa Pizzo's defining feature—more continuous waterfront than any other private property on Como. This isn't marketing hyperbole; the villa genuinely commands the longest uninterrupted stretch of lake access, creating that unique sense of being surrounded by water. Your celebration happens not adjacent to the lake but embraced by it on three sides, where every garden level offers different water perspectives."
+    },
+    {
+      "name": "Terraced Gardens",
+      "description": "Multiple levels descending from the villa toward water, each terrace offering its own character and ceremony possibility. The formal Italian gardens near the villa maintain geometric precision—clipped hedges, gravel paths, classical proportions. As you descend, the planting softens, becomes more romantic, until you reach the water's edge where wild beauty meets cultivated elegance. Guests naturally explore these levels throughout your celebration, discovering hidden benches, fountain corners, viewpoints that frame the lake and distant mountains."
+    },
+    {
+      "name": "The Secret Garden",
+      "description": "Behind protective walls, this enclosed space creates the villa's most intimate ceremony setting. Accessible through arched doorways, planted with roses and Mediterranean blooms, it feels like stepping into a private world. Particularly powerful for couples wanting their vows witnessed only by closest family, or for cocktail spaces where discovering this hidden garden becomes a small adventure."
+    },
+    {
+      "name": "Boat Dock & Water Access",
+      "description": "The private dock at garden's edge isn't simply practical—it's theatrical. Guests arrive by boat from Como (20 minutes), stepping off directly into the villa's world. Similarly, newlywed departures by vintage wooden launch create those cinematic moments where everyone waves from the terrace and the couple glides away across water toward sunset. Many photographers cite these dock arrivals and departures as their favorite shots of the entire day."
+    },
+    {
+      "name": "Dramatic Double Staircases",
+      "description": "Flanking the central courtyard, twin staircases ascend to the villa's main floor in perfect symmetry—pure architectural theater. Perfect for grand entrances, first looks at the top of the stairs, that moment when newlyweds descend to reception while guests gather below. These staircases have appeared in countless wedding photographs because they're simply, objectively beautiful."
+    },
+    {
+      "name": "Neoclassical Halls",
+      "description": "Four interconnected reception rooms that flow naturally while maintaining distinct characters. The largest accommodates seated dinner for sixty with dancing space; smaller salons suit intimate dinner parties or provide retreat spaces where guests escape larger celebrations temporarily. Together they create the flexibility to shape your reception exactly as you envision—one large gathering or multiple intimate rooms, formal dining or casual flow."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "No Onsite Accommodation",
+        "count": 0,
+        "description": "Villa Pizzo operates exclusively as an event venue—no rooms, no overnight stays. This is intentional, preserving the property's character as a private estate rather than hotel. The bridal suite serves for day-of preparations only. Guests stay in the extraordinary hotels and villas surrounding Lake Como—from Villa d'Este next door to Grand Hotel Tremezzo across the lake to countless other luxury properties dotting the shoreline. Most wedding parties coordinate room blocks at nearby hotels, creating multi-day celebrations where Villa Pizzo becomes the spectacular centerpiece rather than the only location. This actually enhances the experience: guests explore Como's finest accommodations, then gather at Pizzo for one unforgettable celebration."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via Regina 46/48, 22012 Cernobbio, Lake Como, Italy",
+    "distances": {
+      "Cernobbio Center": "1 km / 5 min walk",
+      "Como": "6 km / 15 min",
+      "Bellagio": "30 km / 45 min by boat",
+      "Lugano, Switzerland": "35 km / 30 min",
+      "Milan": "51 km / 50 min",
+      "Milan Malpensa Airport": "45 km / 40 min",
+      "Milan Linate Airport": "73 km / 1h",
+      "Bergamo Orio al Serio Airport": "90 km / 1h20"
+    },
+    "coordinates": {
+      "lat": 45.8356,
+      "lng": 9.0725
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.5!2d9.0725!3d45.8356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478154c3f8b3c8c5%3A0x9e8f7d6c5b4a3b2c!2sVilla%20Pizzo!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive day-use access to entire villa and gardens",
+      "Private use of all terraces and lakefront",
+      "Italian Garden for ceremonies",
+      "Secret Garden for intimate ceremonies",
+      "Boat House Terrace for water-level events",
+      "Villa Courtyard for receptions",
+      "All four connected reception halls",
+      "Bridal suite for preparations",
+      "Private boat dock for arrivals/departures",
+      "Access to all garden levels and paths",
+      "Setup time before event",
+      "Breakdown time after celebration",
+      "Villa staff throughout event",
+      "Complete privacy and security",
+      "Flexibility for event timing",
+      "Late-night celebrations (outdoor until 2am)",
+      "Photography access to entire property",
+      "Marquee setup in courtyard if needed"
+    ],
+    "description": "Exclusive use of Villa Pizzo means this 600-year-old estate becomes entirely yours for the day—from morning setup through evening celebration to midnight departure. Your event unfolds across the spaces that best match your vision: ceremonies of 200 in the terraced Italian gardens (where that longest private lakefront creates the backdrop), intimate gatherings of 100 in the Secret Garden (where high walls create genuine seclusion), receptions in the courtyard for 150 under elegant marquee, or formal dinners in the connected halls for 120 moving between four distinct salon spaces. Guests arrive by private boat from Como—twenty minutes across water, approaching the villa exactly as aristocratic visitors have for centuries—and discover the property through natural exploration of multiple garden levels, hidden corners, and viewpoints that frame the lake and mountains. Because Pizzo is event-only (no hotel, no restaurant), your celebration has complete focus: everyone arrives for one purpose, experiences the villa together, then departs carrying memories of something genuinely exclusive. The celebrity pedigree (John Legend and Chrissy Teigen, Kanye West, Stevie Wonder) speaks to understanding what makes celebrations extraordinary: genuine privacy, authentic beauty, scale that allows intimacy despite numbers, and that particular magic of being surrounded by water in a villa designed across centuries to honor exactly this kind of gathering.",
+    "transfers": "Most guests stay in nearby Cernobbio or Como hotels, with Villa Pizzo just minutes away. The signature arrival, however, is by boat—private water taxis or vintage wooden launches departing Como's central pier (20 minutes), creating that dramatic approach across the lake. The villa coordinates water transport logistics, ensuring seamless arrivals throughout your event window."
+  },
+  "faqs": [
+    {
+      "q": "Can guests stay overnight at Villa Pizzo?",
+      "a": "No, Villa Pizzo operates exclusively as an event venue with no accommodations. The bridal suite is available for day-of preparations only. Guests stay at nearby luxury hotels—Villa d'Este is literally next door, with countless other exceptional properties in Cernobbio and Como. This actually enhances the multi-day celebration: guests experience Lake Como's finest hotels, then gather at Pizzo for one spectacular event."
+    },
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "The Italian Gardens accommodate up to 200 guests for ceremonies. Reception capacity depends on configuration: the courtyard with marquee seats 150 for dinner, while the four connected indoor halls together accommodate 120. Most celebrations use garden spaces for ceremony and cocktails, then move to courtyard or halls for reception."
+    },
+    {
+      "q": "How do guests reach Villa Pizzo?",
+      "a": "The villa sits on Via Regina between Cernobbio and Moltrasio, accessible by car (5 minutes from Cernobbio center). However, the signature arrival is by boat—private water taxis or vintage launches from Como (20 minutes) deliver guests directly to the villa's dock, creating that dramatic water approach. Most couples arrange boat shuttles for guests throughout the event."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "Yes, Villa Pizzo books exclusively for weddings (typically minimum 80 guests). This ensures complete privacy and allows your celebration to unfold across all spaces without constraint or time pressure from other events."
+    },
+    {
+      "q": "What makes the lakefront so special?",
+      "a": "Villa Pizzo commands the longest continuous stretch of private lakefront on Lake Como—not adjacent to the water but surrounded by it on three sides. This unique position creates perspectives and atmosphere impossible at other venues. Every garden level offers different water views, and that sense of being embraced by the lake rather than simply beside it changes the entire experience."
+    },
+    {
+      "q": "Can we celebrate late into the evening?",
+      "a": "Yes, outdoor celebrations can continue until 2am (indoor until midnight)—exceptional for Lake Como venues where sound restrictions are typically stricter. Your celebration has natural rhythm without forced early endings."
+    },
+    {
+      "q": "What about catering and dining?",
+      "a": "Villa Pizzo has no restaurant or kitchen—all catering comes from approved external partners specializing in luxury events. This creates flexibility: your caterer designs menus specifically for your celebration, sets up in designated spaces, and delivers world-class cuisine in one of Como's most beautiful settings."
+    },
+    {
+      "q": "Why choose Villa Pizzo over other Como venues?",
+      "a": "It's the convergence of factors: that longest private lakefront creating unique water-surrounded atmosphere, genuine 15th-century origins providing authentic history, exclusive event-only operation ensuring privacy, celebrity pedigree demonstrating world-class standards, and scale that accommodates both intimate (80) and substantial (200) celebrations. Other venues might excel in one area—Villa Pizzo delivers comprehensively."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Villa Pizzo",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@villapizzo.com",
+    "hotelPhone": "+39 031 340 5700"
+  }
+}
+
