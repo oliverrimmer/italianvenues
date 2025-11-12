@@ -1,0 +1,268 @@
+{
+  "name": "Villa Miani",
+  "city": "Rome",
+  "region": "Rome",
+  "maxGuests": 550,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/heroxl",
+  "heroDescription": "Perched atop Monte Mario—Rome's highest point—this 1837 neoclassical villa commands the city's most spectacular panorama, where St. Peter's dome rises in the foreground, the entire Eternal City spreads below, and 3,000 square meters of grand halls, terraced gardens, and that legendary view create Rome's ultimate celebration setting for gatherings from fifty to five hundred.",
+  "intro": "There's a moment during every Villa Miani celebration when guests step onto the panoramic terrace and realize they're seeing all of Rome from above—St. Peter's dome so close you could reach out and touch it, the Tiber snaking through ancient quarters, landmarks emerging from terracotta rooftops like pieces of history refusing to be buried. Villa Miani sits atop Monte Mario, Rome's highest hill, commanding views no other venue can match. Built in 1837 for the aristocratic Counts Miani as their neoclassical retreat above the city's heat and crowds, the villa has evolved into Rome's premier large-scale event venue while maintaining that sense of noble grandeur. The numbers tell part of the story: over 3,000 square meters of event space, the Salone delle Feste accommodating 550 for seated dinners, multiple connected halls for simultaneous events, terraces hosting 500 for alfresco celebrations, capacity expanding to 1,800 with garden tents when occasions demand true scale. But statistics don't capture walking through marble halls where frescoes and chandeliers create natural elegance, or discovering the villa sits within private parkland ensuring complete seclusion despite being fifteen minutes from the Vatican, or that particular Roman sunset when the entire city glows golden and your celebration unfolds with the Eternal City itself providing the backdrop. With just a bridal suite for overnight stays (this is an event venue, not hotel), exclusive use ensuring privacy, Michelin-rated catering partners, and service refined across nearly two centuries of hosting Rome's most important gatherings, Villa Miani delivers the Roman wedding at its most panoramic and grand.",
+  "history": {
+    "description": "In 1837, the Counts Miani chose Rome's highest point for their villa—not just for views (though those were extraordinary) but for escape. Monte Mario sat high enough above the city to catch breezes that made summer bearable, distant enough from urban chaos to feel removed, yet close enough for the family to maintain their position in Roman society. They commissioned a neoclassical palazzo that captured the era's ideals: symmetry, proportion, elegance without excess.",
+    "loveStory": "For generations, Villa Miani remained the family's private retreat—a place for summer gatherings, intimate dinners, celebrations that mixed nobility with Rome's artistic and intellectual elite. The villa witnessed the transition from papal Rome to Italian capital, from horse carriages to automobiles, from candlelight to electricity. Through all these changes, the Miani family maintained the property's essential character: a place designed for gathering, for celebration, for moments that required beauty and space.",
+    "inauguration": "The transformation into an event venue happened as Rome modernized and the family realized these magnificent spaces shouldn't sit empty. Better to share them with couples and organizations whose celebrations could honor the villa's legacy. Today, Villa Miani operates under careful preservation standards, ensuring every event respects the neoclassical architecture while the experienced team delivers contemporary luxury. The views remain unchanged—that same panorama the Counts Miani enjoyed nearly two centuries ago, now backdrop to weddings, galas, and gatherings that continue the villa's tradition of hosting Rome's most important celebrations."
+  },
+  "usps": [
+    "1837 Neoclassical Villa",
+    "Atop Monte Mario (Rome's Highest Hill)",
+    "Panoramic Views of Entire Rome",
+    "St. Peter's Dome in Foreground",
+    "3,000+ Square Meters Event Space",
+    "Salone delle Feste (550 Capacity)",
+    "Multiple Connected Grand Halls",
+    "Panoramic Terrace (500 Guests)",
+    "Private Park & Italian Gardens",
+    "15 Minutes from Vatican/Center",
+    "Can Accommodate Up to 1,800 with Tents",
+    "Marble Halls & Frescoed Ceilings",
+    "Michelin-Rated Catering Partners",
+    "Large Private Parking",
+    "Exclusive Use Required",
+    "Events Until 1am",
+    "Bridal Suite Available"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Salone delle Feste (Grand Ballroom)",
+      "capacities": {
+        "cocktail": 650,
+        "seated": 550,
+        "buffet": 550,
+        "ceremony": 400
+      },
+      "description": "The villa's crown jewel—a ballroom of truly grand proportions where 550 guests dine beneath frescoed ceilings and crystal chandeliers. This is scale done right: large enough to feel spectacular, proportioned well enough to maintain intimacy. Marble floors reflect candlelight, tall windows frame Rome views, and that particular acoustic magic of proper ballrooms means music sounds exactly as it should. Your reception unfolds in a space designed across two centuries for exactly this purpose."
+    },
+    {
+      "name": "Panoramic Terrace",
+      "capacities": {
+        "cocktail": 600,
+        "seated": 500,
+        "buffet": 500,
+        "ceremony": 500
+      },
+      "description": "The reason most couples choose Villa Miani—a vast terrace where St. Peter's dome dominates the foreground, the entire city spreads beyond, and sunset transforms Rome into something that looks painted rather than real. Accommodates 500 for alfresco dinners when weather cooperates, or serves as cocktail space before moving inside. Many couples hold both ceremony and reception here, capitalizing on that view that cameras struggle to capture because the scale feels impossible."
+    },
+    {
+      "name": "Sala Venezia",
+      "capacities": {
+        "cocktail": 200,
+        "seated": 160,
+        "buffet": 160,
+        "ceremony": 120
+      },
+      "description": "A substantial hall perfect for mid-sized celebrations or as overflow space during multi-event gatherings. Maintains the neoclassical elegance at more intimate scale—160 seated means conversations across tables, that sense of closeness that larger ballrooms can't replicate, while preserving the architectural drama and those views."
+    },
+    {
+      "name": "Sala Casanova",
+      "capacities": {
+        "cocktail": 90,
+        "seated": 70,
+        "buffet": 70,
+        "ceremony": 60
+      },
+      "description": "Named for the legendary lover who might have appreciated its romantic proportions—a hall suited for smaller celebrations, rehearsal dinners, or intimate gatherings where seventy guests want villa grandeur without overwhelming scale. Perfect when your vision requires elegance at human dimensions."
+    },
+    {
+      "name": "Sala Belvedere",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 90,
+        "buffet": 90,
+        "ceremony": 80
+      },
+      "description": "Living up to its name (beautiful view), this hall offers another perspective on Rome through large windows. Accommodates ninety for seated events, creating that sweet spot between intimate and substantial. Particularly beautiful for afternoon gatherings when light floods through windows and the city below seems suspended in golden haze."
+    },
+    {
+      "name": "Connected First Floor Halls",
+      "capacities": {
+        "cocktail": 250,
+        "seated": 220,
+        "buffet": 220,
+        "ceremony": 0
+      },
+      "description": "Four interconnected rooms on the villa's first floor—each accommodating 40-70 guests, together creating flexibility for flowing events where different spaces serve different purposes. Perfect for multi-station dinners, separate dessert rooms, or when your celebration benefits from guests discovering new spaces rather than remaining in one large hall."
+    },
+    {
+      "name": "Italian Gardens",
+      "capacities": {
+        "cocktail": 400,
+        "seated": 0,
+        "buffet": 300,
+        "ceremony": 300
+      },
+      "description": "The private parkland surrounding the villa—manicured Italian gardens near the building, then terraced lawns, then more natural planting as you move outward. Perfect for ceremonies where Rome provides backdrop, cocktail receptions where guests explore rather than stand still, or garden dinners under stars when you want celebration in nature with city views."
+    }
+  ],
+  "ancillaryServices": [
+    "Exclusive villa and grounds booking",
+    "Dedicated wedding planning coordination",
+    "Michelin-rated catering (Relais Le Jardin)",
+    "Custom menu design for celebrations",
+    "Professional lighting throughout villa",
+    "Sound systems for all spaces",
+    "Floral design and event styling",
+    "Ceremony setup on terrace or gardens",
+    "Weather backup with multiple indoor halls",
+    "Photography access to entire property",
+    "Videography including aerial drone footage",
+    "Entertainment booking and management",
+    "Bar service and sommelier pairings",
+    "Late-night celebrations (until 1am)",
+    "Security throughout event",
+    "Large private parking",
+    "Shuttle coordination from Rome hotels",
+    "Bridal suite for preparations",
+    "Audio/visual equipment for presentations",
+    "Tent setup for garden expansions"
+  ],
+  "outlets": [
+    "Relais Le Jardin - Michelin-Rated Catering",
+    "External Premium Catering Partners",
+    "Full Bar Service Available"
+  ],
+  "facilities": [
+    {
+      "name": "The Panoramic View",
+      "description": "Villa Miani's defining feature—sitting atop Monte Mario means unobstructed views across all of Rome. St. Peter's dome appears so close and dominant it feels surreal. Beyond it, the entire city unfolds: the Tiber, Castel Sant'Angelo, distant hills, neighborhoods stacked on Rome's famous seven hills. This isn't glimpse of a monument or partial cityscape—it's comprehensive panorama that includes virtually every Roman landmark. Photographers cry with joy. Guests stand stunned. And that view becomes constant backdrop to your entire celebration."
+    },
+    {
+      "name": "3,000 Square Meters of Event Space",
+      "description": "The sheer scale sets Villa Miani apart from Rome's more intimate venues. Multiple grand halls, connected smaller rooms, vast terraces, parkland—your celebration can flow between spaces, accommodate substantial guest lists, or use different areas for different events throughout a multi-day gathering. This is flexibility through abundance rather than constraint."
+    },
+    {
+      "name": "Neoclassical Architecture",
+      "description": "The 1837 construction means authentic neoclassical proportions and details—marble floors, frescoed ceilings, crystal chandeliers, tall windows, that particular sense of symmetry and elegance the era perfected. You're not in a recreation or modern interpretation; you're in genuine 19th-century noble architecture preserved exactly as the Counts Miani commissioned it."
+    },
+    {
+      "name": "Private Parkland",
+      "description": "The villa sits within substantial grounds—Italian gardens, terraced lawns, mature trees creating shade and privacy. Despite being just fifteen minutes from central Rome, the parkland ensures complete seclusion. Traffic sounds don't reach here. The city feels distant. You're in a private estate that happens to command Rome's best views, but maintains its own peaceful world."
+    },
+    {
+      "name": "Large Private Parking",
+      "description": "Practical but crucial—ample parking means guests arrive without logistical stress. For a Roman venue, this is surprisingly rare and valuable. Your celebration doesn't begin with parking frustrations but with easy arrival and that first moment seeing the villa and its panorama."
+    },
+    {
+      "name": "Michelin-Rated Catering",
+      "description": "Relais Le Jardin brings Michelin standards to your celebration—cuisine that honors Italian tradition while embracing contemporary techniques, presentation that matches the villa's elegance, service that maintains standards refined across decades of high-end events. Your guests remember not just the view but the meal."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Bridal Suite",
+        "count": 1,
+        "description": "Villa Miani maintains one bridal suite with ensuite bathroom—a private space for the couple's preparations and potential overnight stay. Beautifully appointed with period furniture and modern comfort, offering those views that become your private morning perspective. This isn't hotel accommodation but a suite in a noble residence opened for celebration guests."
+      },
+      {
+        "name": "VIP Rooms by Arrangement",
+        "count": 2,
+        "description": "Additional rooms can sometimes be arranged for immediate family or VIP guests—total overnight capacity approximately 4-6 people maximum. These aren't standard offerings but possibilities when circumstances warrant and availability allows."
+      },
+      {
+        "name": "Rome Hotel Accommodations",
+        "count": 0,
+        "description": "With minimal onsite accommodation, wedding guests stay in Rome's extraordinary hotels—from historic properties near the Spanish Steps to modern luxury near Villa Borghese. The fifteen-minute proximity means guests experience Rome's full vitality while gathering at Villa Miani for celebration. Many couples arrange hotel blocks in central locations, creating a Rome base with the villa as the spectacular mountaintop centerpiece."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via Alberto Cadlolo 20, 00136 Rome, Italy",
+    "distances": {
+      "Vatican City": "6 km / 15 min",
+      "Spanish Steps": "8 km / 20 min",
+      "Colosseum": "11 km / 25 min",
+      "Villa Borghese": "6 km / 15 min",
+      "Rome City Center": "8 km / 15 min",
+      "Rome Fiumicino Airport": "32 km / 35 min",
+      "Rome Ciampino Airport": "31 km / 40 min"
+    },
+    "coordinates": {
+      "lat": 41.9316,
+      "lng": 12.4378
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.8!2d12.4378!3d41.9316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6e8b3c8c5%3A0x9e8f7d6c5b4a3b2c!2sVilla%20Miani!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive access to entire villa and parkland",
+      "Complete privacy across 3,000+ sqm event space",
+      "Salone delle Feste grand ballroom",
+      "Panoramic terrace for ceremonies and dining",
+      "All connected halls (Venezia, Casanova, Belvedere)",
+      "First floor interconnected rooms",
+      "Italian gardens and parkland",
+      "Bridal suite for preparations",
+      "Large private parking",
+      "Dedicated event coordination team",
+      "Setup across all spaces",
+      "Professional lighting and sound systems",
+      "Flexibility for event timing and flow",
+      "Photography access to entire property",
+      "Late-night celebrations (until 1am)",
+      "Weather backup with multiple indoor options",
+      "Security throughout event",
+      "Audio/visual equipment",
+      "Tent setup options for garden expansion"
+    ],
+    "description": "Exclusive use of Villa Miani means this entire neoclassical estate atop Rome's highest hill becomes yours—from the grand Salone delle Feste seating 550 to the panoramic terrace hosting 500 for alfresco celebrations to the multiple connected halls accommodating simultaneous events to the Italian gardens perfect for ceremonies where St. Peter's dome provides the backdrop. Your celebration can scale from intimate gathering of fifty in Sala Casanova to substantial reception of 550 in the ballroom to truly grand affairs of 1,800 with garden tents—all while maintaining that commanding view across Rome that defines Villa Miani's character. The 3,000-square-meter villa allows natural flow: ceremonies on the terrace as sunset paints the city gold, cocktails in the gardens as guests discover different perspectives on the panorama, reception in the Salone delle Feste where marble and frescoes create timeless elegance, after-party in connected halls where celebration continues until 1am. The dedicated team—experienced in events from intimate weddings to diplomatic galas—orchestrates everything while Michelin-rated catering partners ensure cuisine matches the setting's grandeur. Despite being just fifteen minutes from the Vatican, the private parkland ensures complete seclusion. Your Roman celebration happens above the Eternal City with all of it spread before you, in spaces the Counts Miani designed nearly two centuries ago for precisely this kind of gathering.",
+    "transfers": "Private shuttles coordinate transport from Rome hotels (15-30 minutes depending on location). The villa's large parking accommodates guests arriving by car—rare convenience for Roman venues. Proximity to central Rome means easy logistics without sacrificing that sense of elevated escape."
+  },
+  "faqs": [
+    {
+      "q": "What makes the Villa Miani view so special?",
+      "a": "Villa Miani sits atop Monte Mario, Rome's highest point, commanding unobstructed panorama across the entire Eternal City. St. Peter's dome rises so close in the foreground it feels touchable, with all of Rome spread beyond—the Tiber, every landmark, neighborhoods cascading down the famous seven hills. This isn't partial glimpse but comprehensive cityscape impossible from any other venue. That view becomes constant backdrop to your entire celebration."
+    },
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "The Salone delle Feste accommodates 550 for seated dinners. The panoramic terrace hosts 500 for alfresco events. With multiple halls used simultaneously, total indoor capacity reaches over 1,000. Garden areas with tents can expand to 1,800 for truly substantial celebrations. The villa scales beautifully from intimate gatherings to grand affairs."
+    },
+    {
+      "q": "Can guests stay overnight at Villa Miani?",
+      "a": "The villa offers one bridal suite and occasionally additional VIP rooms—total overnight capacity 4-6 guests maximum. This isn't a hotel but an event venue with limited accommodation for the couple and immediate family. Most wedding parties stay in Rome's hotels, with the fifteen-minute proximity making logistics effortless."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "Yes, Villa Miani books exclusively for weddings and events. This ensures complete privacy across all 3,000+ square meters of space, allows your celebration to flow freely between indoor and outdoor areas, and honors the villa's character as a private estate rather than commercial venue."
+    },
+    {
+      "q": "What about weather backup?",
+      "a": "With over 3,000 square meters of indoor space across multiple grand halls, weather concerns become opportunities rather than problems. Your terrace ceremony moves to the Salone delle Feste or another elegant hall, your alfresco dinner relocates indoors to spaces designed specifically for grand celebrations. The scale and quality of indoor options mean backup plans feel like preferred choices rather than compromises."
+    },
+    {
+      "q": "How far is Villa Miani from central Rome?",
+      "a": "Just fifteen minutes from the Vatican and twenty minutes from the Spanish Steps—close enough for easy guest logistics, far enough to feel elevated and removed. The position atop Monte Mario creates that perfect balance: Rome's convenience with mountaintop serenity and views."
+    },
+    {
+      "q": "What about catering and dining?",
+      "a": "Villa Miani partners with Relais Le Jardin, a Michelin-rated caterer, ensuring cuisine matches the venue's standards. Menus blend Italian tradition with contemporary innovation, presentation honors the setting's elegance, and service maintains levels refined across decades of high-end Roman events."
+    },
+    {
+      "q": "Why choose Villa Miani over other Roman venues?",
+      "a": "It's the convergence of factors: that commanding panorama impossible from any other location, genuine neoclassical architecture from 1837, capacity ranging from intimate to truly grand (50 to 1,800), 3,000 square meters allowing celebration flow and flexibility, fifteen minutes from central Rome yet feeling completely removed, Michelin-rated catering, and service experience handling everything from intimate weddings to diplomatic galas. Other venues might excel in one area—Villa Miani delivers comprehensively while offering views that define Roman grandeur."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Villa Miani",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@villamiani.com",
+    "hotelPhone": "+39 06 3518 9519"
+  }
+}
+
