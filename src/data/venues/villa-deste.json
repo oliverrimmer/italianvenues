@@ -1,0 +1,273 @@
+{
+  "name": "Villa d'Este",
+  "city": "Cernobbio",
+  "region": "Lake Como",
+  "maxGuests": 300,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/heroxl",
+  "heroDescription": "A Renaissance cardinal's palace transformed into Europe's most legendary lakeside resort—where 152 rooms spill across ten hectares of formal gardens, a floating pool hovers over Lake Como's waters, and four centuries of hosting royalty have created the ultimate setting for grand celebrations.",
+  "intro": "Some venues whisper luxury. Villa d'Este announces it with chandeliers and marble, silk-draped suites and Renaissance fountains, gardens so perfectly manicured they've been inspiring landscape architects since the 1500s. Built in 1568 as Cardinal Tolomeo Gallio's summer residence, this palazzo on Lake Como's western shore has evolved through centuries of aristocratic owners—most notably Princess Caroline of Wales, whose presence elevated an already grand villa into legendary status. Today, Villa d'Este operates as a five-star resort that somehow maintains the atmosphere of a private noble estate. The scale alone sets it apart: 152 individually designed rooms, ten hectares of parkland descending to private lakefront, event spaces ranging from intimate salons to the grand Sala Impero seating 200, gardens accommodating marquee receptions for 300+, and that famous floating pool—anchored to the lake bottom, lapped by Como's waters—that's become an icon of Italian elegance. With onsite restaurants, the D'Este nightclub for late-night celebrations, accommodations for up to 300 overnight guests, and service standards refined across decades of hosting the world's elite, Villa d'Este delivers the Lake Como wedding at its most opulent and uncompromising.",
+  "history": {
+    "description": "In 1568, Cardinal Tolomeo Gallio commissioned a summer residence worthy of his position—something that would honor his success while providing escape from duties. The site he chose on Lake Como offered everything: lake views, mountain backdrops, sufficient land for proper gardens, proximity to trade routes. What Gallio built was a masterwork of Renaissance architecture, establishing proportions and elegance that would endure for centuries.",
+    "loveStory": "The villa passed through various noble families until 1815, when it became the residence of Caroline of Brunswick, Princess of Wales. Her presence brought international attention—royalty, artists, diplomats all visiting the princess at her lakeside sanctuary. She filled the villa with art and refinement, establishing traditions of hospitality and elegance. When Caroline departed, her legacy remained embedded in the walls.",
+    "inauguration": "The transformation into a luxury hotel began in 1873, converting a private palace into one of Europe's first grand resort hotels. Over 150 years, Villa d'Este has maintained that delicate balance: the grandeur of an aristocratic residence with the service and amenities of a world-class hotel. Each generation has added refinements—the floating pool, modern spa, additional accommodations—while preserving the Renaissance soul that makes Villa d'Este unlike any contemporary luxury resort. You're not staying at a hotel; you're being temporarily granted residence in a palace that's hosted cardinals, princesses, and four centuries of celebrations."
+  },
+  "usps": [
+    "16th-Century Renaissance Villa (Built 1568)",
+    "152 Rooms & Suites",
+    "10 Hectares of Formal Gardens",
+    "Famous Floating Pool on Lake Como",
+    "Former Residence of Cardinal Gallio",
+    "Princess Caroline of Wales' Historic Home",
+    "Sala Impero Grand Reception Hall",
+    "Mosaic Garden & Nymphaeum",
+    "D'Este Nightclub for After-Parties",
+    "Multiple Onsite Restaurants",
+    "Private Lake Frontage & Boat Dock",
+    "Tennis Courts & Golf Range",
+    "Luxury Spa & Wellness Center",
+    "Accommodates 300 Overnight Guests",
+    "Full Estate Buyout Available",
+    "Celebrations Until 2am"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Mosaic Garden & Nymphaeum",
+      "capacities": {
+        "cocktail": 250,
+        "seated": 0,
+        "buffet": 150,
+        "ceremony": 200
+      },
+      "description": "The villa's crown jewel for outdoor ceremonies—an Italian Renaissance garden where geometric hedges, classical statuary, and that extraordinary mosaic nymphaeum create a setting that's both formal and romantic. Exchange vows where cardinals once strolled, surrounded by cypress and fountains, with Lake Como visible through carefully framed sightlines. Accommodates up to 200 for ceremonies, then transforms into cocktail space while guests explore multiple garden levels."
+    },
+    {
+      "name": "Sala Impero (Empire Hall)",
+      "capacities": {
+        "cocktail": 250,
+        "seated": 200,
+        "buffet": 180,
+        "ceremony": 150
+      },
+      "description": "The grand reception hall that defines Villa d'Este's aristocratic soul—soaring frescoed ceilings, crystal chandeliers, silk wall coverings, marble floors reflecting candlelight. This is where 200 guests dine beneath the same vaults that sheltered royal banquets, where your reception feels less like a hotel event and more like you've somehow secured a Renaissance palace for the evening."
+    },
+    {
+      "name": "Sala Colonne",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 60,
+        "buffet": 60,
+        "ceremony": 50
+      },
+      "description": "A more intimate hall characterized by classical columns and elegant proportions—perfect for smaller celebrations, rehearsal dinners, or when your gathering requires sophistication without overwhelming scale. Sixty seated guests means genuine conversation across tables, that sense of closeness that larger spaces can't replicate."
+    },
+    {
+      "name": "Garden Marquee Spaces",
+      "capacities": {
+        "cocktail": 400,
+        "seated": 300,
+        "buffet": 300,
+        "ceremony": 0
+      },
+      "description": "When your guest list exceeds what the villa's historic halls can accommodate, the gardens offer expansive lawn terraces for elegant marquee receptions. Transparent-sided tents ensure the parkland and lake remain visible, sophisticated lighting transforms evening into magic, and that particular thrill of grand-scale celebration under stars becomes reality. Up to 300 seated with room for dancing, bars, and those late-night moments when everyone realizes they're at something extraordinary."
+    },
+    {
+      "name": "D'Este Club",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "The villa's onsite nightclub—an unexpected treasure for after-parties where dinner's formality gives way to uninhibited celebration. Professional sound system, mood lighting, bars, and that liberating sense of dancing somewhere you'd never expect to find a proper club. Your celebration doesn't end at midnight; it continues underground in spaces designed specifically for release and joy."
+    },
+    {
+      "name": "Terrace Mantero",
+      "capacities": {
+        "cocktail": 60,
+        "seated": 0,
+        "buffet": 40,
+        "ceremony": 50
+      },
+      "description": "A lakeside terrace offering more intimate ceremony space with direct water views. For couples wanting something smaller than the Mosaic Garden but equally romantic—fifty guests, the lake just meters away, mountains framing the horizon, and that particular Como light that turns afternoons golden."
+    },
+    {
+      "name": "Private Parkland",
+      "capacities": {
+        "cocktail": 300,
+        "seated": 0,
+        "buffet": 200,
+        "ceremony": 200
+      },
+      "description": "Ten hectares mean endless possibilities—hidden garden corners for cocktail stations, lawn terraces for lawn games, fountain piazzas for surprise performances, paths through ancient trees where guests discover quiet conversations. The park isn't just venue backdrop but active celebration space your guests explore throughout the event."
+    }
+  ],
+  "ancillaryServices": [
+    "Dedicated wedding planning and coordination",
+    "Full and partial estate buyout arrangements",
+    "Multiple restaurant dining experiences",
+    "Custom menu creation by villa chefs",
+    "Wine pairings from extensive cellar",
+    "Floral design throughout gardens and spaces",
+    "Professional lighting and sound systems",
+    "Marquee and tent setup for garden receptions",
+    "D'Este Club after-party access",
+    "Ceremony setup in gardens or halls",
+    "Weather backup coordination",
+    "Private boat dock access",
+    "Lake tours and excursions for guests",
+    "Spa treatments and pre-wedding wellness",
+    "Tennis and golf activities",
+    "Cooking classes and wine tastings",
+    "Late-night celebrations (until 2am)",
+    "Multi-day event hosting",
+    "Transportation coordination from Milan airports"
+  ],
+  "outlets": [
+    "Veranda Restaurant - Fine Italian Dining",
+    "Il Platano - Casual Lakeside Grill",
+    "Canova Bar",
+    "Pool Bar",
+    "D'Este Nightclub",
+    "Seasonal Terrace Service",
+    "In-Room Dining"
+  ],
+  "facilities": [
+    {
+      "name": "The Floating Pool",
+      "description": "Villa d'Este's icon—a swimming pool literally floating on Lake Como, anchored to the lake bottom, surrounded by water on all sides. This isn't metaphor or marketing; the pool genuinely floats, creating that surreal experience of swimming in a pool that's in a lake. Heated, serviced by attentive staff, surrounded by loungers and Como's impossible beauty, it's where many guests spend entire afternoons contemplating whether they've somehow entered a more elegant dimension."
+    },
+    {
+      "name": "Renaissance Gardens",
+      "description": "Ten hectares of formal Italian gardens that have been refined across four centuries—geometric hedge patterns, classical statuary positioned at calculated sightlines, fountains that still function as they did in Cardinal Gallio's time, pathways that guide exploration while maintaining perfect proportions. These aren't simply pretty grounds; they're masterworks of landscape architecture, protected and preserved exactly as Renaissance designers intended."
+    },
+    {
+      "name": "The Mosaic Nymphaeum",
+      "description": "A grotto adorned with elaborate mosaics—the kind of decorative folly Renaissance nobles commissioned to demonstrate both wealth and taste. Today it serves as ceremony backdrop, photograph location, and physical reminder that you're celebrating somewhere with genuine historical significance rather than modern recreation."
+    },
+    {
+      "name": "Luxury Spa & Wellness Center",
+      "description": "Modern facilities wrapped in classic elegance—treatments, sauna, steam rooms, fitness equipment, personal training. Where your wedding party retreats for pre-celebration pampering or post-party recovery, discovering that even the spa maintains Villa d'Este's standard for refined luxury."
+    },
+    {
+      "name": "Private Lake Frontage",
+      "description": "The villa's lakeside position means private access to Como's waters—boat dock for arrivals and departures, lakeside promenades for evening walks, that particular thrill of waking in Renaissance luxury and stepping directly to the water. Guests arrange private boat tours, sunset cruises, or simply sit at the shore watching light change on mountains across the lake."
+    },
+    {
+      "name": "Tennis Courts & Golf Range",
+      "description": "Recreation facilities for multi-day celebrations when guests want active pursuits between events. The tennis courts have hosted generations of the elite; the golf range offers practice with mountain and lake views that somehow make missing shots feel acceptable."
+    },
+    {
+      "name": "D'Este Nightclub",
+      "description": "That the villa maintains an actual nightclub speaks to understanding celebration's full arc—from ceremony's solemnity through dinner's elegance to late-night's uninhibited joy. Professional DJ equipment, sophisticated lighting, bars, and acoustics that let music thrive without disturbing sleeping guests in distant wings."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Cardinal Building Rooms & Suites",
+        "count": 125,
+        "description": "The original villa's accommodations, each individually designed with period antiques, silk wall coverings, oil paintings, marble bathrooms, and views of either the gardens or lake. These rooms maintain Cardinal Gallio's vision—spaces that honor elegance without sacrificing comfort. Ranging from classic doubles to sprawling suites with separate living areas and private terraces, each one feels curated rather than standardized."
+      },
+      {
+        "name": "Queen's Pavilion",
+        "count": 27,
+        "description": "The building added to accommodate growing demand while maintaining historic character—twenty-seven rooms and suites named in honor of Princess Caroline's residence. These accommodations offer more contemporary comfort while preserving the aesthetic that defines Villa d'Este: antique furniture, luxury textiles, meticulous attention to detail, and those views that make every window a painting."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via Regina 40, 22012 Cernobbio, Lake Como, Italy",
+    "distances": {
+      "Como": "7 km / 10 min",
+      "Bellagio": "28 km / 45 min",
+      "Lugano, Switzerland": "45 km / 40 min",
+      "Milan": "50 km / 45 min",
+      "Milan Malpensa Airport": "55 km / 45 min",
+      "Milan Linate Airport": "72 km / 1h",
+      "Bergamo Orio al Serio Airport": "86 km / 1h15"
+    },
+    "coordinates": {
+      "lat": 45.8419,
+      "lng": 9.0692
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2775.5!2d9.0692!3d45.8419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478154c3f8b3c8c5%3A0x9e8f7d6c5b4a3b2c!2sVilla%20d%27Este!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive access to all 152 rooms and suites",
+      "Complete privacy across entire 10-hectare estate",
+      "Sala Impero for grand receptions",
+      "Sala Colonne for intimate gatherings",
+      "Mosaic Garden and Nymphaeum for ceremonies",
+      "All garden terraces and parkland",
+      "Terrace Mantero lakeside ceremony space",
+      "D'Este nightclub for after-parties",
+      "All villa restaurants and bars",
+      "Veranda fine dining restaurant",
+      "Il Platano casual grill",
+      "Canova Bar and Pool Bar",
+      "Floating pool and all spa facilities",
+      "Tennis courts and golf range",
+      "Private lake frontage and boat dock",
+      "Dedicated wedding coordination team",
+      "Custom catering and menu design",
+      "Professional event setup and lighting",
+      "Floral design throughout property",
+      "Marquee setup for garden receptions",
+      "Late-night celebrations (until 2am)",
+      "Multi-day event capability",
+      "Complete flexibility for celebration timing"
+    ],
+    "description": "Exclusive buyout of Villa d'Este transforms ten hectares of Renaissance parkland and 152 rooms into your private Lake Como palace. This is celebration at maximum scale—up to 300 overnight guests accommodated in rooms that individually honor four centuries of refinement, ceremonies in the Mosaic Garden where cardinals once contemplated, grand receptions for 200 in Sala Impero beneath frescoed vaults, garden marquee dinners for 300 under transparent tents that preserve those lake and mountain views, and late-night dancing in the D'Este Club where formality finally dissolves into pure joy. Your multi-day celebration flows naturally: welcome cocktails by the floating pool as arrivals settle into their suites, rehearsal dinner in Sala Colonne, ceremony in the gardens, grand reception transitioning from Sala Impero to marquee to nightclub, next-day recovery where guests explore the parkland or boat across the lake, farewell brunch on terraces overlooking water. The Villa d'Este team—refined across 150 years of hosting royalty, celebrities, and the world's most discerning travelers—orchestrates everything while maintaining that sense of being guests in a noble residence rather than hotel clients. This isn't simply exclusive use; it's temporary ownership of one of Europe's most legendary properties.",
+    "transfers": "Private transfers from Milan Malpensa (45 minutes), Linate (1 hour), or Bergamo (1.25 hours) airports deliver guests directly to the villa. Alternatively, arrivals by boat from other Como towns create that dramatic water approach. The villa's concierge coordinates all logistics, ensuring seamless arrivals regardless of guest origins."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "Sala Impero accommodates 200 guests for seated dinners. Garden marquees can host up to 300 for receptions. Cocktail receptions utilizing multiple terraces and spaces can welcome 400 guests. The capacity scales beautifully from intimate to grand."
+    },
+    {
+      "q": "How many guests can stay at Villa d'Este?",
+      "a": "With 152 rooms and suites across the Cardinal Building and Queen's Pavilion, the villa accommodates approximately 300 overnight guests—making it one of Lake Como's largest hotel venues and allowing most wedding parties to house all guests onsite."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "For large weddings (typically over 100 guests) or multi-day celebrations, exclusive use ensures privacy and complete flexibility. Smaller events can be accommodated within the hotel's normal operations, though most couples prefer buyout for the freedom it provides."
+    },
+    {
+      "q": "What makes the floating pool special?",
+      "a": "It literally floats on Lake Como—anchored to the lake bottom, surrounded by water, creating that surreal experience of swimming in a heated pool that's in the lake itself. It's become Villa d'Este's most photographed feature and represents the property's commitment to extraordinary experiences."
+    },
+    {
+      "q": "Can we use the D'Este nightclub?",
+      "a": "Absolutely—it's one of Villa d'Este's unique features for celebrations. After formal dinner concludes, the party continues in a proper nightclub with professional sound, lighting, and atmosphere. Celebrations can extend until 2am, rare for Italian venues and perfect for guests who don't want the night to end."
+    },
+    {
+      "q": "Does Villa d'Este have Michelin-starred dining?",
+      "a": "While the Veranda restaurant doesn't hold a Michelin star, it's acclaimed for excellence in Italian cuisine and service. The culinary team creates bespoke wedding menus that honor both tradition and contemporary tastes, supported by an extensive wine cellar."
+    },
+    {
+      "q": "What about the Renaissance gardens?",
+      "a": "The ten-hectare parkland has been refined since Cardinal Gallio's time in the 1500s—geometric Italian gardens, classical fountains, the mosaic nymphaeum, pathways designed for contemplation and discovery. They're protected as historic landscapes and provide endless ceremony and reception options plus exploration for guests throughout your celebration."
+    },
+    {
+      "q": "Why choose Villa d'Este over other Como venues?",
+      "a": "It's the combination of scale, history, and completeness. Where other venues might excel in one aspect—intimate historic character or large capacity or full resort amenities—Villa d'Este delivers all simultaneously. You're in a genuine 16th-century cardinal's palace that operates as a five-star resort accommodating 300 guests with onsite restaurants, spa, pool, nightclub, and gardens that have hosted four centuries of celebrations. That convergence is extraordinarily rare."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Villa d'Este",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@villadeste.it",
+    "hotelPhone": "+39 031 3481"
+  }
+}
+
