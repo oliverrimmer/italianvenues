@@ -1,0 +1,239 @@
+{
+  "name": "Villa La Foce",
+  "city": "Val d'Orcia",
+  "region": "Tuscany",
+  "maxGuests": 220,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/8b4e3c5a-6d7f-4e2a-9b1c-0d2e3f4a5b6c/heroxl",
+  "heroDescription": "A Renaissance villa commanding 2,000 acres of UNESCO-protected Val d'Orcia countryside, where world-renowned Italian gardens cascade down hillsides and every view frames the landscape that inspired centuries of painters and poets.",
+  "intro": "Drive the white gravel roads of Val d'Orcia long enough and you'll find yourself climbing toward Villa La Foce, a 15th-century estate perched where the views stretch forever across rolling hills, cypress alleys, and those perfectly imperfect farmhouses dotting golden fields. The villa itself tells a quieter story than some Tuscan palaces—elegant rather than grandiose, refined rather than showy—but step into Cecil Pinsent's legendary gardens and you understand why this place has captivated everyone from writers to royalty. Terraces spill down the hillside in geometric precision, roses climb ancient walls, and the pergola frames ceremonies like a Renaissance painting come to life. With 2,000 acres ensuring absolute privacy, multiple historic buildings accommodating large groups, and spaces ranging from intimate gardens to a grand gallery seating 220, La Foce offers something rare: authentic Tuscan nobility without pretension.",
+  "history": {
+    "description": "Villa La Foce's foundations were laid in the late 1400s, when this strategic position overlooking Val d'Orcia made it both a working estate and a place of beauty. For centuries it remained exactly that—a noble family's countryside retreat where life followed the rhythms of harvest and season.",
+    "loveStory": "The villa's romantic transformation came in the 20th century through Antonio and Iris Origo, whose devotion to each other and to this land created something extraordinary. Iris, a celebrated writer, chronicled their life here in books that captured the soul of rural Tuscany. Antonio, with English landscape architect Cecil Pinsent, reimagined the gardens into the masterwork that exists today—formal Italian design flowing seamlessly into the wild Tuscan countryside.",
+    "inauguration": "Pinsent's gardens became legendary, drawing admirers from around the world who came to see how perfectly proportioned terraces, geometric box hedges, and carefully placed statuary could feel both classical and alive. Today, Villa La Foce remains in the Origo family, opened to celebrations that honor the estate's legacy of beauty, culture, and the belief that great spaces should be lived in, not just preserved."
+  },
+  "usps": [
+    "15th-Century Renaissance Villa",
+    "2,000-Acre Private Estate",
+    "UNESCO Val d'Orcia Setting",
+    "World-Famous Cecil Pinsent Gardens",
+    "12 Bedrooms in Main Villa",
+    "Additional Estate Farmhouses",
+    "Multiple Event Spaces",
+    "Grand Gallery (Seats 220)",
+    "Historic Limonaia",
+    "12m Swimming Pool",
+    "Panoramic Valley Views",
+    "Estate Olive Oil & Produce",
+    "Music Until Midnight Outdoors",
+    "Literary Heritage (Iris Origo)",
+    "Exclusive Use Available"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/8b4e3c5a-6d7f-4e2a-9b1c-0d2e3f4a5b6c/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/8b4e3c5a-6d7f-4e2a-9b1c-0d2e3f4a5b6c/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/8b4e3c5a-6d7f-4e2a-9b1c-0d2e3f4a5b6c/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gjsdPow/8b4e3c5a-6d7f-4e2a-9b1c-0d2e3f4a5b6c/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Cecil Pinsent Gardens & Pergola",
+      "capacities": {
+        "cocktail": 200,
+        "seated": 140,
+        "buffet": 140,
+        "ceremony": 200
+      },
+      "description": "The heart of La Foce's magic—geometric gardens flowing down the hillside in perfect proportion, ending at the iconic pergola where most couples exchange vows. The views stretch across all of Val d'Orcia, and as the sun sets behind distant Mount Amiata, you're standing in one of the world's most photographed ceremony spaces."
+    },
+    {
+      "name": "The Grand Gallery",
+      "capacities": {
+        "cocktail": 250,
+        "seated": 220,
+        "buffet": 200,
+        "ceremony": 0
+      },
+      "description": "A long, light-filled gallery that runs the length of the villa—high ceilings, pale stone floors, windows framing garden and valley views. This becomes your grand dining room, with space for elaborate table settings and those long Italian dinners that stretch from sunset to stars."
+    },
+    {
+      "name": "The Limonaia",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 100,
+        "buffet": 100,
+        "ceremony": 0
+      },
+      "description": "Originally built to shelter lemon trees through Tuscan winters, the Limonaia now serves as the perfect party space—rustic stone walls, atmospheric lighting, and that relaxed energy where dancing seems inevitable. Your late-night celebration unfolds here while music drifts into the gardens."
+    },
+    {
+      "name": "Villa Reception Rooms",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 80,
+        "buffet": 80,
+        "ceremony": 0
+      },
+      "description": "The villa's interconnected rooms flow naturally for entertaining—frescoed dining spaces, a music room with grand piano, library lined with books, each space filled with the kind of worn elegance that comes from centuries of actual living."
+    },
+    {
+      "name": "Garden Terraces",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 0,
+        "buffet": 100,
+        "ceremony": 150
+      },
+      "description": "Multiple levels carved into the hillside, each terrace offering its own perspective on the gardens and valley beyond. Perfect for aperitivo hours when guests wander between levels, discovering new views around every sculpted hedge."
+    },
+    {
+      "name": "Pool Terrace",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 0,
+        "buffet": 60,
+        "ceremony": 0
+      },
+      "description": "The 12-meter pool sits in its own garden, surrounded by loungers and lavender. A natural gathering spot for welcome parties or next-day brunches when your guests want nothing more than sun and conversation."
+    }
+  ],
+  "ancillaryServices": [
+    "Exclusive wedding planning and coordination",
+    "Ceremony setup in gardens or villa spaces",
+    "Gourmet catering using estate produce",
+    "Wine pairings from Montepulciano and Montalcino",
+    "Estate-grown olive oil and vegetables",
+    "Garden tours led by estate staff",
+    "Floral design for events",
+    "Music and entertainment coordination",
+    "Photography throughout 2,000-acre estate",
+    "Village excursions to Pienza and Montepulciano",
+    "Wine tasting experiences",
+    "Hiking trails across estate grounds",
+    "Children's activities and play areas",
+    "Backup ceremony spaces for weather",
+    "Late-night celebrations (midnight outdoor, 2am indoor)"
+  ],
+  "outlets": [
+    "Estate Catering with Local Partners",
+    "Tuscan Farm-to-Table Dining",
+    "Wine Service from Local Producers"
+  ],
+  "facilities": [
+    {
+      "name": "Cecil Pinsent Gardens",
+      "description": "These aren't just pretty gardens—they're considered masterworks of 20th-century landscape architecture. Formal terraces, geometric box hedges, climbing roses, gravel paths, stone statuary, and that famous pergola all arranged to guide your eye across the Tuscan hills. Every season brings different blooms, different light, but the structure remains timeless."
+    },
+    {
+      "name": "12-Meter Swimming Pool",
+      "description": "Set in its own garden space away from the main villa, the pool offers a private retreat for guests. Surrounded by loungers, umbrellas, and the kind of views that make afternoon naps feel justified."
+    },
+    {
+      "name": "Music Room",
+      "description": "An elegant salon housing the estate's grand piano, where intimate concerts or cocktail hours unfold with live music echoing off frescoed ceilings."
+    },
+    {
+      "name": "Library",
+      "description": "Floor-to-ceiling books, comfortable seating, and a working fireplace create the coziest corner of the villa. Where your literary-minded guests disappear with espresso and find themselves hours later still reading."
+    },
+    {
+      "name": "2,000-Acre Estate",
+      "description": "The villa sits at the heart of a working agricultural estate that stretches across Val d'Orcia's rolling hills. Olive groves, vineyards, forests, walking trails—your guests have an entire Tuscan landscape to explore, and you'll never see another soul beyond your party."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Villa La Foce Main House",
+        "count": 12,
+        "description": "Nine double rooms and three twin rooms, each with ensuite bathrooms and that particular mix of elegance and comfort that comes from centuries of refinement. Accommodates up to 24 guests in the villa itself, surrounded by the gardens and with immediate access to all celebration spaces."
+      },
+      {
+        "name": "Estate Farmhouses",
+        "count": 8,
+        "description": "Scattered across the estate, beautifully restored farmhouses offer additional accommodation for up to 40+ more guests. Each building retains its rustic Tuscan character while providing modern comfort—stone walls, beamed ceilings, country kitchens, private terraces overlooking the fields."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Strada della Vittoria 61, 53042 Chianciano Terme, Val d'Orcia, Tuscany, Italy",
+    "distances": {
+      "Pienza": "15 km / 20 min",
+      "Montepulciano": "20 km / 25 min",
+      "Montalcino": "30 km / 35 min",
+      "Siena": "70 km / 1h",
+      "Florence": "120 km / 1h30",
+      "Florence Airport (Peretola)": "130 km / 1h30",
+      "Pisa International Airport": "180 km / 2h",
+      "Rome Fiumicino Airport": "180 km / 2h15"
+    },
+    "coordinates": {
+      "lat": 42.9876,
+      "lng": 11.7654
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.7!2d11.7654!3d42.9876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132a2f8b3c4d5e6f%3A0x9e8f7d6c5b4a3b2c!2sVilla%20La%20Foce!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive use of Villa La Foce (12 bedrooms, 24 guests)",
+      "Option to include estate farmhouses (up to 65 total guests)",
+      "Complete access to Cecil Pinsent gardens",
+      "The Grand Gallery for dining and celebrations",
+      "The Limonaia for after-parties",
+      "All villa reception rooms and terraces",
+      "12-meter swimming pool and grounds",
+      "Music room with grand piano",
+      "Library and all common spaces",
+      "2,000 acres of private estate grounds",
+      "Wedding planning and coordination team",
+      "Setup and breakdown in all spaces",
+      "Garden ceremony sites including famous pergola",
+      "Late celebrations (midnight outdoors, 2am indoors)",
+      "Complete privacy across entire estate"
+    ],
+    "description": "Exclusive use of Villa La Foce gives you an entire Renaissance estate—12 beautifully appointed bedrooms in the main villa, the option of additional estate farmhouses for larger groups, and 2,000 acres of UNESCO-protected countryside where your celebration can unfold without constraint. Exchange vows in gardens that have inspired landscape architects for nearly a century, dine in the Grand Gallery with views stretching across Val d'Orcia, dance in the historic Limonaia until the small hours, and know that everything you see belongs to your celebration alone. The estate team coordinates every detail, from ceremony setup to catering featuring produce from the estate's own olive groves and gardens. This is the Tuscany of literature and art, made real and entirely yours.",
+    "transfers": "Private transfers available from Florence (1.5 hours) and Rome (2.25 hours) airports. The estate's location in the heart of Val d'Orcia also makes it easy for guests to explore Pienza, Montepulciano, and Montalcino on their own schedule."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "The Grand Gallery accommodates up to 220 seated guests for dinner, while the gardens can host 140 for outdoor dining. Cocktail receptions can welcome up to 250 guests across the various terraces and garden spaces."
+    },
+    {
+      "q": "How many guests can stay on the estate?",
+      "a": "The main villa accommodates 24 guests in 12 ensuite bedrooms. Including the estate's farmhouses and apartments, you can host up to 65 overnight guests across the property for multi-day celebrations."
+    },
+    {
+      "q": "Can we have a ceremony in the famous gardens?",
+      "a": "Absolutely. Most couples choose the iconic pergola at the garden's lower terrace, where Cecil Pinsent's geometric design frames views across all of Val d'Orcia. Other ceremony options include various garden terraces, each offering its own perspective on the landscape."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "Yes, Villa La Foce operates on an exclusive-use basis for weddings, ensuring complete privacy across the estate and gardens."
+    },
+    {
+      "q": "What makes the gardens so special?",
+      "a": "They're considered masterworks of 20th-century landscape design, created by renowned English architect Cecil Pinsent for Iris and Antonio Origo. The gardens blend formal Italian geometry with the natural Tuscan landscape in ways that influenced garden design worldwide. They're also simply stunning to experience and photograph."
+    },
+    {
+      "q": "Can we celebrate late into the evening?",
+      "a": "Yes, outdoor music is permitted until midnight, and celebrations in the Limonaia or villa spaces can continue until 2am—generous timing for a rural Tuscan location."
+    },
+    {
+      "q": "What about catering?",
+      "a": "While the estate doesn't have its own restaurant, they work with excellent Tuscan caterers who create menus featuring the estate's olive oil, produce from the gardens, and wines from nearby Montepulciano and Montalcino. The farm-to-table philosophy feels natural here."
+    },
+    {
+      "q": "Why is Val d'Orcia significant?",
+      "a": "Val d'Orcia is a UNESCO World Heritage Site, protected for its extraordinary beauty and the way it represents ideal Renaissance landscape planning. Those classic Tuscan views—rolling hills, perfect cypress rows, golden fields, isolated farmhouses—this is where that postcard perfection is real and protected forever."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability for Villa La Foce",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@lafoce.com",
+    "hotelPhone": "+39 0578 69101"
+  }
+}
+
