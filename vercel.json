@@ -31,7 +31,7 @@
       "permanent": true
     },
     {
-      "source": "/listing/tenuta-4-pini",
+      "source": "/listing/tenuta-4-pini/:path*",
       "destination": "/venues/tenuta-4-pini",
       "permanent": true
     },
