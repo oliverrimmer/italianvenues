@@ -1,0 +1,197 @@
+{
+  "name": "Tenuta 4 pini",
+  "city": "Frascati",
+  "region": "Rome",
+  "maxGuests": 80,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl",
+  "heroDescription": "A boutique country house in the Roman countryside near Frascati. Three elegant villas nestled in beautiful gardens, perfect for intimate celebrations with authentic Italian charm.",
+  "intro": "Tenuta quattro pini is a boutique country house located in the Roman countryside, just a few kilometers from Frascati's city center. Set in the charming countryside with beautiful gardens and landscapes, this exclusive property offers three elegant villas that can accommodate up to 38 overnight guests, making it perfect for intimate multi-day celebrations with your closest family and friends.",
+  "history": {
+    "description": "Tenuta 4 pini embodies the authentic charm of the Roman countryside, where centuries-old traditions meet modern elegance. Located in the historic Frascati region, known for its white wines and Renaissance villas, this boutique country house offers a tranquil escape from the bustle of Rome.",
+    "loveStory": "The property consists of three beautifully restored villas distributed across landscaped gardens, each offering a unique character while maintaining the cohesive elegance of traditional Roman countryside architecture. The gardens provide stunning backdrops for symbolic ceremonies and outdoor celebrations.",
+    "inauguration": "Today, Tenuta 4 pini continues the tradition of Italian hospitality, offering couples an exclusive setting where they can host intimate weddings with complete privacy, surrounded by the natural beauty of the Roman hills and the warmth of authentic Italian service."
+  },
+  "usps": [
+    "3 Private Villas (38 guest accommodation)",
+    "Main Villa (21 guests)",
+    "Villa Fioretta (9 guests)",
+    "Villa Cecilia (8 guests)",
+    "Up to 80 wedding guests",
+    "Multiple ceremony garden locations",
+    "In-house floral designer",
+    "Own chairs & tablecloth included",
+    "Staff, waiters & service included",
+    "Terra & Mare menu options",
+    "Preferred catering supplier",
+    "Extra lighting for evening ambiance"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Main Garden",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 80,
+        "buffet": 80,
+        "ceremony": 80
+      },
+      "description": "Beautiful landscaped gardens with centuries-old trees, perfect for outdoor ceremonies and receptions with romantic lighting"
+    },
+    {
+      "name": "Main Villa",
+      "capacities": {
+        "cocktail": 40,
+        "seated": 40,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "The largest villa accommodating 21 guests, with elegant interiors and access to garden terraces"
+    },
+    {
+      "name": "Villa Fioretta",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "Charming villa accommodating 9 guests, offering intimate spaces for smaller gatherings"
+    },
+    {
+      "name": "Villa Cecilia",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 0
+      },
+      "description": "Elegant villa accommodating 8 guests, perfect for extended family or bridal party"
+    },
+    {
+      "name": "Garden Ceremony Sites",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 80
+      },
+      "description": "Multiple ceremony locations throughout the gardens with beautiful landscape backgrounds, ideal for symbolic ceremonies"
+    }
+  ],
+  "ancillaryServices": [
+    "On-site floral designer for all decoration needs",
+    "Table setting and decorations by floral specialist",
+    "Round or long table configurations",
+    "Extra lighting installations for evening ambiance",
+    "Outdoor tent arrangements for inclement weather",
+    "Wine tastings of local Frascati wines",
+    "Day trips to Rome (20 minutes away)",
+    "Visits to historic Frascati villas and gardens",
+    "Tours of Roman countryside vineyards",
+    "Private transfers from Rome airports"
+  ],
+  "outlets": [
+    "Terra Menu – Traditional Country Cuisine",
+    "Mare Menu – Mediterranean Seafood",
+    "Garden Bar Service",
+    "Outdoor Reception Areas"
+  ],
+  "facilities": [
+    {
+      "name": "Main Villa Accommodations",
+      "description": "Spacious villa sleeping 21 guests with elegant interiors, modern amenities, and garden access"
+    },
+    {
+      "name": "Villa Fioretta",
+      "description": "Intimate villa for 9 guests with charming country décor and private outdoor spaces"
+    },
+    {
+      "name": "Villa Cecilia",
+      "description": "Beautiful villa accommodating 8 guests with traditional Roman countryside character"
+    },
+    {
+      "name": "Landscaped Gardens",
+      "description": "Extensive gardens with mature trees, flowering plants, and multiple ceremony and reception areas"
+    },
+    {
+      "name": "Floral Design Studio",
+      "description": "In-house floral specialist available for all wedding decoration needs, from table settings to ceremony installations"
+    }
+  ],
+  "locationInfo": {
+    "address": "Frascati, 00044, Rome, Italy",
+    "distances": {
+      "Rome City Center": "20 km / 30min",
+      "Frascati Center": "2 km / 5min",
+      "Rome Fiumicino Airport": "55 km / 45min",
+      "Rome Ciampino Airport": "15 km / 20min",
+      "Vatican City": "30 km / 40min",
+      "Tivoli": "35 km / 40min",
+      "Castel Gandolfo": "10 km / 15min",
+      "Lake Albano": "8 km / 12min"
+    },
+    "gps": "N 41°48', E 12°40'",
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.236429253607!2d12.666!3d41.808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132598!2sFrascati!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive use of all three villas (38 guests total)",
+      "Use of main villa (21 guests)",
+      "Use of Villa Fioretta (9 guests)",
+      "Use of Villa Cecilia (8 guests)",
+      "Access to all garden areas and ceremony sites",
+      "Chairs and tablecloth service",
+      "Professional staff and waiters",
+      "Tables, cutleries, plates, and glasses",
+      "Consultation with in-house floral designer",
+      "Basic garden lighting",
+      "Private parking on property",
+      "Multi-day exclusive access for extended celebrations"
+    ],
+    "description": "Exclusive use of Tenuta 4 pini includes all three villas with accommodation for 38 guests, providing complete privacy for your celebration. The property can host up to 80 guests for your wedding ceremony and reception. All essential services are included: professional staff, waiters, tables, chairs, linens, cutlery, and glassware. Your celebration benefits from the expertise of our in-house floral designer who can create everything from intimate table settings to grand ceremony installations.",
+    "transfers": "Private transfer services are available from both Rome Fiumicino and Ciampino airports. The property is just 20 minutes from central Rome, making it easily accessible for international guests."
+  },
+  "faqs": [
+    {
+      "q": "How many guests can stay overnight?",
+      "a": "The property accommodates 38 overnight guests across three villas: the Main Villa (21 guests), Villa Fioretta (9 guests), and Villa Cecilia (8 guests). This is perfect for intimate multi-day celebrations with family and close friends."
+    },
+    {
+      "q": "What is the maximum capacity for a wedding?",
+      "a": "We can host up to 80 guests for wedding ceremonies and receptions in our gardens. For larger events, an external tent can be arranged to accommodate slightly more guests."
+    },
+    {
+      "q": "What's included with the venue?",
+      "a": "Exclusive use includes all three villas, chairs, tablecloths, professional staff and waiters, tables, cutlery, plates, glasses, consultation with our floral designer, and basic garden lighting. Catering is provided by our preferred supplier."
+    },
+    {
+      "q": "What menu options are available?",
+      "a": "We offer two signature menu styles: 'Terra' featuring traditional country dishes from the Roman countryside with authentic local character, and 'Mare' offering refined Mediterranean seafood dishes. Both menus showcase the best of Italian cuisine."
+    },
+    {
+      "q": "Can you arrange flowers and decorations?",
+      "a": "Yes! We have an in-house floral designer who can assist with all your decoration needs, from table settings to ceremony installations. We can arrange both round and long table configurations, and provide extra lighting for magical evening ambiance."
+    },
+    {
+      "q": "Where can ceremonies take place?",
+      "a": "Symbolic ceremonies can be held in various locations throughout our beautiful gardens, each offering stunning landscape backgrounds. Our multiple ceremony sites provide flexibility and gorgeous natural settings."
+    },
+    {
+      "q": "How far is it from Rome?",
+      "a": "Tenuta 4 pini is just 20 minutes from central Rome and 20 minutes from Rome Ciampino Airport, making it easily accessible while offering the tranquility of the countryside. Rome Fiumicino Airport is 45 minutes away."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability & receive a tailored quote",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@tenuta4pini.it",
+    "hotelPhone": "+39 06 123 4567"
+  }
+}
+
