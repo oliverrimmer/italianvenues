@@ -1,0 +1,258 @@
+{
+  "name": "Villa Aurelia",
+  "city": "Rome",
+  "region": "Rome",
+  "maxGuests": 230,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/heroxl",
+  "heroDescription": "A 17th-century Baroque villa crowning Janiculum Hill—where St. Peter's dome rises at eye level, three terraced gardens cascade down the hillside, frescoed salons open onto panoramic terraces, and that particular combination of authentic cardinal's residence and commanding Rome views creates the city's most romantic celebration setting.",
+  "intro": "Climb Janiculum Hill—one of Rome's famous seven—until the city spreads below and you discover Villa Aurelia perched at the summit like a Baroque jewel someone placed precisely where views reach perfection. Commissioned in 1650 by Cardinal Girolamo Farnese, this palazzo captures everything a prince of the church could want: elevation above summer heat, gardens for contemplation, salons for entertaining, and those views—St. Peter's dome so close you understand the cardinal's power, all of Rome beyond confirming it. Today, Villa Aurelia operates under the stewardship of the American Academy in Rome, hosting cultural events and celebrations that honor the villa's heritage while opening it to those whose important moments deserve genuine Baroque grandeur. The architecture tells the cardinal's story: the Piano Nobile with its interconnected salons (Music Room, Gallery, Dining Room) flowing naturally for entertaining, the Grand Hall where 200 guests dine beneath frescoed ceilings, terraces positioned to frame different Roman perspectives, and those three gardens—the formal Italian Garden with geometric precision, the Lemon Garden fragrant with citrus, the Secret Garden hidden behind walls for intimate ceremonies. With capacity ranging from sixty to 230 depending on configuration, no overnight accommodations (this is a residence and cultural institution, not hotel), and exclusive use ensuring privacy, Villa Aurelia delivers the Roman cardinal's villa experience at its most authentic. The position on Janiculum means you're technically in Trastevere—ten minutes from the Vatican, fifteen from Piazza Navona—yet elevated enough that Rome feels displayed specifically for your celebration rather than simply surrounding it.",
+  "history": {
+    "description": "In 1650, Cardinal Girolamo Farnese—member of one of Rome's most powerful families—commissioned a summer villa on Janiculum Hill. The Farnese understood power's visual language: height communicated authority, gardens demonstrated culture, proximity to St. Peter's signaled church connection, views over Rome itself became daily reminder of influence. The cardinal wanted all of this in architectural form.",
+    "loveStory": "Over centuries, Villa Aurelia passed through various aristocratic hands, each generation adding refinements while preserving the Baroque bones. The frescoes deepened, the gardens matured, the salons accumulated art and furniture. Through papal Rome's transformation into Italian capital, through wars and peace, the villa maintained its character—not fortress, not palace, but that particular noble residence designed for cultivation and celebration in equal measure.",
+    "inauguration": "In the 20th century, the American Academy in Rome acquired Villa Aurelia, ensuring its preservation as cultural institution. Today it hosts scholarly gatherings, artistic events, and celebrations that meet the Academy's standards for honoring the property's significance. This stewardship means Villa Aurelia remains exactly as Cardinal Farnese would recognize—authentic Baroque architecture, gardens maintained to period specifications, that sense of being temporary guest in a residence of genuine historical importance rather than visitor to a commercialized venue."
+  },
+  "usps": [
+    "17th-Century Baroque Villa (Built 1650)",
+    "Commissioned by Cardinal Girolamo Farnese",
+    "Atop Janiculum Hill",
+    "Panoramic Views Across Rome",
+    "St. Peter's Dome at Eye Level",
+    "Managed by American Academy in Rome",
+    "Three Distinct Gardens",
+    "Grand Hall & Piano Nobile Salons",
+    "Accommodates Up to 230 Guests",
+    "10-15 Minutes from Vatican",
+    "Exclusive Use Required",
+    "Indoor Music Until 2am",
+    "Outdoor Music Until 11:30pm",
+    "Baroque Frescoed Interiors",
+    "Historic Cultural Institution",
+    "Trastevere Location",
+    "Complete Privacy & Seclusion"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Grand Hall (Salone delle Feste)",
+      "capacities": {
+        "cocktail": 250,
+        "seated": 200,
+        "buffet": 200,
+        "ceremony": 150
+      },
+      "description": "The villa's principal reception space—where Baroque proportions create natural drama, frescoed ceilings soar overhead, and tall windows frame Rome views that remind you why the cardinal chose this exact elevation. Accommodates 200 for seated dinners with dancing, maintaining that balance between grandeur and intimacy that proper ballrooms achieve. Your reception unfolds exactly where Cardinal Farnese once entertained Rome's elite, beneath the same vaults and surrounded by the same views."
+    },
+    {
+      "name": "Piano Nobile Salons",
+      "capacities": {
+        "cocktail": 220,
+        "seated": 180,
+        "buffet": 180,
+        "ceremony": 120
+      },
+      "description": "The villa's main floor comprises three interconnected salons—Music Room, Gallery, and Dining Room—that flow naturally for entertaining. Together they accommodate 180 for seated events, creating flexibility in table arrangements and natural progression between spaces. Frescoes, period furniture, and architectural details in each room tell different stories while maintaining cohesive Baroque elegance. Perfect when your celebration benefits from movement and discovery rather than remaining in one large hall."
+    },
+    {
+      "name": "Panoramic Terrace",
+      "capacities": {
+        "cocktail": 250,
+        "seated": 180,
+        "buffet": 200,
+        "ceremony": 200
+      },
+      "description": "Connected to the Grand Hall, this terrace positions you at Janiculum's summit with all of Rome spread before you. St. Peter's dome rises at eye level—so close the architectural details visible, so perfectly framed it feels staged. Beyond it, the city cascades down hills toward ancient forums and distant mountains. Most couples choose this for ceremonies where Rome itself provides the only decoration needed, then move to indoor spaces as evening progresses."
+    },
+    {
+      "name": "Italian Garden",
+      "capacities": {
+        "cocktail": 200,
+        "seated": 0,
+        "buffet": 150,
+        "ceremony": 180
+      },
+      "description": "The formal garden maintaining geometric Baroque precision—clipped hedges, gravel paths, classical proportions, and those sightlines the original designers calculated to frame specific Rome perspectives. This becomes your ceremony space when you want Baroque garden architecture combined with that commanding view. The formality creates natural elegance without requiring decoration; the centuries of cultivation speak for themselves."
+    },
+    {
+      "name": "Lemon Garden",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 0,
+        "buffet": 120,
+        "ceremony": 120
+      },
+      "description": "Where citrus trees perfume the air and that particular Roman golden light seems concentrated. More intimate than the Italian Garden, perfect for smaller ceremonies or cocktail receptions where guests want to wander rather than stand in formation. The name tells you everything—this is sensory experience as much as venue, where scent and sight combine."
+    },
+    {
+      "name": "Secret Garden",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 0,
+        "buffet": 60,
+        "ceremony": 80
+      },
+      "description": "Hidden behind walls, accessible through discrete passages—a garden designed for privacy within already private grounds. Cardinal Farnese understood the value of spaces within spaces, and this delivers: intimate ceremonies of eighty where guests feel they've discovered something not meant for public view, or cocktail hours for smaller groups wanting escape from larger celebrations happening simultaneously elsewhere on the property."
+    },
+    {
+      "name": "Gallery & Minor Halls",
+      "capacities": {
+        "cocktail": 100,
+        "seated": 80,
+        "buffet": 80,
+        "ceremony": 60
+      },
+      "description": "Smaller salons throughout the villa suited for intimate dinners, rehearsal meals, or when your gathering requires Baroque elegance at human scale. Each space maintains period character—frescoes, furniture, proportions designed when entertaining meant smaller numbers and deeper conversation."
+    }
+  ],
+  "ancillaryServices": [
+    "Exclusive villa and grounds booking",
+    "Dedicated wedding planning coordination",
+    "Premium catering with Roman partners",
+    "Custom menu design for celebrations",
+    "Professional lighting throughout villa",
+    "Sound systems for all spaces",
+    "Floral design using Italian blooms",
+    "Ceremony setup in gardens or terraces",
+    "Weather backup with multiple indoor halls",
+    "Photography access to entire property",
+    "Videography including aerial footage",
+    "Entertainment booking and management",
+    "Bar service and wine pairings",
+    "Late-night celebrations (indoor until 2am)",
+    "Outdoor music until 11:30pm",
+    "Security throughout event",
+    "Parking arrangements",
+    "Shuttle coordination from Rome hotels",
+    "Bridal suite for preparations"
+  ],
+  "outlets": [
+    "External Premium Catering Partners",
+    "Full Bar Service Available",
+    "No Onsite Restaurant"
+  ],
+  "facilities": [
+    {
+      "name": "The Janiculum Position",
+      "description": "Villa Aurelia's defining advantage—sitting atop one of Rome's seven hills at the perfect elevation where St. Peter's dome appears at eye level, the entire city spreads comprehensively below, and that sense of being above yet part of Rome creates perspective impossible from any other location. The cardinal chose this spot specifically for these views; they remain the villa's greatest asset."
+    },
+    {
+      "name": "Three Distinct Gardens",
+      "description": "The Italian Garden with Baroque geometric precision, the Lemon Garden fragrant with citrus, the Secret Garden hidden for intimacy—each offers different ceremony possibilities and atmospheres. This variety means your celebration can flow between garden spaces, or you can choose the one matching your vision. Cardinal Farnese understood gardens as rooms without roofs; his vision still guides how these spaces work for modern celebrations."
+    },
+    {
+      "name": "Baroque Architecture",
+      "description": "Authentic 17th-century construction means frescoed ceilings, marble floors, period proportions, and that particular Baroque sense of drama and elegance combined. You're not in a recreation or modern interpretation but genuine cardinal's residence where every architectural detail reflects power, culture, and refined taste as understood when Rome was still the center of the Catholic world."
+    },
+    {
+      "name": "American Academy Stewardship",
+      "description": "Being managed by the American Academy in Rome ensures Villa Aurelia is preserved exactly as it was—no commercialization, no modernization that compromises historic integrity. Every event must meet Academy standards for respecting the property's significance. This creates parameters but also guarantees Villa Aurelia remains extraordinary, protected as cultural institution rather than operated as commercial venue."
+    },
+    {
+      "name": "The Piano Nobile",
+      "description": "The main floor's interconnected salons (Music Room, Gallery, Dining Room) represent Baroque entertaining at its finest—spaces flowing naturally while maintaining distinct characters, proportions encouraging conversation while allowing grand gatherings, details everywhere rewarding close attention. Walking these rooms means experiencing how cardinals entertained when architecture communicated power and cultivation simultaneously."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Bridal Suite & VIP Rooms",
+        "count": 2,
+        "description": "Villa Aurelia maintains a bridal suite and limited VIP rooms—total overnight capacity approximately 4-8 guests. These aren't hotel accommodations but rooms in a cultural institution opened occasionally for celebration principals. Beautifully appointed with period character, offering those commanding views, becoming your sanctuary before and potentially after celebration."
+      },
+      {
+        "name": "Rome Hotel Accommodations",
+        "count": 0,
+        "description": "With minimal onsite accommodation, wedding guests stay in Rome's hotels—from historic properties in Trastevere just down the hill to luxury palazzos near Piazza Navona to contemporary hotels near the Vatican. The ten-to-fifteen-minute proximity means guests experience Rome's full vitality while gathering at Villa Aurelia for celebration. Many couples arrange blocks in nearby Trastevere, creating a local neighborhood base with the hilltop villa as the spectacular centerpiece."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Largo di Porta San Pancrazio 2, 00152 Rome, Italy",
+    "distances": {
+      "Trastevere": "5 min walk downhill",
+      "Vatican City": "2 km / 10 min",
+      "Piazza Navona": "3 km / 15 min",
+      "Spanish Steps": "4 km / 20 min",
+      "Colosseum": "6 km / 25 min",
+      "Rome City Center": "3 km / 15 min",
+      "Rome Fiumicino Airport": "35 km / 40 min",
+      "Rome Ciampino Airport": "35 km / 45 min"
+    },
+    "coordinates": {
+      "lat": 41.8906,
+      "lng": 12.4565
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.8!2d12.4565!3d41.8906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6e8b3c8c5%3A0x9e8f7d6c5b4a3b2c!2sVilla%20Aurelia!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive access to entire villa and all gardens",
+      "Complete privacy across Janiculum Hill property",
+      "Grand Hall (Salone delle Feste) for receptions",
+      "Piano Nobile salons (Music Room, Gallery, Dining Room)",
+      "Panoramic terrace for ceremonies and dining",
+      "Italian Garden, Lemon Garden, Secret Garden",
+      "All gallery and minor halls",
+      "Bridal suite and VIP rooms",
+      "Dedicated event coordination team",
+      "Setup across all spaces",
+      "Professional lighting and sound systems",
+      "Flexibility for event timing and flow",
+      "Photography access to entire estate",
+      "Late-night celebrations (indoor until 2am)",
+      "Outdoor music until 11:30pm",
+      "Weather backup with multiple indoor options",
+      "Security throughout celebration",
+      "Parking arrangements"
+    ],
+    "description": "Exclusive use of Villa Aurelia means this entire 17th-century cardinal's residence atop Janiculum Hill becomes yours—from the Grand Hall seating 200 beneath Baroque frescoes to the Piano Nobile's interconnected salons to the panoramic terrace where St. Peter's dome rises at eye level to those three distinct gardens each offering different ceremony atmospheres. Your celebration flows between spaces Cardinal Farnese designed precisely for gathering: ceremonies in the Italian Garden with geometric Baroque precision, cocktails in the Lemon Garden where citrus perfumes the air, reception in the Grand Hall where centuries of Roman celebrations have unfolded, late-night dancing as views across the Eternal City transition from sunset gold to twinkling nighttime magic. The American Academy's stewardship ensures everything honors the villa's cultural significance while the experienced events team delivers contemporary luxury. With capacity ranging from intimate gatherings of sixty in the Secret Garden to substantial celebrations of 230 in the Grand Hall, Villa Aurelia scales beautifully while maintaining that sense of being guest in a genuine noble residence rather than visitor to a commercial venue. The Janiculum position creates the perfect Roman contradiction: elevated above the city ensuring views and seclusion, yet just ten minutes from the Vatican and fifteen from Piazza Navona. Your celebration happens at Rome's most commanding vantage point, in spaces designed by a prince of the church who understood that great gatherings require beauty, proportion, and views that remind guests they're somewhere extraordinary.",
+    "transfers": "Private shuttles coordinate transport from Rome hotels (10-20 minutes depending on location). The villa sits in Trastevere but atop Janiculum Hill—guests either drive up or take arranged transport. Parking accommodates those arriving by car. The position combines Trastevere's charm with hilltop elevation and views."
+  },
+  "faqs": [
+    {
+      "q": "What makes Villa Aurelia's view special?",
+      "a": "The Janiculum Hill position places you at the perfect elevation where St. Peter's dome rises at eye level—close enough to see architectural details, perfectly framed as foreground to the entire city spreading beyond. This isn't distant glimpse but commanding panorama that includes virtually every Roman landmark. Cardinal Farnese chose this exact spot in 1650 for these views; they remain the villa's greatest asset and completely unchanged."
+    },
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "The Grand Hall accommodates 200 for seated dinners. The Piano Nobile salons together seat 180. Outdoor spaces—terrace and gardens—can host up to 230 for receptions or 300 with marquee additions. The villa scales beautifully from intimate Secret Garden ceremonies of eighty to substantial celebrations of 230, all within authentic Baroque architecture."
+    },
+    {
+      "q": "Can guests stay overnight at Villa Aurelia?",
+      "a": "The villa offers a bridal suite and limited VIP rooms—total overnight capacity 4-8 guests maximum. This isn't a hotel but a cultural institution managed by the American Academy in Rome. Most wedding parties stay in nearby Trastevere hotels or accommodations throughout Rome, with the ten-to-fifteen-minute proximity making logistics effortless."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "Yes, Villa Aurelia books exclusively for celebrations. This ensures complete privacy, allows your event to flow across all spaces without constraint, and honors the property's character as a protected cultural institution rather than commercial venue operating multiple simultaneous events."
+    },
+    {
+      "q": "What are the three gardens?",
+      "a": "The Italian Garden maintains formal Baroque geometry with clipped hedges and classical proportions—perfect for ceremonies of 180. The Lemon Garden offers citrus-scented intimacy for gatherings of 120. The Secret Garden, hidden behind walls, accommodates eighty for truly private ceremonies. Each provides different atmosphere while all share those commanding Rome views."
+    },
+    {
+      "q": "How late can celebrations continue?",
+      "a": "Indoor music and celebrations can extend until 2am. Outdoor music is permitted until 11:30pm (Rome's hillside noise restrictions). This gives your event natural rhythm: ceremonies and cocktails outdoors capturing sunset, dinner and dancing inside extending as late as you wish."
+    },
+    {
+      "q": "What is the American Academy's role?",
+      "a": "The American Academy in Rome manages Villa Aurelia as a cultural institution, ensuring its preservation and maintaining standards for events that honor the property's historical significance. This stewardship means the villa remains authentic 17th-century architecture rather than commercialized venue, with every celebration required to respect that heritage."
+    },
+    {
+      "q": "Why choose Villa Aurelia over other Roman venues?",
+      "a": "It's the convergence: genuine Baroque cardinal's villa from 1650, Janiculum Hill's commanding panorama with St. Peter's at eye level, three distinct gardens offering ceremony variety, capacity from intimate to substantial (60-230), ten minutes from Vatican yet feeling completely removed, American Academy stewardship ensuring authenticity, and that particular combination of power (cardinal's residence) and cultivation (cultural institution). Other Roman venues might offer history or views or gardens—Villa Aurelia delivers all three while maintaining standards that honor its genuine significance rather than commercial potential."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Villa Aurelia",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@villaaureliaroma.org",
+    "hotelPhone": "+39 06 581 4363"
+  }
+}
+
