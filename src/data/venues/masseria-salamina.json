@@ -5,7 +5,7 @@
   "maxGuests": 120,
   "exclusiveUse": true,
   "startingPriceEur": 15000,
-  "heroImage": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=85",
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/heroxl",
   "heroDescription": "An ancient 17th-century Masseria immersed in the Apulian countryside among rows of almond and centuries-old olive trees. Experience the authentic charm of Puglia in a place of suggestive beauty, filled with Mediterranean scents of lavender and oregano.",
   "intro": "An ancient Masseria of the 1600s, immersed in the Apulian countryside among rows of almond and centuries-old olive trees, surrounded by Mediterranean scents of lavender and oregano. Imagine celebrating your most important day with the people you love in a place of suggestive beauty, with tables full of fresh and genuine products, prepared with wisdom and authenticity.",
   "history": {
@@ -25,14 +25,10 @@
     "Lush Mediterranean Gardens"
   ],
   "gallery": [
-    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=85",
-    "https://images.unsplash.com/photo-1519974719765-e6559eac2575?w=800&q=85",
-    "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=800&q=85",
-    "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=85",
-    "https://images.unsplash.com/photo-1519974719765-e6559eac2575?w=800&q=85",
-    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=85",
-    "https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=800&q=85",
-    "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=800&q=85"
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg"
   ],
   "spaces": [
     {
