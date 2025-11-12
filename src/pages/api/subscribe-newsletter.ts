@@ -33,16 +33,12 @@ export const POST: APIRoute = async ({ request }) => {
     console.log('Sending to Airtable:', JSON.stringify(airtableData, null, 2));
 
     // Send to Airtable (same table as enquiries)
-    const authHeader = `Bearer ${import.meta.env.AIRTABLE_API_KEY}`;
-    console.log('DEBUG - Auth header length:', authHeader.length);
-    console.log('DEBUG - Auth header starts with:', authHeader.substring(0, 20));
-    
     const airtableResponse = await fetch(
       `https://api.airtable.com/v0/${import.meta.env.AIRTABLE_BASE_ID}/${import.meta.env.AIRTABLE_TABLE_ID}`,
       {
         method: 'POST',
         headers: {
-          'Authorization': authHeader,
+          'Authorization': `Bearer ${import.meta.env.AIRTABLE_API_KEY}`,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(airtableData)
