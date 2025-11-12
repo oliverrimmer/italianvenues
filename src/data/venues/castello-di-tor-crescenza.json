@@ -1,0 +1,268 @@
+{
+  "name": "Castello di Tor Crescenza",
+  "city": "Rome",
+  "region": "Rome",
+  "maxGuests": 300,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/heroxl",
+  "heroDescription": "A 15th-century fortress rising from private parkland within Rome's city limits—where medieval watchtowers, frescoed banquet halls, a glass-roofed Winter Garden, and the particular romance of celebrating in a castle still inhabited by the noble family who've owned it for centuries create Rome's most dramatic wedding setting.",
+  "intro": "Most couples planning Roman weddings face a choice: ancient ruins that can't be touched, or modern venues lacking soul. Castello di Tor Crescenza offers a third option—a genuine medieval castle just fifteen minutes from the Spanish Steps, surrounded by private parkland, still inhabited by the aristocratic family who've owned it since the 1400s, and available for exclusive celebrations that honor both its history and your vision. The castle rises from its grounds with medieval authority—towers built atop an 11th-century watchtower, grand halls added as the Crescenzi family's power grew, frescoes commissioned when Renaissance art flourished, and those courtyards and terraces that seem designed specifically for gathering and celebration. Today, the castle operates as Rome's premier event venue while remaining a protected historic monument and private residence. The scale accommodates both intimate gatherings and substantial celebrations: the Fireplace Room for sixty seated in frescoed intimacy, grand banquet halls for 250 beneath vaulted ceilings, the Winter Garden's glass roof sheltering 300 regardless of weather, courtyards for outdoor ceremonies, a private chapel for religious vows, and parkland exploration between events. With just six rooms for overnight guests (the castle isn't a hotel but a residence that welcomes celebrations), most guests stay in Rome's extraordinary hotels and gather at Tor Crescenza for one unforgettable day. The convenience of being within the city yet feeling entirely removed—medieval walls blocking traffic sounds, parkland creating buffer from urban energy—makes this uniquely Roman: history and convenience, grandeur and accessibility, all within twenty minutes of the Colosseum.",
+  "history": {
+    "description": "In the early 1400s, Marquis Francesco Crescenzi chose this strategic position just outside Rome's northern gates for his castle. The site already held an 11th-century watchtower—defensive remnant from when this area marked civilization's edge. Crescenzi built upon those medieval foundations, adding the towers, halls, and fortifications that established the castle's current form. As Rome expanded and the Crescenzi family's influence grew, successive generations refined interiors, commissioned frescoes, added courtyards and gardens.",
+    "loveStory": "What makes Tor Crescenza extraordinary is continuity: the same noble family has inhabited these walls for six centuries. This isn't a castle converted to museum or hotel—it remains a private residence where the family lives, maintaining traditions of hospitality and celebration that stretch back through generations. When you celebrate here, you're guests in someone's home—albeit a home with medieval towers, frescoed halls, and the kind of architectural drama only centuries of aristocratic ownership creates.",
+    "inauguration": "The transition to hosting events happened organically—the family realized these spaces designed for noble celebrations shouldn't sit empty. Better to share them with couples whose own important moments could honor the castle's legacy. Today, Castello di Tor Crescenza operates under strict heritage protection, ensuring every event respects the building's significance while the family ensures celebrations maintain the warmth and authenticity of genuine hospitality rather than commercial transactions."
+  },
+  "usps": [
+    "15th-Century Medieval Castle",
+    "Built on 11th-Century Watchtower",
+    "Within Rome City Limits",
+    "15-30 Minutes to Central Rome",
+    "Still Inhabited by Noble Crescenzi Family",
+    "Protected Historic Monument",
+    "Medieval Towers & Fortifications",
+    "Grand Frescoed Banquet Halls",
+    "Winter Garden with Glass Roof",
+    "Private Chapel for Ceremonies",
+    "Extensive Private Parkland",
+    "Outdoor Pool",
+    "Adjacent Golf Course",
+    "6 Rooms for Overnight Guests",
+    "Accommodates Up to 300 Guests",
+    "Exclusive Use Required",
+    "Multiple Indoor & Outdoor Spaces"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Grand Banquet Halls",
+      "capacities": {
+        "cocktail": 300,
+        "seated": 250,
+        "buffet": 250,
+        "ceremony": 150
+      },
+      "description": "Multiple interconnected halls where vaulted ceilings soar overhead, frescoes tell centuries-old stories, and the particular gravity of genuine medieval architecture creates natural drama. These become your reception spaces for up to 250 seated guests, where dinner unfolds in rooms designed by the Crescenzi family for exactly this purpose—gathering, celebrating, honoring life's important moments beneath walls that have witnessed six centuries of the same."
+    },
+    {
+      "name": "Winter Garden",
+      "capacities": {
+        "cocktail": 350,
+        "seated": 300,
+        "buffet": 300,
+        "ceremony": 200
+      },
+      "description": "A glass-roofed space connecting castle to gardens—protection without enclosure, shelter while maintaining light and openness. This solves Rome's weather unpredictability: your celebration happens outdoors regardless of conditions, with natural light flooding through glass, views of the parkland, and capacity for 300 seated guests. When couples want garden elegance with zero weather risk, this delivers both."
+    },
+    {
+      "name": "Fireplace Room",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 100,
+        "buffet": 100,
+        "ceremony": 60
+      },
+      "description": "An intimate hall dominated by an enormous period fireplace, walls adorned with frescoes, and proportions that create genuine closeness. Perfect for smaller celebrations of sixty to a hundred, rehearsal dinners, or when your vision requires castle grandeur at human scale. As evening progresses and firelight flickers against frescoed walls, the centuries collapse."
+    },
+    {
+      "name": "Castle Courtyards",
+      "capacities": {
+        "cocktail": 300,
+        "seated": 0,
+        "buffet": 200,
+        "ceremony": 250
+      },
+      "description": "Stone-paved courtyards enclosed by medieval walls and towers—outdoor spaces that feel protected and dramatic simultaneously. These become your ceremony locations where guests gather surrounded by castle architecture, ancient fountains providing ambient sound, and that particular Roman light turning everything golden. Multiple courtyards mean options: intimate corners or grand gathering spaces."
+    },
+    {
+      "name": "Private Chapel",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 50
+      },
+      "description": "The castle's consecrated chapel—small, beautiful, available for Catholic ceremonies or symbolic vows. Where your most sacred moment unfolds in a space designed for devotion, maintained by the family for generations, carrying that accumulated sanctity of centuries of prayer and celebration."
+    },
+    {
+      "name": "Castle Gardens & Parkland",
+      "capacities": {
+        "cocktail": 300,
+        "seated": 0,
+        "buffet": 200,
+        "ceremony": 200
+      },
+      "description": "The private parkland surrounding the castle—manicured gardens near the building, then lawn terraces, then wilder spaces as you move outward. Perfect for cocktail receptions where guests explore rather than stand in one spot, discovering fountains, hidden benches, perspectives on the castle itself. The parkland creates natural flow and that sense of being in countryside despite Rome's proximity."
+    },
+    {
+      "name": "Pool Terrace",
+      "capacities": {
+        "cocktail": 80,
+        "seated": 0,
+        "buffet": 60,
+        "ceremony": 0
+      },
+      "description": "The outdoor pool surrounded by loungers and gardens offers another celebration dimension—particularly for multi-day events when welcome parties or next-day gatherings benefit from casual outdoor energy. Where guests discover the castle operates not just as venue but as complete estate."
+    }
+  ],
+  "ancillaryServices": [
+    "Exclusive castle and grounds booking",
+    "Dedicated wedding planning coordination",
+    "Premium catering with external partners",
+    "Custom menu design for celebrations",
+    "Professional lighting throughout castle",
+    "Sound systems for ceremony and reception",
+    "Floral design using Italian blooms",
+    "Ceremony setup in chapel, courtyards, or gardens",
+    "Weather backup with Winter Garden",
+    "Photography access to entire property",
+    "Videography including aerial drone footage",
+    "Entertainment booking and management",
+    "Bar service and wine pairings",
+    "Late-night celebrations capability",
+    "Security throughout event",
+    "Parking for guest vehicles",
+    "Shuttle coordination from Rome hotels",
+    "Bridal suite for preparations",
+    "Golf course access for guests"
+  ],
+  "outlets": [
+    "External Premium Catering Only",
+    "Full Bar Service Available",
+    "No Onsite Restaurant"
+  ],
+  "facilities": [
+    {
+      "name": "Medieval Towers",
+      "description": "The castle's defining feature—towers rising from the original 11th-century watchtower, expanded by the Crescenzi family through centuries. These aren't decorative additions but functional defensive architecture converted to celebration spaces. Climbing their stairs, standing on their parapets, discovering their interior chambers—guests experience genuine medieval construction rather than recreation."
+    },
+    {
+      "name": "Frescoed Halls",
+      "description": "Throughout the castle, period frescoes adorn walls and ceilings—commissioned by the Crescenzi family when such art represented both devotion and status. These aren't museum pieces behind glass but living parts of celebration spaces, creating atmosphere and beauty that modern decoration cannot replicate. Your dinner happens surrounded by art that's witnessed six centuries of gatherings."
+    },
+    {
+      "name": "The Winter Garden",
+      "description": "This glass-roofed structure represents the castle's evolution—added in more recent centuries to create weather-independent celebration space without sacrificing connection to gardens and natural light. It solves the eternal Roman wedding question: how to plan outdoor beauty when weather's unpredictable. The Winter Garden answers: both, simultaneously."
+    },
+    {
+      "name": "Private Parkland",
+      "description": "The extensive grounds surrounding the castle create buffer from Rome's urban energy. Despite being within city limits, the parkland ensures your celebration feels removed—birdsong instead of traffic, centuries-old trees instead of buildings, that particular serenity that comes from genuine seclusion. Guests explore between events, discovering the estate at their own pace."
+    },
+    {
+      "name": "Adjacent Golf Course",
+      "description": "The castle sits beside a private golf course, offering another dimension for multi-day celebrations. While not part of the castle property, arrangements can be made for guest access—adding recreational options for those arriving early or staying later."
+    },
+    {
+      "name": "Historic Fountains",
+      "description": "Scattered throughout courtyards and gardens, period fountains provide both beauty and ambient sound. Some date to the castle's earliest centuries; others added as tastes evolved. Together they create that particular soundtrack of Italian celebration—water against stone, conversation against splashing, laughter against the unchanging rhythm of fountains that have played for centuries."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Castle Guest Rooms",
+        "count": 6,
+        "description": "The castle maintains six guest rooms with ensuite bathrooms—not hotel accommodations but spare rooms in a noble residence opened for celebration guests. Beautifully appointed with period furniture and modern comfort, these suit your closest family or VIP guests. Total capacity approximately twelve overnight guests. These rooms preserve the sense that you're staying in someone's home—which you are—rather than checking into a hotel."
+      },
+      {
+        "name": "Bridal Suite",
+        "count": 1,
+        "description": "A dedicated suite for the couple's preparations—where getting ready happens in spaces worthy of the celebration ahead. Private, elegant, with castle views, becoming your sanctuary before stepping into the more public festivities."
+      },
+      {
+        "name": "Rome Hotel Accommodations",
+        "count": 0,
+        "description": "With just six castle rooms, most wedding guests stay in Rome's extraordinary hotels—from historic palazzos to contemporary luxury properties. The fifteen-to-thirty-minute proximity means guests experience both Rome's urban vitality and the castle's secluded grandeur. Many couples arrange hotel blocks near the Spanish Steps or Villa Borghese, creating a central Rome base with castle celebration as the spectacular centerpiece."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via Tor Crescenza 118, 00189 Rome, Italy",
+    "distances": {
+      "Spanish Steps": "12 km / 20 min",
+      "Vatican City": "10 km / 15 min",
+      "Villa Borghese": "8 km / 15 min",
+      "Colosseum": "15 km / 25 min",
+      "Rome City Center": "12 km / 20 min",
+      "Rome Fiumicino Airport": "35 km / 35 min",
+      "Rome Ciampino Airport": "35 km / 40 min"
+    },
+    "coordinates": {
+      "lat": 41.9637,
+      "lng": 12.3986
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2967.8!2d12.3986!3d41.9637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6e8b3c8c5%3A0x9e8f7d6c5b4a3b2c!2sCastello%20di%20Tor%20Crescenza!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive access to entire castle and grounds",
+      "Complete privacy across parkland",
+      "Grand Banquet Halls for receptions",
+      "Winter Garden for weather-independent celebrations",
+      "Fireplace Room for intimate gatherings",
+      "All castle courtyards and terraces",
+      "Private chapel for ceremonies",
+      "Castle gardens and parkland",
+      "Pool terrace access",
+      "Six guest rooms for overnight stays",
+      "Bridal suite for preparations",
+      "Medieval towers for exploration",
+      "Historic fountains throughout property",
+      "Parking for guest vehicles",
+      "Dedicated event coordination team",
+      "Setup and breakdown across all spaces",
+      "Professional lighting and sound systems",
+      "Flexibility for event timing",
+      "Photography access to entire estate",
+      "Late-night celebration capability"
+    ],
+    "description": "Exclusive use of Castello di Tor Crescenza means this 15th-century fortress becomes entirely yours—from the medieval watchtowers to the frescoed halls to the private parkland ensuring absolute seclusion despite Rome's proximity. Your celebration flows between spaces designed across centuries for exactly this purpose: ceremonies of 250 in the castle courtyards (where ancient walls and fountains create natural drama), receptions for 300 in the Winter Garden (where glass roof means weather never dictates plans), intimate dinners for 100 in the Fireplace Room (where frescoes and genuine medieval architecture create atmosphere modern venues cannot replicate), or grand banquets for 250 in the interconnected halls beneath vaulted ceilings the Crescenzi family commissioned when their power peaked. Between events, guests explore the parkland, discover hidden corners of the castle, photograph themselves against medieval towers, and experience what it means to celebrate in a fortress still inhabited by the noble family who built it. The six guest rooms accommodate your closest family overnight, though most guests stay in Rome's hotels and shuttle to the castle—creating that perfect balance of urban vitality and secluded grandeur. The dedicated team orchestrates everything while the Crescenzi family ensures celebrations honor the castle's heritage, maintaining standards refined across six centuries of aristocratic hosting.",
+    "transfers": "Private shuttles coordinate transport from Rome hotels (15-30 minutes depending on location). Ample parking accommodates guests arriving by car. The castle's position within Rome yet surrounded by parkland means easy logistics without sacrificing that sense of escape to somewhere entirely different."
+  },
+  "faqs": [
+    {
+      "q": "Where exactly is the castle located?",
+      "a": "Castello di Tor Crescenza sits within Rome's city limits in the northern Cassia/Parco di Roma area—just 15-30 minutes from central landmarks like the Spanish Steps, Vatican, and Villa Borghese. The private parkland surrounding the castle creates complete seclusion despite the urban proximity, offering the rare combination of convenience and escape."
+    },
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "The Winter Garden accommodates 300 guests for seated receptions. Grand Banquet Halls seat 250. Courtyards host ceremonies for 250. The Fireplace Room suits intimate gatherings of 100. The castle scales beautifully from substantial celebrations to more personal gatherings, all within genuine medieval architecture."
+    },
+    {
+      "q": "Can guests stay overnight at the castle?",
+      "a": "The castle offers six guest rooms accommodating approximately twelve overnight guests—typically reserved for the couple's closest family or VIP guests. This isn't a hotel but a noble residence that opens select rooms for celebration guests. Most wedding parties stay in Rome's extraordinary hotels, with the castle serving as the spectacular day-of venue."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "Yes, all celebrations require exclusive castle and grounds booking. This ensures complete privacy, allows your event to unfold across all spaces without constraint, and honors the intimate nature of celebrating in a residence still inhabited by the Crescenzi family."
+    },
+    {
+      "q": "What about weather backup?",
+      "a": "The Winter Garden solves Rome's weather unpredictability—a glass-roofed space accommodating 300 guests where your celebration happens 'outdoors' regardless of conditions. You get natural light, garden views, and connection to the estate without weather risk. Additionally, the grand halls provide elegant indoor alternatives."
+    },
+    {
+      "q": "Can we have a religious ceremony?",
+      "a": "Yes, the castle's private consecrated chapel accommodates Catholic ceremonies for up to fifty guests. Symbolic ceremonies happen in the chapel, courtyards, or gardens. The chapel's intimacy creates powerful moments where your most sacred vows unfold in a space the Crescenzi family has maintained for centuries."
+    },
+    {
+      "q": "How does being in a still-inhabited castle affect celebrations?",
+      "a": "It creates authenticity impossible in converted museums or hotels. The Crescenzi family maintains the castle as their home, ensuring celebrations honor the property's heritage while experiencing genuine hospitality rather than commercial transactions. You're guests in someone's residence—albeit one with medieval towers, frescoed halls, and six centuries of aristocratic history."
+    },
+    {
+      "q": "What makes Castello di Tor Crescenza special compared to other Rome venues?",
+      "a": "It's the convergence of elements: genuine medieval castle (not recreation), still inhabited by the noble family who built it, within Rome yet feeling entirely removed, capacity up to 300, Winter Garden solving weather concerns, private parkland creating seclusion, and that particular drama of celebrating in fortress architecture. Ancient ruins can't be touched; modern venues lack soul. Tor Crescenza offers authentic castle grandeur with celebration flexibility, all within twenty minutes of the Colosseum."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability at Castello di Tor Crescenza",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@castellotorcrescenza.it",
+    "hotelPhone": "+39 06 3089 8801"
+  }
+}
+
