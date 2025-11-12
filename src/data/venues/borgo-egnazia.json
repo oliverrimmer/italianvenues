@@ -1,0 +1,260 @@
+{
+  "name": "Borgo Egnazia",
+  "city": "Savelletri di Fasano",
+  "region": "Puglia",
+  "maxGuests": 500,
+  "exclusiveUse": true,
+  "startingPriceEur": 25000,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/heroxl",
+  "heroDescription": "A five-star luxury resort designed as an authentic Puglian village, featuring white limestone architecture, ancient olive groves, and exclusive event spaces between the Adriatic Sea and countryside.",
+  "intro": "Borgo Egnazia reimagines the traditional villages of Puglia as a world-class luxury resort. Built with local white limestone and surrounded by centuries-old olive trees, this exclusive property offers an unparalleled setting for destination weddings. With multiple event spaces ranging from intimate garden corners to grand piazzas, couples can create their perfect celebration while guests enjoy resort amenities including a beach club, championship golf course, and award-winning spa.",
+  "history": {
+    "description": "Borgo Egnazia was conceived to celebrate and preserve the architectural heritage of Puglia. The resort's design draws inspiration from the region's historic masserie and traditional villages, with winding cobblestone pathways, sun-drenched courtyards, and buildings that blend seamlessly with the surrounding landscape.",
+    "loveStory": "Every stone, archway, and terrace at Borgo Egnazia tells the story of Puglia's rich cultural heritage. The property honors centuries of local building traditions while offering contemporary luxury, creating an atmosphere where authentic Italian charm meets five-star service.",
+    "inauguration": "Since opening, Borgo Egnazia has become one of Italy's most sought-after wedding destinations, hosting intimate celebrations and grand events for couples from around the world. The resort has gained international recognition for its exceptional design, service, and ability to create unforgettable wedding experiences in the heart of Puglia."
+  },
+  "usps": [
+    "183 Accommodations (63 rooms, 92 houses, 28 villas)",
+    "Private beach club on the Adriatic",
+    "Vair Spa - Award-winning wellness center",
+    "San Domenico Golf Course access",
+    "Multiple pools including adults-only",
+    "Traditional Puglian village design",
+    "White limestone architecture",
+    "Ancient olive grove setting",
+    "Exclusive use options available",
+    "Multiple ceremony and reception venues",
+    "On-site wedding planning team",
+    "Five distinctive restaurants"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "La Piazza - Main Village Square",
+      "capacities": {
+        "cocktail": 400,
+        "seated": 350,
+        "buffet": 300,
+        "ceremony": 350
+      },
+      "description": "The heart of Borgo Egnazia, this stunning central piazza surrounded by white limestone buildings creates an authentic Italian village atmosphere for grand celebrations under the stars."
+    },
+    {
+      "name": "La Corte Pool Area",
+      "capacities": {
+        "cocktail": 400,
+        "seated": 350,
+        "buffet": 300,
+        "ceremony": 350
+      },
+      "description": "Elegant poolside area with Mediterranean landscaping, perfect for sophisticated outdoor receptions with views of the main courtyard."
+    },
+    {
+      "name": "Quattro Torri Terrace",
+      "capacities": {
+        "cocktail": 250,
+        "seated": 220,
+        "buffet": 200,
+        "ceremony": 220
+      },
+      "description": "Panoramic rooftop terrace offering breathtaking views over the olive groves and Adriatic coastline, ideal for sunset ceremonies and elegant dinners."
+    },
+    {
+      "name": "La Frasca Terrace",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 100,
+        "buffet": 100,
+        "ceremony": 100
+      },
+      "description": "Intimate terrace space nestled within the resort's gardens, perfect for smaller celebrations seeking privacy and charm."
+    },
+    {
+      "name": "San Domenico Beach Club",
+      "capacities": {
+        "cocktail": 200,
+        "seated": 150,
+        "buffet": 150,
+        "ceremony": 180
+      },
+      "description": "Private beach club on the Adriatic Sea, offering a unique seaside setting for ceremonies and receptions with sand, sea, and stunning coastal views."
+    },
+    {
+      "name": "Chapel",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 50
+      },
+      "description": "Intimate chapel for civil ceremonies, beautifully appointed and perfect for couples seeking a traditional ceremony space."
+    },
+    {
+      "name": "Olive Grove Gardens",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 120,
+        "buffet": 100,
+        "ceremony": 150
+      },
+      "description": "Romantic garden spaces beneath centuries-old olive trees, offering natural beauty and shade for daytime ceremonies and cocktail receptions."
+    }
+  ],
+  "ancillaryServices": [
+    "Comprehensive wedding planning and coordination",
+    "Cooking classes with executive chefs",
+    "Wine tastings featuring Puglian wines",
+    "Golf at San Domenico Championship Course",
+    "Spa treatments and wellness programs at Vair Spa",
+    "Private beach club access and water sports",
+    "Guided tours of local historic sites",
+    "Trulli house visits in Alberobello",
+    "Olive oil mill tours and tastings",
+    "Cycling tours through the countryside",
+    "Tennis and fitness facilities",
+    "Kids club and family activities",
+    "Private dining experiences",
+    "Transportation and transfer services"
+  ],
+  "outlets": [
+    "Due Camini - Fine Dining (Michelin recognition)",
+    "Mia Cucina - Traditional Puglian",
+    "La Frasca - Garden Restaurant",
+    "Trattoria - Casual Dining",
+    "Cala Masciola Beach Restaurant",
+    "La Piazza Bar",
+    "Pool Bars"
+  ],
+  "facilities": [
+    {
+      "name": "Vair Spa",
+      "description": "Award-winning 1,800 sqm spa offering traditional Roman bathing rituals, massage treatments, and wellness programs in a serene setting inspired by ancient thermal baths."
+    },
+    {
+      "name": "San Domenico Beach Club",
+      "description": "Private beach club with sun loungers, cabanas, water sports, and beachside dining on the crystal-clear Adriatic coast."
+    },
+    {
+      "name": "Swimming Pools",
+      "description": "Multiple pools throughout the property including La Corte main pool, adults-only pool, and family pools with Mediterranean views."
+    },
+    {
+      "name": "San Domenico Golf Course",
+      "description": "Championship 18-hole golf course designed by European Golf Design, consistently ranked among Italy's finest courses."
+    },
+    {
+      "name": "Tennis Courts",
+      "description": "Professional tennis facilities available for guest recreation and tournaments."
+    },
+    {
+      "name": "Fitness Center",
+      "description": "State-of-the-art fitness facilities with modern equipment and personal training services."
+    },
+    {
+      "name": "Kids Club",
+      "description": "Dedicated children's area with supervised activities, making the resort ideal for family celebrations."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "La Corte Rooms & Suites",
+        "count": 63,
+        "description": "Elegant rooms and suites in the main building featuring traditional Puglian design with vaulted ceilings, local limestone, and modern amenities. Perfect for couples and wedding guests seeking luxury accommodation."
+      },
+      {
+        "name": "Il Borgo Houses",
+        "count": 92,
+        "description": "Traditional village houses distributed throughout the Borgo, each uniquely designed to reflect authentic Puglian architecture. Ideal for guests wanting an immersive village experience."
+      },
+      {
+        "name": "Private Villas",
+        "count": 28,
+        "description": "Exclusive villas with private pools and gardens, offering ultimate privacy and luxury. Perfect for wedding parties, families, or VIP guests requiring independent accommodation."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Strada Comunale Egnazia, 72015 Savelletri di Fasano, Puglia, Italy",
+    "distances": {
+      "Bari Karol Wojtyła Airport": "55 km / 40 min",
+      "Brindisi Salento Airport": "55 km / 40 min",
+      "Ostuni": "18 km / 20 min",
+      "Alberobello": "30 km / 30 min",
+      "Polignano a Mare": "20 km / 25 min",
+      "Lecce": "85 km / 1h",
+      "Matera": "80 km / 1h"
+    },
+    "coordinates": {
+      "lat": 40.8333,
+      "lng": 17.4167
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3019.2!2d17.4167!3d40.8333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347d1a2e82b8a8d%3A0x8d2e3f4a5b6c7d8e!2sBorgo%20Egnazia!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive use of entire resort (183 accommodations)",
+      "All 63 rooms in La Corte",
+      "All 92 traditional houses in Il Borgo",
+      "All 28 private villas with pools",
+      "Access to all event spaces and venues",
+      "Private beach club with full facilities",
+      "Use of all swimming pools",
+      "Vair Spa access for all guests",
+      "San Domenico Golf Course privileges",
+      "Dedicated wedding planning team",
+      "Multiple dining venues and catering options",
+      "Complete privacy for your celebration",
+      "Staff and hospitality team",
+      "Security and concierge services"
+    ],
+    "description": "Exclusive use of Borgo Egnazia provides complete privacy across the entire resort. With 183 accommodations including luxurious rooms, traditional village houses, and private villas, you can host an extraordinary multi-day celebration for up to 500 guests. Your exclusive rental includes access to all event spaces from the grand Piazza to intimate garden corners, the private beach club, championship golf course, award-winning spa, and multiple dining venues. Our experienced wedding planning team orchestrates every detail to ensure a seamless celebration in Puglia's most prestigious resort.",
+    "transfers": "Private transfer services available from both Bari and Brindisi airports. Helicopter landing pad on property for VIP arrivals. Luxury ground transportation can be arranged for all guests."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "Borgo Egnazia can host weddings from intimate gatherings of 50 guests to grand celebrations of up to 500 guests, with multiple venue options to suit different sizes and styles."
+    },
+    {
+      "q": "How many guests can stay on property?",
+      "a": "The resort offers 183 accommodations across 63 rooms, 92 traditional houses, and 28 private villas, comfortably accommodating 300+ overnight guests for multi-day celebrations."
+    },
+    {
+      "q": "Is exclusive use available?",
+      "a": "Yes, exclusive use of the entire resort is available for weddings and special events, providing complete privacy across all accommodations, event spaces, and facilities."
+    },
+    {
+      "q": "What ceremony options are available?",
+      "a": "We offer multiple ceremony locations including the chapel for civil ceremonies, the main Piazza, rooftop terraces with coastal views, beach club by the Adriatic, and romantic olive grove gardens."
+    },
+    {
+      "q": "What dining options does the resort provide?",
+      "a": "Borgo Egnazia features five distinctive restaurants including Due Camini with Michelin recognition, traditional Puglian cuisine at Mia Cucina, beachside dining at Cala Masciola, and casual options at La Frasca and Trattoria."
+    },
+    {
+      "q": "What activities are available for wedding guests?",
+      "a": "Guests enjoy access to the Vair Spa, private beach club, championship golf course, cooking classes, wine tastings, guided tours of Puglia, water sports, tennis, and curated excursions to nearby historic towns."
+    },
+    {
+      "q": "How far is Borgo Egnazia from airports?",
+      "a": "The resort is approximately 40 minutes from both Bari and Brindisi international airports, making it easily accessible for destination wedding guests from around the world."
+    },
+    {
+      "q": "Do you provide wedding planning services?",
+      "a": "Yes, our dedicated wedding planning team provides comprehensive services from initial consultation through event execution, ensuring every detail of your celebration is perfectly orchestrated."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability & receive a tailored quote",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "info@borgoegnazia.com",
+    "hotelPhone": "+39 080 225 5000"
+  }
+}
+
