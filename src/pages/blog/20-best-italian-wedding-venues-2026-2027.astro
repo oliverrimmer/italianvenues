@@ -32,7 +32,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 <!-- Quick Reference Comparison Table -->
 <!-- Mobile quick reference removed to prevent mobile crashes -->
 
-<!-- Quick Reference: Desktop Table Layout - Removed from DOM on mobile -->
+<!-- Quick Reference: Desktop Table Layout - Hidden on mobile via CSS to prevent performance issues -->
 <div id="desktop-quick-reference" class="hidden md:block my-12 bg-white border-2 border-zinc-200 rounded-xl overflow-hidden">
   <div class="bg-zinc-900 text-white px-6 py-4 flex items-center justify-between">
     <h3 class="text-xl font-bold">Quick Reference: All 20 Venues</h3>
@@ -1840,47 +1840,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
   ]
 })} />
 
-<!-- Mobile Expandable Sections Script -->
-<script is:inline>
-  // Make venue sections expandable on mobile
-  document.addEventListener('DOMContentLoaded', () => {
-    if (window.innerWidth < 768) {
-      const venueSections = document.querySelectorAll('h3.venue-header');
-      venueSections.forEach(header => {
-        const section = header.closest('section') || header.parentElement;
-        if (!section) return;
-        
-        const content = section.querySelectorAll('p, ul, div, table, hr');
-        
-        // Create toggle button
-        const toggle = document.createElement('button');
-        toggle.className = 'venue-toggle md:hidden absolute top-0 right-0 text-[#a78656] font-bold text-2xl';
-        toggle.innerHTML = '+';
-        toggle.setAttribute('aria-label', 'Expand venue details');
-        
-        // Wrap content in collapsible div
-        const wrapper = document.createElement('div');
-        wrapper.className = 'venue-content hidden md:block';
-        content.forEach(el => {
-          if (el !== header && !el.classList.contains('venue-toggle')) {
-            wrapper.appendChild(el.cloneNode(true));
-            if (el instanceof HTMLElement) {
-              el.style.display = 'none';
-            }
-          }
-        });
-        
-        section.appendChild(toggle);
-        section.appendChild(wrapper);
-        
-        toggle.addEventListener('click', () => {
-          wrapper.classList.toggle('hidden');
-          toggle.innerHTML = wrapper.classList.contains('hidden') ? '+' : '−';
-        });
-      });
-    }
-  });
-</script>
+<!-- Mobile performance: Content is always visible, no DOM duplication needed -->
 
 <style>
   @media print {

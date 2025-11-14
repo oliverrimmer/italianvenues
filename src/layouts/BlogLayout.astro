@@ -658,6 +658,14 @@ const slug = Astro.url.pathname.split('/').pop() || '';
   
   /* Defer rendering of heavy blocks on mobile using content-visibility */
   @media (max-width: 768px) {
+    /* Hide desktop table immediately on mobile - prevents layout/parse */
+    :global(#desktop-quick-reference) {
+      display: none !important;
+      visibility: hidden !important;
+      position: absolute !important;
+      left: -9999px !important;
+    }
+    
     /* Defer venue headers */
     :global(h3.venue-header) {
       content-visibility: auto;
@@ -676,14 +684,12 @@ const slug = Astro.url.pathname.split('/').pop() || '';
     :global(.highlight-box),
     :global(.faq-section) {
       content-visibility: auto;
-      /* Provide intrinsic size to avoid layout jumps until painted */
       contain-intrinsic-size: 400px auto;
     }
     
     :global(.venue-image-container img[loading="lazy"]) {
       content-visibility: auto;
       contain-intrinsic-size: 320px 240px;
-      /* Remove heavy shadows on mobile to reduce paint cost */
       box-shadow: none !important;
     }
     
@@ -743,151 +749,117 @@ const slug = Astro.url.pathname.split('/').pop() || '';
 </style>
 
 <script is:inline>
-  // Remove desktop table from DOM on mobile IMMEDIATELY to prevent crashes
-  // This runs before DOMContentLoaded to catch the element as early as possible
+  // Lightweight mobile optimization - remove desktop table BEFORE layout/paint
   (function() {
-    function removeDesktopTable() {
-      if (window.innerWidth < 768 || window.matchMedia('(max-width: 767px)').matches) {
-        const desktopTable = document.getElementById('desktop-quick-reference');
-        if (desktopTable) {
-          desktopTable.remove();
-          return true; // Successfully removed
+    'use strict';
+    
+    // Check if mobile immediately (before DOM parsing)
+    const isMobile = window.innerWidth < 768 || window.matchMedia('(max-width: 767px)').matches;
+    
+    // On mobile, remove table as early as possible
+    if (isMobile) {
+      // Try to remove immediately
+      function removeTable() {
+        const table = document.getElementById('desktop-quick-reference');
+        if (table) {
+          table.remove();
+          return true;
+        }
+        return false;
+      }
+      
+      // Try immediately if DOM exists
+      if (!removeTable()) {
+        // If not found, wait for DOM but run as early as possible
+        if (document.readyState === 'loading') {
+          // Use readystatechange for earliest possible execution
+          document.addEventListener('DOMContentLoaded', removeTable, { once: true, passive: true });
+          // Also try immediately on next tick
+          setTimeout(removeTable, 0);
+        } else {
+          // DOM already loading, try immediately
+          removeTable();
         }
       }
-      return false;
     }
     
-    // Try immediately
-    if (!removeDesktopTable()) {
-      // If not found, try on DOMContentLoaded
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() {
-          if (!removeDesktopTable()) {
-            // Fallback: use MutationObserver to catch it when it appears
-            const observer = new MutationObserver(function(mutations, obs) {
-              if (removeDesktopTable()) {
-                obs.disconnect();
-              }
-            });
-            observer.observe(document.body || document.documentElement, {
-              childList: true,
-              subtree: true
-            });
-            // Stop observing after 5 seconds
-            setTimeout(() => observer.disconnect(), 5000);
-          }
-        }, { once: true });
-      } else {
-        // DOM already ready, try immediately
-        removeDesktopTable();
-      }
-    }
-  })();
-  
-  // Mobile venue cards toggle - simple event handler
-  (function() {
-    function initMobileToggle() {
-      const toggle = document.getElementById('mobile-venue-toggle');
-      const cards = document.getElementById('mobile-venue-cards');
-      if (!toggle || !cards) return;
+    // Desktop: Defer heavy header updates until after paint
+    if (!isMobile && document.querySelector('.venue-header')) {
       
-      const chevron = toggle.querySelector('.chevron');
-      
-      toggle.addEventListener('click', function() {
-        const isHidden = cards.classList.contains('hidden');
-        cards.classList.toggle('hidden');
-        if (chevron) {
-          chevron.classList.toggle('rotate-180');
-        }
-        toggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
-      }, { passive: true });
-    }
-    
-    // Extract numbers from venue headers - DISABLED on mobile to prevent crashes
-    function updateHeaders() {
-      // Skip on mobile devices to prevent crashes
-      if (window.innerWidth < 768) {
-        return;
-      }
-      
-      const venueHeaders = document.querySelectorAll('.venue-header');
-      if (venueHeaders.length === 0) return;
-      
-      // Process in very small batches to avoid blocking
-      let index = 0;
-      const batchSize = 2; // Even smaller batches
-      
-      function processBatch() {
-        if (index >= venueHeaders.length) return;
+      // Defer header number extraction until after initial paint
+      function updateHeaders() {
+        const venueHeaders = document.querySelectorAll('.venue-header');
+        if (venueHeaders.length === 0) return;
         
-        const end = Math.min(index + batchSize, venueHeaders.length);
-        for (let i = index; i < end; i++) {
+        // Process one at a time using requestAnimationFrame
+        let index = 0;
+        
+        function processBatch() {
+          if (index >= venueHeaders.length) return;
+          
           try {
-            const header = venueHeaders[i];
-            if (!header) continue;
-            const text = header.textContent || '';
-            const match = text.match(/^(\d+)\.\s*(.+)$/);
-            if (match) {
-              const number = match[1];
-              const name = match[2];
-              header.innerHTML = `
-                <span class="venue-number">${number}</span>
-                <span class="venue-name">${name}</span>
-              `;
+            const header = venueHeaders[index];
+            if (header) {
+              const text = header.textContent || '';
+              const match = text.match(/^(\d+)\.\s*(.+)$/);
+              if (match) {
+                header.innerHTML = `<span class="venue-number">${match[1]}</span><span class="venue-name">${match[2]}</span>`;
+              }
             }
           } catch (e) {
-            // Silently fail if there's an error
-            console.error('Error updating header:', e);
+            // Silently fail
+          }
+          
+          index++;
+          if (index < venueHeaders.length) {
+            requestAnimationFrame(processBatch);
           }
         }
-        index = end;
-        if (index < venueHeaders.length) {
-          // Use longer timeout on mobile
-          setTimeout(processBatch, 100);
+        
+        // Start after page is painted
+        if (window.requestIdleCallback) {
+          requestIdleCallback(processBatch, { timeout: 2000 });
+        } else {
+          setTimeout(processBatch, 500);
         }
       }
       
-      // Defer header updates significantly
-      setTimeout(processBatch, 500);
-    }
-    
-    function init() {
-      // Initialize mobile toggle first - critical functionality
-      try {
-        initMobileToggle();
-      } catch (e) {
-        console.error('Error initializing mobile toggle:', e);
-      }
-      
-      // Defer header updates significantly to avoid blocking
-      if (window.requestIdleCallback) {
-        requestIdleCallback(updateHeaders, { timeout: 5000 });
+      // Only run on desktop, defer significantly
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+          setTimeout(updateHeaders, 500);
+        }, { once: true });
       } else {
-        setTimeout(updateHeaders, 1000);
+        setTimeout(updateHeaders, 500);
       }
-    }
-    
-    // Wait for DOM to be ready
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', init, { once: true });
-    } else {
-      // DOM already loaded, defer to avoid blocking
-      setTimeout(init, 200);
     }
   })();
 </script>
 
-<!-- Pinterest Save Button Script - Load only when needed -->
+<!-- Pinterest Save Button Script - Load only on desktop, after page is fully loaded -->
 <script is:inline>
-  // Defer Pinterest script loading until after page load
-  if (window.addEventListener) {
-    window.addEventListener('load', function() {
-      var script = document.createElement('script');
-      script.src = 'https://assets.pinterest.com/js/pinit.js';
-      script.async = true;
-      script.defer = true;
-      document.body.appendChild(script);
-    });
+  // Only load Pinterest on desktop, after page is fully interactive
+  if (window.innerWidth >= 768 && window.addEventListener) {
+    // Wait for page to be fully loaded and interactive
+    if (document.readyState === 'complete') {
+      setTimeout(function() {
+        var script = document.createElement('script');
+        script.src = 'https://assets.pinterest.com/js/pinit.js';
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+      }, 2000); // Delay 2 seconds to ensure page is interactive
+    } else {
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          var script = document.createElement('script');
+          script.src = 'https://assets.pinterest.com/js/pinit.js';
+          script.async = true;
+          script.defer = true;
+          document.body.appendChild(script);
+        }, 2000);
+      }, { once: true });
+    }
   }
 </script>
 
