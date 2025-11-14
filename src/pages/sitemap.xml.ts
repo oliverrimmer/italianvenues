@@ -22,6 +22,8 @@ export const GET: APIRoute = () => {
   const staticPages = [
     { url: '', priority: '1.0', changefreq: 'daily' }, // homepage
     { url: '/venues', priority: '0.9', changefreq: 'daily' },
+    { url: '/blog', priority: '0.9', changefreq: 'weekly' },
+    { url: '/blog/20-best-italian-wedding-venues-2026', priority: '0.9', changefreq: 'monthly' },
     { url: '/about', priority: '0.7', changefreq: 'monthly' },
     { url: '/contact', priority: '0.7', changefreq: 'monthly' },
     { url: '/privacy-policy', priority: '0.3', changefreq: 'yearly' },

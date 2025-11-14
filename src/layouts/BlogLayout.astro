@@ -1,0 +1,546 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  publishDate: string;
+  updatedDate?: string;
+  author?: string;
+  heroImage: string;
+  heroImageAlt: string;
+  category: string;
+  readTime: string;
+  tags?: string[];
+}
+
+const { 
+  title, 
+  description, 
+  publishDate, 
+  updatedDate,
+  author = "Italian Venues",
+  heroImage, 
+  heroImageAlt,
+  category,
+  readTime,
+  tags = []
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const slug = Astro.url.pathname.split('/').pop() || '';
+---
+
+<BaseLayout 
+  title={`${title} | Italian Venues Blog`}
+  description={description}
+  ogImage={heroImage}
+>
+  <!-- Schema.org Article Markup -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "image": heroImage,
+    "datePublished": publishDate,
+    ...(updatedDate && { "dateModified": updatedDate }),
+    "author": {
+      "@type": "Organization",
+      "name": author,
+      "url": "https://italianvenues.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Italian Venues",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://italianvenues.com/favicon.svg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": canonicalURL
+    },
+    "articleSection": category,
+    ...(tags.length > 0 && { "keywords": tags.join(', ') })
+  })} />
+
+  <!-- Hero Section - Editorial Style -->
+  <article class="bg-white relative">
+    <!-- Hero Image -->
+    <div class="relative w-full h-[70vh] md:h-[85vh] bg-black isolate overflow-hidden">
+      <img 
+        src={heroImage} 
+        alt={heroImageAlt}
+        class="absolute inset-0 w-full h-full object-cover opacity-90"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70 z-10"></div>
+      
+      <!-- Category Badge -->
+      <div class="absolute top-8 left-1/2 -translate-x-1/2 z-20">
+        <span class="inline-block px-4 py-1.5 bg-white/95 backdrop-blur-sm text-zinc-900 text-xs font-semibold tracking-widest uppercase rounded-full">
+          {category}
+        </span>
+      </div>
+
+      <!-- Title Overlay - Bottom -->
+      <div class="absolute bottom-0 left-0 right-0 z-20 pb-12 md:pb-16">
+        <div class="container mx-auto px-6 max-w-4xl">
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight tracking-tight">
+            {title}
+          </h1>
+          <p class="text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed font-light">
+            {description}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Meta -->
+    <div class="border-b border-zinc-200 bg-white">
+      <div class="container mx-auto px-6 py-6 max-w-5xl">
+        <div class="flex flex-wrap items-center justify-between gap-4 text-sm text-zinc-600">
+          <div class="flex items-center gap-6">
+            <span class="font-medium text-zinc-900">By {author}</span>
+            <time datetime={publishDate} class="text-zinc-600">
+              {new Date(publishDate).toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+              })}
+            </time>
+            {updatedDate && (
+              <span class="text-zinc-500 text-xs">
+                Updated {new Date(updatedDate).toLocaleDateString('en-US', { 
+                  month: 'short', 
+                  day: 'numeric',
+                  year: 'numeric'
+                })}
+              </span>
+            )}
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="text-zinc-600">{readTime} read</span>
+            <div class="flex items-center gap-2">
+              <!-- Share Buttons -->
+              <button 
+                onclick={`window.open('https://www.facebook.com/sharer/sharer.php?u=${canonicalURL}', '_blank', 'width=600,height=400')`}
+                class="p-2 hover:bg-zinc-100 rounded-lg transition-colors"
+                aria-label="Share on Facebook"
+              >
+                <svg class="w-5 h-5 text-zinc-600" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+              </button>
+              <button 
+                onclick={`window.open('https://pinterest.com/pin/create/button/?url=${canonicalURL}&description=${encodeURIComponent(title)}', '_blank', 'width=600,height=400')`}
+                class="p-2 hover:bg-zinc-100 rounded-lg transition-colors"
+                aria-label="Share on Pinterest"
+              >
+                <svg class="w-5 h-5 text-zinc-600" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.690 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/>
+                </svg>
+              </button>
+              <button 
+                onclick={`navigator.clipboard.writeText('${canonicalURL}'); alert('Link copied to clipboard!')`}
+                class="p-2 hover:bg-zinc-100 rounded-lg transition-colors"
+                aria-label="Copy link"
+              >
+                <svg class="w-5 h-5 text-zinc-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Article Content - Editorial Typography -->
+    <div class="container mx-auto px-6 py-16 md:py-24 max-w-4xl">
+      <div class="prose prose-lg prose-zinc max-w-none
+        prose-headings:font-bold prose-headings:tracking-tight
+        prose-h2:text-4xl prose-h2:mt-20 prose-h2:mb-8 prose-h2:leading-tight prose-h2:pt-4
+        prose-h3:text-2xl prose-h3:mt-16 prose-h3:mb-6 prose-h3:pt-2
+        prose-p:text-lg prose-p:leading-relaxed prose-p:text-zinc-700 prose-p:mb-8
+        prose-a:text-[#a78656] prose-a:no-underline hover:prose-a:underline prose-a:font-medium
+        prose-strong:text-zinc-900 prose-strong:font-semibold
+        prose-ul:text-lg prose-ul:text-zinc-700 prose-ul:my-8
+        prose-ol:text-lg prose-ol:text-zinc-700 prose-ol:my-8
+        prose-li:mb-3 prose-li:leading-relaxed
+        prose-img:rounded-2xl prose-img:shadow-2xl prose-img:my-16
+        prose-blockquote:border-l-4 prose-blockquote:border-[#a78656] prose-blockquote:pl-8 prose-blockquote:italic prose-blockquote:text-2xl prose-blockquote:leading-relaxed prose-blockquote:text-zinc-800 prose-blockquote:font-light prose-blockquote:my-16
+        prose-figcaption:text-center prose-figcaption:text-sm prose-figcaption:text-zinc-500 prose-figcaption:mt-6 prose-figcaption:mb-4
+        prose-hr:my-16 prose-hr:border-zinc-200
+      ">
+        <slot />
+      </div>
+    </div>
+
+    <!-- Tags -->
+    {tags.length > 0 && (
+      <div class="border-t border-zinc-200 bg-zinc-50">
+        <div class="container mx-auto px-6 py-8 max-w-4xl">
+          <div class="flex flex-wrap items-center gap-3">
+            <span class="text-sm font-semibold text-zinc-900 uppercase tracking-wider">Tags:</span>
+            {tags.map(tag => (
+              <a 
+                href={`/blog?tag=${encodeURIComponent(tag.toLowerCase())}`}
+                class="px-4 py-2 bg-white border border-zinc-200 text-zinc-700 text-sm hover:border-[#a78656] hover:text-[#a78656] transition-colors rounded-full"
+              >
+                {tag}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    )}
+
+    <!-- Newsletter CTA -->
+    <div class="border-t border-zinc-200 bg-white">
+      <div class="container mx-auto px-6 py-16 max-w-3xl text-center">
+        <h3 class="text-3xl font-bold mb-4 text-zinc-900">Never Miss a Guide</h3>
+        <p class="text-lg text-zinc-600 mb-8 max-w-2xl mx-auto">
+          Get exclusive Italian wedding insights, venue updates, and planning tips delivered to your inbox.
+        </p>
+        <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" id="blog-newsletter-form">
+          <input 
+            type="email" 
+            name="email"
+            placeholder="Your email address" 
+            required
+            class="flex-1 px-6 py-4 border-2 border-zinc-200 rounded-lg focus:outline-none focus:border-[#a78656] text-lg"
+          />
+          <button 
+            type="submit"
+            class="px-8 py-4 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-all duration-200 whitespace-nowrap"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Related/Back to Blog -->
+    <div class="border-t border-zinc-200 bg-zinc-50">
+      <div class="container mx-auto px-6 py-12 max-w-4xl">
+        <a 
+          href="/blog" 
+          class="inline-flex items-center gap-2 text-zinc-900 hover:text-[#a78656] font-medium transition-colors group"
+        >
+          <svg class="w-5 h-5 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+          Back to All Articles
+        </a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<script>
+  // Newsletter form submission
+  const form = document.getElementById('blog-newsletter-form');
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target as HTMLFormElement);
+    const submitButton = (e.target as HTMLFormElement).querySelector('button[type="submit"]') as HTMLButtonElement;
+    const originalButtonText = submitButton?.textContent || 'Subscribe';
+
+    // Disable button and show loading state
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.textContent = 'Subscribing...';
+    }
+
+    try {
+      const response = await fetch('/api/subscribe-newsletter', {
+        method: 'POST',
+        body: formData
+      });
+
+      const result = await response.json().catch(() => ({ error: 'Failed to parse response' }));
+
+      if (response.ok) {
+        alert('Thank you for subscribing! Check your inbox for confirmation.');
+        (e.target as HTMLFormElement).reset();
+      } else {
+        // Show actual error message from API
+        const errorMessage = result.error || 'Something went wrong. Please try again.';
+        alert(errorMessage);
+      }
+    } catch (error) {
+      console.error('Newsletter subscription error:', error);
+      alert('Network error. Please check your connection and try again.');
+    } finally {
+      // Re-enable button
+      if (submitButton) {
+        submitButton.disabled = false;
+        submitButton.textContent = originalButtonText;
+      }
+    }
+  });
+</script>
+
+<style>
+  /* Custom pull quote styling */
+  :global(.pull-quote) {
+    @apply text-3xl md:text-4xl leading-tight font-light italic text-zinc-900 my-16 pl-8 border-l-4 border-[#a78656];
+  }
+
+  /* Image caption styling */
+  :global(.blog-image-caption) {
+    @apply text-center text-sm text-zinc-500 mt-4 italic;
+  }
+
+  /* Two column image grid */
+  :global(.image-grid-2) {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6 my-12;
+  }
+
+  /* Three column image grid */
+  :global(.image-grid-3) {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-6 my-12;
+  }
+
+  /* Full bleed image */
+  :global(.full-bleed-image) {
+    @apply -mx-6 md:-mx-12 lg:-mx-24 xl:-mx-32 my-16;
+  }
+
+  /* Highlight box */
+  :global(.highlight-box) {
+    @apply bg-zinc-50 border-l-4 border-[#a78656] p-8 my-12 rounded-r-lg;
+  }
+
+  /* Stats/Numbers highlight */
+  :global(.stat-highlight) {
+    @apply text-5xl font-bold text-[#a78656] block mb-2;
+  }
+
+  /* Location Headers - Large, bold, with decorative line */
+  :global(.location-header) {
+    @apply text-5xl md:text-6xl font-bold text-zinc-900 tracking-tight leading-tight mb-8 mt-24 pt-10 pb-4;
+    position: relative;
+    padding-left: 0;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 1rem;
+  }
+
+  :global(.location-header)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 5px;
+    background: #a78656;
+    border-radius: 2px;
+  }
+
+  :global(.location-header)::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 120px;
+    height: 2px;
+    background: #a78656;
+  }
+
+  /* Section Headers - For "The Next Step", "FAQ", etc. */
+  :global(.section-header) {
+    @apply text-3xl md:text-4xl font-bold text-zinc-900 tracking-tight leading-tight mb-8 mt-20;
+    position: relative;
+    padding-left: 0;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  :global(.section-header)::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #a78656;
+  }
+
+  /* Venue Headers - Prominent with number badge */
+  :global(.venue-header) {
+    @apply text-3xl md:text-4xl font-bold text-zinc-900 tracking-tight leading-tight mb-8 mt-20;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  :global(.venue-header .venue-number) {
+    flex-shrink: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #a78656;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  :global(.venue-header .venue-name) {
+    flex: 1;
+  }
+
+  /* Decision Framework Headers */
+  :global(.decision-framework-header) {
+    @apply text-2xl md:text-3xl font-bold text-zinc-900 tracking-tight leading-tight mb-4 mt-12;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  :global(.decision-framework-header)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 4px;
+    height: 1.5rem;
+    background: #a78656;
+    border-radius: 2px;
+  }
+
+  /* Decision Framework Lists */
+  :global(ul.decision-list) {
+    @apply my-6 space-y-3;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  :global(ul.decision-list li) {
+    @apply text-lg text-zinc-700 leading-relaxed;
+    position: relative;
+    padding-left: 1.75rem;
+  }
+
+  :global(ul.decision-list li)::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #a78656;
+    font-weight: 600;
+  }
+
+  :global(ol.decision-list) {
+    @apply my-6 space-y-3;
+    padding-left: 1.5rem;
+  }
+
+  :global(ol.decision-list li) {
+    @apply text-lg text-zinc-700 leading-relaxed;
+  }
+
+  /* FAQ Section */
+  :global(.faq-section) {
+    @apply my-12;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  :global(.faq-item) {
+    @apply pb-10 pt-6 border-b border-zinc-200;
+  }
+
+  :global(.faq-item:first-child) {
+    padding-top: 0;
+  }
+
+  :global(.faq-item:last-child) {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  :global(.faq-question) {
+    @apply text-xl md:text-2xl font-bold text-zinc-900 mb-5 leading-tight;
+  }
+
+  :global(.faq-answer) {
+    @apply text-lg text-zinc-700 leading-relaxed;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Fix header backdrop on blog pages - prevent hero image showing through */
+  :global(header#site-header #header-backdrop) {
+    background: rgba(0, 0, 0, 0.75) !important;
+  }
+
+  :global(header#site-header #header-gradient) {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  /* When header is scrolled and has white background, ensure it's solid */
+  :global(header#site-header #header-backdrop.bg-white) {
+    background: white !important;
+  }
+
+  /* Pinterest Save Button - Subtle overlay on images */
+  :global(.venue-image-container) {
+    position: relative;
+  }
+
+  :global(.pinterest-save-btn) {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    @apply flex items-center justify-center w-10 h-10 bg-white/90 backdrop-blur-sm text-[#BD081C] rounded-full shadow-lg hover:bg-white hover:shadow-xl transition-all focus:outline-none focus:ring-2 focus:ring-[#BD081C] focus:ring-offset-2 z-10;
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  :global(.pinterest-save-btn:hover) {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  :global(.pinterest-save-btn svg) {
+    width: 18px;
+    height: 18px;
+  }
+
+  :global(.pinterest-save-btn .pinterest-text) {
+    display: none;
+  }
+</style>
+
+<script is:inline>
+  // Extract numbers from venue headers and restructure
+  document.addEventListener('DOMContentLoaded', () => {
+    const venueHeaders = document.querySelectorAll('.venue-header');
+    venueHeaders.forEach(header => {
+      const text = header.textContent || '';
+      const match = text.match(/^(\d+)\.\s*(.+)$/);
+      if (match) {
+        const number = match[1];
+        const name = match[2];
+        header.innerHTML = `
+          <span class="venue-number">${number}</span>
+          <span class="venue-name">${name}</span>
+        `;
+      }
+    });
+  });
+</script>
+
+<!-- Pinterest Save Button Script -->
+<script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
+
