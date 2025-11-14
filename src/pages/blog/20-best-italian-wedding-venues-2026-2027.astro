@@ -32,8 +32,8 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 <!-- Quick Reference Comparison Table -->
 <!-- Mobile quick reference removed to prevent mobile crashes -->
 
-<!-- Quick Reference: Desktop Table Layout -->
-<div class="hidden md:block my-12 bg-white border-2 border-zinc-200 rounded-xl overflow-hidden">
+<!-- Quick Reference: Desktop Table Layout - Removed from DOM on mobile -->
+<div id="desktop-quick-reference" class="hidden md:block my-12 bg-white border-2 border-zinc-200 rounded-xl overflow-hidden">
   <div class="bg-zinc-900 text-white px-6 py-4 flex items-center justify-between">
     <h3 class="text-xl font-bold">Quick Reference: All 20 Venues</h3>
     <button onclick="window.print()" class="text-sm text-zinc-300 hover:text-white underline">Print/PDF</button>
