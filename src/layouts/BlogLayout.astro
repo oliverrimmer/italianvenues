@@ -520,6 +520,79 @@ const slug = Astro.url.pathname.split('/').pop() || '';
   :global(.pinterest-save-btn .pinterest-text) {
     display: none;
   }
+
+  /* Mobile Quick Reference Cards - Performance Optimizations */
+  :global(.mobile-venue-cards) {
+    /* Enable smooth scrolling with hardware acceleration */
+    -webkit-overflow-scrolling: touch;
+    /* Use GPU for scrolling */
+    transform: translateZ(0);
+    /* Optimize scrolling performance */
+    overscroll-behavior: contain;
+    /* Reduce repaints */
+    contain: layout style paint;
+    /* Smooth scrolling */
+    scroll-behavior: smooth;
+  }
+
+  :global(.mobile-venue-cards > a) {
+    /* Use GPU acceleration to prevent browser crashes */
+    transform: translateZ(0);
+    /* Limit reflow scope */
+    contain: layout style paint;
+    /* Optimize rendering */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* Prevent text selection during scroll for better performance */
+    -webkit-tap-highlight-color: transparent;
+    /* Reduce hover complexity */
+    transition: background-color 0.15s ease;
+    /* Better touch targets */
+    min-height: 72px;
+  }
+
+  /* Improve spacing and readability */
+  :global(.mobile-venue-cards > a h4) {
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+
+  :global(.mobile-venue-cards > a p) {
+    line-height: 1.5;
+    margin-top: 0.25rem;
+  }
+
+  /* Reduce hover effect complexity on mobile to prevent lag */
+  @media (max-width: 768px) {
+    :global(.mobile-venue-cards > a:active) {
+      background-color: rgba(244, 244, 245, 0.8);
+    }
+    
+    /* Ensure region links don't interfere with card click */
+    :global(.mobile-venue-cards > a a) {
+      pointer-events: auto;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  /* Venue details tables - performance optimizations */
+  :global(.venue-details-table) {
+    /* Use GPU acceleration */
+    transform: translateZ(0);
+    /* Limit reflow scope */
+    contain: layout style paint;
+  }
+
+  :global(.venue-details-table table) {
+    /* Optimize table rendering */
+    table-layout: fixed;
+  }
+
+  :global(.venue-details-table tbody tr) {
+    /* Optimize row rendering */
+    contain: layout style paint;
+  }
 </style>
 
 <script is:inline>

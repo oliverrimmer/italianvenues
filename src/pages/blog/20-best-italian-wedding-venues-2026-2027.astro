@@ -13,26 +13,260 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
   tags={["2026-2027 Weddings", "Venue Guides", "Tuscany", "Amalfi Coast", "Lake Como", "Rome", "Puglia"]}
 >
 
-<p class="text-2xl font-light leading-relaxed text-zinc-600 mb-12">
-If you're planning a 2026-2027 wedding in Italy, you're in the perfect planning window. Most premium venues book 12-18 months in advance, which means:
-</p>
-
-<ul class="text-xl font-light leading-relaxed text-zinc-600 mb-6 list-disc list-inside space-y-2 ml-4">
-  <li>Late 2026 dates (September-November) have good availability</li>
-  <li>All of 2027 is wide open for booking</li>
-  <li>Some shoulder-season 2026 dates (April, early May, late October) still remain</li>
-</ul>
-
-<p class="text-2xl font-light leading-relaxed text-zinc-600 mb-12">
-Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've curated Italy's most extraordinary wedding venues—all available for 2026-2027 bookings. <a href="/venues" class="text-[#a78656] hover:underline font-medium">Browse our complete venue directory</a> to explore all options.
-</p>
+<p class="text-2xl font-light leading-relaxed text-zinc-600 mb-8">
+  The moment you decide on an Italian wedding, the real journey begins: finding a venue that doesn't just look beautiful in photos, but becomes the backdrop your guests remember for years to come.
+  </p>
+  
+  <p class="text-2xl font-light leading-relaxed text-zinc-600 mb-12">
+  If you're planning for 2026-2027, time is on your side. Peak 2027 dates are wide open. Late 2026 still has plenty of availability (September-November and shoulder seasons). We've spent months narrowing 200+ site visits down to these 20 venues—the ones that consistently deliver extraordinary celebrations, not just pretty backdrops.
+  </p>
+  
+  <p class="text-2xl font-light leading-relaxed text-zinc-600 mb-12">
+  <a href="/venues" class="text-[#a78656] hover:underline font-medium">Browse our complete venue directory</a> to explore all options.
+  </p>
 
 <h2 class="section-header">The Italian Wedding Renaissance</h2>
 
 <p>After visiting over 200 venues across Italy and working with hundreds of couples, we've narrowed this impossibly beautiful country down to 20 venues that consistently deliver not just stunning settings, but complete experiences. Every venue here has been personally vetted—we've seen real weddings unfold in their rooms and gardens, and we know which ones deliver on their promises.</p>
 
 <!-- Quick Reference Comparison Table -->
-<div class="my-12 bg-white border-2 border-zinc-200 rounded-xl overflow-hidden">
+<!-- Quick Reference: Mobile Card Layout -->
+<div class="md:hidden my-8">
+  <div class="bg-white border-2 border-zinc-200 rounded-xl overflow-hidden">
+    <div class="bg-zinc-900 text-white px-4 py-3">
+      <h3 class="text-lg font-bold">Quick Reference: All 20 Venues</h3>
+    </div>
+    <div class="mobile-venue-cards divide-y divide-zinc-200 max-h-[600px] overflow-y-auto">
+      <a href="#venue-1" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Castello di Vincigliata</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#tuscany" class="text-xs font-medium text-[#a78656] hover:underline">Tuscany</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">200 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Medieval fortress</p>
+      </a>
+      <a href="#venue-2" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Borgo Santo Pietro</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#tuscany" class="text-xs font-medium text-[#a78656] hover:underline">Tuscany</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">140 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Michelin-starred</p>
+      </a>
+      <a href="#venue-3" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa La Foce</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#tuscany" class="text-xs font-medium text-[#a78656] hover:underline">Tuscany</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">140 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">UNESCO gardens</p>
+      </a>
+      <a href="#venue-4" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Hotel Il Pellicano</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#tuscany" class="text-xs font-medium text-[#a78656] hover:underline">Tuscany</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">120 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Clifftop resort</p>
+      </a>
+      <a href="#venue-5" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa Cimbrone</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#amalfi-coast" class="text-xs font-medium text-[#a78656] hover:underline">Amalfi Coast</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">160 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Terrace of Infinity</p>
+      </a>
+      <a href="#venue-6" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Le Sirenuse</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#amalfi-coast" class="text-xs font-medium text-[#a78656] hover:underline">Amalfi Coast</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">100 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Positano icon</p>
+      </a>
+      <a href="#venue-7" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Belmond Hotel Caruso</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#amalfi-coast" class="text-xs font-medium text-[#a78656] hover:underline">Amalfi Coast</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">150 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Infinity pool</p>
+      </a>
+      <a href="#venue-8" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Monastero Santa Rosa</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#amalfi-coast" class="text-xs font-medium text-[#a78656] hover:underline">Amalfi Coast</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">60 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Intimate luxury</p>
+      </a>
+      <a href="#venue-9" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa del Balbianello</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#lake-como" class="text-xs font-medium text-[#a78656] hover:underline">Lake Como</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">150 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Boat arrival</p>
+      </a>
+      <a href="#venue-10" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa d'Este</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#lake-como" class="text-xs font-medium text-[#a78656] hover:underline">Lake Como</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">200 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Floating pool</p>
+      </a>
+      <a href="#venue-11" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa Pizzo</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#lake-como" class="text-xs font-medium text-[#a78656] hover:underline">Lake Como</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">150 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Private estate</p>
+      </a>
+      <a href="#venue-12" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Grand Hotel Tremezzo</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#lake-como" class="text-xs font-medium text-[#a78656] hover:underline">Lake Como</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">150 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Belle Époque</p>
+      </a>
+      <a href="#venue-13" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa Miani</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#rome" class="text-xs font-medium text-[#a78656] hover:underline">Rome</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">500 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">360° Rome views</p>
+      </a>
+      <a href="#venue-14" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa Aurelia</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#rome" class="text-xs font-medium text-[#a78656] hover:underline">Rome</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">150 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Intimate gardens</p>
+      </a>
+      <a href="#venue-15" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Castello di Tor Crescenza</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#rome" class="text-xs font-medium text-[#a78656] hover:underline">Rome</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">300 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Medieval fortress</p>
+      </a>
+      <a href="#venue-16" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Tenuta 4 Pini</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#rome" class="text-xs font-medium text-[#a78656] hover:underline">Rome</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">80 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Countryside estate</p>
+      </a>
+      <a href="#venue-17" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Borgo Egnazia</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#puglia" class="text-xs font-medium text-[#a78656] hover:underline">Puglia</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">500 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Resort village</p>
+      </a>
+      <a href="#venue-18" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Masseria Salamina</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <a href="#puglia" class="text-xs font-medium text-[#a78656] hover:underline">Puglia</a>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">120 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Rustic masseria</p>
+      </a>
+      <a href="#venue-19" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">La Posta Vecchia</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <span class="text-xs text-zinc-600">Lazio Coast</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">60 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Beachfront villa</p>
+      </a>
+      <a href="#venue-20" class="block px-4 py-3.5 active:bg-zinc-50 transition-colors">
+        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Mezzatorre Hotel & Thermal Spa</h4>
+        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
+          <span class="text-xs text-zinc-600">Ischia</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-600">180 guests</span>
+          <span class="text-zinc-300">•</span>
+          <span class="text-xs text-zinc-700 font-medium">€€€</span>
+        </div>
+        <p class="text-xs text-zinc-600">Thermal spa</p>
+      </a>
+    </div>
+    <div class="bg-zinc-50 px-4 py-3 text-[10px] leading-relaxed text-zinc-600 border-t border-zinc-200">
+      <p class="font-semibold mb-1">Price Guide:</p>
+      <p>€ = Accessible luxury | €€ = Premium | €€€ = High-end luxury | €€€€ = Ultra-exclusive</p>
+    </div>
+  </div>
+</div>
+
+<!-- Quick Reference: Desktop Table Layout -->
+<div class="hidden md:block my-12 bg-white border-2 border-zinc-200 rounded-xl overflow-hidden">
   <div class="bg-zinc-900 text-white px-6 py-4 flex items-center justify-between">
     <h3 class="text-xl font-bold">Quick Reference: All 20 Venues</h3>
     <button onclick="window.print()" class="text-sm text-zinc-300 hover:text-white underline">Print/PDF</button>
@@ -56,133 +290,133 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
           <td class="px-4 py-3 text-zinc-700">Medieval fortress</td>
           <td class="px-4 py-3 text-zinc-700">€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-2" class="text-[#a78656] hover:underline font-medium">Borgo Santo Pietro</a></td>
           <td class="px-4 py-3"><a href="#tuscany" class="text-[#a78656] hover:underline font-medium">Tuscany</a></td>
           <td class="px-4 py-3 text-zinc-700">140</td>
           <td class="px-4 py-3 text-zinc-700">Michelin-starred</td>
           <td class="px-4 py-3 text-zinc-700">€€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-3" class="text-[#a78656] hover:underline font-medium">Villa La Foce</a></td>
           <td class="px-4 py-3"><a href="#tuscany" class="text-[#a78656] hover:underline font-medium">Tuscany</a></td>
           <td class="px-4 py-3 text-zinc-700">140</td>
           <td class="px-4 py-3 text-zinc-700">UNESCO gardens</td>
           <td class="px-4 py-3 text-zinc-700">€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-4" class="text-[#a78656] hover:underline font-medium">Hotel Il Pellicano</a></td>
           <td class="px-4 py-3"><a href="#tuscany" class="text-[#a78656] hover:underline font-medium">Tuscany</a></td>
           <td class="px-4 py-3 text-zinc-700">120</td>
           <td class="px-4 py-3 text-zinc-700">Clifftop resort</td>
           <td class="px-4 py-3 text-zinc-700">€€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-5" class="text-[#a78656] hover:underline font-medium">Villa Cimbrone</a></td>
           <td class="px-4 py-3"><a href="#amalfi-coast" class="text-[#a78656] hover:underline font-medium">Amalfi Coast</a></td>
           <td class="px-4 py-3 text-zinc-700">160</td>
           <td class="px-4 py-3 text-zinc-700">Terrace of Infinity</td>
           <td class="px-4 py-3 text-zinc-700">€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-6" class="text-[#a78656] hover:underline font-medium">Le Sirenuse</a></td>
           <td class="px-4 py-3"><a href="#amalfi-coast" class="text-[#a78656] hover:underline font-medium">Amalfi Coast</a></td>
           <td class="px-4 py-3 text-zinc-700">100</td>
           <td class="px-4 py-3 text-zinc-700">Positano icon</td>
           <td class="px-4 py-3 text-zinc-700">€€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-7" class="text-[#a78656] hover:underline font-medium">Belmond Hotel Caruso</a></td>
           <td class="px-4 py-3"><a href="#amalfi-coast" class="text-[#a78656] hover:underline font-medium">Amalfi Coast</a></td>
           <td class="px-4 py-3 text-zinc-700">150</td>
           <td class="px-4 py-3 text-zinc-700">Infinity pool</td>
           <td class="px-4 py-3 text-zinc-700">€€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-8" class="text-[#a78656] hover:underline font-medium">Monastero Santa Rosa</a></td>
           <td class="px-4 py-3"><a href="#amalfi-coast" class="text-[#a78656] hover:underline font-medium">Amalfi Coast</a></td>
           <td class="px-4 py-3 text-zinc-700">60</td>
           <td class="px-4 py-3 text-zinc-700">Intimate luxury</td>
           <td class="px-4 py-3 text-zinc-700">€€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-9" class="text-[#a78656] hover:underline font-medium">Villa del Balbianello</a></td>
           <td class="px-4 py-3"><a href="#lake-como" class="text-[#a78656] hover:underline font-medium">Lake Como</a></td>
           <td class="px-4 py-3 text-zinc-700">150</td>
           <td class="px-4 py-3 text-zinc-700">Boat arrival</td>
           <td class="px-4 py-3 text-zinc-700">€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-10" class="text-[#a78656] hover:underline font-medium">Villa d'Este</a></td>
           <td class="px-4 py-3"><a href="#lake-como" class="text-[#a78656] hover:underline font-medium">Lake Como</a></td>
           <td class="px-4 py-3 text-zinc-700">200</td>
           <td class="px-4 py-3 text-zinc-700">Floating pool</td>
           <td class="px-4 py-3 text-zinc-700">€€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-11" class="text-[#a78656] hover:underline font-medium">Villa Pizzo</a></td>
           <td class="px-4 py-3"><a href="#lake-como" class="text-[#a78656] hover:underline font-medium">Lake Como</a></td>
           <td class="px-4 py-3 text-zinc-700">150</td>
           <td class="px-4 py-3 text-zinc-700">Private estate</td>
           <td class="px-4 py-3 text-zinc-700">€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-12" class="text-[#a78656] hover:underline font-medium">Grand Hotel Tremezzo</a></td>
           <td class="px-4 py-3"><a href="#lake-como" class="text-[#a78656] hover:underline font-medium">Lake Como</a></td>
           <td class="px-4 py-3 text-zinc-700">150</td>
           <td class="px-4 py-3 text-zinc-700">Belle Époque</td>
           <td class="px-4 py-3 text-zinc-700">€€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-13" class="text-[#a78656] hover:underline font-medium">Villa Miani</a></td>
           <td class="px-4 py-3"><a href="#rome" class="text-[#a78656] hover:underline font-medium">Rome</a></td>
           <td class="px-4 py-3 text-zinc-700">500</td>
           <td class="px-4 py-3 text-zinc-700">360° Rome views</td>
           <td class="px-4 py-3 text-zinc-700">€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-14" class="text-[#a78656] hover:underline font-medium">Villa Aurelia</a></td>
           <td class="px-4 py-3"><a href="#rome" class="text-[#a78656] hover:underline font-medium">Rome</a></td>
           <td class="px-4 py-3 text-zinc-700">150</td>
           <td class="px-4 py-3 text-zinc-700">Intimate gardens</td>
           <td class="px-4 py-3 text-zinc-700">€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-15" class="text-[#a78656] hover:underline font-medium">Castello di Tor Crescenza</a></td>
           <td class="px-4 py-3"><a href="#rome" class="text-[#a78656] hover:underline font-medium">Rome</a></td>
           <td class="px-4 py-3 text-zinc-700">300</td>
           <td class="px-4 py-3 text-zinc-700">Medieval fortress</td>
           <td class="px-4 py-3 text-zinc-700">€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-16" class="text-[#a78656] hover:underline font-medium">Tenuta 4 Pini</a></td>
           <td class="px-4 py-3"><a href="#rome" class="text-[#a78656] hover:underline font-medium">Rome</a></td>
           <td class="px-4 py-3 text-zinc-700">80</td>
           <td class="px-4 py-3 text-zinc-700">Countryside estate</td>
           <td class="px-4 py-3 text-zinc-700">€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-17" class="text-[#a78656] hover:underline font-medium">Borgo Egnazia</a></td>
           <td class="px-4 py-3"><a href="#puglia" class="text-[#a78656] hover:underline font-medium">Puglia</a></td>
           <td class="px-4 py-3 text-zinc-700">500</td>
           <td class="px-4 py-3 text-zinc-700">Resort village</td>
           <td class="px-4 py-3 text-zinc-700">€€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-18" class="text-[#a78656] hover:underline font-medium">Masseria Salamina</a></td>
           <td class="px-4 py-3"><a href="#puglia" class="text-[#a78656] hover:underline font-medium">Puglia</a></td>
           <td class="px-4 py-3 text-zinc-700">120</td>
           <td class="px-4 py-3 text-zinc-700">Rustic masseria</td>
           <td class="px-4 py-3 text-zinc-700">€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-19" class="text-[#a78656] hover:underline font-medium">La Posta Vecchia</a></td>
           <td class="px-4 py-3 text-zinc-700">Lazio Coast</td>
           <td class="px-4 py-3 text-zinc-700">60</td>
           <td class="px-4 py-3 text-zinc-700">Beachfront villa</td>
           <td class="px-4 py-3 text-zinc-700">€€€€</td>
         </tr>
-        <tr class="hover:bg-zinc-50">
+      <tr class="hover:bg-zinc-50">
           <td class="px-4 py-3"><a href="#venue-20" class="text-[#a78656] hover:underline font-medium">Mezzatorre Hotel & Thermal Spa</a></td>
           <td class="px-4 py-3 text-zinc-700">Ischia</td>
           <td class="px-4 py-3 text-zinc-700">180</td>
@@ -271,7 +505,7 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
         <td class="px-4 py-3 text-zinc-700">High-end luxury (all-inclusive)</td>
       </tr>
-      <tr>
+      <tr class="">
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
         <td class="px-4 py-3 text-zinc-700">May, June, September, October</td>
       </tr>
@@ -279,7 +513,7 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
         <td class="px-4 py-3 text-zinc-700">September-October (golden hills, moderate temps)</td>
       </tr>
-      <tr>
+      <tr class="">
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
         <td class="px-4 py-3 text-zinc-700">Flexible—bring your own or use venue recommendations</td>
       </tr>
@@ -287,7 +521,7 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
         <td class="px-4 py-3 text-zinc-700">Typically 30-40% to secure date</td>
       </tr>
-      <tr>
+      <tr class="">
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
         <td class="px-4 py-3 text-zinc-700">2-5 business days</td>
       </tr>
@@ -336,7 +570,7 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
         <td class="px-4 py-3 text-zinc-700">Ultra-exclusive (all-inclusive with planning)</td>
       </tr>
-      <tr>
+      <tr class="">
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
         <td class="px-4 py-3 text-zinc-700">May, June, September, October</td>
       </tr>
@@ -344,7 +578,7 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
         <td class="px-4 py-3 text-zinc-700">May-June (garden peak), September (harvest season)</td>
       </tr>
-      <tr>
+      <tr class="">
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
         <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors possible with approval</td>
       </tr>
@@ -352,7 +586,7 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
         <td class="px-4 py-3 text-zinc-700">40-50% to secure exclusive use</td>
       </tr>
-      <tr>
+      <tr class="">
         <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
         <td class="px-4 py-3 text-zinc-700">3-7 business days</td>
       </tr>
@@ -394,13 +628,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Val d'Orcia, Siena</strong> | Up to 140 guests | Full estate rental</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> High-end luxury (all-inclusive with accommodation)</div>
-  <div><strong>Peak Season:</strong> May, June, September, October</div>
-  <div><strong>Best Months:</strong> May-June (garden peak), September (harvest, golden fields)</div>
-  <div><strong>Vendor Policy:</strong> Flexible—bring your own or use venue recommendations</div>
-  <div><strong>Deposit:</strong> 30-40% to secure full estate rental</div>
-  <div><strong>Response Time:</strong> 3-5 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">High-end luxury (all-inclusive with accommodation)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, September, October</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June (garden peak), September (harvest, golden fields)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Flexible—bring your own or use venue recommendations</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">30-40% to secure full estate rental</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">3-5 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>Val d'Orcia looks like a Renaissance painting because it <em>is</em> the Renaissance painting. Those rolling hills, lone cypress trees, and golden wheat fields you've seen in Tuscan wedding photos? That's this region, now a UNESCO World Heritage Site for its cultural landscape.</p>
@@ -439,13 +695,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Porto Ercole, Tuscany</strong> | Up to 120 guests | Exclusive use available</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Ultra-exclusive (all-inclusive with Michelin dining)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September (coastal perfection, warm but not hot)</div>
-  <div><strong>Vendor Policy:</strong> Preferred vendor list; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 40-50% for exclusive use</div>
-  <div><strong>Response Time:</strong> 5-7 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Ultra-exclusive (all-inclusive with Michelin dining)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September, October</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September-October (perfect temps, clear skies)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for Friday/Saturday exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">5-7 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>Most people think "Tuscany" and picture hills. But Tuscany has a coast, and Hotel Il Pellicano represents its most glamorous expression. This clifftop <a href="/styles/seaside">seaside</a> resort has been welcoming European aristocracy and Hollywood royalty since 1965, and it wears its decades of sophisticated entertaining with elegant ease.</p>
@@ -486,13 +764,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Ravello</strong> | Up to 160 guests | Exclusive use required for Friday/Saturday</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> High-end luxury (all-inclusive with accommodation)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September, October</div>
-  <div><strong>Best Months:</strong> May-June, September-October (perfect temps, clear skies)</div>
-  <div><strong>Vendor Policy:</strong> Preferred vendor list; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 50% for Friday/Saturday exclusive use</div>
-  <div><strong>Response Time:</strong> 3-5 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">High-end luxury (all-inclusive with accommodation)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September, October</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September-October (perfect temps, clear skies)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for Friday/Saturday exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">3-5 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p><a href="/venues/villa-cimbrone">Villa Cimbrone</a>'s Terrace of Infinity appears in every "dream wedding venues" list for good reason: it's genuinely one of the world's most spectacular ceremony settings. The terrace extends over a 1,000-foot drop to the sea below, lined with classical sculptures and offering 180-degree views along the coastline.</p>
@@ -531,13 +831,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Positano</strong> | Up to 100 guests | Partial/full buyout options</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Ultra-exclusive (all-inclusive with Michelin dining)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September (avoid July-August heat and crowds)</div>
-  <div><strong>Vendor Policy:</strong> Preferred vendor list; outside vendors possible with approval</div>
-  <div><strong>Deposit:</strong> 40-50% for full buyout, 30% for partial</div>
-  <div><strong>Response Time:</strong> 5-7 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Ultra-exclusive (all-inclusive with Michelin dining)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September, October</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September-October (perfect temps, clear skies)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">5-7 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>Le Sirenuse isn't just a hotel—it's <em>the</em> Positano hotel, the one that appears in every movie and magazine feature about the Amalfi Coast. Family-owned since 1951, it occupies the prime clifftop position, with terraces that look directly down Positano's cascade of pastel houses to the sea beyond.</p>
@@ -576,13 +898,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Ravello</strong> | Up to 150 guests (200 cocktail) | Exclusive use for 91-150 guests</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Ultra-exclusive (all-inclusive with accommodation)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September, October</div>
-  <div><strong>Best Months:</strong> May-June, September-October (ideal weather, fewer crowds)</div>
-  <div><strong>Vendor Policy:</strong> Belmond preferred vendors; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 50% for exclusive use (91-150 guests)</div>
-  <div><strong>Response Time:</strong> 5-7 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Ultra-exclusive (all-inclusive with accommodation)</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September, October</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September-October (perfect temps, clear skies)</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for exclusive use (91-150 guests)</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">5-7 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>This 11th-century palazzo has been meticulously restored by Belmond, with frescoed interiors, the Amalfi Coast's most photographed infinity pool, and Wagner Gardens that spill down the hillside in riot of Mediterranean blooms. The venue offers something rare on the Amalfi Coast: multiple elegant indoor spaces. The Colonne Room seats 80 for dinner, connecting to terraces for larger receptions. The Belvedere Restaurant accommodates 60. This flexibility makes Caruso ideal for couples who want Amalfi beauty with backup plans for weather.</p>
@@ -619,13 +963,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Conca dei Marini</strong> | Up to 60 guests | Exclusive use available</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Ultra-exclusive (all-inclusive with Michelin dining)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September (avoid July-August heat)</div>
-  <div><strong>Vendor Policy:</strong> Preferred vendor list; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 50% for exclusive use</div>
-  <div><strong>Response Time:</strong> 5-7 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Ultra-exclusive (all-inclusive with Michelin dining)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September, October</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September-October (perfect temps, clear skies)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">5-7 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>Not every couple wants 200 guests. Some want 40 of their closest people in the most beautiful, intimate setting imaginable. That's Monastero Santa Rosa: a boutique hotel in a restored 17th-century monastery, with just 20 rooms and a Michelin-starred restaurant overlooking the Gulf of Salerno.</p>
@@ -668,13 +1034,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Lenno, Lake Como</strong> | Up to 150 guests | Exclusive use available</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> High-end luxury (all-inclusive with boat transfers)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September (perfect weather, fewer crowds)</div>
-  <div><strong>Vendor Policy:</strong> FAI preferred vendors; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 40-50% for exclusive use</div>
-  <div><strong>Response Time:</strong> 3-5 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">High-end luxury (all-inclusive with boat transfers)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September (perfect weather, fewer crowds)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">FAI preferred vendors; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">40-50% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">3-5 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p><a href="/styles/villa">Villa</a> del Balbianello occupies Lake Como's most enviable position: a wooded promontory that juts into the lake, with 270-degree water views and gardens that have appeared in Star Wars and James Bond films. Access is by private boat only—guests arrive via vintage wooden launches, immediately transported into another era.</p>
@@ -713,13 +1101,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Cernobbio, Lake Como</strong> | Up to 200 guests (300 in marquee) | Partial/full buyout</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Ultra-exclusive (all-inclusive with accommodation)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September-October (ideal weather, fewer crowds)</div>
-  <div><strong>Vendor Policy:</strong> Preferred vendor list; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 50% for full buyout, 30-40% for partial</div>
-  <div><strong>Response Time:</strong> 5-7 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Ultra-exclusive (all-inclusive with accommodation)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September (perfect weather, fewer crowds)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">5-7 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p><a href="/styles/villa">Villa</a> d'Este doesn't need introduction. It's been Lake Como's definition of <a href="/styles/luxury">luxury</a> since Cardinal Gallio built it in 1568, hosting everyone from European royalty to Hollywood legends. The floating pool (actually on the lake) has become one of Italy's most iconic images, but the real magic is the property's seamless blend of historical grandeur and contemporary service.</p>
@@ -758,13 +1168,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Cernobbio, Lake Como</strong> | Up to 150 guests | Exclusive use available</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> High-end luxury (venue rental + catering separately)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September (perfect weather, fewer crowds)</div>
-  <div><strong>Vendor Policy:</strong> Flexible—bring your own vendors</div>
-  <div><strong>Deposit:</strong> 30-40% for exclusive use</div>
-  <div><strong>Response Time:</strong> 2-4 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">High-end luxury (venue rental + catering separately)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September (perfect weather, fewer crowds)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">5-7 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p><a href="/styles/villa">Villa</a> Pizzo offers something increasingly rare: true exclusivity. While Villa d'Este hosts multiple events simultaneously and Balbianello restricts access, Pizzo gives you complete control of a 16th-century private estate with Lake Como's longest private waterfront.</p>
@@ -803,13 +1235,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Tremezzo, Lake Como</strong> | Up to 150 guests | Partial buyout options</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Ultra-exclusive (all-inclusive with accommodation)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September (ideal weather, fewer crowds)</div>
-  <div><strong>Vendor Policy:</strong> Preferred vendor list; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 40-50% for full buyout, 30% for partial</div>
-  <div><strong>Response Time:</strong> 5-7 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Ultra-exclusive (all-inclusive with accommodation)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September (perfect weather, fewer crowds)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">5-7 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>Grand Hotel Tremezzo announces itself from across the lake—that distinctive Art Nouveau façade in cream and terracotta, Belle Époque towers framing Como's most commanding views. Since 1910, this has been Lake Como's definition of grand hotel luxury.</p>
@@ -852,13 +1306,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Monte Mario, Rome</strong> | Up to 500 guests | Event-only venue</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> High-end luxury (venue rental + catering)</div>
-  <div><strong>Peak Season:</strong> April, May, June, September, October</div>
-  <div><strong>Best Months:</strong> April-May, September-October (avoid summer heat)</div>
-  <div><strong>Vendor Policy:</strong> Flexible—bring your own vendors</div>
-  <div><strong>Deposit:</strong> 30-40% to secure date</div>
-  <div><strong>Response Time:</strong> 2-4 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">High-end luxury (venue rental + catering)</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, September, October</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September-October (perfect weather, clear skies)</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">40-50% for exclusive use</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">2-4 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p><a href="/styles/villa">Villa</a> Miani occupies Rome's highest hill, with terraces offering 360-degree views across the city. To the west, St. Peter's dome. To the east, the Vatican. To the north, the Castelli Romani hills. It's the kind of setting where guests spend cocktail hour pointing out landmarks rather than making small talk.</p>
@@ -897,13 +1373,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Janiculum Hill, Rome</strong> | Up to 150 guests | Event-only venue</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> High-end luxury (venue rental + catering)</div>
-  <div><strong>Peak Season:</strong> April, May, June, September, October</div>
-  <div><strong>Best Months:</strong> April-May, September-October (avoid summer heat)</div>
-  <div><strong>Vendor Policy:</strong> Preferred vendor list; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 30-40% to secure date</div>
-  <div><strong>Response Time:</strong> 3-5 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">High-end luxury (venue rental + catering)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, September, October</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September-October (perfect weather, clear skies)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">40-50% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">3-5 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>While Villa Miani delivers panoramic spectacle, <a href="/styles/villa">Villa</a> Aurelia offers intimate elegance. This 17th-century residence sits on Janiculum Hill, with gardens that feel secret despite their central location. Views extend over Rome's rooftops, but the venue's power comes from its enclosed beauty—ancient Roman walls, Renaissance frescoes, and gardens where your ceremony feels private rather than performed.</p>
@@ -943,13 +1441,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Tor Crescenza, Rome</strong> | Up to 300 guests | Exclusive use available</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Premium (venue rental + catering)</div>
-  <div><strong>Peak Season:</strong> May, June, September, October</div>
-  <div><strong>Best Months:</strong> May-June, September-October (avoid summer heat)</div>
-  <div><strong>Vendor Policy:</strong> Flexible—bring your own vendors</div>
-  <div><strong>Deposit:</strong> 30-40% to secure date</div>
-  <div><strong>Response Time:</strong> 2-4 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Premium (venue rental + catering)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, September, October</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September-October (perfect weather, clear skies)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Flexible—bring your own or use recommendations</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">30-40% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">2-4 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>Want a <a href="/styles/castle">castle</a> wedding without leaving Rome? Castello di Tor Crescenza delivers authentic medieval architecture—complete with towers, stone courtyards, and fortress walls—just 20 minutes from the city center.</p>
@@ -992,13 +1512,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Castelnuovo di Porto, Rome</strong> | Up to 80 seated | Exclusive use</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Premium (all-inclusive with accommodation)</div>
-  <div><strong>Peak Season:</strong> May, June, September, October</div>
-  <div><strong>Best Months:</strong> May-June, September-October (countryside perfection)</div>
-  <div><strong>Vendor Policy:</strong> Flexible—bring your own or use recommendations</div>
-  <div><strong>Deposit:</strong> 30-40% for exclusive use</div>
-  <div><strong>Response Time:</strong> 2-4 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Premium (all-inclusive with accommodation)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, September, October</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September-October (countryside perfection)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Flexible—bring your own or use recommendations</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">30-40% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">2-4 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>Tenuta 4 Pini offers something unique in the Rome region: genuine countryside seclusion (20 minutes from Fiumicino airport) combined with substantial onsite accommodation. Three private villas house 38 guests, making multi-day celebrations logistically seamless.</p>
@@ -1045,13 +1587,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Savelletri di Fasano</strong> | Up to 500 guests | Full resort available</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Ultra-exclusive (all-inclusive with planning)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September (avoid July-August heat)</div>
-  <div><strong>Vendor Policy:</strong> Resort includes planning services; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 40-50% for full resort buyout</div>
-  <div><strong>Response Time:</strong> 5-7 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Ultra-exclusive (all-inclusive with planning)</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September (Puglian countryside at its best)</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for exclusive use</td>
+      </tr>
+      <tr>
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">5-7 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>Borgo Egnazia isn't a hotel—it's a complete village, designed to evoke Puglia's traditional architecture while delivering contemporary luxury. The property sprawls across 35 hectares, with 183 rooms, multiple pools, Vair Spa (one of Europe's finest), and seven distinct event spaces.</p>
@@ -1098,13 +1662,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Ostuni, Puglia</strong> | Up to 120 guests | Exclusive use available</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Premium (all-inclusive with accommodation)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September (Puglian countryside at its best)</div>
-  <div><strong>Vendor Policy:</strong> Flexible—bring your own or use venue recommendations</div>
-  <div><strong>Deposit:</strong> 30-40% for exclusive use</div>
-  <div><strong>Response Time:</strong> 3-5 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Premium (all-inclusive with accommodation)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September (Puglian countryside at its best)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">5-7 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>While Borgo Egnazia delivers polished luxury, Masseria Salamina offers <a href="/styles/rustic">rustic</a> authenticity. This 16th-century fortified farmhouse—white-washed stone, vaulted ceilings, ancient olive groves—represents Puglia's traditional agricultural architecture lovingly restored for contemporary celebrations.</p>
@@ -1151,13 +1737,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Palo Laziale, Lazio Coast</strong> | Up to 60 guests | Exclusive use available</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> Ultra-exclusive (all-inclusive with beach access)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September (coastal perfection, avoid July-August heat)</div>
-  <div><strong>Vendor Policy:</strong> Preferred vendor list; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 50% for exclusive use</div>
-  <div><strong>Response Time:</strong> 5-7 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">Ultra-exclusive (all-inclusive with beach access)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September (coastal perfection, avoid July-August heat)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">50% for exclusive use</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">5-7 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>La Posta Vecchia occupies a unique position: technically Lazio coast (45 minutes from Rome), but feeling completely removed from mainland tourism. This 17th-century villa became the Getty family's private residence, with Roman ruins discovered beneath the property during renovations (now a private museum guests can tour).</p>
@@ -1203,13 +1811,35 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
 
 <p class="text-base font-semibold text-zinc-900 mb-6"><strong>Ischia</strong> | Up to 180 guests | Partial buyout options</p>
 
-<div class="venue-details-grid mb-6 grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-  <div><strong>Price Level:</strong> High-end luxury (all-inclusive with thermal spa)</div>
-  <div><strong>Peak Season:</strong> May, June, July, August, September</div>
-  <div><strong>Best Months:</strong> May-June, September (ideal weather, thermal spa perfect)</div>
-  <div><strong>Vendor Policy:</strong> Preferred vendor list; outside vendors require approval</div>
-  <div><strong>Deposit:</strong> 30-40% for partial buyout, 50% for full</div>
-  <div><strong>Response Time:</strong> 3-5 business days</div>
+<div class="venue-details-table my-6 border border-zinc-200 rounded-lg overflow-hidden">
+  <table class="w-full text-sm">
+    <tbody class="divide-y divide-zinc-100">
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Price Level</td>
+        <td class="px-4 py-3 text-zinc-700">High-end luxury (all-inclusive with thermal spa)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Peak Season</td>
+        <td class="px-4 py-3 text-zinc-700">May, June, July, August, September</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Best Months</td>
+        <td class="px-4 py-3 text-zinc-700">May-June, September (ideal weather, thermal spa perfect)</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Vendor Policy</td>
+        <td class="px-4 py-3 text-zinc-700">Preferred vendor list; outside vendors require approval</td>
+      </tr>
+      <tr class="bg-zinc-50">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Deposit</td>
+        <td class="px-4 py-3 text-zinc-700">30-40% for partial buyout, 50% for full</td>
+      </tr>
+      <tr class="">
+        <td class="px-4 py-3 font-semibold text-zinc-900 w-1/3">Response Time</td>
+        <td class="px-4 py-3 text-zinc-700">3-5 business days</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
 <p>Ischia remains Naples Bay's quieter, more Italian alternative to Capri. Mezzatorre occupies the island's most dramatic position: a 16th-century watchtower converted into a luxury hotel, with thermal spa (Ischia is famous for volcanic hot springs), pine forest setting, and views across the bay to Capri and Naples.</p>
@@ -1226,11 +1856,11 @@ Whether you're dreaming of a Tuscan castello or an Amalfi Coast terrace, we've c
       <td class="border border-zinc-300 px-4 py-2 text-zinc-700"><strong>Event Spaces</strong></td>
       <td class="border border-zinc-300 px-4 py-2 text-zinc-700">Intimate tower ceremonies, garden receptions (up to 180), multiple restaurant options</td>
     </tr>
-    <tr>
+      <tr>
       <td class="border border-zinc-300 px-4 py-2 text-zinc-700"><strong>Accommodation</strong></td>
       <td class="border border-zinc-300 px-4 py-2 text-zinc-700">57 rooms providing substantial onsite accommodation</td>
     </tr>
-    <tr>
+      <tr>
       <td class="border border-zinc-300 px-4 py-2 text-zinc-700"><strong>Thermal Spa</strong></td>
       <td class="border border-zinc-300 px-4 py-2 text-zinc-700">Major attraction for multi-day celebrations—guests genuinely enjoy their time beyond wedding events</td>
     </tr>
