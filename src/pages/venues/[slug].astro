@@ -88,22 +88,7 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
         ...(typeof f === 'object' && f.description && { "value": f.description })
       }))
     }),
-    ...(heroImage && { "image": heroImage }),
-    "event": {
-      "@type": "Event",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "location": {
-        "@type": "Place",
-        "name": name,
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": city,
-          "addressRegion": region,
-          "addressCountry": "IT"
-        }
-      }
-    }
+    ...(heroImage && { "image": heroImage })
   })} />
 
   <!-- HERO SECTION -->
