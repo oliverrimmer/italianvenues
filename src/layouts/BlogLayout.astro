@@ -525,30 +525,27 @@ const slug = Astro.url.pathname.split('/').pop() || '';
   :global(.mobile-venue-cards) {
     /* Enable smooth scrolling with hardware acceleration */
     -webkit-overflow-scrolling: touch;
-    /* Use GPU for scrolling */
-    transform: translateZ(0);
     /* Optimize scrolling performance */
     overscroll-behavior: contain;
-    /* Reduce repaints */
-    contain: layout style paint;
-    /* Smooth scrolling */
-    scroll-behavior: smooth;
+    /* Prevent scroll chaining */
+    overscroll-behavior-y: contain;
+    /* Remove containment to prevent crashes - let browser handle it */
+    contain: none;
   }
 
   :global(.mobile-venue-cards > a) {
-    /* Use GPU acceleration to prevent browser crashes */
-    transform: translateZ(0);
-    /* Limit reflow scope */
-    contain: layout style paint;
-    /* Optimize rendering */
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     /* Prevent text selection during scroll for better performance */
     -webkit-tap-highlight-color: transparent;
-    /* Reduce hover complexity */
-    transition: background-color 0.15s ease;
+    -webkit-user-select: none;
+    user-select: none;
     /* Better touch targets */
     min-height: 72px;
+    /* Prevent layout shifts */
+    display: block;
+    /* Remove all containment and transforms to prevent crashes */
+    contain: none;
+    transform: none;
+    will-change: auto;
   }
 
   /* Improve spacing and readability */
@@ -564,56 +561,205 @@ const slug = Astro.url.pathname.split('/').pop() || '';
 
   /* Reduce hover effect complexity on mobile to prevent lag */
   @media (max-width: 768px) {
-    :global(.mobile-venue-cards > a:active) {
-      background-color: rgba(244, 244, 245, 0.8);
+    :global(.mobile-venue-cards > a) {
+      /* Remove all transitions, transforms, and effects on mobile */
+      transition: none !important;
+      transform: none !important;
+      will-change: auto !important;
+      /* Simplify active state - use native tap highlight */
+      -webkit-tap-highlight-color: rgba(244, 244, 245, 0.2);
+      /* Remove pointer events on children during scroll */
+      pointer-events: auto;
+      /* Prevent reflows */
+      position: relative;
     }
     
-    /* Ensure region links don't interfere with card click */
-    :global(.mobile-venue-cards > a a) {
-      pointer-events: auto;
-      position: relative;
-      z-index: 1;
+    :global(.mobile-venue-cards > a:active) {
+      background-color: rgba(244, 244, 245, 0.5);
+    }
+    
+    /* Disable smooth scrolling on mobile for better performance */
+    :global(.mobile-venue-cards) {
+      scroll-behavior: auto !important;
+      /* Remove will-change and transforms on mobile */
+      will-change: auto !important;
+      transform: none !important;
+      /* Reduce max-height on smaller screens */
+      max-height: 55vh !important;
+    }
+    
+    /* On very small screens, reduce max-height further */
+    @media (max-height: 700px) {
+      :global(.mobile-venue-cards) {
+        max-height: 45vh !important;
+      }
     }
   }
 
   /* Venue details tables - performance optimizations */
   :global(.venue-details-table) {
-    /* Use GPU acceleration */
-    transform: translateZ(0);
-    /* Limit reflow scope */
-    contain: layout style paint;
+    /* Remove containment to prevent crashes */
+    contain: none;
   }
 
   :global(.venue-details-table table) {
     /* Optimize table rendering */
-    table-layout: fixed;
+    table-layout: auto;
+    width: 100%;
+    /* Reduce complexity on mobile */
+    border-collapse: collapse;
   }
 
   :global(.venue-details-table tbody tr) {
-    /* Optimize row rendering */
-    contain: layout style paint;
+    /* Remove containment on rows */
+    contain: none;
+  }
+  
+  /* Simplify tables on mobile to prevent crashes */
+  @media (max-width: 768px) {
+    :global(.venue-details-table) {
+      /* Simplify border on mobile */
+      border-radius: 0.5rem;
+      /* Remove extra padding */
+      margin: 1rem 0;
+    }
+    
+    :global(.venue-details-table table) {
+      /* Simpler table layout on mobile */
+      font-size: 0.8125rem;
+      /* Reduce border complexity */
+      border-collapse: collapse;
+    }
+    
+    :global(.venue-details-table td) {
+      /* Reduce padding on mobile */
+      padding: 0.625rem 0.75rem;
+      /* Prevent text wrapping issues */
+      word-break: break-word;
+      hyphens: auto;
+      /* Prevent layout shifts */
+      vertical-align: top;
+    }
+    
+    :global(.venue-details-table tbody tr) {
+      /* Simplify row rendering on mobile */
+      display: table-row;
+      /* Remove background color transitions */
+      transition: none;
+    }
+    
+    :global(.venue-details-table tbody tr.bg-zinc-50) {
+      /* Simplify alternating rows on mobile */
+      background-color: #fafafa;
+    }
   }
 </style>
 
 <script is:inline>
-  // Extract numbers from venue headers and restructure
-  document.addEventListener('DOMContentLoaded', () => {
-    const venueHeaders = document.querySelectorAll('.venue-header');
-    venueHeaders.forEach(header => {
-      const text = header.textContent || '';
-      const match = text.match(/^(\d+)\.\s*(.+)$/);
-      if (match) {
-        const number = match[1];
-        const name = match[2];
-        header.innerHTML = `
-          <span class="venue-number">${number}</span>
-          <span class="venue-name">${name}</span>
-        `;
+  // Mobile venue cards toggle - simple event handler
+  (function() {
+    function initMobileToggle() {
+      const toggle = document.getElementById('mobile-venue-toggle');
+      const cards = document.getElementById('mobile-venue-cards');
+      if (!toggle || !cards) return;
+      
+      const chevron = toggle.querySelector('.chevron');
+      
+      toggle.addEventListener('click', function() {
+        const isHidden = cards.classList.contains('hidden');
+        cards.classList.toggle('hidden');
+        if (chevron) {
+          chevron.classList.toggle('rotate-180');
+        }
+        toggle.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+      }, { passive: true });
+    }
+    
+    // Extract numbers from venue headers - DISABLED on mobile to prevent crashes
+    function updateHeaders() {
+      // Skip on mobile devices to prevent crashes
+      if (window.innerWidth < 768) {
+        return;
       }
-    });
-  });
+      
+      const venueHeaders = document.querySelectorAll('.venue-header');
+      if (venueHeaders.length === 0) return;
+      
+      // Process in very small batches to avoid blocking
+      let index = 0;
+      const batchSize = 2; // Even smaller batches
+      
+      function processBatch() {
+        if (index >= venueHeaders.length) return;
+        
+        const end = Math.min(index + batchSize, venueHeaders.length);
+        for (let i = index; i < end; i++) {
+          try {
+            const header = venueHeaders[i];
+            if (!header) continue;
+            const text = header.textContent || '';
+            const match = text.match(/^(\d+)\.\s*(.+)$/);
+            if (match) {
+              const number = match[1];
+              const name = match[2];
+              header.innerHTML = `
+                <span class="venue-number">${number}</span>
+                <span class="venue-name">${name}</span>
+              `;
+            }
+          } catch (e) {
+            // Silently fail if there's an error
+            console.error('Error updating header:', e);
+          }
+        }
+        index = end;
+        if (index < venueHeaders.length) {
+          // Use longer timeout on mobile
+          setTimeout(processBatch, 100);
+        }
+      }
+      
+      // Defer header updates significantly
+      setTimeout(processBatch, 500);
+    }
+    
+    function init() {
+      // Initialize mobile toggle first - critical functionality
+      try {
+        initMobileToggle();
+      } catch (e) {
+        console.error('Error initializing mobile toggle:', e);
+      }
+      
+      // Defer header updates significantly to avoid blocking
+      if (window.requestIdleCallback) {
+        requestIdleCallback(updateHeaders, { timeout: 5000 });
+      } else {
+        setTimeout(updateHeaders, 1000);
+      }
+    }
+    
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init, { once: true });
+    } else {
+      // DOM already loaded, defer to avoid blocking
+      setTimeout(init, 200);
+    }
+  })();
 </script>
 
-<!-- Pinterest Save Button Script -->
-<script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
+<!-- Pinterest Save Button Script - Load only when needed -->
+<script is:inline>
+  // Defer Pinterest script loading until after page load
+  if (window.addEventListener) {
+    window.addEventListener('load', function() {
+      var script = document.createElement('script');
+      script.src = 'https://assets.pinterest.com/js/pinit.js';
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+    });
+  }
+</script>
 
