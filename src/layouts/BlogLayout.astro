@@ -744,27 +744,44 @@ const slug = Astro.url.pathname.split('/').pop() || '';
 
 <script is:inline>
   // Remove desktop table from DOM on mobile IMMEDIATELY to prevent crashes
-  // Run this before any other scripts
+  // This runs before DOMContentLoaded to catch the element as early as possible
   (function() {
     function removeDesktopTable() {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 768 || window.matchMedia('(max-width: 767px)').matches) {
         const desktopTable = document.getElementById('desktop-quick-reference');
         if (desktopTable) {
           desktopTable.remove();
+          return true; // Successfully removed
         }
       }
+      return false;
     }
     
-    // Try immediately if DOM is ready
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', removeDesktopTable, { once: true });
-    } else {
-      // DOM already ready, remove immediately
-      removeDesktopTable();
+    // Try immediately
+    if (!removeDesktopTable()) {
+      // If not found, try on DOMContentLoaded
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          if (!removeDesktopTable()) {
+            // Fallback: use MutationObserver to catch it when it appears
+            const observer = new MutationObserver(function(mutations, obs) {
+              if (removeDesktopTable()) {
+                obs.disconnect();
+              }
+            });
+            observer.observe(document.body || document.documentElement, {
+              childList: true,
+              subtree: true
+            });
+            // Stop observing after 5 seconds
+            setTimeout(() => observer.disconnect(), 5000);
+          }
+        }, { once: true });
+      } else {
+        // DOM already ready, try immediately
+        removeDesktopTable();
+      }
     }
-    
-    // Also run after a short delay in case element isn't in DOM yet
-    setTimeout(removeDesktopTable, 0);
   })();
   
   // Mobile venue cards toggle - simple event handler
