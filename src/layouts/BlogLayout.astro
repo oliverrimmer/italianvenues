@@ -615,6 +615,24 @@ const slug = Astro.url.pathname.split('/').pop() || '';
     contain: none;
   }
   
+  /* Defer rendering of heavy blocks on mobile using content-visibility */
+  @media (max-width: 768px) {
+    :global(.venue-image-container),
+    :global(.venue-details-table),
+    :global(.highlight-box),
+    :global(.faq-section) {
+      content-visibility: auto;
+      /* Provide intrinsic size to avoid layout jumps until painted */
+      contain-intrinsic-size: 600px auto;
+    }
+    :global(.venue-image-container img[loading="lazy"]) {
+      content-visibility: auto;
+      contain-intrinsic-size: 480px 320px;
+      /* Remove heavy shadows on mobile to reduce paint cost */
+      box-shadow: none !important;
+    }
+  }
+  
   /* Simplify tables on mobile to prevent crashes */
   @media (max-width: 768px) {
     :global(.venue-details-table) {
@@ -651,6 +669,14 @@ const slug = Astro.url.pathname.split('/').pop() || '';
     :global(.venue-details-table tbody tr.bg-zinc-50) {
       /* Simplify alternating rows on mobile */
       background-color: #fafafa;
+    }
+  }
+  
+  /* Disable expensive backdrop filters on mobile for performance */
+  @media (max-width: 768px) {
+    :global(header#site-header #header-gradient) {
+      -webkit-backdrop-filter: none !important;
+      backdrop-filter: none !important;
     }
   }
 </style>

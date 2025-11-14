@@ -30,249 +30,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 <p>After visiting over 200 venues across Italy and working with hundreds of couples, we've narrowed this impossibly beautiful country down to 20 venues that consistently deliver not just stunning settings, but complete experiences. Every venue here has been personally vetted—we've seen real weddings unfold in their rooms and gardens, and we know which ones deliver on their promises.</p>
 
 <!-- Quick Reference Comparison Table -->
-<!-- Quick Reference: Mobile Card Layout -->
-<div class="md:hidden my-8">
-  <div class="bg-white border-2 border-zinc-200 rounded-xl overflow-hidden">
-    <button 
-      id="mobile-venue-toggle"
-      class="w-full bg-zinc-900 text-white px-4 py-3 flex items-center justify-between"
-      aria-expanded="false"
-      aria-controls="mobile-venue-cards"
-      type="button"
-    >
-      <h3 class="text-lg font-bold">Quick Reference: All 20 Venues</h3>
-      <svg class="chevron w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-      </svg>
-    </button>
-    <div id="mobile-venue-cards" class="hidden mobile-venue-cards divide-y divide-zinc-200 max-h-[55vh] overflow-y-auto">
-      <a href="#venue-1" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Castello di Vincigliata</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Tuscany</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">200 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Medieval fortress</p>
-      </a>
-      <a href="#venue-2" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Borgo Santo Pietro</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Tuscany</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">140 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Michelin-starred</p>
-      </a>
-      <a href="#venue-3" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa La Foce</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Tuscany</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">140 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">UNESCO gardens</p>
-      </a>
-      <a href="#venue-4" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Hotel Il Pellicano</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Tuscany</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">120 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Clifftop resort</p>
-      </a>
-      <a href="#venue-5" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa Cimbrone</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Amalfi Coast</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">160 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Terrace of Infinity</p>
-      </a>
-      <a href="#venue-6" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Le Sirenuse</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Amalfi Coast</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">100 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Positano icon</p>
-      </a>
-      <a href="#venue-7" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Belmond Hotel Caruso</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Amalfi Coast</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">150 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Infinity pool</p>
-      </a>
-      <a href="#venue-8" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Monastero Santa Rosa</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Amalfi Coast</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">60 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Intimate luxury</p>
-      </a>
-      <a href="#venue-9" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa del Balbianello</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Lake Como</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">150 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Boat arrival</p>
-      </a>
-      <a href="#venue-10" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa d'Este</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Lake Como</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">200 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Floating pool</p>
-      </a>
-      <a href="#venue-11" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa Pizzo</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Lake Como</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">150 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Private estate</p>
-      </a>
-      <a href="#venue-12" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Grand Hotel Tremezzo</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Lake Como</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">150 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Belle Époque</p>
-      </a>
-      <a href="#venue-13" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa Miani</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Rome</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">500 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">360° Rome views</p>
-      </a>
-      <a href="#venue-14" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Villa Aurelia</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Rome</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">150 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Intimate gardens</p>
-      </a>
-      <a href="#venue-15" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Castello di Tor Crescenza</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Rome</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">300 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Medieval fortress</p>
-      </a>
-      <a href="#venue-16" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Tenuta 4 Pini</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Rome</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">80 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Countryside estate</p>
-      </a>
-      <a href="#venue-17" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Borgo Egnazia</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Puglia</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">500 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Resort village</p>
-      </a>
-      <a href="#venue-18" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Masseria Salamina</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Puglia</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">120 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Rustic masseria</p>
-      </a>
-      <a href="#venue-19" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">La Posta Vecchia</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Lazio Coast</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">60 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Beachfront villa</p>
-      </a>
-      <a href="#venue-20" class="block px-4 py-3.5">
-        <h4 class="font-semibold text-base text-zinc-900 mb-2 leading-tight">Mezzatorre Hotel & Thermal Spa</h4>
-        <div class="flex items-center flex-wrap gap-x-2 gap-y-1 mb-1.5">
-          <span class="text-xs text-zinc-600">Ischia</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-600">180 guests</span>
-          <span class="text-zinc-300">•</span>
-          <span class="text-xs text-zinc-700 font-medium">€€€</span>
-        </div>
-        <p class="text-xs text-zinc-600">Thermal spa</p>
-      </a>
-    </div>
-    <div class="bg-zinc-50 px-4 py-3 text-[10px] leading-relaxed text-zinc-600 border-t border-zinc-200">
-      <p class="font-semibold mb-1">Price Guide:</p>
-      <p>€ = Accessible luxury | €€ = Premium | €€€ = High-end luxury | €€€€ = Ultra-exclusive</p>
-    </div>
-  </div>
-</div>
+<!-- Mobile quick reference removed to prevent mobile crashes -->
 
 <!-- Quick Reference: Desktop Table Layout -->
 <div class="hidden md:block my-12 bg-white border-2 border-zinc-200 rounded-xl overflow-hidden">
@@ -617,7 +375,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/0b36d92b-1c51-4f99-e078-da943a794200/cardlg" alt="Villa La Foce gardens in Val d'Orcia UNESCO site" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/0b36d92b-1c51-4f99-e078-da943a794200/cardlg" alt="Villa La Foce gardens in Val d'Orcia UNESCO site" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/0b36d92b-1c51-4f99-e078-da943a794200/cardlg&description=Villa La Foce - Historic villa with legendary gardens in UNESCO-protected Val d'Orcia, Tuscany. Up to 140 guests."
       target="_blank"
@@ -684,7 +442,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl" alt="Hotel Il Pellicano clifftop resort on Tuscany coast" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl" alt="Hotel Il Pellicano clifftop resort on Tuscany coast" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl&description=Hotel Il Pellicano - 1960s clifftop legend in Porto Ercole, Tuscany. Michelin-starred dining. Up to 120 guests."
       target="_blank"
@@ -753,7 +511,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/ace25b84-de07-483a-9a27-aec5cb5cf500/heroxl" alt="Villa Cimbrone Terrace of Infinity in Ravello" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/ace25b84-de07-483a-9a27-aec5cb5cf500/heroxl" alt="Villa Cimbrone Terrace of Infinity in Ravello" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/ace25b84-de07-483a-9a27-aec5cb5cf500/heroxl&description=Villa Cimbrone - Legendary Terrace of Infinity on the Amalfi Coast, Ravello. Up to 160 guests."
       target="_blank"
@@ -820,7 +578,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/ce48d453-9ce7-46e8-32b6-0a1ba4adc900/heroxl" alt="Le Sirenuse hotel perched on Positano cliffs" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/ce48d453-9ce7-46e8-32b6-0a1ba4adc900/heroxl" alt="Le Sirenuse hotel perched on Positano cliffs" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/ce48d453-9ce7-46e8-32b6-0a1ba4adc900/heroxl&description=Le Sirenuse - Positano's most iconic hotel on the Amalfi Coast. Michelin dining. Up to 100 guests."
       target="_blank"
@@ -887,7 +645,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/a001222d-f56e-43da-f16f-867caa91f400/cardlg" alt="Belmond Hotel Caruso infinity pool overlooking Amalfi Coast" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/a001222d-f56e-43da-f16f-867caa91f400/cardlg" alt="Belmond Hotel Caruso infinity pool overlooking Amalfi Coast" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/a001222d-f56e-43da-f16f-867caa91f400/cardlg&description=Belmond Hotel Caruso - 11th-century palazzo in Ravello, Amalfi Coast. Legendary infinity pool. Up to 150 guests."
       target="_blank"
@@ -952,7 +710,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/f68ee20e-f669-4517-509a-c17acbfdce00/heroxl" alt="Monastero Santa Rosa cliffside monastery hotel" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/f68ee20e-f669-4517-509a-c17acbfdce00/heroxl" alt="Monastero Santa Rosa cliffside monastery hotel" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/f68ee20e-f669-4517-509a-c17acbfdce00/heroxl&description=Monastero Santa Rosa - 17th-century monastery on the Amalfi Coast. Intimate luxury with Michelin dining. Up to 60 guests."
       target="_blank"
@@ -1023,7 +781,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/e6c0c8e7-6d2f-4e67-872d-5f0afccffb00/heroxl" alt="Villa del Balbianello on Lake Como promontory" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/e6c0c8e7-6d2f-4e67-872d-5f0afccffb00/heroxl" alt="Villa del Balbianello on Lake Como promontory" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/e6c0c8e7-6d2f-4e67-872d-5f0afccffb00/heroxl&description=Villa del Balbianello - 18th-century villa on Lake Como's most dramatic promontory. Arrive by private boat. Up to 150 guests."
       target="_blank"
@@ -1090,7 +848,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4500557d-7c6d-4894-c0b0-bb41e39cf900/heroxl" alt="Villa d'Este luxury hotel with famous floating pool" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4500557d-7c6d-4894-c0b0-bb41e39cf900/heroxl" alt="Villa d'Este luxury hotel with famous floating pool" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4500557d-7c6d-4894-c0b0-bb41e39cf900/heroxl&description=Villa d'Este - Legendary floating pool and 16th-century Cardinal's palace on Lake Como. Up to 200 guests."
       target="_blank"
@@ -1157,7 +915,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/1fc2850f-f609-4181-4418-38c833d47200/cardlg" alt="Villa Pizzo private estate on Lake Como" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/1fc2850f-f609-4181-4418-38c833d47200/cardlg" alt="Villa Pizzo private estate on Lake Como" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/1fc2850f-f609-4181-4418-38c833d47200/cardlg&description=Villa Pizzo - Private 16th-century villa on Lake Como with longest private shoreline. Exclusive use. Up to 150 guests."
       target="_blank"
@@ -1224,7 +982,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/3f795e14-a221-47d9-8e04-17b682c0a300/cardlg" alt="Grand Hotel Tremezzo Art Nouveau facade on Lake Como" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/3f795e14-a221-47d9-8e04-17b682c0a300/cardlg" alt="Grand Hotel Tremezzo Art Nouveau facade on Lake Como" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/3f795e14-a221-47d9-8e04-17b682c0a300/cardlg&description=Grand Hotel Tremezzo - Belle Époque elegance on Lake Como with famous floating pool. Up to 150 guests."
       target="_blank"
@@ -1295,7 +1053,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/cfa930d3-8122-4247-0ead-3219ced3fb00/cardlg" alt="Villa Miani rooftop terrace overlooking Rome" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/cfa930d3-8122-4247-0ead-3219ced3fb00/cardlg" alt="Villa Miani rooftop terrace overlooking Rome" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/cfa930d3-8122-4247-0ead-3219ced3fb00/cardlg&description=Villa Miani - Panoramic rooftop venue with 360-degree Rome views including St. Peter's. Up to 500 guests."
       target="_blank"
@@ -1362,7 +1120,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bbaa2f88-c2f2-42a9-f17f-11f151d5e800/cardlg" alt="Villa Aurelia 17th-century villa on Janiculum Hill" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bbaa2f88-c2f2-42a9-f17f-11f151d5e800/cardlg" alt="Villa Aurelia 17th-century villa on Janiculum Hill" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/bbaa2f88-c2f2-42a9-f17f-11f151d5e800/cardlg&description=Villa Aurelia - 17th-century villa on Janiculum Hill, Rome. Intimate gardens. Up to 150 guests."
       target="_blank"
@@ -1429,7 +1187,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/a1260c43-ab15-45c9-29f4-d4f68ea2e000/cardlg" alt="Castello di Tor Crescenza medieval fortress near Rome" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/a1260c43-ab15-45c9-29f4-d4f68ea2e000/cardlg" alt="Castello di Tor Crescenza medieval fortress near Rome" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/a1260c43-ab15-45c9-29f4-d4f68ea2e000/cardlg&description=Castello di Tor Crescenza - Authentic medieval fortress near Rome. Up to 300 guests."
       target="_blank"
@@ -1500,7 +1258,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/0d201783-e0f6-4d1e-3783-9c2beda8b800/heroxl" alt="Tenuta 4 Pini countryside estate near Rome" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/0d201783-e0f6-4d1e-3783-9c2beda8b800/heroxl" alt="Tenuta 4 Pini countryside estate near Rome" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/0d201783-e0f6-4d1e-3783-9c2beda8b800/heroxl&description=Tenuta 4 Pini - Private countryside estate near Rome with three villas. Up to 80 guests."
       target="_blank"
@@ -1575,7 +1333,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4fdf05cf-5fe9-4492-905a-e5b6200cd900/heroxl" alt="Borgo Egnazia luxury resort in Puglia" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4fdf05cf-5fe9-4492-905a-e5b6200cd900/heroxl" alt="Borgo Egnazia luxury resort in Puglia" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4fdf05cf-5fe9-4492-905a-e5b6200cd900/heroxl&description=Borgo Egnazia - Award-winning resort in Puglia designed as a traditional Puglian village. Up to 500 guests."
       target="_blank"
@@ -1650,7 +1408,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg" alt="Masseria Salamina traditional Puglian farmhouse" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg" alt="Masseria Salamina traditional Puglian farmhouse" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/465d1e18-2988-4b5a-c489-d6de8073bf00/cardlg&description=Masseria Salamina - Authentic 16th-century masseria in Puglia with rustic elegance. Up to 120 guests."
       target="_blank"
@@ -1725,7 +1483,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl" alt="La Posta Vecchia beachfront villa north of Rome" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl" alt="La Posta Vecchia beachfront villa north of Rome" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl&description=La Posta Vecchia - Getty family villa turned boutique hotel on Lazio coast. Roman ruins beneath. Up to 60 guests."
       target="_blank"
@@ -1799,7 +1557,7 @@ import BlogLayout from '../../layouts/BlogLayout.astro';
 
 <div class="my-10">
   <div class="venue-image-container rounded-2xl overflow-hidden">
-    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl" alt="Mezzatorre Hotel tower on Ischia island" class="rounded-2xl shadow-2xl w-full" />
+    <img decoding="async" loading="lazy" src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl" alt="Mezzatorre Hotel tower on Ischia island" class="rounded-2xl shadow-2xl w-full" / fetchpriority=\"low\">
     <a 
       href="https://www.pinterest.com/pin/create/button/?url=https://italianvenues.com/blog/20-best-italian-wedding-venues-2026-2027&media=https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl&description=Mezzatorre Hotel & Thermal Spa - 16th-century watchtower on Ischia with thermal spa. Bay of Naples views. Up to 180 guests."
       target="_blank"
