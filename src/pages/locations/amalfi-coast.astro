@@ -176,6 +176,9 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
                 decoding="async"
+                width="800"
+                height="600"
+                fetchpriority="low"
               />
               {venue.featured && (
                 <div class="absolute top-4 right-4 px-4 py-2 bg-[#a78656] text-white text-sm font-semibold rounded-full shadow-lg">
@@ -480,119 +483,90 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
 </style>
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-link');
-    const stickyNav = document.getElementById('sticky-nav');
-
-    let activeSection: string | null = null;
-    let scrollTimeout: number | null = null;
-    let isScrolling = false;
+  // Optimized scroll handler - uses only IntersectionObserver for better performance
+  (function() {
+    'use strict';
     
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (!isScrolling) return;
-        
-        let highestSection: string | null = null;
-        let highestRatio = 0;
-        
-        entries.forEach((entry) => {
-          if (entry.isIntersecting && entry.intersectionRatio > highestRatio) {
-            highestRatio = entry.intersectionRatio;
-            highestSection = entry.target.getAttribute('id');
-          }
-        });
-        
-        if (highestSection && highestSection !== activeSection) {
-          activeSection = highestSection;
-          navLinks.forEach((link) => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${highestSection}`) {
-              link.classList.add('active');
-            }
-          });
-        }
-      },
-      {
-        threshold: 0.3,
-        rootMargin: '-120px 0px -60% 0px',
+    // Defer initialization until page is interactive
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init, { once: true });
+    } else {
+      // Use requestIdleCallback for non-critical initialization
+      if (window.requestIdleCallback) {
+        requestIdleCallback(init, { timeout: 2000 });
+      } else {
+        setTimeout(init, 100);
       }
-    );
-    
-    let scrollUpdateTimeout: number | null = null;
-    window.addEventListener('scroll', () => {
-      isScrolling = true;
-      
-      if (scrollUpdateTimeout) {
-        clearTimeout(scrollUpdateTimeout);
-      }
-      
-      scrollUpdateTimeout = window.setTimeout(() => {
-        isScrolling = false;
-        
-        const scrollPosition = window.scrollY + 150;
-        
-        let currentSection: string | null = null;
-        let closestSection: string | null = null;
-        let minDistance = Infinity;
-        
-        sections.forEach((section) => {
-          const rect = section.getBoundingClientRect();
-          const sectionTop = window.scrollY + rect.top;
-          const distance = Math.abs(scrollPosition - sectionTop);
-          
-          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + rect.height) {
-            currentSection = section.getAttribute('id');
-          }
-          
-          if (distance < minDistance) {
-            minDistance = distance;
-            closestSection = section.getAttribute('id');
-          }
-        });
-        
-        const targetSection = currentSection || closestSection;
-        
-        if (targetSection && targetSection !== activeSection) {
-          activeSection = targetSection;
-          navLinks.forEach((link) => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${targetSection}`) {
-              link.classList.add('active');
-            }
-          });
-        }
-      }, 150);
-    }, { passive: true });
-
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    if (navLinks.length > 0) {
-      navLinks[0].classList.add('active');
     }
+    
+    function init() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      const stickyNav = document.getElementById('sticky-nav');
+      if (!sections.length || !navLinks.length) return;
 
-    navLinks.forEach((link) => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
-        
-        if (targetSection) {
-          navLinks.forEach((l) => l.classList.remove('active'));
-          link.classList.add('active');
+      let activeSection: string | null = null;
+      
+      // Use single IntersectionObserver instead of scroll + observer combo
+      const observer = new IntersectionObserver(
+        (entries) => {
+          // Find the section with highest intersection ratio
+          let highestSection: string | null = null;
+          let highestRatio = 0;
           
-          activeSection = targetId.substring(1);
-          
-          const offsetTop = targetSection.offsetTop - (stickyNav?.offsetHeight || 0);
-          window.scrollTo({
-            top: offsetTop,
-            behavior: 'smooth',
+          entries.forEach((entry) => {
+            if (entry.isIntersecting && entry.intersectionRatio > highestRatio) {
+              highestRatio = entry.intersectionRatio;
+              highestSection = entry.target.getAttribute('id');
+            }
           });
+          
+          // Update active nav link only if changed
+          if (highestSection && highestSection !== activeSection) {
+            activeSection = highestSection;
+            navLinks.forEach((link) => {
+              const isActive = link.getAttribute('href') === `#${highestSection}`;
+              link.classList.toggle('active', isActive);
+            });
+          }
+        },
+        {
+          threshold: [0.1, 0.3, 0.5],
+          rootMargin: '-100px 0px -50% 0px',
         }
+      );
+
+      sections.forEach((section) => {
+        observer.observe(section);
       });
-    });
-  });
+
+      // Set initial active link
+      if (navLinks.length > 0) {
+        navLinks[0].classList.add('active');
+        activeSection = navLinks[0].getAttribute('href')?.substring(1) || null;
+      }
+
+      // Handle nav link clicks
+      navLinks.forEach((link) => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const targetId = link.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+          
+          if (targetSection) {
+            activeSection = targetId?.substring(1) || null;
+            navLinks.forEach((l) => l.classList.remove('active'));
+            link.classList.add('active');
+            
+            const offsetTop = targetSection.getBoundingClientRect().top + window.scrollY - (stickyNav?.offsetHeight || 0);
+            window.scrollTo({
+              top: offsetTop,
+              behavior: 'smooth',
+            });
+          }
+        }, { passive: false });
+      });
+    }
+  })();
 </script>
 
