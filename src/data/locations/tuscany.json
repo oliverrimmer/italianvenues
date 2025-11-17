@@ -92,13 +92,13 @@
       "featured": true
     },
     {
-      "name": "Castello di Vincigliata",
-      "slug": "castello-di-vincigliata",
-      "setting": "Medieval Castle",
-      "location": "Fiesole, Florence",
+      "name": "La Pescaia Resort",
+      "slug": "la-pescaia-resort",
+      "setting": "Historic Country Estate",
+      "location": "Sticciano Scalo, Grosseto",
       "maxGuests": 200,
-      "usp": "Authentic 11th-century fortress with panoramic views over Florence",
-      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/492085f9-2d4e-4c60-737a-85551e589100/cardlg",
+      "usp": "19th-century estate in Maremma with historic villa, pine groves, and farm-to-table cuisine",
+      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/18e91f45-c5f7-4ad3-27d8-70f6e7244500/cardlg",
       "featured": false
     },
     {

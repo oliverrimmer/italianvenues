@@ -46,17 +46,6 @@
 
   "featuredVenues": [
     {
-      "name": "Castello di Vincigliata",
-      "slug": "castello-di-vincigliata",
-      "setting": "Medieval Castle",
-      "location": "Fiesole, Florence",
-      "maxGuests": 200,
-      "usp": "Authentic 11th-century fortress with panoramic views over Florence and the Tuscan hills",
-      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/492085f9-2d4e-4c60-737a-85551e589100/cardlg",
-      "featured": true,
-      "castleFeatures": ["11th-century fortress", "Panoramic Florence views", "Medieval architecture", "Historic courtyards", "Tuscan location"]
-    },
-    {
       "name": "Castello di Tor Crescenza",
       "slug": "castello-di-tor-crescenza",
       "setting": "Medieval Castle",

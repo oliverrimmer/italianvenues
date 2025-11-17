@@ -1,0 +1,199 @@
+{
+  "name": "La Pescaia Resort",
+  "city": "Sticciano Scalo",
+  "region": "Tuscany",
+  "maxGuests": 200,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/18e91f45-c5f7-4ad3-27d8-70f6e7244500/heroxl",
+  "heroDescription": "An enchanting 19th-century estate nestled in the heart of Maremma, Tuscany, surrounded by vast olive groves and centuries-old pines, offering elegant rooms, organic cuisine, and picturesque gardens for memorable destination weddings.",
+  "intro": "La Pescaia Resort is an enchanting 19th-century estate nestled in the heart of Maremma, Tuscany, surrounded by vast olive groves and centuries-old pines. This historic country estate offers authentic rural charm with sophisticated comforts, featuring a historic villa, rustic farm buildings, and a swimming pool carved from ancient basins. Managed by a passionate family team, the estate excels in tailored events with local farm-to-table menus, enchanting views, and an intimate chapel for ceremonies. Guests enjoy elegant rooms, organic cuisine, and picturesque gardens that create the perfect backdrop for memorable destination weddings and exclusive events.",
+  "history": {
+    "description": "La Pescaia Resort traces its origins to the 19th century, when this strategic estate in the Maremma countryside served as both a working farm and a place of refined country living. The property has been carefully preserved to maintain its authentic Tuscan character while evolving to meet the needs of modern celebrations.",
+    "loveStory": "The estate's transformation into a wedding destination came through the dedication of a passionate family team who recognized the property's unique potential. They've preserved the historic villa's character while creating spaces that honor both the estate's agricultural heritage and its role as a place where couples begin their lives together.",
+    "inauguration": "Today, La Pescaia Resort stands as a testament to authentic Tuscan hospitality, where centuries-old pines frame ceremonies, historic buildings host celebrations, and farm-to-table cuisine reflects the estate's connection to the land. The property offers an intimate, family-managed experience that feels both exclusive and welcoming."
+  },
+  "usps": [
+    "19th-Century Historic Villa",
+    "Rustic Farm Buildings",
+    "Swimming Pool in Ancient Basins",
+    "Vast Olive Groves",
+    "Centuries-Old Pine Groves",
+    "Intimate Chapel for Ceremonies",
+    "Picturesque Gardens",
+    "Farm-to-Table Organic Cuisine",
+    "Elegant Guest Rooms",
+    "Exclusive Use Available",
+    "Outdoor Ceremony Spaces (Up to 200)",
+    "Indoor Reception Spaces (90-120)",
+    "Family-Managed Hospitality",
+    "Authentic Rural Maremma Setting"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/18e91f45-c5f7-4ad3-27d8-70f6e7244500/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Outdoor Gardens & Terraces",
+      "capacities": {
+        "cocktail": 200,
+        "seated": 200,
+        "buffet": 200,
+        "ceremony": 200
+      },
+      "description": "The estate's expansive outdoor spaces, framed by centuries-old pines and olive groves, create an enchanting setting for ceremonies and receptions. Terraces and gardens offer multiple options for celebrations beneath the Tuscan sky, with views across the Maremma countryside."
+    },
+    {
+      "name": "The Orangerie",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 100,
+        "buffet": 100,
+        "ceremony": 100
+      },
+      "description": "An elegant glass-walled space that brings the gardens inside, perfect for receptions that flow seamlessly between indoor comfort and outdoor beauty. The orangerie offers protection from weather while maintaining the connection to the estate's natural surroundings."
+    },
+    {
+      "name": "The Granaio (Indoor Reception Space)",
+      "capacities": {
+        "cocktail": 120,
+        "seated": 90,
+        "buffet": 90,
+        "ceremony": 0
+      },
+      "description": "A rustic yet refined indoor space within the historic farm buildings, perfect for wet weather receptions or evening celebrations. The granaio maintains the estate's authentic character while providing comfortable accommodation for seated dinners and dancing."
+    },
+    {
+      "name": "Intimate Chapel",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 50
+      },
+      "description": "The estate's intimate chapel provides a beautiful, sacred space for ceremonies, whether religious or symbolic. This historic space offers couples a meaningful setting for their vows within the estate's grounds."
+    },
+    {
+      "name": "Pool Area & Surrounding Gardens",
+      "capacities": {
+        "cocktail": 150,
+        "seated": 100,
+        "buffet": 100,
+        "ceremony": 100
+      },
+      "description": "The swimming pool, carved from ancient basins, creates a stunning focal point for celebrations. The surrounding gardens and terraces offer flexible spaces for cocktails, receptions, and ceremonies with the pool as a dramatic backdrop."
+    }
+  ],
+  "highlights": [
+    {
+      "title": "Historic Villa & Farm Buildings",
+      "description": "The 19th-century villa and restored farm buildings provide authentic Tuscan architecture that tells the story of rural Maremma life. Each space has been carefully preserved to maintain historic character while offering modern comfort."
+    },
+    {
+      "title": "Centuries-Old Pine Groves",
+      "description": "The estate's ancient pine groves create natural cathedrals for outdoor ceremonies, offering shade, atmosphere, and that unmistakable Tuscan countryside feeling that makes every photograph look like a painting."
+    },
+    {
+      "title": "Farm-to-Table Organic Cuisine",
+      "description": "The estate's connection to the land extends to its cuisine, with farm-to-table menus featuring local ingredients, estate olive oil, and traditional Tuscan recipes prepared with passion and expertise."
+    },
+    {
+      "title": "Family-Managed Hospitality",
+      "description": "Managed by a passionate family team, La Pescaia offers personalized service that feels both professional and genuinely warm. Every detail is handled with care, ensuring your celebration reflects your vision."
+    },
+    {
+      "title": "Exclusive Use Privacy",
+      "description": "With exclusive use, the entire estate becomes your private world. Your celebration flows freely between indoor and outdoor spaces, with complete privacy and the flexibility to create your perfect day."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "Historic Villa Rooms",
+        "count": 0,
+        "description": "Elegant rooms within the historic villa, each thoughtfully designed to blend period character with contemporary comfort. The villa accommodations offer guests a true sense of the estate's history and charm."
+      },
+      {
+        "name": "Estate Accommodations",
+        "count": 0,
+        "description": "Additional accommodations throughout the estate provide comfortable options for wedding guests, ensuring everyone can stay within the property's grounds and fully immerse themselves in the celebration."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Località Pescaia, 58036 Sticciano Scalo GR, Italy",
+    "distances": {
+      "Grosseto": "Distance TBD",
+      "Florence": "Distance TBD",
+      "Siena": "Distance TBD",
+      "Rome Fiumicino Airport": "Distance TBD",
+      "Pisa International Airport": "Distance TBD"
+    },
+    "coordinates": {
+      "lat": 42.8,
+      "lng": 11.1
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2918.7!2d11.1!3d42.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sLa%20Pescaia%20Resort!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive use of entire estate and all accommodations",
+      "Access to historic villa and farm buildings",
+      "All outdoor ceremony and reception spaces",
+      "The orangerie for indoor celebrations",
+      "The granaio for wet weather receptions",
+      "Intimate chapel for ceremonies",
+      "Swimming pool and surrounding gardens",
+      "Olive groves and pine groves",
+      "Farm-to-table catering",
+      "Dedicated event coordination",
+      "Complete privacy across the estate",
+      "Flexible event timing"
+    ],
+    "description": "Exclusive use of La Pescaia Resort transforms the entire estate into your private Tuscan celebration. Your wedding flows freely between the historic villa, rustic farm buildings, outdoor gardens beneath the pines, and indoor spaces like the orangerie and granaio. The family-managed team ensures every detail reflects your vision, from farm-to-table menus featuring estate ingredients to ceremonies in the intimate chapel or beneath centuries-old pines. With complete privacy and the flexibility to use all spaces, your celebration becomes a true immersion in authentic Maremma hospitality.",
+    "transfers": "Private transfers can be arranged from major airports and cities. The estate team coordinates transport to ensure guests arrive relaxed and ready to celebrate."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "Outdoor celebrations accommodate up to 200 guests, while indoor receptions in the orangerie or granaio can host 90-120 guests depending on configuration and weather considerations."
+    },
+    {
+      "q": "Is exclusive use required?",
+      "a": "Yes, for celebrations, exclusive use of the estate is typically required. This ensures complete privacy and allows your event to unfold across all the property's spaces without interruption."
+    },
+    {
+      "q": "What ceremony locations are available?",
+      "a": "Multiple options include the intimate chapel, outdoor spaces beneath the pine groves, garden terraces, and the pool area. Each offers its own atmosphere, from sacred and intimate to grand and open-air."
+    },
+    {
+      "q": "What makes La Pescaia Resort special?",
+      "a": "It's the combination of authentic 19th-century character, family-managed hospitality, and the estate's natural beauty. The centuries-old pines, olive groves, and historic buildings create an atmosphere that feels both timeless and welcoming, while farm-to-table cuisine reflects the property's connection to the land."
+    },
+    {
+      "q": "What is the vendor policy?",
+      "a": "The estate offers semi-flexible vendor policies, with some recommended or on-site caterers available. The team works with you to ensure your vision is realized while maintaining the estate's standards and character."
+    },
+    {
+      "q": "What are the best months for weddings?",
+      "a": "September and October offer ideal conditions with golden Tuscan landscapes, moderate temperatures perfect for outdoor ceremonies, and the magical atmosphere of harvest season. May and June also provide beautiful weather and blooming gardens."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability & receive a tailored quote",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "",
+    "hotelPhone": ""
+  },
+  "pricing": {
+    "startingPriceEur": 0,
+    "priceRange": "Mid to upper range",
+    "notes": "Pricing varies based on season, guest count, and services selected. Contact the estate for detailed quotes tailored to your celebration."
+  },
+  "seasonalInfo": {
+    "peakSeason": ["May", "June", "September", "October"],
+    "bestMonths": "September-October (golden hills, moderate temperatures)",
+    "offSeason": ["November", "December", "January", "February", "March", "April", "July", "August"]
+  }
+}
+
