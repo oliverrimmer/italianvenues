@@ -6,8 +6,28 @@
       "permanent": true
     },
     {
+      "source": "/inspiration",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
+      "source": "/inspiration/",
+      "destination": "/blog",
+      "permanent": true
+    },
+    {
       "source": "/inspiration/:path*",
       "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/post-category/2025-wedding-venues",
+      "destination": "/blog/20-best-italian-wedding-venues-2026-2027",
+      "permanent": true
+    },
+    {
+      "source": "/post-category/2025-wedding-venues/",
+      "destination": "/blog/20-best-italian-wedding-venues-2026-2027",
       "permanent": true
     },
     {
