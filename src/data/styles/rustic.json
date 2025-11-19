@@ -66,17 +66,6 @@
       "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/77acf364-4124-4cd5-38ce-a8dad33b2100/cardlg",
       "featured": false,
       "rusticFeatures": ["Organic farm", "Michelin dining", "Countryside setting", "Agricultural heritage", "Tuscan charm"]
-    },
-    {
-      "name": "Villa La Foce",
-      "slug": "villa-la-foce",
-      "setting": "Historic Villa",
-      "location": "Val d'Orcia",
-      "maxGuests": 100,
-      "usp": "Iconic Renaissance villa surrounded by UNESCO World Heritage landscapes in the heart of Tuscany",
-      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/f89bc39a-a918-43f8-f9d9-1a36bd07ca00/cardlg",
-      "featured": false,
-      "rusticFeatures": ["UNESCO landscapes", "Countryside setting", "Natural beauty", "Historic farmstead", "Tuscan fields"]
     }
   ],
 

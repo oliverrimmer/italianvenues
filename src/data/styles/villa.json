@@ -68,17 +68,6 @@
       "villaFeatures": ["Floating garden", "Michelin dining", "Historic pool", "500+ year heritage", "Lake Como views"]
     },
     {
-      "name": "Villa La Foce",
-      "slug": "villa-la-foce",
-      "setting": "Iconic Renaissance Villa",
-      "location": "Val d'Orcia, Tuscany",
-      "maxGuests": 100,
-      "usp": "Iconic Renaissance villa surrounded by UNESCO World Heritage landscapes in the heart of Val d'Orcia",
-      "image": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/f89bc39a-a918-43f8-f9d9-1a36bd07ca00/cardlg",
-      "featured": false,
-      "villaFeatures": ["UNESCO landscapes", "Renaissance architecture", "Tuscan gardens", "Val d'Orcia views", "Historic charm"]
-    },
-    {
       "name": "Villa Aurelia",
       "slug": "villa-aurelia",
       "setting": "Historic Hilltop Villa",

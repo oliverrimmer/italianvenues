@@ -139,6 +139,16 @@
       "source": "/how-to-pick-an-italian-wedding-venue",
       "destination": "/about",
       "permanent": true
+    },
+    {
+      "source": "/venues/villa-la-foce",
+      "destination": "/venues?region=Tuscany",
+      "permanent": true
+    },
+    {
+      "source": "/venues/villa-la-foce/",
+      "destination": "/venues?region=Tuscany",
+      "permanent": true
     }
   ]
 }
