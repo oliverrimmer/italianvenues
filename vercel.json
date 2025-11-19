@@ -32,7 +32,7 @@
     },
     {
       "source": "/post-category/:path*",
-      "destination": "/about",
+      "destination": "/blog",
       "permanent": true
     },
     {
@@ -97,7 +97,7 @@
     },
     {
       "source": "/category/:slug",
-      "destination": "/venues",
+      "destination": "/",
       "permanent": true
     },
     {
@@ -148,6 +148,56 @@
     {
       "source": "/venues/villa-la-foce/",
       "destination": "/venues?region=Tuscany",
+      "permanent": true
+    },
+    {
+      "source": "/product",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/product/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/my-account-2",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/my-account-2/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/shop",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/shop/:path*",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/region",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/region/:path*",
+      "destination": "/",
       "permanent": true
     }
   ]
