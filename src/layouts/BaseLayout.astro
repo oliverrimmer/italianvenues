@@ -52,6 +52,16 @@ const currentUrl = new URL(Astro.url.pathname, siteUrl).href;
     <!-- Canonical -->
     <link rel="canonical" href={currentUrl} />
     
+    <!-- TravelPayouts Verification -->
+    <script is:inline data-noptimize="1" data-cfasync="false" data-wpfc-render="false">
+      (function () {
+          var script = document.createElement("script");
+          script.async = 1;
+          script.src = 'https://emrld.ltd/NDc2MDI4.js?t=476028';
+          document.head.appendChild(script);
+      })();
+    </script>
+    
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6TR5XNKVNM"></script>
     <script is:inline>
