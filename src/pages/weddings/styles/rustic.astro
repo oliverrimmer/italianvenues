@@ -1,13 +1,13 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
 
-const styleData = await import('../../data/styles/seaside.json');
+const styleData = await import('../../../data/styles/rustic.json');
 const {
-  name, heroImage, heroTitle, heroDescription, metaDescription, about, characteristics, featuredVenues, seasonalConsiderations, seasideExperiences, planningConsiderations, comparisonInsights, seoKeywords, cta
+  name, heroImage, heroTitle, heroDescription, metaDescription, about, characteristics, featuredVenues, seasonalConsiderations, rusticExperiences, planningConsiderations, comparisonInsights, seoKeywords, cta
 } = styleData.default;
 
 // List of venues with actual detail pages
-const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa', 'hotel-il-pellicano'];
+const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa', 'hotel-il-pellicano', 'masseria-salamina'];
 ---
 
 <BaseLayout 
@@ -28,7 +28,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section class="relative h-screen bg-black">
     <img
       src={heroImage}
-      alt="Seaside Italian wedding venues - Coastal villas and Mediterranean views"
+      alt="Rustic Italian wedding venues - Countryside estates and authentic charm"
       class="absolute inset-0 w-full h-full object-cover opacity-60"
       fetchpriority="high"
       loading="eager"
@@ -45,10 +45,10 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
       </p>
       <div class="flex gap-4 flex-wrap justify-center">
         <a href="#venues" class="inline-flex items-center px-8 py-4 bg-[#a78656] text-white font-semibold hover:bg-[#8f6d47] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#a78656] rounded-lg">
-          View Seaside Venues
+          View Rustic Venues
         </a>
         <a href="#contact" class="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold hover:bg-white hover:text-black transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-white rounded-lg">
-          Plan Your Seaside Wedding
+          Plan Your Rustic Wedding
         </a>
       </div>
     </div>
@@ -59,11 +59,11 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
     <div class="container mx-auto px-6 max-w-7xl">
       <div class="flex items-center gap-3 overflow-x-auto scrollbar-hide py-4">
         <a href="#overview" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Overview</a>
-        <a href="#characteristics" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">What is Seaside</a>
+        <a href="#characteristics" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">What is a Rustic</a>
         <a href="#venues" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Venues</a>
         <a href="#experiences" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Experiences</a>
         <a href="#planning" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Planning</a>
-        <a href="#insights" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Why Seaside</a>
+        <a href="#insights" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Why Rustics</a>
         <a href="#contact" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Contact</a>
       </div>
     </div>
@@ -73,7 +73,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section id="overview" class="bg-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="text-center mb-16">
-        <h2 class="heading-h2 font-semibold mb-6 text-zinc-900">Where Azure Waters Meet Mediterranean Romance</h2>
+        <h2 class="heading-h2 font-semibold mb-6 text-zinc-900">The Pinnacle of Italian Wedding Excellence</h2>
       </div>
       
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -93,7 +93,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section id="characteristics" class="bg-gradient-to-b from-zinc-50 to-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="text-center mb-12">
-        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">What Defines a Seaside Wedding in Italy</h2>
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">What Defines a Rustic Wedding in Italy</h2>
         <p class="text-xl text-zinc-700 max-w-3xl mx-auto leading-relaxed">{characteristics.summary}</p>
       </div>
 
@@ -119,14 +119,14 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section id="venues" class="bg-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-7xl">
       <div class="text-center mb-12">
-        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Italy's Most Stunning Seaside Wedding Venues</h2>
-        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">From clifftop Tuscan resorts to Amalfi Coast villas and volcanic island retreats</p>
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Italy's Most Beautiful Rustic Wedding Venues</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">From Renaissance palazzos to hilltop estates and lakeside retreats</p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {featuredVenues.map((venue) => (
           <a 
-            href={availableVenueSlugs.includes(venue.slug) ? `/venues/${venue.slug}` : `#contact`}
+            href={availableVenueSlugs.includes(venue.slug) ? `/weddings/venues/${venue.slug}` : `#contact`}
             class="group block bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:border-[#a78656] transition-all hover:shadow-2xl"
           >
             <div class="relative h-80 overflow-hidden">
@@ -153,11 +153,11 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
               <p class="text-zinc-600 font-medium mb-2">{venue.setting} • {venue.location}</p>
               <p class="text-zinc-700 leading-relaxed mb-4">{venue.usp}</p>
               
-              {venue.seasideFeatures && (
+              {venue.rusticFeatures && (
                 <div class="border-t border-zinc-200 pt-4 mt-4">
-                  <p class="text-sm font-semibold text-zinc-900 mb-2">Seaside Features:</p>
+                  <p class="text-sm font-semibold text-zinc-900 mb-2">Rustic Features:</p>
                   <div class="flex flex-wrap gap-2">
-                    {venue.seasideFeatures.slice(0, 3).map((feature) => (
+                    {venue.rusticFeatures.slice(0, 3).map((feature) => (
                       <span class="text-xs px-3 py-1 bg-[#a78656]/10 text-[#a78656] rounded-full font-medium">{feature}</span>
                     ))}
                   </div>
@@ -178,26 +178,26 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
       </div>
 
       <div class="text-center mt-12">
-        <a href="/venues?style=seaside" class="inline-flex items-center px-8 py-4 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-colors duration-200">
-          View All Seaside Venues
+        <a href="/weddings/venues?style=rustic" class="inline-flex items-center px-8 py-4 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-colors duration-200">
+          View All Rustic Venues
         </a>
       </div>
     </div>
   </section>
 
-  <!-- LUXURY EXPERIENCES SECTION -->
+  <!-- VILLA EXPERIENCES SECTION -->
   <section id="experiences" class="bg-gradient-to-b from-zinc-50 to-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="text-center mb-12">
-        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Coastal & Mediterranean Experiences</h2>
-        <p class="text-xl text-zinc-700 max-w-3xl mx-auto leading-relaxed">{seasideExperiences.intro}</p>
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Authentic Rustic Experiences</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto leading-relaxed">{rusticExperiences.intro}</p>
       </div>
 
       <!-- Activities Grid -->
       <div class="mb-16">
         <h3 class="text-2xl font-semibold text-zinc-900 mb-8">Curated Guest Experiences</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {seasideExperiences.activities.map((activity) => (
+          {rusticExperiences.activities.map((activity) => (
             <div class="flex items-start gap-4 bg-white p-6 rounded-xl border border-zinc-200 shadow-sm hover:shadow-md transition-shadow">
               <svg class="w-6 h-6 text-[#a78656] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
@@ -215,9 +215,9 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
             <svg class="w-8 h-8 text-[#a78656]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
             </svg>
-            <h4 class="text-xl font-semibold text-zinc-900">Coastal Wedding Vendors</h4>
+            <h4 class="text-xl font-semibold text-zinc-900">Rustic Wedding Vendors</h4>
           </div>
-          <p class="text-zinc-700 leading-relaxed">{seasideExperiences.vendors}</p>
+          <p class="text-zinc-700 leading-relaxed">{rusticExperiences.vendors}</p>
         </div>
 
         <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
@@ -225,9 +225,9 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
             <svg class="w-8 h-8 text-[#a78656]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
             </svg>
-            <h4 class="text-xl font-semibold text-zinc-900">Seaside Accommodations</h4>
+            <h4 class="text-xl font-semibold text-zinc-900">Five-Star Accommodations</h4>
           </div>
-          <p class="text-zinc-700 leading-relaxed">{seasideExperiences.accommodations}</p>
+          <p class="text-zinc-700 leading-relaxed">{rusticExperiences.accommodations}</p>
         </div>
       </div>
     </div>
@@ -237,7 +237,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section id="planning" class="bg-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="text-center mb-12">
-        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Planning Your Seaside Wedding</h2>
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Planning Your Rustic Wedding</h2>
         <p class="text-xl text-zinc-700 max-w-3xl mx-auto">Essential guidance for creating a flawless celebration</p>
       </div>
 
@@ -262,7 +262,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
 
       <!-- Seasonal Considerations -->
       <div class="bg-gradient-to-br from-zinc-50 to-zinc-100 rounded-2xl p-10 border border-zinc-200">
-        <h3 class="text-2xl font-semibold text-zinc-900 mb-6 text-center">Best Seasons for Seaside Weddings</h3>
+        <h3 class="text-2xl font-semibold text-zinc-900 mb-6 text-center">Best Seasons for Rustic Weddings</h3>
         <p class="text-lg text-zinc-700 text-center mb-8 max-w-3xl mx-auto">{seasonalConsiderations.summary}</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           {seasonalConsiderations.seasons.map((season) => (
@@ -280,30 +280,30 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section id="insights" class="bg-gradient-to-b from-zinc-50 to-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="text-center mb-12">
-        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Why Choose a Seaside Wedding in Italy?</h2>
-        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">Mediterranean romance at its most breathtaking</p>
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Why Choose a Rustic Wedding in Italy?</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">The ultimate investment in perfection and cultural immersion</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
-          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Seaside vs. Inland Venues</h4>
-          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsInlandVenues}</p>
+          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Rustics vs. Other Styles</h4>
+          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsOtherStyles}</p>
         </div>
         <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
-          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Italy vs. International Coastal</h4>
-          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsInternationalCoastal}</p>
+          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Italy vs. International</h4>
+          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsInternational}</p>
         </div>
       </div>
 
       <div class="bg-white p-10 rounded-2xl border border-zinc-200 shadow-sm">
-        <h4 class="text-2xl font-semibold text-zinc-900 mb-4">The Seaside Advantage</h4>
-        <p class="text-lg text-zinc-700 leading-relaxed">{comparisonInsights.whySeaside}</p>
+        <h4 class="text-2xl font-semibold text-zinc-900 mb-4">The Rustic Advantage</h4>
+        <p class="text-lg text-zinc-700 leading-relaxed">{comparisonInsights.whyRustic}</p>
       </div>
 
       <div class="bg-[#a78656] text-white p-10 rounded-2xl text-center mt-12">
-        <h3 class="text-3xl font-semibold mb-4">Ready to Plan Your Seaside Italian Wedding?</h3>
+        <h3 class="text-3xl font-semibold mb-4">Ready to Plan Your Rustic Wedding?</h3>
         <p class="text-xl text-white/90 mb-6 max-w-3xl mx-auto">
-          Let us connect you with Italy's most stunning coastal venues and create an unforgettable Mediterranean celebration
+          Let us connect you with Italy's finest villa venues and create an unforgettable garden celebration
         </p>
         <a href="#contact" class="inline-flex items-center px-8 py-4 bg-white text-[#a78656] font-semibold rounded-lg hover:bg-zinc-100 transition-colors duration-200">
           Get Started
@@ -315,8 +315,8 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <!-- CONTACT SECTION -->
   <section id="contact" class="bg-[hsl(0,0%,3%)] text-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-2xl">
-      <h2 class="heading-h2 font-semibold mb-6 text-center">Request a Seaside Wedding Quote</h2>
-      <p class="text-center text-zinc-400 mb-12">Tell us about your coastal wedding vision and we'll connect you with Italy's most stunning seaside venues.</p>
+      <h2 class="heading-h2 font-semibold mb-6 text-center">Request a Rustic Wedding Quote</h2>
+      <p class="text-center text-zinc-400 mb-12">Tell us about your vision and we'll connect you with Italy's most beautiful villa venues.</p>
       
       <form class="space-y-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -367,20 +367,18 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
         </div>
 
         <div>
-          <label for="region" class="block text-sm font-medium text-zinc-300 mb-2">Preferred Coastal Region</label>
+          <label for="budget" class="block text-sm font-medium text-zinc-300 mb-2">Estimated Budget (EUR)</label>
           <select
-            id="region"
-            name="region"
+            id="budget"
+            name="budget"
             class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
           >
-            <option value="" class="text-black">Select a region...</option>
-            <option value="amalfi-coast" class="text-black">Amalfi Coast</option>
-            <option value="tuscan-coast" class="text-black">Tuscan Coast (Monte Argentario)</option>
-            <option value="ischia" class="text-black">Ischia Island</option>
-            <option value="capri" class="text-black">Capri</option>
-            <option value="sicily" class="text-black">Sicily</option>
-            <option value="puglia" class="text-black">Puglia</option>
-            <option value="other" class="text-black">Other / Undecided</option>
+            <option value="" class="text-black">Select budget range...</option>
+            <option value="50-100k" class="text-black">€50,000 - €100,000</option>
+            <option value="100-200k" class="text-black">€100,000 - €200,000</option>
+            <option value="200-350k" class="text-black">€200,000 - €350,000</option>
+            <option value="350-500k" class="text-black">€350,000 - €500,000</option>
+            <option value="500k+" class="text-black">€500,000+</option>
           </select>
         </div>
 
@@ -392,7 +390,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
             rows="6"
             required
             class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent resize-none"
-            placeholder="Describe your dream seaside wedding: style, venue preferences, coastal activities, special requests..."
+            placeholder="Describe your dream villa wedding: style, preferences, must-haves, special requests..."
           ></textarea>
         </div>
 
@@ -405,7 +403,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
       </form>
 
       <p class="text-center text-zinc-500 text-sm mt-8">
-        We'll respond within 24 hours with curated seaside venue options and coastal wedding planning recommendations.
+        We'll respond within 24 hours with curated villa venue options and planning recommendations.
       </p>
     </div>
   </section>

@@ -2,6 +2,8 @@
   "name": "Belmond Hotel Caruso",
   "city": "Ravello",
   "region": "Amalfi Coast",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 150,
   "exclusiveUse": true,
   "startingPriceEur": 0,

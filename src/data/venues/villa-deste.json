@@ -2,6 +2,8 @@
   "name": "Villa d'Este",
   "city": "Cernobbio",
   "region": "Lake Como",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 300,
   "exclusiveUse": true,
   "startingPriceEur": 0,

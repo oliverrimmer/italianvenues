@@ -1,17 +1,17 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
 
-const locationData = await import('../../data/locations/amalfi-coast.json');
+const destinationData = await import('../../../data/destinations/puglia.json');
 const {
   name, heroImage, heroTitle, heroDescription, metaDescription, about, climate, accessibility, serviceAreas, distancesFromMajorCities, featuredVenues, localExperience, comparisonInsights, seoKeywords, cta
-} = locationData.default;
+} = destinationData.default;
 
 // List of venues with actual detail pages
-const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa', 'hotel-il-pellicano', 'le-sirenuse', 'belmond-hotel-caruso', 'monastero-santa-rosa', 'villa-cimbrone'];
+const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa', 'hotel-il-pellicano', 'masseria-salamina', 'borgo-egnazia'];
 ---
 
 <BaseLayout 
-  title={`${heroTitle} | Luxury Amalfi Coast Wedding Venues & Planning | ItalianVenues`}
+  title={`${heroTitle} | Luxury Puglia Wedding Venues & Planning | ItalianVenues`}
   description={metaDescription}
   ogImage={heroImage}
 >
@@ -23,8 +23,8 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
     "description": metaDescription,
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": "40.6333",
-      "longitude": "14.6029"
+      "latitude": "40.3514",
+      "longitude": "18.1750"
     },
     "touristType": "Destination Wedding",
     "isAccessibleForFree": false,
@@ -38,7 +38,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section class="relative h-screen bg-black">
     <img
       src={heroImage}
-      alt={`${name} wedding destination - dramatic cliffside views`}
+      alt={`${name} wedding destination - whitewashed towns and Adriatic coast`}
       class="absolute inset-0 w-full h-full object-cover opacity-60"
       fetchpriority="high"
       loading="eager"
@@ -76,7 +76,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
         <a href="#venues" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Venues</a>
         <a href="#experiences" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Experiences</a>
         <a href="#accessibility" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Getting There</a>
-        <a href="#insights" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Why Amalfi</a>
+        <a href="#insights" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Why Puglia</a>
         <a href="#contact" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Contact</a>
       </div>
     </div>
@@ -86,7 +86,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section id="overview" class="bg-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="text-center mb-16">
-        <h2 class="heading-h2 font-semibold mb-6 text-zinc-900">Italy's Most Iconic Coastal Wedding Destination</h2>
+        <h2 class="heading-h2 font-semibold mb-6 text-zinc-900">Italy's Hidden Mediterranean Gem</h2>
       </div>
       
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
@@ -102,7 +102,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
 
       <!-- Service Areas -->
       <div class="bg-gradient-to-br from-zinc-50 to-zinc-100 rounded-2xl p-10 border border-zinc-200">
-        <h3 class="heading-h3 font-semibold mb-6 text-zinc-900 text-center">Coastal Towns & Villages</h3>
+        <h3 class="heading-h3 font-semibold mb-6 text-zinc-900 text-center">Key Regions & Towns</h3>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {serviceAreas.map((area) => (
             <div class="bg-white px-5 py-3 rounded-lg shadow-sm border border-zinc-200 text-center">
@@ -159,14 +159,14 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section id="venues" class="bg-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-7xl">
       <div class="text-center mb-12">
-        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Featured Amalfi Coast Wedding Venues</h2>
-        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">From clifftop palazzos to historic monasteries and island retreats</p>
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Featured Puglia Wedding Venues</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">From luxury masserie to coastal resorts and trulli estates</p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         {featuredVenues.map((venue) => (
           <a 
-            href={availableVenueSlugs.includes(venue.slug) ? `/venues/${venue.slug}` : `#contact`}
+            href={availableVenueSlugs.includes(venue.slug) ? `/weddings/venues/${venue.slug}` : `#contact`}
             class="group block bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:border-[#a78656] transition-all hover:shadow-2xl"
           >
             <div class="relative h-80 overflow-hidden">
@@ -176,9 +176,6 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 loading="lazy"
                 decoding="async"
-                width="800"
-                height="600"
-                fetchpriority="low"
               />
               {venue.featured && (
                 <div class="absolute top-4 right-4 px-4 py-2 bg-[#a78656] text-white text-sm font-semibold rounded-full shadow-lg">
@@ -209,8 +206,8 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
       </div>
 
       <div class="text-center mt-12">
-        <a href="/venues?region=Amalfi Coast" class="inline-flex items-center px-8 py-4 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-colors duration-200">
-          View All Amalfi Coast Venues
+        <a href="/weddings/venues?region=Puglia" class="inline-flex items-center px-8 py-4 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-colors duration-200">
+          View All Puglia Venues
         </a>
       </div>
     </div>
@@ -220,7 +217,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section id="experiences" class="bg-gradient-to-b from-zinc-50 to-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="text-center mb-12">
-        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Amalfi Coast Wedding Experiences</h2>
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Puglian Wedding Experiences</h2>
         <p class="text-xl text-zinc-700 max-w-3xl mx-auto leading-relaxed">{localExperience.intro}</p>
       </div>
 
@@ -268,8 +265,8 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section id="accessibility" class="bg-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="text-center mb-12">
-        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Getting to the Amalfi Coast</h2>
-        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">Accessible from Naples and Rome with scenic coastal transfers</p>
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Getting to Puglia</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">Easily accessible from major international airports and Italian cities</p>
       </div>
 
       <!-- Airports -->
@@ -323,33 +320,33 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <section id="insights" class="bg-gradient-to-b from-zinc-50 to-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-6xl">
       <div class="text-center mb-12">
-        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Why Choose the Amalfi Coast?</h2>
-        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">How the Amalfi Coast compares to other Italian wedding destinations</p>
+        <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Why Choose Puglia?</h2>
+        <p class="text-xl text-zinc-700 max-w-3xl mx-auto">How Puglia compares to other Italian wedding destinations</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
         <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
-          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Amalfi Coast vs. Tuscany</h4>
+          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Puglia vs. Tuscany</h4>
           <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsTuscany}</p>
         </div>
         <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
-          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Amalfi Coast vs. Lake Como</h4>
-          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsLakeComo}</p>
+          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Puglia vs. Amalfi Coast</h4>
+          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsAmalfiCoast}</p>
         </div>
         <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
-          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Amalfi Coast vs. Puglia</h4>
-          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsPuglia}</p>
+          <h4 class="text-xl font-semibold text-zinc-900 mb-3">Puglia vs. Sicily</h4>
+          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.vsSicily}</p>
         </div>
         <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
-          <h4 class="text-xl font-semibold text-zinc-900 mb-3">The Amalfi Advantage</h4>
-          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.whyAmalfi}</p>
+          <h4 class="text-xl font-semibold text-zinc-900 mb-3">The Puglia Advantage</h4>
+          <p class="text-zinc-700 leading-relaxed">{comparisonInsights.whyPuglia}</p>
         </div>
       </div>
 
       <div class="bg-[#a78656] text-white p-10 rounded-2xl text-center">
-        <h3 class="text-3xl font-semibold mb-4">Ready to Plan Your Amalfi Coast Wedding?</h3>
+        <h3 class="text-3xl font-semibold mb-4">Ready to Plan Your Puglia Wedding?</h3>
         <p class="text-xl text-white/90 mb-6 max-w-3xl mx-auto">
-          Let us help you discover the perfect clifftop venue and create an unforgettable coastal celebration
+          Let us help you discover the perfect venue and create an unforgettable Italian celebration
         </p>
         <a href="#contact" class="inline-flex items-center px-8 py-4 bg-white text-[#a78656] font-semibold rounded-lg hover:bg-zinc-100 transition-colors duration-200">
           Get Started
@@ -361,8 +358,8 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
   <!-- CONTACT SECTION -->
   <section id="contact" class="bg-[hsl(0,0%,3%)] text-white py-24 md:py-32">
     <div class="container mx-auto px-6 max-w-2xl">
-      <h2 class="heading-h2 font-semibold mb-6 text-center">Request a Tailored Amalfi Coast Wedding Quote</h2>
-      <p class="text-center text-zinc-400 mb-12">Tell us about your dream Amalfi Coast wedding and we'll connect you with the perfect venues and vendors.</p>
+      <h2 class="heading-h2 font-semibold mb-6 text-center">Request a Tailored Puglia Wedding Quote</h2>
+      <p class="text-center text-zinc-400 mb-12">Tell us about your dream Puglia wedding and we'll connect you with the perfect venues and vendors.</p>
       
       <form class="space-y-6">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -413,19 +410,18 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
         </div>
 
         <div>
-          <label for="region" class="block text-sm font-medium text-zinc-300 mb-2">Preferred Coastal Town</label>
+          <label for="region" class="block text-sm font-medium text-zinc-300 mb-2">Preferred Puglia Region</label>
           <select
             id="region"
             name="region"
             class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent"
           >
-            <option value="" class="text-black">Select a town...</option>
-            <option value="positano" class="text-black">Positano</option>
-            <option value="ravello" class="text-black">Ravello</option>
-            <option value="amalfi" class="text-black">Amalfi</option>
-            <option value="sorrento" class="text-black">Sorrento</option>
-            <option value="praiano" class="text-black">Praiano</option>
-            <option value="capri" class="text-black">Capri</option>
+            <option value="" class="text-black">Select a region...</option>
+            <option value="valle-ditria" class="text-black">Valle d'Itria (Alberobello, Ostuni)</option>
+            <option value="salento" class="text-black">Salento (Lecce, Otranto)</option>
+            <option value="adriatic-coast" class="text-black">Adriatic Coast (Polignano a Mare, Monopoli)</option>
+            <option value="bari" class="text-black">Bari & Surroundings</option>
+            <option value="fasano" class="text-black">Fasano (Savelletri)</option>
             <option value="other" class="text-black">Other / Undecided</option>
           </select>
         </div>
@@ -438,7 +434,7 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
             rows="6"
             required
             class="w-full px-4 py-3 bg-white/5 border border-zinc-700 rounded-lg text-white placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-[#a78656] focus:border-transparent resize-none"
-            placeholder="Describe your dream Amalfi Coast wedding: venue style, guest count, activities, special requests..."
+            placeholder="Describe your dream Puglia wedding: venue style, guest count, activities, special requests..."
           ></textarea>
         </div>
 
@@ -480,93 +476,128 @@ const availableVenueSlugs = ['la-posta-vecchia', 'mezzatorre-hotel-thermal-spa',
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.8);
+    cursor: pointer;
+    opacity: 0.8;
+  }
 </style>
 
 <script>
-  // Optimized scroll handler - uses only IntersectionObserver for better performance
-  (function() {
-    'use strict';
-    
-    // Defer initialization until page is interactive
-    if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', init, { once: true });
-    } else {
-      // Use requestIdleCallback for non-critical initialization
-      if (window.requestIdleCallback) {
-        requestIdleCallback(init, { timeout: 2000 });
-      } else {
-        setTimeout(init, 100);
-      }
-    }
-    
-    function init() {
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.nav-link');
-      const stickyNav = document.getElementById('sticky-nav');
-      if (!sections.length || !navLinks.length) return;
+  document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const stickyNav = document.getElementById('sticky-nav');
 
-      let activeSection: string | null = null;
-      
-      // Use single IntersectionObserver instead of scroll + observer combo
-      const observer = new IntersectionObserver(
-        (entries) => {
-          // Find the section with highest intersection ratio
-          let highestSection: string | null = null;
-          let highestRatio = 0;
-          
-          entries.forEach((entry) => {
-            if (entry.isIntersecting && entry.intersectionRatio > highestRatio) {
-              highestRatio = entry.intersectionRatio;
-              highestSection = entry.target.getAttribute('id');
+    let activeSection: string | null = null;
+    let scrollTimeout: number | null = null;
+    let isScrolling = false;
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!isScrolling) return;
+        
+        let highestSection: string | null = null;
+        let highestRatio = 0;
+        
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio > highestRatio) {
+            highestRatio = entry.intersectionRatio;
+            highestSection = entry.target.getAttribute('id');
+          }
+        });
+        
+        if (highestSection && highestSection !== activeSection) {
+          activeSection = highestSection;
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${highestSection}`) {
+              link.classList.add('active');
             }
           });
-          
-          // Update active nav link only if changed
-          if (highestSection && highestSection !== activeSection) {
-            activeSection = highestSection;
-            navLinks.forEach((link) => {
-              const isActive = link.getAttribute('href') === `#${highestSection}`;
-              link.classList.toggle('active', isActive);
-            });
-          }
-        },
-        {
-          threshold: [0.1, 0.3, 0.5],
-          rootMargin: '-100px 0px -50% 0px',
         }
-      );
-
-      sections.forEach((section) => {
-        observer.observe(section);
-      });
-
-      // Set initial active link
-      if (navLinks.length > 0) {
-        navLinks[0].classList.add('active');
-        activeSection = navLinks[0].getAttribute('href')?.substring(1) || null;
+      },
+      {
+        threshold: 0.3,
+        rootMargin: '-120px 0px -60% 0px',
       }
-
-      // Handle nav link clicks
-      navLinks.forEach((link) => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const targetId = link.getAttribute('href');
-          const targetSection = document.querySelector(targetId);
+    );
+    
+    let scrollUpdateTimeout: number | null = null;
+    window.addEventListener('scroll', () => {
+      isScrolling = true;
+      
+      if (scrollUpdateTimeout) {
+        clearTimeout(scrollUpdateTimeout);
+      }
+      
+      scrollUpdateTimeout = window.setTimeout(() => {
+        isScrolling = false;
+        
+        const scrollPosition = window.scrollY + 150;
+        
+        let currentSection: string | null = null;
+        let closestSection: string | null = null;
+        let minDistance = Infinity;
+        
+        sections.forEach((section) => {
+          const rect = section.getBoundingClientRect();
+          const sectionTop = window.scrollY + rect.top;
+          const distance = Math.abs(scrollPosition - sectionTop);
           
-          if (targetSection) {
-            activeSection = targetId?.substring(1) || null;
-            navLinks.forEach((l) => l.classList.remove('active'));
-            link.classList.add('active');
-            
-            const offsetTop = targetSection.getBoundingClientRect().top + window.scrollY - (stickyNav?.offsetHeight || 0);
-            window.scrollTo({
-              top: offsetTop,
-              behavior: 'smooth',
-            });
+          if (scrollPosition >= sectionTop && scrollPosition < sectionTop + rect.height) {
+            currentSection = section.getAttribute('id');
           }
-        }, { passive: false });
-      });
+          
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestSection = section.getAttribute('id');
+          }
+        });
+        
+        const targetSection = currentSection || closestSection;
+        
+        if (targetSection && targetSection !== activeSection) {
+          activeSection = targetSection;
+          navLinks.forEach((link) => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${targetSection}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      }, 150);
+    }, { passive: true });
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    if (navLinks.length > 0) {
+      navLinks[0].classList.add('active');
     }
-  })();
+
+    navLinks.forEach((link) => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        
+        if (targetSection) {
+          navLinks.forEach((l) => l.classList.remove('active'));
+          link.classList.add('active');
+          
+          activeSection = targetId.substring(1);
+          
+          const offsetTop = targetSection.offsetTop - (stickyNav?.offsetHeight || 0);
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth',
+          });
+        }
+      });
+    });
+  });
 </script>
 

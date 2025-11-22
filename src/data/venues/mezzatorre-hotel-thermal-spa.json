@@ -2,6 +2,8 @@
   "name": "Mezzatorre Hotel & Thermal Spa",
   "city": "Forio, Ischia",
   "region": "Campania",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 120,
   "exclusiveUse": true,
   "startingPriceEur": 0,

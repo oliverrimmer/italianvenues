@@ -2,6 +2,8 @@
   "name": "Masseria Salamina",
   "city": "Puglia",
   "region": "Puglia",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 120,
   "exclusiveUse": true,
   "startingPriceEur": 15000,

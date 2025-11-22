@@ -2,6 +2,8 @@
   "name": "Borgo Santo Pietro",
   "city": "Chiusdino",
   "region": "Tuscany",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 140,
   "exclusiveUse": true,
   "startingPriceEur": 0,

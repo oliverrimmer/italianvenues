@@ -2,6 +2,8 @@
   "name": "Tenuta 4 pini",
   "city": "Frascati",
   "region": "Rome",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 80,
   "exclusiveUse": true,
   "startingPriceEur": 0,

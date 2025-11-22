@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
 
 // In future, this will dynamically load blog posts from a content collection or directory
 // For now, we'll manually list the first post
@@ -31,7 +31,7 @@ const categories = ['All', 'Venue Guides', 'Location Guides', 'Planning & Tips',
     "@type": "Blog",
     "name": "Italian Venues Blog",
     "description": "Expert guides and inspiration for Italian destination weddings",
-    "url": "https://italianvenues.com/blog",
+    "url": "https://italianvenues.com/weddings/journal",
     "publisher": {
       "@type": "Organization",
       "name": "Italian Venues",
@@ -46,7 +46,7 @@ const categories = ['All', 'Venue Guides', 'Location Guides', 'Planning & Tips',
       "description": post.description,
       "image": post.heroImage,
       "datePublished": post.publishDate,
-      "url": `https://italianvenues.com/blog/${post.slug}`
+      "url": `https://italianvenues.com/weddings/journal/${post.slug}`
     }))
   })} />
 
@@ -98,7 +98,7 @@ const categories = ['All', 'Venue Guides', 'Location Guides', 'Planning & Tips',
           </span>
         </div>
         <a 
-          href={`/blog/${post.slug}`}
+          href={`/weddings/journal/${post.slug}`}
           class="group block"
         >
           <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">

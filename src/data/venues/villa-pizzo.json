@@ -2,6 +2,8 @@
   "name": "Villa Pizzo",
   "city": "Cernobbio",
   "region": "Lake Como",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 200,
   "exclusiveUse": true,
   "startingPriceEur": 0,

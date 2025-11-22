@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+const { slug } = Astro.params;
+---
+
+<BaseLayout
+  title="Italian Venues Travel | Hotel Profiles Coming Soon"
+  description="We’re expanding Italian Venues into luxury travel. Full hotel profiles will launch soon with editorial insights and booking guidance."
+>
+  <section class="min-h-[60vh] flex flex-col items-center justify-center bg-zinc-50 text-center px-6 py-24">
+    <div class="max-w-2xl space-y-5">
+      <p class="text-sm tracking-[0.4em] uppercase text-[#a78656]">Italian Venues Travel</p>
+      <h1 class="heading-h2 text-zinc-900">Hotel profile coming soon</h1>
+      <p class="text-zinc-600 leading-relaxed">
+        The travel collection is in production. We’ll soon share full hotel editorials, amenity breakdowns, and deep links for premium bookings.
+      </p>
+      {slug?.length && (
+        <p class="text-xs text-zinc-400 uppercase tracking-[0.4em]">
+          {Array.isArray(slug) ? slug.join(' / ') : slug}
+        </p>
+      )}
+      <p class="text-zinc-500">
+        Need assistance before launch? <a href="/contact" class="text-[#a78656] font-medium hover:underline">Contact our travel desk</a>.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+

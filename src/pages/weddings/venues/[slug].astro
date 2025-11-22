@@ -1,12 +1,12 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
 
 // Prerender venue pages as static HTML
 export const prerender = true;
 
 // Generate static paths for all venue JSON files
 export async function getStaticPaths() {
-  const venueFiles = import.meta.glob('../../data/venues/*.json');
+  const venueFiles = import.meta.glob('../../../data/venues/*.json');
   
   const paths = await Promise.all(
     Object.keys(venueFiles).map(async (path) => {
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 
 // Dynamically import venue data based on slug
-const venueData = await import(`../../data/venues/${slug}.json`);
+const venueData = await import(`../../../data/venues/${slug}.json`);
 const {
   name,
   city,
@@ -44,7 +44,13 @@ const {
   exclusiveUseDetails,
   locationInfo,
   faqs,
-  contact
+  contact,
+  pricing,
+  seasonalInfo,
+  isWeddingVenue = true,
+  isHotel = false,
+  weddingData,
+  hotelData
 } = venueData.default;
 
 // Google Maps link (you might want to add this to JSON in future)
@@ -52,6 +58,8 @@ const mapsLink = locationInfo?.mapsLink || `https://www.google.com/maps/search/$
 
 // Generate meta description
 const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} is an exclusive luxury wedding venue in ${city}, ${region}. Accommodating up to ${maxGuests} guests.`;
+const canonicalUrl = `https://italianvenues.com/weddings/venues/${slug}`;
+const hasHotelSection = isHotel && hotelData && Object.keys(hotelData).length > 0;
 ---
 
 <BaseLayout 
@@ -59,6 +67,7 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
   description={metaDescription}
   ogImage={heroImage}
 >
+  <span id="weddings" class="block"></span>
   <!-- Schema.org JSON-LD for SEO -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -78,7 +87,7 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
       "longitude": locationInfo.coordinates.lng
     } : undefined,
     "maximumAttendeeCapacity": maxGuests,
-    "url": `https://italianvenues.com/venues/${slug}`,
+    "url": canonicalUrl,
     "email": "contact@italianvenues.com",
     ...(startingPriceEur && { "priceRange": `€${startingPriceEur.toLocaleString()} and up` }),
     ...(facilities && facilities.length > 0 && {
@@ -147,6 +156,9 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
         )}
         {faqs && faqs.length > 0 && (
           <a href="#faqs" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">FAQs</a>
+        )}
+        {isHotel && (
+          <a href="#stay" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Stay</a>
         )}
         <a href="#contact" class="nav-link inline-flex items-center px-4 py-2 text-sm font-medium rounded-full transition-all duration-200 text-zinc-600 whitespace-nowrap">Contact</a>
       </div>
@@ -530,6 +542,56 @@ const metaDescription = heroDescription || intro?.substring(0, 155) || `${name} 
             </details>
           ))}
         </div>
+      </div>
+    </section>
+  )}
+
+  {(isHotel) && (
+    <section id="stay" class="bg-gradient-to-b from-white to-zinc-50 py-24 md:py-32">
+      <div class="container mx-auto px-6 max-w-6xl">
+        <div class="text-center mb-12">
+          <h2 class="heading-h2 font-semibold mb-4 text-zinc-900">Stay Experience</h2>
+          <p class="text-lg text-zinc-600 max-w-3xl mx-auto leading-relaxed">
+            {hotelData?.intro || `This property also welcomes overnight guests and will be profiled in the upcoming Italian Venues Travel launch.`}
+          </p>
+        </div>
+
+        {hotelData ? (
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {hotelData.roomCount && (
+              <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
+                <h3 class="text-xl font-semibold text-zinc-900 mb-2">Room Inventory</h3>
+                <p class="text-zinc-700">Approximately {hotelData.roomCount} rooms and suites available for guest stays.</p>
+              </div>
+            )}
+            {hotelData.startingRate && (
+              <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm">
+                <h3 class="text-xl font-semibold text-zinc-900 mb-2">Starting Rates</h3>
+                <p class="text-zinc-700">{hotelData.startingRate}</p>
+              </div>
+            )}
+            {hotelData.amenities && hotelData.amenities.length > 0 && (
+              <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm md:col-span-2">
+                <h3 class="text-xl font-semibold text-zinc-900 mb-4">Signature Amenities</h3>
+                <div class="flex flex-wrap gap-3">
+                  {hotelData.amenities.map((amenity) => (
+                    <span class="px-4 py-2 bg-[#a78656]/10 text-[#a78656] rounded-full text-sm font-medium">{amenity}</span>
+                  ))}
+                </div>
+              </div>
+            )}
+            {hotelData.notes && (
+              <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm md:col-span-2">
+                <h3 class="text-xl font-semibold text-zinc-900 mb-4">Travel Notes</h3>
+                <p class="text-zinc-700 leading-relaxed">{hotelData.notes}</p>
+              </div>
+            )}
+          </div>
+        ) : (
+          <div class="bg-white border border-dashed border-zinc-300 rounded-2xl p-10 text-center text-zinc-600 max-w-3xl mx-auto">
+            Detailed hotel content is coming soon. Our travel desk can already advise on availability, room blocks, and bespoke itineraries.
+          </div>
+        )}
       </div>
     </section>
   )}

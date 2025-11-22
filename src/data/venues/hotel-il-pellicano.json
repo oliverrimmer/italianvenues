@@ -2,6 +2,8 @@
   "name": "Hotel Il Pellicano",
   "city": "Porto Ercole",
   "region": "Tuscany",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 120,
   "exclusiveUse": true,
   "startingPriceEur": 0,

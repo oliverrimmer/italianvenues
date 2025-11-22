@@ -2,6 +2,8 @@
   "name": "Villa Cimbrone",
   "city": "Ravello",
   "region": "Amalfi Coast",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 160,
   "exclusiveUse": true,
   "startingPriceEur": 0,

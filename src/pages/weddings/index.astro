@@ -1,0 +1,113 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const highlights = [
+  {
+    title: 'Venues',
+    description: 'Explore our editorially curated directory of Italy’s most exclusive wedding venues.',
+    href: '/weddings/venues',
+    cta: 'Browse Venues →',
+    image: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4500557d-7c6d-4894-c0b0-bb41e39cf900/cardlg'
+  },
+  {
+    title: 'Destinations',
+    description: 'Dive into region-by-region planning guides covering climate, logistics, and signature experiences.',
+    href: '/weddings/destinations',
+    cta: 'Discover Destinations →',
+    image: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/1b934f50-6f77-4c03-0ddc-fde1fcdf3d00/cardlg'
+  },
+  {
+    title: 'Styles',
+    description: 'Compare the defining traits of castle, villa, seaside, and rustic celebrations across Italy.',
+    href: '/weddings/styles',
+    cta: 'Find Your Style →',
+    image: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg'
+  },
+  {
+    title: 'Journal',
+    description: 'Editorial features, planning advice, and seasonal inspiration from our destination specialists.',
+    href: '/weddings/journal',
+    cta: 'Read The Journal →',
+    image: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/3f795e14-a221-47d9-8e04-17b682c0a300/cardlg'
+  },
+];
+---
+
+<BaseLayout
+  title="Italian Venues Weddings | Curated Venues, Regions & Editorial Planning"
+  description="Plan an unforgettable Italian wedding with curated venues, in-depth regional guides, and expert editorial insights — all under the Italian Venues Weddings hub."
+>
+  <section class="relative bg-black py-24 md:py-32 overflow-hidden">
+    <div class="absolute inset-0">
+      <img
+        src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/18e91f45-c5f7-4ad3-27d8-70f6e7244500/heroxl"
+        alt="Tuscan landscape for destination weddings"
+        class="w-full h-full object-cover opacity-60"
+        loading="eager"
+        decoding="async"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-black/80"></div>
+    </div>
+
+    <div class="relative z-10 max-w-4xl mx-auto px-6 text-center space-y-6">
+      <p class="text-[#a78656] text-sm md:text-base tracking-[0.3em] uppercase">Italian Venues Weddings</p>
+      <h1 class="heading-h1 text-white">One Home for Italy’s Most Exceptional Celebrations</h1>
+      <p class="text-white/85 text-lg md:text-xl leading-relaxed">
+        Navigate every stage of your destination wedding journey — from shortlist-worthy venues to regional planning guides and seasonal inspiration. Each feature is curated by our on-the-ground team with a single goal: elevating your celebration.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4 pt-4">
+        <a href="/weddings/venues" class="inline-flex items-center px-6 py-3 bg-[#a78656] text-white font-semibold rounded-lg hover:bg-[#8f6d47] transition-all">
+          Browse Venues
+        </a>
+        <a href="/contact" class="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all">
+          Plan With Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6 space-y-16">
+      <div class="space-y-4 text-center">
+        <p class="text-sm md:text-base uppercase tracking-[0.4em] text-[#a78656]">Curated Journeys</p>
+        <h2 class="heading-h2 text-zinc-900">Everything You Need for a Flawless Italian Wedding</h2>
+        <p class="text-zinc-600 max-w-3xl mx-auto text-lg leading-relaxed">
+          Whether you are early in research or finalising a celebration weekend, start here to explore venues, compare regions, and lean on the insights of our editorial planning team.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {highlights.map((item) => (
+          <a
+            href={item.href}
+            class="group relative flex flex-col overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm hover:shadow-2xl transition-all"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src={item.image}
+                alt={item.title}
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6 text-white">
+                <p class="text-sm tracking-[0.3em] uppercase text-white/70">Weddings</p>
+                <h3 class="text-3xl font-semibold">{item.title}</h3>
+              </div>
+            </div>
+            <div class="flex-1 p-8 space-y-4">
+              <p class="text-zinc-700 leading-relaxed">{item.description}</p>
+              <span class="inline-flex items-center gap-2 text-[#a78656] font-semibold group-hover:gap-3 transition-all">
+                {item.cta}
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

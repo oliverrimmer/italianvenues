@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
 
 // Aggregate all venues from all sources
 const allVenues = [
@@ -275,6 +275,25 @@ const allVenues = [
     priceIndicator: "€€€€"
   }
 ];
+
+const venueModules = import.meta.glob('../../../data/venues/*.json', { eager: true });
+const propertyRoles = Object.entries(venueModules).reduce((acc, [path, module]) => {
+  const slug = path.split('/').pop()?.replace('.json', '') || '';
+  const data = (module as { default: Record<string, any> }).default;
+  acc[slug] = {
+    isWeddingVenue: data.isWeddingVenue ?? true,
+    isHotel: data.isHotel ?? false,
+  };
+  return acc;
+}, {} as Record<string, { isWeddingVenue: boolean; isHotel: boolean }>);
+
+const venues = allVenues
+  .map((venue) => ({
+    ...venue,
+    isWeddingVenue: propertyRoles[venue.slug]?.isWeddingVenue ?? true,
+    isHotel: propertyRoles[venue.slug]?.isHotel ?? false,
+  }))
+  .filter((venue) => venue.isWeddingVenue);
 ---
 
 <BaseLayout 
@@ -342,7 +361,7 @@ const allVenues = [
             <!-- Sticky Header Section (Desktop Only) -->
             <div class="hidden lg:block flex-shrink-0 pb-4 border-b border-zinc-200 mb-4">
               <h3 class="text-lg font-semibold mb-3 text-zinc-900">Filter Venues</h3>
-              <p class="text-sm text-zinc-600 mb-3">Showing <span id="venue-count">{allVenues.length}</span> venues</p>
+              <p class="text-sm text-zinc-600 mb-3">Showing <span id="venue-count">{venues.length}</span> venues</p>
               
               <!-- Clear All Filters Button - at top for easy access -->
               <button 
@@ -355,7 +374,7 @@ const allVenues = [
             
             <!-- Mobile Venue Count -->
             <div class="lg:hidden mb-4 pb-4 border-b border-zinc-200">
-              <p class="text-sm text-zinc-600">Showing <span id="venue-count-mobile">{allVenues.length}</span> venues</p>
+              <p class="text-sm text-zinc-600">Showing <span id="venue-count-mobile">{venues.length}</span> venues</p>
             </div>
             
             <!-- Scrollable Filters Section -->
@@ -465,9 +484,9 @@ const allVenues = [
         <!-- VENUE GRID -->
         <div class="flex-1">
           <div id="venue-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {allVenues.map((venue) => (
+            {venues.map((venue) => (
               <a 
-                href={venue.hasDetailPage ? `/venues/${venue.slug}` : `#contact`}
+                href={venue.hasDetailPage ? `/weddings/venues/${venue.slug}` : `#contact`}
                 class="venue-card group block bg-zinc-50 rounded-2xl overflow-hidden border border-zinc-200 hover:border-[#a78656] transition-all hover:shadow-2xl"
                 data-region={venue.region}
                 data-capacity={venue.maxGuests}

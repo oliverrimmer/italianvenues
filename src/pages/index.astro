@@ -12,7 +12,7 @@ const featuredCards = [
     maxGuests: 120,
     priceIndicator: "€€€€",
     imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/9488d2d6-d8c4-47df-43c9-1812b9d41a00/heroxl', 
-    link: '/venues/la-posta-vecchia',
+    link: '/weddings/venues/la-posta-vecchia',
     hasDetailPage: true
   },
   { 
@@ -24,7 +24,7 @@ const featuredCards = [
     maxGuests: 200,
     priceIndicator: "€€€€",
     imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/40f741b0-ff15-4046-4b89-d8c83df8bd00/heroxl', 
-    link: '/venues/mezzatorre-hotel-thermal-spa',
+    link: '/weddings/venues/mezzatorre-hotel-thermal-spa',
     hasDetailPage: true
   },
   { 
@@ -36,19 +36,19 @@ const featuredCards = [
     maxGuests: 120,
     priceIndicator: "€€€€",
     imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/fafd9066-931f-4689-87a1-cd118c268f00/heroxl', 
-    link: '/venues/hotel-il-pellicano',
+    link: '/weddings/venues/hotel-il-pellicano',
     hasDetailPage: true
   },
 ];
 
 // Location cards - 6 locations (ordered for 2x3 grid: Row1, Row2, Row3)
 const allLocationCards = [
-  { name: 'Amalfi Coast', tag: 'Coastal', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg', link: '/locations/amalfi-coast' },
-  { name: 'Lake Como', tag: 'Lakeside', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg', link: '/locations/lake-como' },
-  { name: 'Tuscany', tag: 'Vineyards', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/1b934f50-6f77-4c03-0ddc-fde1fcdf3d00/cardlg', link: '/locations/tuscany' },
-  { name: 'Rome', tag: 'Historic', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg', link: '/locations/rome' },
-  { name: 'Puglia', tag: 'Authentic', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/828dceeb-1863-4026-e6f5-842bdc520d00/cardlg', link: '/locations/puglia' },
-  { name: 'Umbria', tag: 'Green Heart', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6f57ad10-4935-41aa-f894-c674a6781200/cardlg', link: '/locations/umbria' },
+  { name: 'Amalfi Coast', tag: 'Coastal', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/cardlg', link: '/weddings/destinations/amalfi-coast' },
+  { name: 'Lake Como', tag: 'Lakeside', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/7e0d31b3-2208-45f6-752c-9f19da879700/cardlg', link: '/weddings/destinations/lake-como' },
+  { name: 'Tuscany', tag: 'Vineyards', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/1b934f50-6f77-4c03-0ddc-fde1fcdf3d00/cardlg', link: '/weddings/destinations/tuscany' },
+  { name: 'Rome', tag: 'Historic', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6dbda489-8fea-43f2-98fe-3f5ec4525500/cardlg', link: '/weddings/destinations/rome' },
+  { name: 'Puglia', tag: 'Authentic', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/828dceeb-1863-4026-e6f5-842bdc520d00/cardlg', link: '/weddings/destinations/puglia' },
+  { name: 'Umbria', tag: 'Green Heart', imgSrc: 'https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/6f57ad10-4935-41aa-f894-c674a6781200/cardlg', link: '/weddings/destinations/umbria' },
 ];
 ---
 
@@ -91,7 +91,7 @@ const allLocationCards = [
           "@type": "SearchAction",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://italianvenues.com/venues?search={search_term_string}"
+            "urlTemplate": "https://italianvenues.com/weddings/venues?search={search_term_string}"
           },
           "query-input": "required name=search_term_string"
         }
@@ -519,7 +519,7 @@ const allLocationCards = [
     query = query.toLowerCase().trim();
     
     if (!query) {
-      window.location.href = '/venues';
+      window.location.href = '/weddings/venues';
       return;
     }
 
@@ -604,44 +604,44 @@ const allLocationCards = [
       if (foundCriteria.location) params.append('region', foundCriteria.location);
       if (foundCriteria.capacity) params.append('capacity', foundCriteria.capacity);
       if (foundCriteria.style) params.append('style', foundCriteria.style);
-      window.location.href = `/venues?${params.toString()}`;
+      window.location.href = `/weddings/venues?${params.toString()}`;
       return;
     }
 
     // If only location found, go to location page
     if (foundCriteria.location) {
       const locationSlugMap = {
-        'Tuscany': '/locations/tuscany',
-        'Amalfi Coast': '/locations/amalfi-coast',
-        'Lake Como': '/locations/lake-como',
-        'Rome': '/locations/rome',
-        'Puglia': '/locations/puglia',
-        'Umbria': '/locations/umbria'
+        'Tuscany': '/weddings/destinations/tuscany',
+        'Amalfi Coast': '/weddings/destinations/amalfi-coast',
+        'Lake Como': '/weddings/destinations/lake-como',
+        'Rome': '/weddings/destinations/rome',
+        'Puglia': '/weddings/destinations/puglia',
+        'Umbria': '/weddings/destinations/umbria'
       };
-      window.location.href = locationSlugMap[foundCriteria.location] || '/venues';
+      window.location.href = locationSlugMap[foundCriteria.location] || '/weddings/venues';
       return;
     }
 
     // If only capacity found, go to venues with capacity filter
     if (foundCriteria.capacity) {
-      window.location.href = `/venues?capacity=${foundCriteria.capacity}`;
+      window.location.href = `/weddings/venues?capacity=${foundCriteria.capacity}`;
       return;
     }
 
     // If only style found, go to style page or venues with style filter
     if (foundCriteria.style) {
       if (foundCriteria.style === 'luxury') {
-        window.location.href = '/styles/luxury';
+        window.location.href = '/weddings/styles/luxury';
       } else if (foundCriteria.style === 'seaside') {
-        window.location.href = '/styles/seaside';
+        window.location.href = '/weddings/styles/seaside';
       } else {
-        window.location.href = `/venues?style=${foundCriteria.style}`;
+        window.location.href = `/weddings/venues?style=${foundCriteria.style}`;
       }
       return;
     }
 
     // Fallback: redirect to venues page with search query
-    window.location.href = `/venues?q=${encodeURIComponent(query)}`;
+    window.location.href = `/weddings/venues?q=${encodeURIComponent(query)}`;
   }
 
   // Hero search form handler

@@ -2,6 +2,8 @@
   "name": "Borgo Egnazia",
   "city": "Savelletri di Fasano",
   "region": "Puglia",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 500,
   "exclusiveUse": true,
   "startingPriceEur": 25000,

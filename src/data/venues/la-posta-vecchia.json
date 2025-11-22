@@ -2,6 +2,8 @@
   "name": "La Posta Vecchia",
   "city": "Ladispoli",
   "region": "Rome",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 160,
   "exclusiveUse": true,
   "startingPriceEur": 25000,

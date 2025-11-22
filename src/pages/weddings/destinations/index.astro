@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const destinationModules = import.meta.glob('../../../data/destinations/*.json', { eager: true });
+
+const destinations = Object.entries(destinationModules).map(([path, module]) => {
+  const slug = path.split('/').pop()?.replace('.json', '') || '';
+  const data = (module as { default: Record<string, any> }).default;
+  return {
+    slug,
+    name: data.name,
+    heroImage: data.heroImage,
+    heroTitle: data.heroTitle,
+    heroDescription: data.heroDescription,
+    metaDescription: data.metaDescription,
+  };
+});
+
+const sortedDestinations = destinations.sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<BaseLayout
+  title="Italian Venues Weddings | Destination Planning Guides Across Italy"
+  description="Compare Italy’s leading wedding destinations with curated guides covering venues, logistics, climate, and signature experiences."
+>
+  <section class="relative bg-black py-20 md:py-28">
+    <div class="absolute inset-0">
+      <img
+        src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/622038ec-6d45-4042-e340-2db5d7319000/heroxl"
+        alt="Panoramic Italian coastline"
+        class="w-full h-full object-cover opacity-60"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-6 space-y-6">
+      <p class="text-sm tracking-[0.4em] uppercase text-[#a78656]">Wedding Destinations</p>
+      <h1 class="heading-h1 text-white">Italy’s most celebrated wedding regions</h1>
+      <p class="text-white/85 text-lg md:text-xl leading-relaxed">
+        Every guide pairs insider logistics with curated venue recommendations, seasonal considerations, and guest experience planning.
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center px-6 py-3 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all"
+      >
+        Plan my destination wedding
+      </a>
+    </div>
+  </section>
+
+  <section class="bg-white py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {sortedDestinations.map((destination) => (
+          <a
+            href={`/weddings/destinations/${destination.slug}`}
+            class="group block overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm hover:shadow-2xl transition-all"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src={destination.heroImage}
+                alt={destination.name}
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <h2 class="absolute bottom-6 left-6 text-3xl font-semibold text-white">
+                {destination.name}
+              </h2>
+            </div>
+            <div class="p-8 space-y-4">
+              <p class="text-zinc-600 leading-relaxed">
+                {destination.metaDescription || destination.heroDescription}
+              </p>
+              <span class="inline-flex items-center gap-2 text-[#a78656] font-semibold group-hover:gap-3 transition-all">
+                View guide
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

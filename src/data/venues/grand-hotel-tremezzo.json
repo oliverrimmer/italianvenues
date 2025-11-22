@@ -2,6 +2,8 @@
   "name": "Grand Hotel Tremezzo",
   "city": "Tremezzina",
   "region": "Lake Como",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 120,
   "exclusiveUse": true,
   "startingPriceEur": 0,

@@ -2,6 +2,8 @@
   "name": "Villa del Balbianello",
   "city": "Lenno",
   "region": "Lake Como",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 150,
   "exclusiveUse": true,
   "startingPriceEur": 0,

@@ -2,17 +2,17 @@
   "redirects": [
     {
       "source": "/explore-5/:path*",
-      "destination": "/venues",
+      "destination": "/weddings/venues",
       "permanent": true
     },
     {
       "source": "/inspiration",
-      "destination": "/blog",
+      "destination": "/weddings/journal",
       "permanent": true
     },
     {
       "source": "/inspiration/",
-      "destination": "/blog",
+      "destination": "/weddings/journal",
       "permanent": true
     },
     {
@@ -22,77 +22,147 @@
     },
     {
       "source": "/post-category/2025-wedding-venues",
-      "destination": "/blog/20-best-italian-wedding-venues-2026-2027",
+      "destination": "/weddings/journal/20-best-italian-wedding-venues-2026-2027",
       "permanent": true
     },
     {
       "source": "/post-category/2025-wedding-venues/",
-      "destination": "/blog/20-best-italian-wedding-venues-2026-2027",
+      "destination": "/weddings/journal/20-best-italian-wedding-venues-2026-2027",
       "permanent": true
     },
     {
       "source": "/post-category/:path*",
-      "destination": "/blog",
+      "destination": "/weddings/journal",
+      "permanent": true
+    },
+    {
+      "source": "/venues",
+      "destination": "/weddings/venues",
+      "permanent": true
+    },
+    {
+      "source": "/venues/:path*",
+      "destination": "/weddings/venues/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/locations",
+      "destination": "/weddings/destinations",
+      "permanent": true
+    },
+    {
+      "source": "/locations/:path*",
+      "destination": "/weddings/destinations/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/weddings/locations",
+      "destination": "/weddings/destinations",
+      "permanent": true
+    },
+    {
+      "source": "/weddings/locations/:path*",
+      "destination": "/weddings/destinations/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/destinations",
+      "destination": "/weddings/destinations",
+      "permanent": true
+    },
+    {
+      "source": "/destinations/:path*",
+      "destination": "/weddings/destinations/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/styles",
+      "destination": "/weddings/styles",
+      "permanent": true
+    },
+    {
+      "source": "/styles/:path*",
+      "destination": "/weddings/styles/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "/weddings/journal",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:path*",
+      "destination": "/weddings/journal/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/journal",
+      "destination": "/weddings/journal",
+      "permanent": true
+    },
+    {
+      "source": "/journal/:path*",
+      "destination": "/weddings/journal/:path*",
       "permanent": true
     },
     {
       "source": "/listing/hotel-il-pellicano",
-      "destination": "/venues/hotel-il-pellicano",
+      "destination": "/weddings/venues/hotel-il-pellicano",
       "permanent": true
     },
     {
       "source": "/listing/mezzatorre-hotel-thermal-spa",
-      "destination": "/venues/mezzatorre-hotel-thermal-spa",
+      "destination": "/weddings/venues/mezzatorre-hotel-thermal-spa",
       "permanent": true
     },
     {
       "source": "/listing/la-posta-vecchia",
-      "destination": "/venues/la-posta-vecchia",
+      "destination": "/weddings/venues/la-posta-vecchia",
       "permanent": true
     },
     {
       "source": "/listing/tenuta-4-pini/:path*",
-      "destination": "/venues/tenuta-4-pini",
+      "destination": "/weddings/venues/tenuta-4-pini",
       "permanent": true
     },
     {
       "source": "/listing/tenuta-4-pini",
-      "destination": "/venues/tenuta-4-pini",
+      "destination": "/weddings/venues/tenuta-4-pini",
       "permanent": true
     },
     {
       "source": "/listing/tenuta-4-pini/",
-      "destination": "/venues/tenuta-4-pini",
+      "destination": "/weddings/venues/tenuta-4-pini",
       "permanent": true
     },
     {
       "source": "/listing/:slug",
-      "destination": "/venues",
+      "destination": "/weddings/venues",
       "permanent": true
     },
     {
       "source": "/category/luxury",
-      "destination": "/styles/luxury",
+      "destination": "/weddings/styles/luxury",
       "permanent": true
     },
     {
       "source": "/category/rustic",
-      "destination": "/styles/rustic",
+      "destination": "/weddings/styles/rustic",
       "permanent": true
     },
     {
       "source": "/category/villa",
-      "destination": "/styles/villa",
+      "destination": "/weddings/styles/villa",
       "permanent": true
     },
     {
       "source": "/category/castle",
-      "destination": "/styles/castle",
+      "destination": "/weddings/styles/castle",
       "permanent": true
     },
     {
       "source": "/category/coastal",
-      "destination": "/styles/seaside",
+      "destination": "/weddings/styles/seaside",
       "permanent": true
     },
     {
@@ -102,7 +172,7 @@
     },
     {
       "source": "/tag/:slug",
-      "destination": "/venues",
+      "destination": "/weddings/venues",
       "permanent": true
     },
     {
@@ -122,17 +192,17 @@
     },
     {
       "source": "/top-wedding-villas-in-italy-with-on-site-accommodation-2025-guide",
-      "destination": "/venues",
+      "destination": "/weddings/venues",
       "permanent": true
     },
     {
       "source": "/mama-shelter-lake-como-a-trendy-modern-wedding-venue-in-italy",
-      "destination": "/locations/lake-como",
+      "destination": "/weddings/locations/lake-como",
       "permanent": true
     },
     {
       "source": "/villa-cetinale-siena-tuscany",
-      "destination": "/locations/tuscany",
+      "destination": "/weddings/locations/tuscany",
       "permanent": true
     },
     {
@@ -142,12 +212,12 @@
     },
     {
       "source": "/venues/villa-la-foce",
-      "destination": "/venues?region=Tuscany",
+      "destination": "/weddings/venues?region=Tuscany",
       "permanent": true
     },
     {
       "source": "/venues/villa-la-foce/",
-      "destination": "/venues?region=Tuscany",
+      "destination": "/weddings/venues?region=Tuscany",
       "permanent": true
     },
     {

@@ -2,6 +2,8 @@
   "name": "Villa Miani",
   "city": "Rome",
   "region": "Rome",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 550,
   "exclusiveUse": true,
   "startingPriceEur": 0,

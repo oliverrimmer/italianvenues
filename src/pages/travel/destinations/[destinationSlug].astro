@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+export const prerender = true;
+
+export async function getStaticPaths() {
+  // Return empty array for now - no travel destinations yet
+  return [];
+}
+
+const { destinationSlug } = Astro.params;
+---
+
+<BaseLayout
+  title="Destination Guide Coming Soon | Italian Venues Travel"
+  description="This travel destination guide is launching soon."
+>
+  <section class="min-h-[60vh] flex flex-col items-center justify-center bg-zinc-50 text-center px-6 py-24">
+    <div class="max-w-3xl space-y-6">
+      <p class="text-sm tracking-[0.4em] uppercase text-[#a78656]">Coming Soon</p>
+      <h1 class="heading-h2 text-zinc-900">Travel destination guide launching soon</h1>
+      <p class="text-zinc-600 text-lg leading-relaxed">
+        Comprehensive travel guides with hotel recommendations, restaurant picks, and curated experiences are being prepared for launch.
+      </p>
+      <p class="text-zinc-500">
+        <a href="/contact" class="text-[#a78656] font-medium hover:underline">Contact us</a> for early access.
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+

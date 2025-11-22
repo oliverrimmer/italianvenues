@@ -2,6 +2,8 @@
   "name": "Monastero Santa Rosa",
   "city": "Conca dei Marini",
   "region": "Amalfi Coast",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 60,
   "exclusiveUse": true,
   "startingPriceEur": 0,

@@ -2,6 +2,8 @@
   "name": "Castello di Tor Crescenza",
   "city": "Rome",
   "region": "Rome",
+  "isWeddingVenue": true,
+  "isHotel": false,
   "maxGuests": 300,
   "exclusiveUse": true,
   "startingPriceEur": 0,

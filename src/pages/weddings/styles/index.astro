@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+
+const styleModules = import.meta.glob('../../../data/styles/*.json', { eager: true });
+
+const styles = Object.entries(styleModules).map(([path, module]) => {
+  const slug = path.split('/').pop()?.replace('.json', '') || '';
+  const data = (module as { default: Record<string, any> }).default;
+  return {
+    slug,
+    name: data.name,
+    heroImage: data.heroImage,
+    heroTitle: data.heroTitle,
+    heroDescription: data.heroDescription,
+    metaDescription: data.metaDescription,
+  };
+});
+---
+
+<BaseLayout
+  title="Italian Venues Weddings | Compare Luxury Wedding Styles"
+  description="Discover what defines Italy’s most sought-after wedding styles — from castles and villas to seaside resorts and rustic masserias."
+>
+  <section class="relative bg-black py-20 md:py-28">
+    <div class="absolute inset-0">
+      <img
+        src="https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/4500557d-7c6d-4894-c0b0-bb41e39cf900/heroxl"
+        alt="Italian palazzo wedding style"
+        class="w-full h-full object-cover opacity-60"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80"></div>
+    </div>
+    <div class="relative z-10 max-w-4xl mx-auto text-center px-6 space-y-6">
+      <p class="text-sm tracking-[0.4em] uppercase text-[#a78656]">Wedding Styles</p>
+      <h1 class="heading-h1 text-white">Define the atmosphere for your Italian celebration</h1>
+      <p class="text-white/85 text-lg md:text-xl leading-relaxed">
+        Each style guide pairs design inspiration with capacity considerations, planning insights, and curated venue recommendations.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-white py-20 md:py-28">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+        {styles.map((style) => (
+          <a
+            href={`/weddings/styles/${style.slug}`}
+            class="group block overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm hover:shadow-2xl transition-all"
+          >
+            <div class="relative h-64 overflow-hidden">
+              <img
+                src={style.heroImage}
+                alt={style.name}
+                class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                loading="lazy"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+              <h2 class="absolute bottom-6 left-6 text-3xl font-semibold text-white">
+                {style.name}
+              </h2>
+            </div>
+            <div class="p-8 space-y-4">
+              <p class="text-zinc-600 leading-relaxed">
+                {style.metaDescription || style.heroDescription}
+              </p>
+              <span class="inline-flex items-center gap-2 text-[#a78656] font-semibold group-hover:gap-3 transition-all">
+                Explore style guide
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+              </span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+

@@ -188,7 +188,7 @@ const slug = Astro.url.pathname.split('/').pop() || '';
             <span class="text-sm font-semibold text-zinc-900 uppercase tracking-wider">Tags:</span>
             {tags.map(tag => (
               <a 
-                href={`/blog?tag=${encodeURIComponent(tag.toLowerCase())}`}
+                href={`/weddings/journal?tag=${encodeURIComponent(tag.toLowerCase())}`}
                 class="px-4 py-2 bg-white border border-zinc-200 text-zinc-700 text-sm hover:border-[#a78656] hover:text-[#a78656] transition-colors rounded-full"
               >
                 {tag}
@@ -228,7 +228,7 @@ const slug = Astro.url.pathname.split('/').pop() || '';
     <div class="border-t border-zinc-200 bg-zinc-50">
       <div class="container mx-auto px-6 py-12 max-w-4xl">
         <a 
-          href="/blog" 
+          href="/weddings/journal" 
           class="inline-flex items-center gap-2 text-zinc-900 hover:text-[#a78656] font-medium transition-colors group"
         >
           <svg class="w-5 h-5 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
