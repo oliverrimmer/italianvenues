@@ -20,7 +20,6 @@ export const GET: APIRoute = () => {
     { url: '/weddings/styles', priority: '0.8', changefreq: 'weekly' },
     { url: '/weddings/journal', priority: '0.7', changefreq: 'weekly' },
     { url: '/weddings/journal/20-best-italian-wedding-venues-2026-2027', priority: '0.8', changefreq: 'monthly' },
-    { url: '/travel', priority: '0.4', changefreq: 'monthly' },
     { url: '/about', priority: '0.6', changefreq: 'monthly' },
     { url: '/contact', priority: '0.6', changefreq: 'monthly' },
     { url: '/privacy-policy', priority: '0.3', changefreq: 'yearly' },
