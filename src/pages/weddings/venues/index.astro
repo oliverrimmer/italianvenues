@@ -692,10 +692,10 @@ const venues = allVenues
       // Check capacity filter
       if (activeFilters.capacities.length > 0) {
         const capacityMatch = activeFilters.capacities.some(range => {
-          if (range === '50-100') return cardCapacity >= 50 && cardCapacity <= 100;
-          if (range === '100-150') return cardCapacity > 100 && cardCapacity <= 150;
-          if (range === '150-200') return cardCapacity > 150 && cardCapacity <= 200;
-          if (range === '200+') return cardCapacity > 200;
+          if (range === '50-100') return cardCapacity >= 50 && cardCapacity < 100;
+          if (range === '100-150') return cardCapacity >= 100 && cardCapacity < 150;
+          if (range === '150-200') return cardCapacity >= 150 && cardCapacity < 200;
+          if (range === '200+') return cardCapacity >= 200;
           return false;
         });
         matches = matches && capacityMatch;

@@ -588,9 +588,9 @@ const allLocationCards = [
     if (capacityMatch) {
       const capacity = parseInt(capacityMatch[1]);
       if (capacity >= 50) {
-        if (capacity <= 100) foundCriteria.capacity = '50-100';
-        else if (capacity <= 150) foundCriteria.capacity = '100-150';
-        else if (capacity <= 200) foundCriteria.capacity = '150-200';
+        if (capacity < 100) foundCriteria.capacity = '50-100';
+        else if (capacity < 150) foundCriteria.capacity = '100-150';
+        else if (capacity < 200) foundCriteria.capacity = '150-200';
         else foundCriteria.capacity = '200+';
       }
     }
