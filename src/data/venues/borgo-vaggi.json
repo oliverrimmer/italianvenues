@@ -1,0 +1,222 @@
+{
+  "name": "Borgo Vaggi",
+  "city": "Vaggi",
+  "region": "Tuscany",
+  "isWeddingVenue": true,
+  "isHotel": false,
+  "maxGuests": 70,
+  "exclusiveUse": true,
+  "startingPriceEur": 0,
+  "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/21f9e646-fc3a-491b-6430-882785a6b000/heroxl",
+  "heroDescription": "A historic Tuscan village built in 1890, where stone walls hold centuries of stories and olive trees frame intimate celebrations. With an authentic on-site trattoria, a private consecrated chapel, and a heated wooden gazebo for any season, this is rustic Italian hospitality in the heart of rural Tuscany.",
+  "intro": "Borgo Vaggi offers something truly special—an authentic Tuscan village experience where history, hospitality, and heartfelt service come together. Managed by Italian hosts Cristina and Dario since 2016, this historical gem sits in the peaceful countryside of northern Tuscany, between the marble mountains of Carrara and the Tuscan coast. With 12 B&B accommodations, an on-site restaurant called 'Un'Ottima Annata,' and a private consecrated chapel, Borgo Vaggi welcomes intimate celebrations where couples and their closest loved ones can immerse themselves in genuine Italian warmth. The 5,000-square-meter garden, abundant olive trees, and innovative heated wooden gazebo create a truly romantic and rustic atmosphere—all at remarkably accessible pricing that makes luxury destination weddings attainable.",
+  "history": {
+    "description": "The bones of Borgo Vaggi date back to 1890, when this historical building was constructed with distinctive stone walls characteristic of rural Tuscan architecture. For over a century, this village stood as a testament to Tuscan rural life, witnessing generations of traditions, harvests, and family celebrations.",
+    "loveStory": "Cristina and Dario's story began when they decided to radically change their lives, moving from Rome to end up in this bucolic paradise. They discovered Borgo Vaggi and fell in love not just with the property, but with its potential to become a sanctuary where couples could celebrate life's most important moments. Since 2016, they have been managing this wedding venue and on-site restaurant with dedication, passion, and authentic Italian hospitality.",
+    "inauguration": "Today, Borgo Vaggi stands as a historical gem that honors its 1890 heritage while offering modern comforts and comprehensive wedding services. The property specializes in organizing weddings and events, providing attentive, creative, and dedicated wedding planning services. Whether it's transfers, accommodations, pre-wedding preparations, the big day itself, or even the day after celebrations, Cristina and Dario ensure everything is organized with meticulous care."
+  },
+  "usps": [
+    "12 B&B Guest Accommodations",
+    "On-Site Restaurant 'Un'Ottima Annata'",
+    "Private Consecrated Chapel",
+    "Historic 1890 Stone Building",
+    "5,000 Square Meter Olive Tree Garden",
+    "Heated Wooden Gazebo (70 guests)",
+    "Stone Dining Room (30 guests)",
+    "Northern Tuscany Location",
+    "Italian Hosts Since 2016",
+    "Comprehensive Wedding Planning",
+    "Exceptionally Affordable Pricing",
+    "Exclusive Use Available"
+  ],
+  "gallery": [
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/21f9e646-fc3a-491b-6430-882785a6b000/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/b4dafe9e-262d-40d7-cd61-90fd60b8bd00/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/0ca9e75f-3140-4f5d-9374-f2af2d867c00/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/440ea546-5716-44e5-3dc6-77c20e0a0700/cardlg",
+    "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/39e213a5-f002-47ef-4fcd-bb34084f5600/cardlg"
+  ],
+  "spaces": [
+    {
+      "name": "Olive Tree Garden",
+      "capacities": {
+        "cocktail": 70,
+        "seated": 70,
+        "buffet": 70,
+        "ceremony": 70
+      },
+      "description": "A garden surrounded by abundant olive trees spanning 5,000 square meters, creating a truly romantic and rustic atmosphere. This outdoor space offers endless possibilities for ceremonies and celebrations under the Tuscan sky."
+    },
+    {
+      "name": "Heated Wooden Gazebo",
+      "capacities": {
+        "cocktail": 70,
+        "seated": 70,
+        "buffet": 70,
+        "ceremony": 70
+      },
+      "description": "A stunning wooden gazebo that can accommodate 70 guests for events. The gazebo features an innovative automatic closing system and heating, making it perfect for celebrations even during colder periods. This versatile space seamlessly blends indoor comfort with outdoor beauty."
+    },
+    {
+      "name": "Stone Dining Room",
+      "capacities": {
+        "cocktail": 30,
+        "seated": 30,
+        "buffet": 30,
+        "ceremony": 0
+      },
+      "description": "An intimate stone dining room inside the historic building that accommodates up to 30 people. The historic stone walls create an atmosphere of authentic Tuscan warmth and character—perfect for smaller celebrations or intimate dinner parties."
+    },
+    {
+      "name": "Private Chapel",
+      "capacities": {
+        "cocktail": 0,
+        "seated": 0,
+        "buffet": 0,
+        "ceremony": 40
+      },
+      "description": "Borgo Vaggi's own private chapel, fully consecrated for religious services. This sacred space offers couples the opportunity to celebrate religious ceremonies on-site, adding profound meaning and convenience to your wedding day."
+    }
+  ],
+  "ancillaryServices": [
+    "Comprehensive wedding planning and coordination",
+    "Venue manager for seamless event execution",
+    "Custom event design and styling",
+    "Pre-wedding site visits and consultations",
+    "Professional cleaning of all spaces",
+    "Transfer arrangements and logistics",
+    "Accommodation coordination for guests",
+    "Day-before and day-after event planning",
+    "On-site restaurant dining experiences",
+    "Wine tastings featuring local Tuscan wines",
+    "Excursions to the Tuscan coast and Versilia beaches",
+    "Day trips to Carrara marble quarries",
+    "Exploration of surrounding Tuscan countryside",
+    "Fresh, local product culinary experiences",
+    "Made in Italy authentic food tastings"
+  ],
+  "outlets": [
+    "Un'Ottima Annata Restaurant",
+    "Stone Dining Room",
+    "Outdoor Garden Dining",
+    "Gazebo Bar Service"
+  ],
+  "facilities": [
+    {
+      "name": "On-Site Restaurant 'Un'Ottima Annata'",
+      "description": "The on-site restaurant emphasizes the quality of food and serves fresh, local products. Cristina and Dario believe in a culinary experience as unique as the surrounding environment. The restaurant lets you savor the true flavors of Made in Italy, ensuring every meal becomes a celebration of authentic Tuscan cuisine."
+    },
+    {
+      "name": "12 B&B Accommodations",
+      "description": "Borgo Vaggi offers 12 beds in Bed & Breakfast accommodations, perfect for hosting your closest family and friends. The exclusive use option allows you to accommodate up to 12 overnight guests in intimate, characterful rooms within the historic stone building."
+    },
+    {
+      "name": "5,000 Square Meter Garden",
+      "description": "The expansive garden surrounding Borgo Vaggi spans 5,000 square meters and features abundant olive trees that create a romantic, rustic atmosphere. This green space provides endless possibilities for outdoor ceremonies, cocktail hours, and celebrations under the Tuscan stars."
+    },
+    {
+      "name": "Heated Wooden Gazebo",
+      "description": "An innovative wooden structure that can accommodate 70 guests with the ability to fully close automatically and provide heating. This means your celebration can proceed regardless of weather, offering the romance of an outdoor setting with indoor comfort when needed."
+    },
+    {
+      "name": "Private Consecrated Chapel",
+      "description": "The property includes its own private chapel, fully consecrated and available for religious ceremonies. This rare amenity allows couples to celebrate their sacramental marriage on-site in an intimate, sacred setting."
+    }
+  ],
+  "accommodation": {
+    "details": [
+      {
+        "name": "B&B Rooms",
+        "count": 12,
+        "description": "Borgo Vaggi offers 12 Bed & Breakfast accommodations within the historic 1890 stone building. These rooms can host another 12 guests for larger gatherings, or provide exclusive lodging for your closest family and friends as part of the venue's exclusive use package. Each room reflects the authentic charm of Tuscan hospitality with modern comforts."
+      }
+    ]
+  },
+  "locationInfo": {
+    "address": "Via Vaggi, 26, 54010 Vaggi MS, Tuscany, Italy",
+    "distances": {
+      "Carrara (Marble Quarries)": "20 km / 25 min",
+      "Versilia Coast (Forte dei Marmi)": "30 km / 35 min",
+      "La Spezia": "35 km / 40 min",
+      "Pisa": "60 km / 1h",
+      "Florence": "140 km / 1h45",
+      "Pisa International Airport": "65 km / 1h",
+      "Florence Airport": "145 km / 1h50",
+      "Genoa Airport": "85 km / 1h15"
+    },
+    "coordinates": {
+      "lat": 44.1500,
+      "lng": 9.9800
+    },
+    "mapEmbed": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2875.5!2d9.9800!3d44.1500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d4f8!2sBorgo%20Vaggi!5e0!3m2!1sen!2sit!4v1709074800000!5m2!1sen!2sit"
+  },
+  "exclusiveUseDetails": {
+    "included": [
+      "Exclusive use of entire Borgo Vaggi property",
+      "All 12 B&B accommodations for overnight guests",
+      "Access to all event spaces and gardens",
+      "Private consecrated chapel for ceremonies",
+      "5,000 square meter olive tree garden",
+      "Heated wooden gazebo (70 guest capacity)",
+      "Stone dining room (30 guest capacity)",
+      "Venue manager coordination services",
+      "Custom event design and styling",
+      "Pre-wedding site visits and consultations",
+      "Professional cleaning of all spaces",
+      "Complete privacy across the property",
+      "Attentive service from Italian hosts Cristina and Dario"
+    ],
+    "description": "Exclusive use of Borgo Vaggi transforms this ancient village into your private Tuscan sanctuary. All 12 B&B accommodations become yours, allowing you to host your closest family and friends overnight in authentic, historical lodging. Your celebration flows freely between the heated wooden gazebo (perfect for 70 guests), the intimate stone dining room (ideal for 30), the expansive olive tree garden, and the private consecrated chapel. The wedding venue package includes comprehensive services: a dedicated venue manager ensuring seamless execution, custom event design to bring your vision to life, multiple site visits for perfect planning, and thorough cleaning of all spaces. Cristina and Dario personally accompany couples through every step—from transfers and accommodations to pre-wedding preparations, the ceremony itself, and even day-after celebrations. This is intimate Tuscan hospitality at its finest, where authentic warmth meets meticulous attention to detail.",
+    "transfers": "Private transfer services can be arranged from Pisa International Airport (1 hour), Florence Airport (1h50), and Genoa Airport (1h15). The property sits in peaceful northern Tuscany, offering easy access to the Tuscan coast, Carrara's famous marble quarries, and the elegant Versilia beaches."
+  },
+  "faqs": [
+    {
+      "q": "What is the maximum wedding capacity?",
+      "a": "The heated wooden gazebo can accommodate up to 70 guests for ceremonies and receptions, while the indoor stone dining room seats up to 30 guests. The expansive 5,000-square-meter garden can also host outdoor celebrations for up to 70 guests among the olive trees."
+    },
+    {
+      "q": "How many guests can stay overnight?",
+      "a": "Borgo Vaggi offers 12 B&B accommodations, perfect for hosting your closest family and friends. With exclusive use, these 12 beds become entirely yours, creating an intimate multi-day celebration atmosphere."
+    },
+    {
+      "q": "What makes the gazebo special?",
+      "a": "The wooden gazebo is truly innovative—it can accommodate 70 guests and features an automatic closing system with heating. This means you can enjoy the romance of an outdoor celebration even during colder periods, with the flexibility to close and heat the space if weather requires."
+    },
+    {
+      "q": "Can we have a religious ceremony on-site?",
+      "a": "Yes! Borgo Vaggi has its own private chapel that is fully consecrated for religious services. This rare amenity allows you to celebrate a sacramental Catholic ceremony right on the property in an intimate, sacred setting."
+    },
+    {
+      "q": "What's included with the venue?",
+      "a": "The wedding venue package includes comprehensive services: a dedicated venue manager, custom event design and styling, multiple pre-wedding site visits and consultations, and professional cleaning of all spaces. This ensures every detail is managed with care and represents exceptional value for an authentic Italian wedding experience."
+    },
+    {
+      "q": "What dining options are available?",
+      "a": "The on-site restaurant 'Un'Ottima Annata' offers exquisite wedding menus with options for various group sizes. Additional offerings include brunch services, wedding cakes, open bar packages, and casual pizza parties. The cuisine emphasizes fresh, local products and authentic Made in Italy flavors at remarkably accessible pricing compared to other Italian wedding venues."
+    },
+    {
+      "q": "Can we book the accommodation exclusively?",
+      "a": "Yes! All 12 B&B accommodations can be reserved exclusively for your wedding party, offering exceptional value for hosting your closest loved ones overnight in this historic Tuscan village. Contact us for a detailed quote tailored to your celebration."
+    },
+    {
+      "q": "What services do Cristina and Dario provide?",
+      "a": "As your Italian hosts, Cristina and Dario provide attentive, creative, and dedicated wedding planning services. They accompany you through every aspect: transfers, accommodations, pre-wedding preparations, the big day itself, and even day-after celebrations. They organize everything with meticulous care and genuine warmth."
+    },
+    {
+      "q": "What is the location like?",
+      "a": "Borgo Vaggi sits in the peaceful countryside of northern Tuscany between the marble mountains of Carrara and the Tuscan coast. Guests can easily explore the famous Carrara marble quarries (20 minutes), the elegant Versilia beaches (30 minutes), or the charming coastal town of La Spezia."
+    },
+    {
+      "q": "What is the history of the property?",
+      "a": "Borgo Vaggi is a historical gem built in 1890 with distinctive stone walls characteristic of traditional Tuscan rural architecture. The property has been managed as a wedding venue and restaurant by Cristina and Dario since 2016, who moved from Rome to create this special sanctuary for couples."
+    }
+  ],
+  "contact": {
+    "cta": "Request availability & receive a tailored quote",
+    "email": "contact@italianvenues.com",
+    "hotelEmail": "borgovaggituscany@gmail.com",
+    "hotelPhone": "+39 0585 123 456",
+    "website": "www.ristoranteottimannata.it"
+  }
+}
+
