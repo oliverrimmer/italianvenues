@@ -8,18 +8,18 @@
   "exclusiveUse": true,
   "startingPriceEur": 0,
   "heroImage": "https://imagedelivery.net/SQx9MVPmzIo4YN8gmsdPow/21f9e646-fc3a-491b-6430-882785a6b000/heroxl",
-  "heroDescription": "A historic Tuscan village built in 1890, where stone walls hold centuries of stories and olive trees frame intimate celebrations. With an authentic on-site trattoria, a private consecrated chapel, and a heated wooden gazebo for any season, this is rustic Italian hospitality in the heart of rural Tuscany.",
+  "heroDescription": "A historic Tuscan village built in 1690, where stone walls hold centuries of stories and olive trees frame intimate celebrations. With an authentic on-site trattoria, a private consecrated chapel, and a heated wooden gazebo for any season, this is rustic Italian hospitality in the heart of rural Tuscany.",
   "intro": "Borgo Vaggi offers something truly special—an authentic Tuscan village experience where history, hospitality, and heartfelt service come together. Managed by Italian hosts Cristina and Dario since 2016, this historical gem sits in the peaceful countryside of northern Tuscany, between the marble mountains of Carrara and the Tuscan coast. With 12 B&B accommodations, an on-site restaurant called 'Un'Ottima Annata,' and a private consecrated chapel, Borgo Vaggi welcomes intimate celebrations where couples and their closest loved ones can immerse themselves in genuine Italian warmth. The 5,000-square-meter garden, abundant olive trees, and innovative heated wooden gazebo create a truly romantic and rustic atmosphere—all at remarkably accessible pricing that makes luxury destination weddings attainable.",
   "history": {
-    "description": "The bones of Borgo Vaggi date back to 1890, when this historical building was constructed with distinctive stone walls characteristic of rural Tuscan architecture. For over a century, this village stood as a testament to Tuscan rural life, witnessing generations of traditions, harvests, and family celebrations.",
+    "description": "The bones of Borgo Vaggi date back to 1690, when this historical building was constructed with distinctive stone walls characteristic of rural Tuscan architecture. For over three centuries, this village stood as a testament to Tuscan rural life, witnessing generations of traditions, harvests, and family celebrations.",
     "loveStory": "Cristina and Dario's story began when they decided to radically change their lives, moving from Rome to end up in this bucolic paradise. They discovered Borgo Vaggi and fell in love not just with the property, but with its potential to become a sanctuary where couples could celebrate life's most important moments. Since 2016, they have been managing this wedding venue and on-site restaurant with dedication, passion, and authentic Italian hospitality.",
-    "inauguration": "Today, Borgo Vaggi stands as a historical gem that honors its 1890 heritage while offering modern comforts and comprehensive wedding services. The property specializes in organizing weddings and events, providing attentive, creative, and dedicated wedding planning services. Whether it's transfers, accommodations, pre-wedding preparations, the big day itself, or even the day after celebrations, Cristina and Dario ensure everything is organized with meticulous care."
+    "inauguration": "Today, Borgo Vaggi stands as a historical gem that honors its 1690 heritage while offering modern comforts and comprehensive wedding services. The property specializes in organizing weddings and events, providing attentive, creative, and dedicated wedding planning services. Whether it's transfers, accommodations, pre-wedding preparations, the big day itself, or even the day after celebrations, Cristina and Dario ensure everything is organized with meticulous care."
   },
   "usps": [
     "12 B&B Guest Accommodations",
     "On-Site Restaurant 'Un'Ottima Annata'",
     "Private Consecrated Chapel",
-    "Historic 1890 Stone Building",
+    "Historic 1690 Stone Building",
     "5,000 Square Meter Olive Tree Garden",
     "Heated Wooden Gazebo (70 guests)",
     "Stone Dining Room (30 guests)",
@@ -63,9 +63,9 @@
         "cocktail": 30,
         "seated": 30,
         "buffet": 30,
-        "ceremony": 0
+        "ceremony": 30
       },
-      "description": "An intimate stone dining room inside the historic building that accommodates up to 30 people. The historic stone walls create an atmosphere of authentic Tuscan warmth and character—perfect for smaller celebrations or intimate dinner parties."
+      "description": "An intimate stone dining room inside the historic building that accommodates up to 30 people. The historic stone walls create an atmosphere of authentic Tuscan warmth and character—perfect for smaller celebrations, intimate dinner parties, or indoor ceremonies."
     },
     {
       "name": "Private Chapel",
@@ -73,13 +73,13 @@
         "cocktail": 0,
         "seated": 0,
         "buffet": 0,
-        "ceremony": 40
+        "ceremony": 30
       },
       "description": "Borgo Vaggi's own private chapel, fully consecrated for religious services. This sacred space offers couples the opportunity to celebrate religious ceremonies on-site, adding profound meaning and convenience to your wedding day."
     }
   ],
   "ancillaryServices": [
-    "Comprehensive wedding planning and coordination",
+    "Comprehensive wedding planning and coordination with a professional destination wedding planner",
     "Venue manager for seamless event execution",
     "Custom event design and styling",
     "Pre-wedding site visits and consultations",
@@ -88,10 +88,10 @@
     "Accommodation coordination for guests",
     "Day-before and day-after event planning",
     "On-site restaurant dining experiences",
-    "Wine tastings featuring local Tuscan wines",
-    "Excursions to the Tuscan coast and Versilia beaches",
+    "Wine tastings featuring local Colli di Luni and Tuscan wineries",
+    "Excursions to the 5 Terre, Tuscan coast and Versilia beaches",
     "Day trips to Carrara marble quarries",
-    "Exploration of surrounding Tuscan countryside",
+    "Exploration of surrounding Tuscan and Ligurian countryside",
     "Fresh, local product culinary experiences",
     "Made in Italy authentic food tastings"
   ],
@@ -208,7 +208,7 @@
     },
     {
       "q": "What is the history of the property?",
-      "a": "Borgo Vaggi is a historical gem built in 1890 with distinctive stone walls characteristic of traditional Tuscan rural architecture. The property has been managed as a wedding venue and restaurant by Cristina and Dario since 2016, who moved from Rome to create this special sanctuary for couples."
+      "a": "Borgo Vaggi is a historical gem built in 1690 with distinctive stone walls characteristic of traditional Tuscan rural architecture. The property has been managed as a wedding venue and restaurant by Cristina and Dario since 2016, who moved from Rome to create this special sanctuary for couples."
     }
   ],
   "contact": {
