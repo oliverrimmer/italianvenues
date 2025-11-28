@@ -64,7 +64,7 @@ ${allPages
   return new Response(sitemap, {
     headers: {
       'Content-Type': 'application/xml',
-      'Cache-Control': 'public, max-age=3600',
+      'Cache-Control': 'public, max-age=3600, must-revalidate',
     },
   });
 };
